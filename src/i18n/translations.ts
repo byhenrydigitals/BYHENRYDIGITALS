@@ -5,6 +5,7 @@ import { ig } from './locales/ig';
 import { yo } from './locales/yo';
 import { ha } from './locales/ha';
 import { fr } from './locales/fr';
+import { pcm } from './locales/pcm';
 
 export type { TranslationBundle } from './schema';
 
@@ -14,4 +15,5 @@ export const TRANSLATIONS: Record<ActiveLanguageCode, TranslationBundle> = {
   yo,
   ha,
   fr,
+  pcm,
 };

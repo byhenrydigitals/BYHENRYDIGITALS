@@ -14,6 +14,7 @@ const STOP_WORDS = new Set([
   'na', 'nke', 'maka', 'kedu', 'gini', 'bu',
   'ni', 'ti', 'se', 'fun', 'ki', 'bawo',
   'da', 'ta', 'ya', 'ne', 'ce', 'yadda', 'mene', 'me', 'ina',
+  'dey', 'wey', 'abi', 'una', 'dem', 'sef', 'di', 'dis', 'dat', 'wetin',
 ]);
 
 function normalizeText(value: string): string {

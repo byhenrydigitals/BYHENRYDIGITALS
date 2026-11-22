@@ -1,4 +1,4 @@
-export type ActiveLanguageCode = 'en' | 'ig' | 'yo' | 'ha' | 'fr';
+export type ActiveLanguageCode = 'en' | 'ig' | 'yo' | 'ha' | 'fr' | 'pcm';
 
 export type SupportedLanguageCode = ActiveLanguageCode;
 
@@ -17,6 +17,7 @@ export const LANGUAGE_REGISTRY: LanguageDefinition[] = [
   { code: 'yo', name: 'Yoruba', nativeName: 'Yorùbá', dir: 'ltr', status: 'ready' },
   { code: 'ha', name: 'Hausa', nativeName: 'Hausa', dir: 'ltr', status: 'ready' },
   { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷', dir: 'ltr', status: 'ready' },
+  { code: 'pcm', name: 'Nigerian Pidgin', nativeName: 'Nigerian Pidgin', dir: 'ltr', status: 'ready' },
 ];
 
-export const ACTIVE_LANGUAGE_CODES: ActiveLanguageCode[] = ['en', 'ig', 'yo', 'ha', 'fr'];
+export const ACTIVE_LANGUAGE_CODES: ActiveLanguageCode[] = ['en', 'ig', 'yo', 'ha', 'fr', 'pcm'];

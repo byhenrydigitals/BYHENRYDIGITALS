@@ -44,7 +44,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'about-06': {
     question: 'Kí ni ìran BYHENRYDIGITALS?',
     answer: [
-      'Ìran BHD ni láti kọ́ àgbáyé dígítà tó ṣeé gbẹ́kẹ̀lé tí ó ń so àwọn akẹ́kọ̀ọ́, olùṣẹ̀dá, àti ilé-iṣẹ́ pọ̀ kọjá èdè àti agbègbè.',
+      'Ìran BHD ni láti kọ́ àgbáyé dígítà tó ṣeé gbẹ́kẹ̀lé tí ó ń so àwọn akẹ́kọ̀ọ́, olùṣẹ̀dá, àti ilé-iṣẹ́ pọ̀ kọjá èdè mẹ́fà tó ń ṣiṣẹ́: English, Igbo, Yorùbá, Hausa, French, àti Nigerian Pidgin.',
     ],
   },
   'about-07': {
@@ -496,7 +496,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Àwọn èdè wo ni wẹ́ẹ̀bù BYHENRYDIGITALS ń ṣe àtìlẹ́yìn fún báyìí?',
     answer: [
-      'Èdè Gẹ̀ẹ́sì (English), Igbo, Yorùbá, Hausa, àti Faransé (French) ń ṣiṣẹ́ kíkún lórí gbogbo wẹ́ẹ̀bù àti Vanessa FAQ.',
+      'Èdè Gẹ̀ẹ́sì (English), Igbo, Yorùbá, Hausa, Faransé (French), àti Nigerian Pidgin ń ṣiṣẹ́ kíkún lórí gbogbo wẹ́ẹ̀bù àti Vanessa FAQ.',
     ],
   },
   'lang-02': {
@@ -529,8 +529,15 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
       'Yíyan Hausa ń yí wẹ́ẹ̀bù àti Vanessa FAQ padà sí Hausa lẹ́sẹ̀kẹsẹ̀ láìtún ojú-ewé gbé.',
     ],
   },
+  'lang-09': {
+    question: 'Báwo ni a ṣe ń ṣe àtìlẹ́yìn fún Èdè Nigerian Pidgin?',
+    answer: [
+      'Yíyan Nigerian Pidgin lórí menu èdè yóò yí gbogbo ojú-ewé, àpilẹ̀kọ, àti Vanessa FAQ padà sí Nigerian Pidgin lẹ́sẹ̀kẹsẹ̀. Àwọn ìwé Selar fúnra wọn wà ní Èdè Gẹ̀ẹ́sì báyìí.',
+    ],
+    extraKeywords: ['nigerian pidgin', 'pidgin'],
+  },
   'lang-07': {
-    question: 'Ṣé àwọn ọjà Selar ti BHD ti wà ní Faransé, Igbo, Yorùbá, tàbí Hausa?',
+    question: 'Ṣé àwọn ọjà Selar ti BHD ti wà ní Faransé, Igbo, Yorùbá, Hausa, tàbí Nigerian Pidgin?',
     answer: [
       'Rárá. Àwọn ọjà Selar mẹ́tẹ̀ẹ̀ta wà ní Èdè Gẹ̀ẹ́sì nìkan lọ́wọ́lọ́wọ́.',
     ],
@@ -618,7 +625,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'nav-04': {
     question: 'Báwo ni mo ṣe lè lo olùyàn èdè wẹ́ẹ̀bù?',
     answer: [
-      'Tẹ bọtìnì Èdè ní apá ọ̀tún òkè láti yan English, Igbo, Yorùbá, Hausa, tàbí French.',
+      'Tẹ bọtìnì Èdè ní apá ọ̀tún òkè láti yan English, Igbo, Yorùbá, Hausa, French, tàbí Nigerian Pidgin.',
     ],
   },
   'nav-05': {
@@ -680,7 +687,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'van-06': {
     question: 'Ṣé Vanessa FAQ ń yí èdè padà nígbà tí mo bá yí èdè wẹ́ẹ̀bù padà?',
     answer: [
-      'Bẹ́ẹ̀ ni. Ó ń yí padà lẹ́sẹ̀kẹsẹ̀ láàárín English, Igbo, Yorùbá, Hausa, àti French.',
+      'Bẹ́ẹ̀ ni. Ó ń yí padà lẹ́sẹ̀kẹsẹ̀ láàárín English, Igbo, Yorùbá, Hausa, French, àti Nigerian Pidgin.',
     ],
   },
   'van-07': {
@@ -761,7 +768,7 @@ export const faqYo: FaqBundle = {
     },
     'languages-learning': {
       title: 'G. Èdè àti Ohun Èlò Ìkẹ́kọ̀ọ́',
-      description: 'Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa, Faransé àti èdè ọjà.',
+      description: 'Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa, Faransé, Nigerian Pidgin àti èdè ọjà.',
     },
     'payments-purchases': {
       title: 'H. Rírà, Ìsanwó àti Ìtìlẹ́yìn',

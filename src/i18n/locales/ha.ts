@@ -86,7 +86,7 @@ export const ha: TranslationBundle = {
     visionKicker: 'Hangen Nesa na Duniya',
     visionTitle: 'An Tsara Don Samun Dama a Duniya',
     visionDesc:
-      'BYHENRYDIGITALS yana aiki da Turanci, Igbo, Yorùbá, Hausa da Faransanci domin maziyarta su binciki kayayyaki, ayyuka da jagorori cikin sauƙi.',
+      'BYHENRYDIGITALS yana aiki da Turanci, Igbo, Yorùbá, Hausa, Faransanci da Nigerian Pidgin domin maziyarta su binciki kayayyaki, ayyuka da jagorori cikin sauƙi.',
     vanessaKicker: 'Vanessa — Cikakken FAQ na BHD',
     vanessaTitle: 'VANESSA — CIKAKKEN FAQ NA BHD',
     vanessaDesc:
@@ -124,7 +124,7 @@ export const ha: TranslationBundle = {
       },
       {
         title: 'Shirin Duniya',
-        body: 'Tsarinmu yana goyan bayan Turanci, Igbo, Yorùbá, Hausa da Faransanci a dukan shafuka da sassan ilimi.',
+        body: 'Tsarinmu yana goyan bayan Turanci, Igbo, Yorùbá, Hausa, Faransanci da Nigerian Pidgin a dukan shafuka da sassan ilimi.',
       },
     ],
     founderKicker: 'Jagoranci',
@@ -494,7 +494,7 @@ export const ha: TranslationBundle = {
     emailUsLabel: 'Aika Mana Imel',
     whatsappUsLabel: 'Yi Hira da Mu a WhatsApp',
     socialTitle: 'Tashoshin Sadarwa',
-    languagesLabel: 'Harsuna masu aiki: English, Igbo, Yorùbá, Hausa da French',
+    languagesLabel: 'Harsuna masu aiki: English, Igbo, Yorùbá, Hausa, French da Nigerian Pidgin',
     copyright: 'BYHENRYDIGITALS (BHD). Duk haƙƙoƙi suna da kariya.',
     globalOperationLabel: 'Yana aiki a dijital don al’ummar duniya',
   },

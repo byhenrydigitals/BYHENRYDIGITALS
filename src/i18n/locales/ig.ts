@@ -86,7 +86,7 @@ export const ig: TranslationBundle = {
     visionKicker: 'Ọhụụ Mba Ụwa',
     visionTitle: 'E Mere Ya Maka Ịnweta Zuru Ụwa Ọnụ',
     visionDesc:
-      'BYHENRYDIGITALS na-arụ ọrụ n’asụsụ English, Igbo, Yorùbá, Hausa, na French ka ndị ọbịa nwee ike ịgụ na iji weebụsaịtị a n’asụsụ ha họọrọ.',
+      'BYHENRYDIGITALS na-arụ ọrụ n’asụsụ English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin ka ndị ọbịa nwee ike ịgụ na iji weebụsaịtị a n’asụsụ ha họọrọ.',
     vanessaKicker: 'Vanessa — Ajụjụ BHD Zuru Ezu',
     vanessaTitle: 'VANESSA — AJỤJỤ BHD ZURU EZU',
     vanessaDesc:
@@ -124,7 +124,7 @@ export const ig: TranslationBundle = {
       },
       {
         title: 'Njikere Zuru Ụwa Ọnụ',
-        body: 'Sistemụ anyị na-akwado English, Igbo, Yorùbá, Hausa, na French n’ibe niile, menu, na ntuziaka mmụta.',
+        body: 'Sistemụ anyị na-akwado English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin n’ibe niile, menu, na ntuziaka mmụta.',
       },
     ],
     founderKicker: 'Nduzi',
@@ -494,7 +494,7 @@ export const ig: TranslationBundle = {
     emailUsLabel: 'Ziga Anyị Ozi-e',
     whatsappUsLabel: 'Kparịta Ụka na WhatsApp',
     socialTitle: 'Ọwa Mmekọrịta',
-    languagesLabel: 'Asụsụ na-arụ ọrụ: English, Igbo, Yorùbá, Hausa & French',
+    languagesLabel: 'Asụsụ na-arụ ọrụ: English, Igbo, Yorùbá, Hausa, French & Nigerian Pidgin',
     copyright: 'BYHENRYDIGITALS (BHD). Ikike niile echekwabara.',
     globalOperationLabel: 'Na-arụ ọrụ dijitalụ maka ndị mmadụ zuru ụwa ọnụ',
   },

@@ -49,7 +49,7 @@ export const en: TranslationBundle = {
       },
       {
         title: 'International Vision',
-        detail: 'Accessible digital systems available in English, Igbo, Yoruba, Hausa, and French.',
+        detail: 'Accessible digital systems available in English, Igbo, Yoruba, Hausa, French, and Nigerian Pidgin.',
       },
     ],
     productsSectionKicker: 'Digital Products',
@@ -86,7 +86,7 @@ export const en: TranslationBundle = {
     visionKicker: 'International Vision',
     visionTitle: 'Designed for Global Accessibility',
     visionDesc:
-      'BYHENRYDIGITALS operates across English, Igbo, Yoruba, Hausa, and French so local and international visitors can navigate products, services, and guides with clarity.',
+      'BYHENRYDIGITALS operates across English, Igbo, Yoruba, Hausa, French, and Nigerian Pidgin so local and international visitors can navigate products, services, and guides with clarity.',
     vanessaKicker: 'Vanessa — Detailed BHD FAQ',
     vanessaTitle: 'VANESSA — DETAILED BHD FAQ',
     vanessaDesc:
@@ -124,7 +124,7 @@ export const en: TranslationBundle = {
       },
       {
         title: 'Global Readiness',
-        body: 'Our platform supports English, Igbo, Yoruba, Hausa, and French across all core pages, navigation, and educational sections.',
+        body: 'Our platform supports English, Igbo, Yoruba, Hausa, French, and Nigerian Pidgin across all core pages, navigation, and educational sections.',
       },
     ],
     founderKicker: 'Leadership',
@@ -494,7 +494,7 @@ export const en: TranslationBundle = {
     emailUsLabel: 'Email Us',
     whatsappUsLabel: 'Chat With Us on WhatsApp',
     socialTitle: 'Social Channels',
-    languagesLabel: 'Active languages: English, Igbo, Yorùbá, Hausa & French',
+    languagesLabel: 'Active languages: English, Igbo, Yorùbá, Hausa, French & Nigerian Pidgin',
     copyright: 'BYHENRYDIGITALS (BHD). All rights reserved.',
     globalOperationLabel: 'Operating digitally for a global audience',
   },

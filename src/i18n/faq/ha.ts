@@ -44,7 +44,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'about-06': {
     question: 'Menene hangen nesan BYHENRYDIGITALS?',
     answer: [
-      'Hangen nesan BHD shi ne gina sahihiyar cibiyar dijital ta duniya da ke haɗa masu koyo, masu ƙirƙira, da kamfanoni a harsuna da ƙasashe daban-daban.',
+      'Hangen nesan BHD shi ne gina sahihiyar cibiyar dijital ta duniya da ke haɗa masu koyo, masu ƙirƙira, da kamfanoni a harsuna shida: English, Igbo, Yorùbá, Hausa, French, da Nigerian Pidgin.',
     ],
   },
   'about-07': {
@@ -491,7 +491,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Waɗanne harsuna shafin BYHENRYDIGITALS ke tallafawa a yanzu?',
     answer: [
-      'Turanci (English), Igbo, Yorùbá, Hausa, da Faransanci (French) suna aiki a dukan shafin da Vanessa FAQ.',
+      'Turanci (English), Igbo, Yorùbá, Hausa, Faransanci (French), da Nigerian Pidgin suna aiki a dukan shafin da Vanessa FAQ.',
     ],
   },
   'lang-02': {
@@ -524,8 +524,15 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
       'Zaɓar Hausa yana canza shafin da Vanessa FAQ zuwa Hausa nan take ba tare da sake loda shafi ba.',
     ],
   },
+  'lang-09': {
+    question: 'Ta yaya ake samun shiga a harshen Nigerian Pidgin?',
+    answer: [
+      'Zaɓar Nigerian Pidgin a menu na harshe yana canza dukan shafin, labarai, da Vanessa FAQ zuwa Nigerian Pidgin nan take. Kayayyakin Selar da ake saukewa suna cikin Turanci a yanzu.',
+    ],
+    extraKeywords: ['nigerian pidgin', 'pidgin'],
+  },
   'lang-07': {
-    question: 'Shin an fassara kayayyakin Selar na BHD zuwa Faransanci, Igbo, Yorùbá, ko Hausa?',
+    question: 'Shin an fassara kayayyakin Selar na BHD zuwa Faransanci, Igbo, Yorùbá, Hausa, ko Nigerian Pidgin?',
     answer: [
       'A’a, har yanzu kayayyakin Selar guda uku suna cikin harshen Turanci ne kaɗai.',
     ],
@@ -613,7 +620,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'nav-04': {
     question: 'Ta yaya zan yi amfani da maɓallin zaɓin harshe?',
     answer: [
-      'Danna maɓallin Harshe a kusurwar dama ta sama don zaɓar English, Igbo, Yorùbá, Hausa, ko French.',
+      'Danna maɓallin Harshe a kusurwar dama ta sama don zaɓar English, Igbo, Yorùbá, Hausa, French, ko Nigerian Pidgin.',
     ],
   },
   'nav-05': {
@@ -675,7 +682,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'van-06': {
     question: 'Shin Vanessa FAQ tana canza harshe idan na canza harshen shafin?',
     answer: [
-      'Eh, tana canzawa nan take tsakanin English, Igbo, Yorùbá, Hausa, da French.',
+      'Eh, tana canzawa nan take tsakanin English, Igbo, Yorùbá, Hausa, French, da Nigerian Pidgin.',
     ],
   },
   'van-07': {
@@ -756,7 +763,7 @@ export const faqHa: FaqBundle = {
     },
     'languages-learning': {
       title: 'G. Harsuna da Albarkatun Koyo',
-      description: 'Turanci, Igbo, Yorùbá, Hausa, Faransanci da harshen samfuri.',
+      description: 'Turanci, Igbo, Yorùbá, Hausa, Faransanci, Nigerian Pidgin da harshen samfuri.',
     },
     'payments-purchases': {
       title: 'H. Saye, Biya da Tallafin Abokin Ciniki',

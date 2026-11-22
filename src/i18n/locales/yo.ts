@@ -86,7 +86,7 @@ export const yo: TranslationBundle = {
     visionKicker: 'Ìran Àgbáyé',
     visionTitle: 'A Ṣe É Fún Àǹfààní Káríayé',
     visionDesc:
-      'BYHENRYDIGITALS ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa àti Faransé kí àwọn àlejò láti ilẹ̀ bílẹ̀ àti àgbáyé lè rí ìtọ́sọ́nà lọ́nà tó yéni.',
+      'BYHENRYDIGITALS ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa, Faransé àti Nigerian Pidgin kí àwọn àlejò láti ilẹ̀ bílẹ̀ àti àgbáyé lè rí ìtọ́sọ́nà lọ́nà tó yéni.',
     vanessaKicker: 'Vanessa — Ìbéèrè BHD Kíkún',
     vanessaTitle: 'VANESSA — ÌBÉÈRÈ BHD KÍKÚN',
     vanessaDesc:
@@ -124,7 +124,7 @@ export const yo: TranslationBundle = {
       },
       {
         title: 'Ìmúrasílẹ̀ Àgbáyé',
-        body: 'Ètò wa ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa àti Faransé káàkiri gbogbo ojú-ewé àti ìtọ́sọ́nà.',
+        body: 'Ètò wa ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa, Faransé àti Nigerian Pidgin káàkiri gbogbo ojú-ewé àti ìtọ́sọ́nà.',
       },
     ],
     founderKicker: 'Ìdarí',
@@ -494,7 +494,7 @@ export const yo: TranslationBundle = {
     emailUsLabel: 'Fi Ímeèlì Ránṣẹ́',
     whatsappUsLabel: 'Bá Wa Sọ̀rọ̀ lórí WhatsApp',
     socialTitle: 'Àwọn Ìkànnì Àjọlò',
-    languagesLabel: 'Àwọn èdè tó ń ṣiṣẹ́: English, Igbo, Yorùbá, Hausa àti French',
+    languagesLabel: 'Àwọn èdè tó ń ṣiṣẹ́: English, Igbo, Yorùbá, Hausa, French àti Nigerian Pidgin',
     copyright: 'BYHENRYDIGITALS (BHD). Gbogbo ẹ̀tọ́ wà ní ìpamọ́.',
     globalOperationLabel: 'Ń ṣiṣẹ́ lórí íńtánẹ́ẹ̀tì fún gbogbo àgbáyé',
   },

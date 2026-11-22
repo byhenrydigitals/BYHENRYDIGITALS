@@ -46,7 +46,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     question: 'What is BYHENRYDIGITALS’ vision?',
     answer: [
       'BHD’s vision is to grow a trusted, internationally accessible digital ecosystem connecting learners, creators, and businesses across languages and borders.',
-      'This international direction is already visible in BHD’s five active website languages—English, Igbo, Yorùbá, Hausa, and French—as well as its focus on cross-border digital value.',
+      'This international direction is already visible in BHD’s six active website languages—English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin—as well as its focus on cross-border digital value.',
     ],
   },
   'about-07': {
@@ -522,8 +522,9 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Which languages does the BYHENRYDIGITALS website currently support?',
     answer: [
-      'The website supports full multilingual switching across five active languages: English, Igbo, Yorùbá, Hausa, and French.',
+      'The website supports full multilingual switching across six active languages: English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin.',
     ],
+    extraKeywords: ['six languages', 'nigerian pidgin', 'pidgin'],
     actionLabel: 'Explore Learning Resources',
   },
   'lang-02': {
@@ -559,10 +560,18 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
       'Selecting Hausa switches website pages, resource summaries, affiliate guidelines, contact channels, and the Vanessa Detailed FAQ into Hausa immediately without reloading your page.',
     ],
   },
-  'lang-07': {
-    question: 'Are BHD’s downloadable Selar digital products translated into French, Igbo, Yorùbá, or Hausa yet?',
+  'lang-09': {
+    question: 'How is Nigerian Pidgin supported on BYHENRYDIGITALS?',
     answer: [
-      'No. While the website and this Vanessa FAQ guide are fully multilingual across all five active languages, the downloadable digital guides currently sold on Selar (Clicks-to-Cash, Global Monetisation, and Remote Jobs for Under 18) are published in English.',
+      'Selecting Nigerian Pidgin in the header language switcher translates the entire BHD website—navigation, Home, About, Products, Affiliate Programme, Services, Resources articles, Contact page, Footer, and this full Vanessa Detailed FAQ—into natural Nigerian Pidgin immediately.',
+      'Downloadable digital guides hosted on Selar remain published in their original English edition.',
+    ],
+    extraKeywords: ['nigerian pidgin', 'pidgin', 'pidgin english', 'pcm'],
+  },
+  'lang-07': {
+    question: 'Are BHD’s downloadable Selar digital products translated into French, Igbo, Yorùbá, Hausa, or Nigerian Pidgin yet?',
+    answer: [
+      'No. While the website and this Vanessa FAQ guide are fully multilingual across all six active languages, the downloadable digital guides currently sold on Selar (Clicks-to-Cash, Global Monetisation, and Remote Jobs for Under 18) are published in English.',
       'BHD never claims a translated edition of a Selar product exists unless that translated edition has actually been released.',
     ],
   },
@@ -654,7 +663,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'nav-04': {
     question: 'How do I use the website language selector?',
     answer: [
-      'Click the Language button in the top-right area of the header and pick English, Igbo, Yorùbá, Hausa, or French. Visible text—including Vanessa FAQ—updates immediately without reloading your page, and your choice is saved for future visits.',
+      'Click the Language button in the top-right area of the header and pick English, Igbo, Yorùbá, Hausa, French, or Nigerian Pidgin. Visible text—including Vanessa FAQ—updates immediately without reloading your page, and your choice is saved for future visits.',
     ],
   },
   'nav-05': {
@@ -720,7 +729,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'van-06': {
     question: 'Does Vanessa Detailed FAQ update when I change the website language?',
     answer: [
-      'Yes. Vanessa is connected to BHD’s website-wide multilingual system. Switching between English, Igbo, Yorùbá, Hausa, and French updates the search interface, category headings, questions, answers, and empty-state notices immediately.',
+      'Yes. Vanessa is connected to BHD’s website-wide multilingual system. Switching between English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin updates the search interface, category headings, questions, answers, and empty-state notices immediately.',
     ],
   },
   'van-07': {
@@ -801,7 +810,7 @@ export const faqEn: FaqBundle = {
     },
     'languages-learning': {
       title: 'G. Languages & Learning Resources',
-      description: 'English, Igbo, Yorùbá, Hausa, and French support plus edition clarity.',
+      description: 'English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin support plus edition clarity.',
     },
     'payments-purchases': {
       title: 'H. Purchases, Payments & Customer Support',

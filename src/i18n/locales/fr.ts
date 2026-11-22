@@ -86,7 +86,7 @@ export const fr: TranslationBundle = {
     visionKicker: 'Vision Internationale',
     visionTitle: 'Conçu pour l’Accessibilité Mondiale',
     visionDesc:
-      'BYHENRYDIGITALS est accessible en anglais, igbo, yoruba, haoussa et français afin que les visiteurs locaux et internationaux puissent consulter nos guides et services avec clarté.',
+      'BYHENRYDIGITALS est accessible en anglais, igbo, yoruba, haoussa, français et Nigerian Pidgin afin que les visiteurs locaux et internationaux puissent consulter nos guides et services avec clarté.',
     vanessaKicker: 'Vanessa — FAQ Détaillée BHD',
     vanessaTitle: 'VANESSA — FAQ DÉTAILLÉE BHD',
     vanessaDesc:
@@ -124,7 +124,7 @@ export const fr: TranslationBundle = {
       },
       {
         title: 'Ouverture Mondiale',
-        body: 'Notre plateforme prend en charge l’anglais, l’igbo, le yoruba, le haoussa et le français sur l’ensemble des pages, menus et guides.',
+        body: 'Notre plateforme prend en charge l’anglais, l’igbo, le yoruba, le haoussa, le français et le Nigerian Pidgin sur l’ensemble des pages, menus et guides.',
       },
     ],
     founderKicker: 'Direction',
@@ -494,7 +494,7 @@ export const fr: TranslationBundle = {
     emailUsLabel: 'Nous Écrire par E-mail',
     whatsappUsLabel: 'Discuter avec nous sur WhatsApp',
     socialTitle: 'Réseaux Sociaux',
-    languagesLabel: 'Langues actives : English, Igbo, Yorùbá, Hausa et Français',
+    languagesLabel: 'Langues actives : English, Igbo, Yorùbá, Hausa, Français et Nigerian Pidgin',
     copyright: 'BYHENRYDIGITALS (BHD). Tous droits réservés.',
     globalOperationLabel: 'Activité numérique au service d’un public mondial',
   },

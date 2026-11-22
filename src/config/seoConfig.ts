@@ -178,7 +178,7 @@ export function buildStructuredDataGraph(
           contactType: 'customer support',
           email: SITE_CONFIG.contactEmail,
           url: `${cleanBase}/contact`,
-          availableLanguage: ['English', 'Igbo', 'Yoruba', 'Hausa', 'French'],
+          availableLanguage: ['English', 'Igbo', 'Yoruba', 'Hausa', 'French', 'Nigerian Pidgin'],
         },
       ],
     },
@@ -190,7 +190,7 @@ export function buildStructuredDataGraph(
       url: `${cleanBase}/`,
       description: ROUTE_SEO['/'].description,
       publisher: { '@id': orgId },
-      inLanguage: ['en', 'ig', 'yo', 'ha', 'fr'],
+      inLanguage: ['en', 'ig', 'yo', 'ha', 'fr', 'pcm'],
     },
     {
       '@type': meta.schemaType,

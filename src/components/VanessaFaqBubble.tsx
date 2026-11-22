@@ -5,6 +5,7 @@ import {
   BookOpen,
   ChevronDown,
   ChevronUp,
+  Compass,
   HelpCircle,
   Info,
   Mail,
@@ -189,14 +190,14 @@ export function VanessaFaqBubble({
         className={`rounded-xl border transition-colors ${
           expanded
             ? 'border-[#eab308]/50 bg-[#141414]'
-            : 'border-white/[0.09] bg-[#111111] hover:border-white/[0.18]'
+            : 'border-white/[0.08] bg-[#111111] hover:border-white/[0.18]'
         }`}
       >
         <button
           type="button"
           onClick={() => toggleEntry(entry.id)}
           aria-expanded={expanded}
-          className="flex w-full items-start justify-between gap-3 px-4 py-3.5 text-start cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308] rounded-xl"
+          className="flex w-full items-start justify-between gap-4 px-4 sm:px-5 py-4 text-start cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308] rounded-xl"
         >
           <div className="min-w-0 space-y-1">
             {showCategoryTag && (
@@ -204,7 +205,7 @@ export function VanessaFaqBubble({
                 {faq.categories[entry.categoryId].title}
               </div>
             )}
-            <h3 className="font-display text-sm font-semibold leading-snug text-[#f5f5f4]">
+            <h3 className="font-display text-sm sm:text-[15px] font-semibold leading-snug text-[#f5f5f4]">
               {entry.question}
             </h3>
           </div>
@@ -218,7 +219,7 @@ export function VanessaFaqBubble({
         </button>
 
         {expanded && (
-          <div className="border-t border-white/[0.08] px-4 pb-4 pt-3 space-y-3">
+          <div className="border-t border-white/[0.08] px-4 sm:px-5 pb-5 pt-4 space-y-4">
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-mono-tabular text-[#a1a1aa]">
               {entry.verified && (
                 <>
@@ -233,14 +234,14 @@ export function VanessaFaqBubble({
               <span>{entry.lastUpdated}</span>
             </div>
 
-            <div className="space-y-2.5 text-xs sm:text-[13px] leading-relaxed text-[#d4d4d8]">
+            <div className="space-y-3 text-xs sm:text-sm leading-relaxed text-[#d4d4d8]">
               {entry.answer.map((paragraph, idx) => (
                 <p key={idx}>{paragraph}</p>
               ))}
             </div>
 
             {entry.actionLabel && (entry.actionRoute || entry.actionExternalUrl) && (
-              <div className="pt-0.5">
+              <div className="pt-1">
                 {entry.actionExternalUrl ? (
                   <a
                     href={entry.actionExternalUrl}
@@ -270,7 +271,7 @@ export function VanessaFaqBubble({
             )}
 
             {relatedEntries.length > 0 && (
-              <div className="border-t border-white/[0.08] pt-3 space-y-2">
+              <div className="border-t border-white/[0.08] pt-3.5 space-y-2">
                 <div className="text-[10px] font-semibold uppercase tracking-wider text-[#a1a1aa]">
                   {faq.relatedQuestionsLabel}
                 </div>
@@ -313,7 +314,7 @@ export function VanessaFaqBubble({
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-end justify-end sm:p-6 bg-black/60 backdrop-blur-[2px]"
+          className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 bg-black/70 backdrop-blur-sm"
           onClick={() => onToggle(false)}
         >
           <section
@@ -321,10 +322,10 @@ export function VanessaFaqBubble({
             aria-modal="true"
             aria-labelledby="vanessa-faq-title"
             onClick={(e) => e.stopPropagation()}
-            className="flex h-[100dvh] w-full flex-col overflow-hidden bg-[#0b0b0b] text-[#f5f5f4] sm:h-[min(690px,calc(100dvh-3rem))] sm:w-[min(540px,calc(100vw-3rem))] sm:rounded-2xl sm:border sm:border-white/[0.16] shadow-2xl"
+            className="flex h-[100dvh] w-full flex-col overflow-hidden bg-[#0b0b0b] text-[#f5f5f4] sm:h-[min(820px,calc(100dvh-3rem))] sm:w-[min(1080px,calc(100vw-3rem))] sm:rounded-2xl sm:border sm:border-white/[0.16] shadow-2xl"
           >
             {/* Panel Header */}
-            <header className="flex shrink-0 items-start justify-between gap-3 border-b border-white/[0.1] bg-[#111111] px-4 py-3.5 pt-[max(0.875rem,env(safe-area-inset-top))] sm:px-5 sm:pt-3.5">
+            <header className="flex shrink-0 items-center justify-between gap-3 border-b border-white/[0.1] bg-[#111111] px-4 py-4 pt-[max(1rem,env(safe-area-inset-top))] sm:px-6 sm:py-4">
               <div className="min-w-0 space-y-1">
                 <div className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-[#eab308]">
                   <BookOpen className="h-3.5 w-3.5 shrink-0" />
@@ -332,7 +333,7 @@ export function VanessaFaqBubble({
                 </div>
                 <h2
                   id="vanessa-faq-title"
-                  className="font-display text-base font-semibold tracking-tight text-[#f5f5f4] sm:text-lg"
+                  className="font-display text-base font-semibold tracking-tight text-[#f5f5f4] sm:text-xl"
                 >
                   {faq.heading}
                 </h2>
@@ -344,214 +345,236 @@ export function VanessaFaqBubble({
                 aria-label={faq.closeAriaLabel}
                 className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/[0.14] bg-[#0b0b0b] text-[#e4e4e7] hover:border-[#eab308] hover:text-[#eab308] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
               >
-                <X className="h-4 w-4" />
+                <X className="h-5 w-5" />
               </button>
             </header>
 
-            {/* Non-AI Clarity + Search Input + Category Filter Strip */}
-            <div className="shrink-0 space-y-3 border-b border-white/[0.08] bg-[#0b0b0b] px-4 py-3 sm:px-5">
-              <div className="flex items-start gap-2 rounded-lg border border-white/[0.08] bg-[#141414] px-3 py-2 text-[11px] leading-snug text-[#d4d4d8]">
-                <Info className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#eab308]" />
-                <span>{faq.nonAiNotice}</span>
-              </div>
+            {/* Main Body: Desktop 2-Column Split Pane OR Mobile Vertical Layout */}
+            <div className="min-h-0 flex-1 flex flex-col lg:flex-row overflow-hidden">
+              {/* Left Sidebar (Desktop) / Category Scrollable Bar (Mobile) */}
+              <aside className="shrink-0 border-b lg:border-b-0 lg:border-e border-white/[0.08] bg-[#0d0d0d] p-3 sm:p-4 lg:w-[280px] xl:w-[310px] lg:overflow-y-auto">
+                <div className="space-y-2">
+                  <div className="hidden lg:block px-1 pb-1 text-[11px] font-semibold uppercase tracking-wider text-[#a1a1aa]">
+                    {faq.categoriesHeading}
+                  </div>
 
-              <div className="relative">
-                <Search
-                  aria-hidden="true"
-                  className="pointer-events-none absolute start-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#eab308]"
-                />
-                <input
-                  ref={searchInputRef}
-                  type="search"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder={faq.searchPlaceholder}
-                  aria-label={faq.searchAriaLabel}
-                  className="min-h-[46px] min-w-0 w-full rounded-xl border border-white/[0.16] bg-[#141414] ps-10 pe-24 text-sm text-[#f5f5f4] placeholder:text-[#71717a] focus:border-[#eab308] focus:outline-none"
-                />
-                {query.trim().length > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => setQuery('')}
-                    className="absolute end-2 top-1/2 inline-flex min-h-[34px] -translate-y-1/2 items-center gap-1 rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-2.5 text-[11px] font-medium text-[#d4d4d8] hover:border-[#eab308] hover:text-[#eab308] transition-colors cursor-pointer"
-                  >
-                    <X className="h-3 w-3" />
-                    <span>{faq.clearSearchLabel}</span>
-                  </button>
-                )}
-              </div>
-
-              {/* Popular Example Searches */}
-              <div className="space-y-1.5">
-                <div className="text-[11px] font-medium text-[#a1a1aa]">
-                  {faq.exampleQueriesTitle}
-                </div>
-                <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
-                  {faq.exampleQueries.map((example) => {
-                    const isSelected =
-                      query.trim().toLowerCase() === example.toLowerCase();
-                    return (
-                      <button
-                        key={example}
-                        type="button"
-                        onClick={() => handleSelectExample(example)}
-                        className={`shrink-0 whitespace-nowrap rounded-lg border px-2.5 py-1 text-[11px] font-medium transition-colors cursor-pointer ${
-                          isSelected
-                            ? 'border-[#eab308] bg-[#eab308] text-[#0b0b0b] font-semibold'
-                            : 'border-white/[0.1] bg-[#141414] text-[#d4d4d8] hover:border-[#eab308]/50 hover:text-[#f5f5f4]'
-                        }`}
-                      >
-                        {example}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Horizontal Category Selector (All + A–J) */}
-              <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
-                <button
-                  type="button"
-                  onClick={() => setSelectedCategory('all')}
-                  className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg border px-2.5 py-1.5 text-[11px] font-medium transition-colors cursor-pointer ${
-                    selectedCategory === 'all'
-                      ? 'border-[#eab308] bg-[#eab308] text-[#0b0b0b] font-semibold'
-                      : 'border-white/[0.1] bg-[#141414] text-[#e4e4e7] hover:border-white/[0.25]'
-                  }`}
-                >
-                  <span>{faq.allCategoriesLabel}</span>
-                  <span className="font-mono-tabular opacity-80">
-                    {publishedEntries.length}
-                  </span>
-                </button>
-
-                {FAQ_CATEGORY_ORDER.map((catId) => {
-                  const active = selectedCategory === catId;
-                  return (
+                  {/* Category Selection List */}
+                  <div className="flex lg:flex-col gap-1.5 overflow-x-auto lg:overflow-x-visible pb-1 lg:pb-0">
                     <button
-                      key={catId}
                       type="button"
                       onClick={() => {
-                        setSelectedCategory(catId);
-                        const firstInCat = publishedEntries.find(
-                          (e) => e.categoryId === catId
-                        );
-                        if (firstInCat) setExpandedIds(new Set([firstInCat.id]));
+                        setSelectedCategory('all');
                         resultsScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
-                      className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg border px-2.5 py-1.5 text-[11px] font-medium transition-colors cursor-pointer ${
-                        active
-                          ? 'border-[#eab308] bg-[#eab308] text-[#0b0b0b] font-semibold'
-                          : 'border-white/[0.1] bg-[#141414] text-[#e4e4e7] hover:border-white/[0.25]'
+                      className={`flex shrink-0 lg:w-full items-center justify-between rounded-xl px-3.5 py-2.5 text-xs font-medium transition-colors cursor-pointer ${
+                        selectedCategory === 'all'
+                          ? 'bg-[#eab308] text-[#0b0b0b] font-semibold shadow-md'
+                          : 'bg-[#141414] text-[#e4e4e7] hover:bg-white/[0.06] hover:text-white'
                       }`}
                     >
-                      <span>{faq.categories[catId].title}</span>
-                      <span className="font-mono-tabular opacity-80">
-                        {categoryCounts[catId]}
+                      <span className="flex items-center gap-2 truncate">
+                        <Compass className="h-4 w-4 shrink-0 opacity-80" />
+                        <span>{faq.allCategoriesLabel}</span>
+                      </span>
+                      <span className="font-mono-tabular text-[11px] opacity-80">
+                        {publishedEntries.length}
                       </span>
                     </button>
-                  );
-                })}
-              </div>
 
-              {/* Counts & Action Controls */}
-              <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-[#a1a1aa]">
-                <span>
-                  <span className="font-mono-tabular font-semibold text-[#eab308]">
-                    {matches.length}
-                  </span>{' '}
-                  {isSearching ? faq.resultsMatchingLabel : faq.allTopicsCountLabel}
-                </span>
-
-                <div className="flex items-center gap-3">
-                  {visibleIds.length > 1 && (
-                    <button
-                      type="button"
-                      onClick={handleToggleAllVisible}
-                      className="font-medium text-[#e4e4e7] hover:text-[#eab308] transition-colors cursor-pointer"
-                    >
-                      {allVisibleExpanded ? faq.collapseAllLabel : faq.expandAllLabel}
-                    </button>
-                  )}
-
-                  {(isSearching || selectedCategory !== 'all') && (
-                    <button
-                      type="button"
-                      onClick={handleResetFilters}
-                      className="inline-flex items-center gap-1 font-medium text-[#eab308] hover:underline cursor-pointer"
-                    >
-                      <RotateCcw className="h-3 w-3" />
-                      <span>{faq.resetFiltersLabel}</span>
-                    </button>
-                  )}
+                    {FAQ_CATEGORY_ORDER.map((catId) => {
+                      const active = selectedCategory === catId;
+                      const catMeta = faq.categories[catId];
+                      return (
+                        <button
+                          key={catId}
+                          type="button"
+                          onClick={() => {
+                            setSelectedCategory(catId);
+                            const firstInCat = publishedEntries.find(
+                              (e) => e.categoryId === catId
+                            );
+                            if (firstInCat) setExpandedIds(new Set([firstInCat.id]));
+                            resultsScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
+                          }}
+                          className={`flex shrink-0 lg:w-full items-center justify-between rounded-xl px-3.5 py-2.5 text-xs font-medium transition-colors cursor-pointer text-start ${
+                            active
+                              ? 'bg-[#eab308] text-[#0b0b0b] font-semibold shadow-md'
+                              : 'bg-[#141414] text-[#e4e4e7] hover:bg-white/[0.06] hover:text-white'
+                          }`}
+                        >
+                          <span className="truncate pe-2">{catMeta.title}</span>
+                          <span className="font-mono-tabular text-[11px] opacity-80 shrink-0">
+                            {categoryCounts[catId]}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            </div>
+              </aside>
 
-            {/* Scrollable FAQ Results List */}
-            <div
-              ref={resultsScrollRef}
-              className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-5 space-y-4"
-            >
-              {matches.length === 0 ? (
-                <div className="rounded-xl border border-white/[0.12] bg-[#141414] p-5 space-y-4">
-                  <div className="space-y-1.5">
-                    <h3 className="font-display text-base font-semibold text-[#f5f5f4]">
-                      {faq.noResultsTitle}
-                    </h3>
-                    <p className="text-xs leading-relaxed text-[#a1a1aa]">
-                      {faq.noResultsBody}
-                    </p>
+              {/* Right Content Area: Search + Results */}
+              <div className="min-h-0 flex-1 flex flex-col overflow-hidden bg-[#0b0b0b]">
+                {/* Search & Notice Bar */}
+                <div className="shrink-0 space-y-3 border-b border-white/[0.08] bg-[#0b0b0b] px-4 py-3 sm:px-6">
+                  <div className="flex items-start gap-2 rounded-xl border border-white/[0.08] bg-[#141414] px-3.5 py-2 text-xs leading-relaxed text-[#d4d4d8]">
+                    <Info className="mt-0.5 h-4 w-4 shrink-0 text-[#eab308]" />
+                    <span>{faq.nonAiNotice}</span>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={handleResetFilters}
-                    className="inline-flex min-h-[40px] items-center gap-2 rounded-lg bg-[#eab308] px-4 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors cursor-pointer"
-                  >
-                    <RotateCcw className="h-3.5 w-3.5" />
-                    <span>{faq.resetFiltersLabel}</span>
-                  </button>
+                  <div className="relative">
+                    <Search
+                      aria-hidden="true"
+                      className="pointer-events-none absolute start-4 top-1/2 h-4 w-4 -translate-y-1/2 text-[#eab308]"
+                    />
+                    <input
+                      ref={searchInputRef}
+                      type="search"
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
+                      placeholder={faq.searchPlaceholder}
+                      aria-label={faq.searchAriaLabel}
+                      className="min-h-[46px] min-w-0 w-full rounded-xl border border-white/[0.16] bg-[#141414] ps-11 pe-24 text-sm text-[#f5f5f4] placeholder:text-[#71717a] focus:border-[#eab308] focus:outline-none"
+                    />
+                    {query.trim().length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setQuery('')}
+                        className="absolute end-2.5 top-1/2 inline-flex min-h-[34px] -translate-y-1/2 items-center gap-1 rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-2.5 text-[11px] font-medium text-[#d4d4d8] hover:border-[#eab308] hover:text-[#eab308] transition-colors cursor-pointer"
+                      >
+                        <X className="h-3 w-3" />
+                        <span>{faq.clearSearchLabel}</span>
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Popular Example Searches */}
+                  <div className="space-y-1.5">
+                    <div className="text-[11px] font-medium text-[#a1a1aa]">
+                      {faq.exampleQueriesTitle}
+                    </div>
+                    <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+                      {faq.exampleQueries.map((example) => {
+                        const isSelected =
+                          query.trim().toLowerCase() === example.toLowerCase();
+                        return (
+                          <button
+                            key={example}
+                            type="button"
+                            onClick={() => handleSelectExample(example)}
+                            className={`shrink-0 whitespace-nowrap rounded-lg border px-2.5 py-1 text-[11px] font-medium transition-colors cursor-pointer ${
+                              isSelected
+                                ? 'border-[#eab308] bg-[#eab308] text-[#0b0b0b] font-semibold'
+                                : 'border-white/[0.1] bg-[#141414] text-[#d4d4d8] hover:border-[#eab308]/50 hover:text-[#f5f5f4]'
+                            }`}
+                          >
+                            {example}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Counts & Action Controls */}
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[#a1a1aa] pt-0.5">
+                    <span>
+                      <span className="font-mono-tabular font-semibold text-[#eab308]">
+                        {matches.length}
+                      </span>{' '}
+                      {isSearching ? faq.resultsMatchingLabel : faq.allTopicsCountLabel}
+                    </span>
+
+                    <div className="flex items-center gap-3">
+                      {visibleIds.length > 1 && (
+                        <button
+                          type="button"
+                          onClick={handleToggleAllVisible}
+                          className="font-medium text-[#e4e4e7] hover:text-[#eab308] transition-colors cursor-pointer"
+                        >
+                          {allVisibleExpanded ? faq.collapseAllLabel : faq.expandAllLabel}
+                        </button>
+                      )}
+
+                      {(isSearching || selectedCategory !== 'all') && (
+                        <button
+                          type="button"
+                          onClick={handleResetFilters}
+                          className="inline-flex items-center gap-1 font-medium text-[#eab308] hover:underline cursor-pointer"
+                        >
+                          <RotateCcw className="h-3 w-3" />
+                          <span>{faq.resetFiltersLabel}</span>
+                        </button>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              ) : isSearching ? (
-                <div className="space-y-2.5">
-                  {matches.map(({ entry }) => renderEntryCard(entry, true))}
-                </div>
-              ) : (
-                <div className="space-y-6">
-                  {groupedCategories.map((group) => (
-                    <div key={group.categoryId} className="space-y-2.5">
-                      <div className="border-b border-white/[0.08] pb-2">
-                        <div className="flex items-baseline justify-between gap-2">
-                          <h3 className="font-display text-sm font-semibold text-[#f5f5f4]">
-                            {group.meta.title}
-                          </h3>
-                          <span className="font-mono-tabular text-[11px] text-[#eab308]">
-                            {group.entries.length}
-                          </span>
-                        </div>
-                        <p className="mt-0.5 text-[11px] leading-relaxed text-[#a1a1aa]">
-                          {group.meta.description}
+
+                {/* Scrollable FAQ Results List */}
+                <div
+                  ref={resultsScrollRef}
+                  className="min-h-0 flex-1 overflow-y-auto px-4 py-5 sm:px-6 space-y-6"
+                >
+                  {matches.length === 0 ? (
+                    <div className="rounded-2xl border border-white/[0.12] bg-[#141414] p-6 space-y-4">
+                      <div className="space-y-1.5">
+                        <h3 className="font-display text-base font-semibold text-[#f5f5f4]">
+                          {faq.noResultsTitle}
+                        </h3>
+                        <p className="text-xs sm:text-sm leading-relaxed text-[#a1a1aa]">
+                          {faq.noResultsBody}
                         </p>
                       </div>
-                      <div className="space-y-2">
-                        {group.entries.map((entry) => renderEntryCard(entry, false))}
-                      </div>
+
+                      <button
+                        type="button"
+                        onClick={handleResetFilters}
+                        className="inline-flex min-h-[40px] items-center gap-2 rounded-lg bg-[#eab308] px-4 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors cursor-pointer"
+                      >
+                        <RotateCcw className="h-3.5 w-3.5" />
+                        <span>{faq.resetFiltersLabel}</span>
+                      </button>
                     </div>
-                  ))}
+                  ) : isSearching ? (
+                    <div className="space-y-3">
+                      {matches.map(({ entry }) => renderEntryCard(entry, true))}
+                    </div>
+                  ) : (
+                    <div className="space-y-8">
+                      {groupedCategories.map((group) => (
+                        <div key={group.categoryId} className="space-y-3.5">
+                          <div className="border-b border-white/[0.08] pb-2.5">
+                            <div className="flex items-baseline justify-between gap-2">
+                              <h3 className="font-display text-base font-semibold text-[#f5f5f4]">
+                                {group.meta.title}
+                              </h3>
+                              <span className="font-mono-tabular text-xs font-medium text-[#eab308]">
+                                {group.entries.length}
+                              </span>
+                            </div>
+                            <p className="mt-1 text-xs leading-relaxed text-[#a1a1aa]">
+                              {group.meta.description}
+                            </p>
+                          </div>
+                          <div className="space-y-3">
+                            {group.entries.map((entry) => renderEntryCard(entry, false))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
 
-            {/* Persistent Bottom "Can't find your answer?" Support Bar */}
-            <footer className="shrink-0 border-t border-white/[0.12] bg-[#141414] px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-5 sm:pb-3.5">
-              <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
+            {/* Dedicated Contact BHD Footer Section */}
+            <footer className="shrink-0 border-t border-white/[0.12] bg-[#141414] px-4 py-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] sm:px-6 sm:py-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="min-w-0">
-                  <div className="font-display text-xs font-semibold text-[#f5f5f4]">
+                  <div className="font-display text-xs sm:text-sm font-semibold text-[#f5f5f4]">
                     {faq.escalationTitle}
                   </div>
-                  <p className="truncate text-[11px] text-[#a1a1aa]">
-                    {SITE_CONFIG.contactEmail} · {SITE_CONFIG.whatsappNumberDisplay}
+                  <p className="truncate text-xs text-[#a1a1aa]">
+                    {faq.escalationBody}
                   </p>
                 </div>
 
@@ -559,10 +582,10 @@ export function VanessaFaqBubble({
                   <a
                     href={SITE_CONFIG.mailtoUrl}
                     aria-label={`${faq.emailButtonLabel} (${SITE_CONFIG.contactEmail})`}
-                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg border border-white/[0.16] bg-[#0b0b0b] px-3 py-1.5 text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors"
+                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg border border-white/[0.16] bg-[#0b0b0b] px-3.5 py-2 text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors"
                   >
                     <Mail className="h-3.5 w-3.5 shrink-0 text-[#eab308]" />
-                    <span>{faq.emailButtonLabel}</span>
+                    <span>{SITE_CONFIG.contactEmail}</span>
                   </a>
 
                   <a
@@ -570,10 +593,10 @@ export function VanessaFaqBubble({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${faq.whatsappButtonLabel} (${SITE_CONFIG.whatsappNumberDisplay})`}
-                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3 py-1.5 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
+                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3.5 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                   >
                     <MessageCircle className="h-3.5 w-3.5 shrink-0" />
-                    <span>{faq.whatsappButtonLabel}</span>
+                    <span>WhatsApp (+234 708 208 8942)</span>
                     <ArrowUpRight className="h-3 w-3 shrink-0" />
                   </a>
 
@@ -585,9 +608,10 @@ export function VanessaFaqBubble({
                         handleNavigateAndClose('/contact');
                       }
                     }}
-                    className="inline-flex min-h-[40px] items-center gap-1 rounded-lg border border-white/[0.12] px-2.5 py-1.5 text-[11px] font-medium text-[#d4d4d8] hover:border-[#eab308]/50 hover:text-[#eab308] transition-colors"
+                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2 text-xs font-semibold text-[#e4e4e7] hover:border-[#eab308] hover:text-[#eab308] transition-colors"
                   >
                     <span>{faq.contactPageButtonLabel}</span>
+                    <ArrowRight className="h-3.5 w-3.5 shrink-0" />
                   </a>
                 </div>
               </div>

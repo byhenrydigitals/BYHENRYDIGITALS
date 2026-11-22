@@ -108,8 +108,16 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
             >
               <Globe className="hidden min-[380px]:block h-3.5 w-3.5 text-[#eab308] shrink-0" />
               <span>
-                {currentDefinition.nativeName}
-                {currentDefinition.flag ? ` ${currentDefinition.flag}` : ''}
+                {currentDefinition.code === 'pcm' ? (
+                  <>
+                    <span className="hidden min-[400px]:inline">Nigerian </span>Pidgin
+                  </>
+                ) : (
+                  <>
+                    {currentDefinition.nativeName}
+                    {currentDefinition.flag ? ` ${currentDefinition.flag}` : ''}
+                  </>
+                )}
               </span>
               <ChevronDown className="h-3.5 w-3.5 text-[#a1a1aa] shrink-0" />
             </button>

@@ -138,7 +138,11 @@ function AppShell({ initialRoute }: AppProps) {
     upsertMetaTag('property', 'og:title', title);
     upsertMetaTag('property', 'og:description', description);
     upsertMetaTag('property', 'og:url', canonicalUrl);
-    upsertMetaTag('property', 'og:locale', language === 'fr' ? 'fr_FR' : `${language}_NG`);
+    upsertMetaTag(
+      'property',
+      'og:locale',
+      language === 'fr' ? 'fr_FR' : language === 'pcm' ? 'pcm_NG' : `${language}_NG`
+    );
     upsertMetaTag('property', 'og:image', ogImageUrl);
     upsertMetaTag('property', 'og:image:alt', SEO_IMAGE_ALT);
 

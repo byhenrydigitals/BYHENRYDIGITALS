@@ -44,7 +44,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'about-06': {
     question: 'Gịnị bụ ọhụụ BYHENRYDIGITALS?',
     answer: [
-      'Ọhụụ BHD bụ ịzụlite gburugburu dijitalụ mba ụwa a tụkwasịrị obi nke na-ejikọ ndị na-amụ ihe, ndị na-emepụta ihe, na azụmaahịa gafee asụsụ na ókèala.',
+      'Ọhụụ BHD bụ ịzụlite gburugburu dijitalụ mba ụwa a tụkwasịrị obi nke na-ejikọ ndị na-amụ ihe, ndị na-emepụta ihe, na azụmaahịa gafee asụsụ na ókèala — egosipụtara ugbu a n’asụsụ isii: English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin.',
     ],
   },
   'about-07': {
@@ -486,7 +486,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'ai-08': {
     question: 'Gịnị dị iche n’etiti ihe AI dere na ọrụ mmadụ nyochara?',
     answer: [
-      'Ọrụ mmadụ nyochara na-ejide n’aka eziokwu, nghọta doro anya, na mkpụrụedemede ziri ezi n’Igbo, Yorùbá, Hausa, French, na English.',
+      'Ọrụ mmadụ nyochara na-ejide n’aka eziokwu, nghọta doro anya, na mkpụrụedemede ziri ezi n’Igbo, Yorùbá, Hausa, French, Nigerian Pidgin, na English.',
     ],
   },
   'ai-09': {
@@ -500,7 +500,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Kedu asụsụ weebụsaịtị BYHENRYDIGITALS na-akwado ugbu a?',
     answer: [
-      'English, Igbo, Yorùbá, Hausa, na French na-arụ ọrụ ugbu a n’akụkụ niile nke weebụsaịtị na Vanessa FAQ.',
+      'English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin na-arụ ọrụ ugbu a n’akụkụ niile nke weebụsaịtị na Vanessa FAQ.',
     ],
   },
   'lang-02': {
@@ -533,8 +533,15 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
       'Ịhọrọ Hausa na-atụgharị saịtị ahụ dum na Vanessa FAQ n’asụsụ Hausa ozugbo.',
     ],
   },
+  'lang-09': {
+    question: 'Kedu ka e si akwado ịnweta n’asụsụ Nigerian Pidgin na BHD?',
+    answer: [
+      'Ịhọrọ Nigerian Pidgin n’elu weebụsaịtị na-atụgharị menu, ibe niile, edemede, na Vanessa FAQ ozugbo n’asụsụ Nigerian Pidgin doro anya. Ngwaahịa Selar a na-ebudata ka dị n’asụsụ Bekee.',
+    ],
+    extraKeywords: ['nigerian pidgin', 'pidgin'],
+  },
   'lang-07': {
-    question: 'Ngwaahịa dijitalụ BHD dị na Selar hà atụgharịla n’asụsụ French, Igbo, Yorùbá ma ọ bụ Hausa?',
+    question: 'Ngwaahịa dijitalụ BHD dị na Selar hà atụgharịla n’asụsụ French, Igbo, Yorùbá, Hausa ma ọ bụ Nigerian Pidgin?',
     answer: [
       'Mba. Ngwaahịa Selar atọ dị ugbu a ka dị naanị n’asụsụ Bekee mbụ ha. BHD anaghị ekwu na ntụgharị dị ma ọ bụrụ na emebeghị ya.',
     ],
@@ -622,7 +629,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'nav-04': {
     question: 'Kedu ka m ga-esi jiri ihe nhọrọ asụsụ weebụsaịtị?',
     answer: [
-      'Pịa bọtịnụ Asụsụ n’aka nri elu wee họrọ English, Igbo, Yorùbá, Hausa, ma ọ bụ French.',
+      'Pịa bọtịnụ Asụsụ n’aka nri elu wee họrọ English, Igbo, Yorùbá, Hausa, French, ma ọ bụ Nigerian Pidgin.',
     ],
   },
   'nav-05': {
@@ -684,7 +691,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'van-06': {
     question: 'Vanessa FAQ ọ na-agbanwe asụsụ mgbe m gbanwere asụsụ weebụsaịtị?',
     answer: [
-      'Ee. Ọ na-agbanwe ozugbo n’etiti English, Igbo, Yorùbá, Hausa, na French.',
+      'Ee. Ọ na-agbanwe ozugbo n’etiti English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin.',
     ],
   },
   'van-07': {
@@ -765,7 +772,7 @@ export const faqIg: FaqBundle = {
     },
     'languages-learning': {
       title: 'G. Asụsụ na Akụrụngwa Mmụta',
-      description: 'English, Igbo, Yorùbá, Hausa, French na asụsụ ngwaahịa.',
+      description: 'English, Igbo, Yorùbá, Hausa, French, Nigerian Pidgin na asụsụ ngwaahịa.',
     },
     'payments-purchases': {
       title: 'H. Ịzụta, Ịkwụ Ụgwọ na Nkwado',

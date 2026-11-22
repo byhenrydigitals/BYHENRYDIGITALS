@@ -3,6 +3,7 @@ import { faqEn } from './en';
 import { faqFr } from './fr';
 import { faqHa } from './ha';
 import { faqIg } from './ig';
+import { faqPcm } from './pcm';
 import { FaqBundle } from './types';
 import { faqYo } from './yo';
 
@@ -12,6 +13,7 @@ export const FAQ_BUNDLES: Record<ActiveLanguageCode, FaqBundle> = {
   yo: faqYo,
   ha: faqHa,
   fr: faqFr,
+  pcm: faqPcm,
 };
 
 export type {

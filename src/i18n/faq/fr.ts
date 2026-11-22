@@ -46,7 +46,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     question: 'Quelle est la vision de BYHENRYDIGITALS ?',
     answer: [
       'La vision de BHD est de bâtir un écosystème numérique international fiable reliant apprenants, créateurs et entreprises au-delà des frontières linguistiques.',
-      'Cette ambition internationale s’illustre déjà par les cinq langues actives du site — anglais, igbo, yoruba, haoussa et français.',
+      'Cette ambition internationale s’illustre déjà par les six langues actives du site — anglais, igbo, yoruba, haoussa, français et Nigerian Pidgin.',
     ],
   },
   'about-07': {
@@ -515,7 +515,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Quelles langues le site BYHENRYDIGITALS prend-il actuellement en charge ?',
     answer: [
-      'Le site prend en charge cinq langues actives : anglais, igbo, yoruba, haoussa et français.',
+      'Le site prend en charge six langues actives : anglais, igbo, yoruba, haoussa, français et Nigerian Pidgin.',
     ],
     actionLabel: 'Explorer les Ressources',
   },
@@ -551,10 +551,17 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
       'Le choix du haoussa affiche immédiatement les pages du site, le programme d’affiliation, les contacts et toute la FAQ Vanessa en haoussa sans recharger la page.',
     ],
   },
-  'lang-07': {
-    question: 'Les guides téléchargeables BHD sur Selar sont-ils traduits en français, igbo, yoruba ou haoussa ?',
+  'lang-09': {
+    question: 'Comment le Nigerian Pidgin est-il pris en charge sur BYHENRYDIGITALS ?',
     answer: [
-      'Pas encore. Si le site web et la FAQ Vanessa sont entièrement traduits dans ces cinq langues, les fichiers numériques actuellement vendus sur Selar sont édités uniquement en anglais. BHD ne prétend jamais qu’une traduction existe si ce n’est pas le cas.',
+      'Le choix du Nigerian Pidgin dans le sélecteur de langue met immédiatement à jour menus, pages, articles du Centre de Ressources, page Contact et toute la FAQ Vanessa en Nigerian Pidgin naturel. Les guides téléchargeables sur Selar demeurent en anglais.',
+    ],
+    extraKeywords: ['nigerian pidgin', 'pidgin'],
+  },
+  'lang-07': {
+    question: 'Les guides téléchargeables BHD sur Selar sont-ils traduits en français, igbo, yoruba, haoussa ou Nigerian Pidgin ?',
+    answer: [
+      'Pas encore. Si le site web et la FAQ Vanessa sont entièrement traduits dans ces six langues, les fichiers numériques actuellement vendus sur Selar sont édités uniquement en anglais. BHD ne prétend jamais qu’une traduction existe si ce n’est pas le cas.',
     ],
   },
   'lang-08': {
@@ -643,7 +650,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'nav-04': {
     question: 'Comment utiliser le sélecteur de langue du site ?',
     answer: [
-      'Cliquez sur le bouton Langue en haut à droite puis sélectionnez English, Igbo, Yorùbá, Hausa ou Français. Le changement est immédiat, sans rechargement de page, et mémorisé.',
+      'Cliquez sur le bouton Langue en haut à droite puis sélectionnez English, Igbo, Yorùbá, Hausa, Français ou Nigerian Pidgin. Le changement est immédiat, sans rechargement de page, et mémorisé.',
     ],
   },
   'nav-05': {
@@ -709,7 +716,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'van-06': {
     question: 'Vanessa FAQ se traduit-elle lorsque je change la langue du site ?',
     answer: [
-      'Oui. Le changement de langue dans l’en-tête met immédiatement à jour l’interface de recherche, les 10 catégories, les questions et les réponses en anglais, igbo, yoruba, haoussa ou français.',
+      'Oui. Le changement de langue dans l’en-tête met immédiatement à jour l’interface de recherche, les 10 catégories, les questions et les réponses en anglais, igbo, yoruba, haoussa, français ou Nigerian Pidgin.',
     ],
   },
   'van-07': {
@@ -790,7 +797,7 @@ export const faqFr: FaqBundle = {
     },
     'languages-learning': {
       title: 'G. Langues & Ressources d’Apprentissage',
-      description: 'Anglais, igbo, yoruba, haoussa, français et langue des produits.',
+      description: 'Anglais, igbo, yoruba, haoussa, français, Nigerian Pidgin et langue des produits.',
     },
     'payments-purchases': {
       title: 'H. Achats, Paiements & Support Client',
