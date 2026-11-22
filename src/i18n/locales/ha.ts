@@ -1,0 +1,511 @@
+import { TranslationBundle } from '../schema';
+
+export const ha: TranslationBundle = {
+  routeTitles: {
+    '/': 'Hanyoyin Dijital. Tasirin Duniya.',
+    '/about': 'Game da BYHENRYDIGITALS',
+    '/products': 'Kayayyakin Dijital',
+    '/affiliate-programme': 'Shirin Haɗin Gwiwa (Affiliate)',
+    '/services': 'Ayyukan Dijital',
+    '/resources': 'Albarkatu da Labarai',
+    '/contact': 'Tuntuɓi BHD',
+  },
+  nav: {
+    home: 'Gida',
+    about: 'Game da Mu',
+    products: 'Kayayyaki',
+    affiliate: 'Shirin Haɗin Gwiwa',
+    services: 'Ayyuka',
+    resources: 'Albarkatu',
+    faq: 'Tambayoyin Vanessa',
+    contact: 'Tuntuɓe Mu',
+    primaryCta: 'Binciki Hanyoyinmu',
+    languageMenuLabel: 'Harshe',
+    activeLanguagesLabel: 'Harsunan da Suke Aiki',
+    plannedLanguagesNote:
+      'Sauran harsunan duniya suna cikin shiri don fassara mai inganci.',
+    plannedBadge: 'A Shirye',
+    activeBadge: 'Yana Aiki',
+    openMenuAria: 'Buɗe menu na kewayawa',
+    closeMenuAria: 'Rufe menu na kewayawa',
+  },
+  home: {
+    kicker: 'BYHENRYDIGITALS (BHD)',
+    heroTitle: 'Hanyoyin Dijital. Tasirin Duniya.',
+    heroSubtitle:
+      'Gano albarkatun dijital masu amfani, damammakin koyo da hanyoyin da aka ƙera don taimaka maka gina, bunƙasa da samar da daraja a duniyar dijital.',
+    secondaryTagline: 'Muna Gina Darajar Dijital Mai Sayarwa.',
+    primaryCta: 'Binciki Hanyoyinmu',
+    secondaryCta: 'Gano BHD',
+    pillars: [
+      {
+        title: 'Ilimin Dijital Mai Amfani',
+        detail: 'Jagorori masu bayani da albarkatu da aka tsara don aiki na zahiri.',
+      },
+      {
+        title: 'Hanyoyin Yanar Gizo Masu Aiki',
+        detail: 'Shafukan yanar gizo da shafukan sauka da aka gina don sauri, haske da sauƙin amfani.',
+      },
+      {
+        title: 'Tsarin Haɗin Gwiwa na Gaskiya',
+        detail: 'Kashi 35% na kwamishon akan tallace-tallacen Selar da suka cancanta, ba tare da kuɗin rajista ko MLM ba.',
+      },
+      {
+        title: 'Hangen Nesa na Duniya',
+        detail: 'Tsarin dijital mai sauƙin shiga don al’umma masu magana da harsuna daban-daban.',
+      },
+    ],
+    productsSectionKicker: 'Kayayyakin Dijital',
+    productsSectionTitle: 'Jagororin Dijital da Albarkatun Koyo Tsarabtu',
+    productsSectionDesc:
+      'Binciki kayayyakin dijital na BHD da ke kan Selar, waɗanda aka ƙera don taimaka wa masu koyo da masu gina dijital su sami ƙwarewa ta gaske.',
+    viewAllProducts: 'Duba Jerin Kayayyaki',
+    selarBadge: 'Kundin Selar',
+    selarLinkShort: 'Selar',
+    servicesSectionKicker: 'Ayyukan Dijital',
+    servicesSectionTitle: 'Kwarewar Dijital Mai Aiki Mai Kyau',
+    servicesSectionDesc:
+      'Daga shafukan sauka masu jan hankali zuwa hanyoyin aiki masu amfani da AI, BHD yana gina kadarorin dijital masu dogaro.',
+    exploreServices: 'Binciki Ayyuka',
+    enquireShort: 'Yi Tambaya',
+    affiliateSectionKicker: 'Shirin Haɗin Gwiwa na BHD',
+    affiliateSectionTitle: 'Sami Kashi 35% Ta Hanyar Raba Ingantattun Kayayyakin Dijital',
+    affiliateSectionDesc:
+      'Aiwatarwa kyauta ce ba tare da sayan tilas ko tsarin ƙasa-da-ƙasa ba. Aiwatar kai tsaye ko ka zaɓi Affiliate Starter Kit na ₦8,000 a matsayin zaɓi.',
+    learnAffiliate: 'Cikakken Bayani',
+    applyAffiliate: 'Nemi Shiga Haɗin Gwiwa',
+    affiliateCards: {
+      commissionLabel: 'Kwamishon akan tallace-tallacen Selar da suka cancanta',
+      signupLabel: 'Babu kuɗin rajista ko sayan tilas',
+      noMlmTitle: 'Babu MLM',
+      noMlmLabel: 'Shirin haɗin gwiwa kai tsaye mataki ɗaya',
+      starterKitLabel: 'Affiliate Starter Kit (Na Zaɓi)',
+    },
+    resourcesSectionKicker: 'Albarkatu da Bayanai',
+    resourcesSectionTitle: 'Jagorori Kan Ƙwarewar Dijital, Yanar Gizo da AI',
+    resourcesSectionDesc:
+      'Karanta labarai masu amfani kan ilimin dijital, damammakin kan layi, kasuwanci, gina shafukan yanar gizo da kayan aikin dijital.',
+    browseResources: 'Buɗe Cibiyar Albarkatu',
+    visionKicker: 'Hangen Nesa na Duniya',
+    visionTitle: 'An Tsara Don Samun Dama a Duniya',
+    visionDesc:
+      'BYHENRYDIGITALS yanzu yana aiki da Turanci, Igbo, Yorùbá, Hausa da Faransanci, tare da shirin faɗaɗawa zuwa ƙarin harsunan duniya ta hanyar ingantacciyar fassara.',
+    visionMorePlanned: 'ƙarin harsuna a cikin shiri',
+    vanessaKicker: 'Vanessa — Cikakken FAQ na BHD',
+    vanessaTitle: 'VANESSA — CIKAKKEN FAQ NA BHD',
+    vanessaDesc:
+      'Jagoranka mai sauƙin bincike don komai game da BYHENRYDIGITALS. Bincika sama da amsoshi 100 da aka tabbatar a fannoni 10 da suka shafi kayayyaki, shirin 35%, ayyuka, harsuna, da tallafi—kullum yana nan a kumfar FAQ ta BHD a ƙasa.',
+    openVanessaFaq: 'Buɗe FAQ na Vanessa',
+    contactBannerTitle: 'Kana Shirye Don Tattauna Aiki Ko Tambaya?',
+    contactBannerDesc:
+      'Tuntuɓi BYHENRYDIGITALS ta imel (byhenrydigitals@gmail.com), WhatsApp (+234 708 208 8942), ko fom ɗin tuntuɓarmu.',
+    contactBannerCta: 'Tuntuɓi BHD',
+  },
+  about: {
+    kicker: 'Game da BHD',
+    title: 'Gina Darajar Dijital Mai Amfani Tare da Gaskiya da Aminci',
+    intro:
+      'BYHENRYDIGITALS (BHD) alama ce ta hanyoyin dijital da ilimi wadda ke taimaka wa mutane da kasuwanci gano damammakin dijital na gaskiya, samun albarkatu masu amfani da gina kadarorin dijital masu aiki.',
+    missionTitle: 'Manufarmu (Mission)',
+    missionBody:
+      'Sauƙaƙa hanyar samun ƙwarewar dijital mai amfani da ingantattun hanyoyin yanar gizo ta hanyar ilimi bayyananne, kasuwanci mai gaskiya da jagora ta gaskiya.',
+    visionTitle: 'Hangen Nesanmu (Vision)',
+    visionBody:
+      'Bunƙasa tsarin dijital na ƙasa da ƙasa abin dogaro wanda ke haɗa masu koyo, masu ƙirƙira da kasuwanci a kan harsuna da iyakoki.',
+    principlesTitle: 'Yadda BHD Ke Aiki',
+    principles: [
+      {
+        title: 'Gaskiya Sama da Hayaniya',
+        body: 'Ba ma yin alƙawarin samun kuɗi cikin dare ɗaya ko tabbacin riba. Kowane abu yana mai da hankali kan ƙwarewar gaske.',
+      },
+      {
+        title: 'Amfani Kafin Ado',
+        body: 'Ko muna gina shafin yanar gizo ko rubuta jagora, sauƙin amfani da sakamako mai kyau suna gaba.',
+      },
+      {
+        title: 'Hanyoyin Shiga Masu Sauƙi',
+        body: 'Daga shirin haɗin gwiwa kyauta zuwa jagororin dijital na musamman, BHD yana sanya hanyoyi cikin sauƙi.',
+      },
+      {
+        title: 'Shirin Duniya',
+        body: 'Tsarinmu yana goyan bayan Turanci, Igbo, Yorùbá, Hausa da Faransanci a yau, tare da tsarin ƙarin harsuna.',
+      },
+    ],
+    founderKicker: 'Jagoranci',
+    founderTitle: 'Wanda Ya Kafa: Henry (Coach Henry)',
+    founderRole: 'Wanda Ya Kafa BYHENRYDIGITALS',
+    founderBio:
+      'Henry, wanda aka fi sani da Coach Henry, ne ya kafa BYHENRYDIGITALS da burin mayar da ilimin dijital mai amfani, gina shafukan yanar gizo da hanyoyin samun daraja a kan layi masu sauƙin fahimta.',
+    founderNote:
+      'Coach Henry yana jagorantar BHD tare da mai da hankali kan ilimi mai amfani, tsarin dijital mai tsafta, da tallafi na gaskiya ga masu koyo da kasuwanci a duniya.',
+    exploreProductsCta: 'Binciki Kayayyakin BHD',
+    contactCta: 'Tuntuɓi BYHENRYDIGITALS',
+  },
+  products: {
+    kicker: 'Kundin Kayayyakin Selar',
+    title: 'Kayayyakin Dijital na BYHENRYDIGITALS',
+    intro:
+      'Ana rarraba duk sahihan kayayyakin dijital na BYHENRYDIGITALS cikin aminci ta shagonmu na Selar. Cikakkun bayanai da farashin gaskiya suna kan kowane shafin Selar.',
+    storeBannerTitle: 'Shagon Hukuma na BHD akan Selar',
+    storeBannerDesc:
+      'Ziyarci selar.com/m/BYHENRYDIGITALS don duba farashin yanzu, cikakken tsarin kayayyaki da biyan kuɗi nan take.',
+    visitStoreCta: 'Ziyarci Shagon Selar',
+    problemLabel: 'Matsala da Buƙatar Koyo da Yake Magancewa',
+    audienceLabel: 'Masu Amfani da Aka Tsara Don Su',
+    outcomesLabel: 'Abin da Za Ka Koya',
+    priceLabel: 'Farashi akan Selar',
+    originalLanguageLabel: 'Harshen Asali na Kaya',
+    productCta: 'Duba & Saya akan Selar',
+    storeIntegrityNotice:
+      'Shagon Hukuma & Farashin Yanzu: Duk albarkatun ilimin dijital na BYHENRYDIGITALS suna kan Selar (selar.com/m/BYHENRYDIGITALS), inda ake tabbatar da farashin yanzu kafin siya.',
+    brandPlatformTag: 'BYHENRYDIGITALS · Selar',
+    items: {
+      'clicks-to-cash': {
+        resourceTypeLabel: 'Jagorar Dijital · Tushen Haɗin Gwiwa & Sayarwa',
+        shortDescription:
+          'Gabatarwa mai sauƙin fahimta ga masu farawa kan yadda hankalin kan layi ke zama tallace-tallacen dijital na halal—yana bayyana alaƙar da ke tsakanin masu ƙirƙirar kaya, abokan haɗin gwiwa, da masu siya.',
+        problemAddressed:
+          'Yana taimaka wa masu farawa da ke shan wahala da shawarwari masu rikitarwa ko tura spam su fahimci yadda shawarar gaskiya ke samar da daraja.',
+        intendedAudience:
+          'Masu farawa, sabbin masu tallan dijital, da sabbin abokan haɗin gwiwar BHD da ke son tsarin tushe mai kyau.',
+        learningOutcomes: [
+          'Yadda hankalin dijital ke motsawa zuwa amincin mai siya da tsarin kaya',
+          'Bambanci tsakanin ba da shawarar kaya na gaskiya da tura hanyoyi barkatai',
+          'Halayen aiki masu kyau na gabatar da kayayyakin dijital cikin gaskiya',
+        ],
+        priceDisplay: 'Duba farashin yanzu akan Selar',
+        originalLanguageNote: 'An buga shi cikin Turanci (English) akan Selar',
+      },
+      'global-monetisation': {
+        resourceTypeLabel: 'Jagorar Dijital · Kasuwanci Tsallaka Iyakoki',
+        shortDescription:
+          'Jagora mai amfani da ke mai da hankali kan haɗa iliminka, ƙwarewarka, ko albarkatunka zuwa tayin dijital wanda masu siya a ƙasashen waje za su iya samu da kuɗaɗe daban-daban.',
+        problemAddressed:
+          'Yana magance wahalar da masu ƙirƙira da masu fasaha ke fuskanta wajen mayar da ƙwarewar gida zuwa kayayyakin dijital na duniya.',
+        intendedAudience:
+          'Masu ƙirƙira, malamai, da ƙwararru da ke neman tsara kayayyakin dijital don masu siya na ƙasa da ƙasa.',
+        learningOutcomes: [
+          'Tsara ilimi da gwaninta zuwa tsarin dijital bayyananne mai sayarwa',
+          'Fahimtar shagon kan layi na duniya da karɓar kuɗaɗe daban-daban',
+          'Gina ɗabi’un rarrabawa masu ɗorewa da suka dace da masu saurare',
+        ],
+        priceDisplay: 'Duba farashin yanzu akan Selar',
+        originalLanguageNote: 'An buga shi cikin Turanci (English) akan Selar',
+      },
+      'remote-jobs-under-18': {
+        resourceTypeLabel: 'Jagorar Ilimi · Hanyoyin Dijital na Matasa',
+        shortDescription:
+          'Albarkatun ilimi ga matasa masu koyo ’yan ƙasa da shekara 18 da iyaye, wanda ke bincika ƙwarewar dijital da suka dace da shekaru, amincin kan layi, da koyo kafin balaga.',
+        problemAddressed:
+          'Yana warware ruɗani da haɗarin da matasa ke fuskanta a kan layi—inda ƙa’idojin shekaru, dokokin biyan kuɗi, da alƙawuran ƙarya ke raba hankali.',
+        intendedAudience:
+          'Ɗalibai da matasa ’yan ƙasa da shekara 18, tare da iyaye ko masu kulawa masu neman ingantattun hanyoyin koyo.',
+        learningOutcomes: [
+          'Gano ƙwarewar dijital da suka dace da shekaru don koyo yayin karatu',
+          'Fahimtar dokokin shekaru na dandamali, aminci, da kulawar iyaye',
+          'Gina tarin ayyukan farko da tsammanin gaskiya ba tare da garantin aiki ba',
+        ],
+        priceDisplay: 'Duba farashin yanzu akan Selar',
+        originalLanguageNote: 'An buga shi cikin Turanci (English) akan Selar',
+      },
+    },
+  },
+  affiliate: {
+    kicker: 'Yi Haɗin Gwiwa da BHD',
+    title: 'Shirin Haɗin Gwiwa na BHD',
+    intro:
+      'Ba da shawarar kayayyakin dijital na BYHENRYDIGITALS akan Selar kuma ka sami kashi 35% na kwamishon akan tallace-tallacen da suka cancanta—ba tare da kuɗin rajista ko MLM ba.',
+    applyNowCta: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
+    applyNowSubject: 'Aiwatarwa da Bayani Kan Shirin Haɗin Gwiwa na BHD',
+    askQuestionCta: 'Yi Tambaya',
+    askQuestionSubject: 'Tambaya Game da Shirin Haɗin Gwiwa na BHD',
+    factsTitle: 'Sahihin Tsarin Shirin',
+    facts: [
+      { label: 'Kuɗin Rajista', value: 'Babu (₦0 don aiwatarwa)' },
+      { label: 'Sayan Tilas', value: 'Ba a buƙata ba' },
+      { label: 'Tsari', value: 'Haɗin gwiwa kai tsaye kaɗai (Babu MLM)' },
+      { label: 'Adadin Kwamishon', value: '35% akan tallace-tallacen Selar da suka cancanta' },
+      { label: 'Starter Kit (Na Zaɓi)', value: '₦8,000 (Albarkatu na zaɓi)' },
+      { label: 'Tuntuɓar Shiga', value: 'Shafin Tuntuɓa, Imel & WhatsApp na BHD' },
+    ],
+    howItWorksTitle: 'Yadda Shirin Ke Aiki',
+    steps: [
+      {
+        num: '01',
+        title: 'Tuntuɓe Mu Kai Tsaye',
+        desc: 'Tuntuɓi BYHENRYDIGITALS ta shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942) don neman shiga. Babu kuɗin rajista ko sayan tilas.',
+      },
+      {
+        num: '02',
+        title: 'Duba Kayayyaki da Albarkatu',
+        desc: 'Da zarar an amince da kai, fahimci kayayyakin Selar da ka zaɓa ka gabatar. Za ka iya siyan Affiliate Starter Kit na ₦8,000 idan kana son horo na musamman.',
+      },
+      {
+        num: '03',
+        title: 'Raba Kuma Ka Sami 35%',
+        desc: 'Jagoranci masu sha’awa zuwa kayayyakin BHD ta hanyar mahadar Selar taka kuma ka sami kwamishon 35% akan sayan da aka tabbatar.',
+      },
+    ],
+    whoCanApplyTitle: 'Waɗanda Za Su Iya Aiwatarwa',
+    whoCanApply: [
+      'Malaman dijital, marubuta da masu ƙirƙirar abun ciki da ke raba kayan aiki masu amfani.',
+      'Mutane masu sha’awar ba da shawarar kayayyaki cikin gaskiya ba tare da kula da kaya na zahiri ba.',
+      'Masu farawa da ke shirye su koyi tallan gaskiya ba tura spam ba.',
+    ],
+    commissionsTitle: 'Yadda Kwamishon da Kit na Zaɓi Ke Aiki',
+    commissionsBody:
+      'Abokan haɗin gwiwa da aka amince da su suna samun 35% akan tallace-tallacen kayayyakin dijital da aka bi ta Selar. Affiliate Starter Kit na zaɓi (₦8,000) yana nan ga masu son horon jagora, amma sayan sa na zaɓi ne gaba ɗaya.',
+    termsTitle: 'Muhimman Sharudda da Gaskiya',
+    terms: [
+      'Amincewa ta dogara ne akan duba aikace-aikace kai tsaye daga BYHENRYDIGITALS.',
+      'Ba a bada garantin kuɗi ko adadin tallace-tallace ba—sakamako ya dogara da ƙoƙarin mutum.',
+      'Yin ƙarya, alƙawuran arziki na gaggawa, ko kwaikwayon alama ba tare da izini ba haramun ne.',
+      'BHD yana gudanar da tsarin haɗin gwiwa mataki ɗaya ba tare da ladan kawo mutane ba.',
+    ],
+    transparencyNotice:
+      'Bayyanar da Gaskiya: BYHENRYDIGITALS ba ya bada garantin tallace-tallace ko samun kuɗi. Sakamako ya bambanta dangane da ƙoƙari, ingancin sadarwa da buƙatar kasuwa.',
+  },
+  services: {
+    kicker: 'Hanyoyin Abokan Ciniki',
+    title: 'Ayyukan Dijital da Aka Gina Don Amfani na Gaske',
+    intro:
+      'Muna gina kwarewar dijital masu aiki—ba kawai shafukan yanar gizo masu kyau ba. Kowane aiki yana mai da hankali kan tsari, sauri da bayani mai sauƙi.',
+    philosophyTitle: 'Darajar Dijital Mai Sayarwa',
+    philosophyBody:
+      'Kyan gani kaɗai ba ya bunƙasa kasuwanci. BHD yana haɗa tsarin baƙi, fari da zinare da kyakkyawar hanyar amfani da tsarin dijital masu amfani.',
+    brandServicesTag: 'Ayyukan BYHENRYDIGITALS',
+    customScopedLabel: 'Ana tsara shi bisa buƙatar aikin',
+    discussCta: 'Tattauna Aikin Ka',
+    pricingNotice:
+      'Ana ƙayyade girman aiki da farashi yayin tattaunawa. Ba a jera farashi mai tsauri a nan ba.',
+    items: {
+      'web-design-dev': {
+        title: 'Zane da Gina Shafukan Yanar Gizo',
+        summary:
+          'Shafukan yanar gizo masu sauri da dacewa da kowace na’ura, waɗanda aka gina don tafiyar mai amfani bayyananna da amincin alama.',
+        functionalFocus:
+          'An gina don tallafawa ayyukan kasuwanci na gaske—ba shafin nuni kaɗai ba.',
+        deliverables: [
+          'Tsari mai dacewa da kwamfuta, kwamfutar hannu da wayar salula',
+          'Tsarin lamba mai tsafta da metadata na bincike',
+          'Hanyoyin tambaya da tuntuba bayyanannu',
+        ],
+      },
+      'landing-pages': {
+        title: 'Shafukan Sauka (Landing Pages)',
+        summary:
+          'Shafuka masu manufa guda ɗaya da aka tsara don bayyana tayi a sarari da jagorantar baƙi zuwa mataki guda.',
+        functionalFocus:
+          'Yana kawar da shagala domin kamfen da fom ɗin neman bayani su yi magana kai tsaye.',
+        deliverables: [
+          'Tsarin gabatarwa daga taken zuwa matakin aiki',
+          'Fom ɗin da aka tantance da haɗi zuwa shago',
+          'Tsarin hotuna da rubutu mai saurin buɗewa',
+        ],
+      },
+      'digital-presence': {
+        title: 'Bunƙasa Kasancewa a Dijital',
+        summary:
+          'Daidaito tsakanin babban shafinka, shagon kayayyaki da tashoshin abun ciki domin alamarka ta nuna kwarewa nan take.',
+        functionalFocus:
+          'Yana daidaita saƙon alama da ganuwa a duk wuraren tuntuba.',
+        deliverables: [
+          'Tsarin baƙi-fari-zinare ko launukan alamarka na musamman',
+          'Tsarin shago da mahada (Selar, fom da cibiyoyi)',
+          'Tsarin abun ciki don baƙi na ƙasa da ƙasa',
+        ],
+      },
+      'nocode-ai-solutions': {
+        title: 'Hanyoyin No-Code da Masu Amfani da AI',
+        summary:
+          'Tsarin aiki na atomatik masu amfani, haɗin chatbot ga abokan ciniki idan sun buƙata, da kayan aikin no-code don rage wahalar aikin hannu.',
+        functionalFocus:
+          'Yana sanya kayan aikin zamani inda suke adana lokaci ga ayyukan abokan ciniki.',
+        deliverables: [
+          'Ayyukan atomatik da haɗin chatbot na musamman ga abokan ciniki',
+          'Fom ɗin karɓar bayanai na no-code da sanarwa',
+          'Takardun jagora masu sauƙin fahimta ga ƙungiyoyi',
+        ],
+      },
+      'digital-business-support': {
+        title: 'Tallafin Kasuwancin Dijital',
+        summary:
+          'Jagora ta gaskiya ga waɗanda suka kafa kasuwanci yayin fitar da kayayyakin dijital ko kula da shafukan yanar gizo.',
+        functionalFocus:
+          'Tallafin fasaha da dabaru don ci gaba da tafiyar ayyukan dijital.',
+        deliverables: [
+          'Warware matsalolin fasaha da duba shagon yanar gizo',
+          'Sabunta fasaloli da faɗaɗa tsarin abun ciki',
+          'Jagorar aiwatarwa mai sauƙi ba tare da rikitarwa ba',
+        ],
+      },
+    },
+  },
+  resources: {
+    kicker: 'Cibiyar Ilimi',
+    title: 'Albarkatu, Jagorori da Labarai',
+    intro:
+      'Laburare mai tsari da ke rufe ƙwarewar dijital, aikin kan layi, tsarin yanar gizo da fasaha mai amfani.',
+    allTopics: 'Duk Batutuwa',
+    editorialNote:
+      'Jagororin BHD: Labarai masu amfani da BYHENRYDIGITALS suka rubuta kan tsarin yanar gizo, haɗin gwiwa na gaskiya, ƙwarewar dijital, kayan aiki, da ilimin kan layi mai aminci.',
+    readArticle: 'Karanta Labari',
+    closeArticle: 'Rufe',
+    emptyTopicTitle: 'Babu labari da ya dace da wannan fanni',
+    emptyTopicBody:
+      'Zaɓi wani batu a sama ko duba Duk Batutuwa don karanta jagororin BHD.',
+    topics: {
+      'digital-education': 'Ilimin Dijital',
+      'online-opportunities': 'Damammakin Kan Layi',
+      'digital-tools': 'Kayan Aikin Dijital',
+      entrepreneurship: 'Kasuwanci',
+      'website-development': 'Gina Shafukan Yanar Gizo',
+      'ai-technology': 'AI da Fasaha',
+      'practical-guides': 'Jagorori Masu Amfani',
+    },
+    articles: {
+      'functional-websites': {
+        title: 'Me Ya Sa Tsarin Yanar Gizo Mai Aiki Ya Fi Ado Kawai',
+        publishedLabel: 'Jagorar Yanar Gizo ta BHD',
+        readTime: 'Minti 4 karatu',
+        excerpt:
+          'Shafin farko mai cike da zane ba zai iya gyara mummunar hanya ko jinkirin wayar hannu ba. Ga yadda tsari mai kyau ke kawo tambayoyin kasuwanci.',
+        body: [
+          'Yawancin sabbin kamfanoni suna mai da hankali kan kyan gani kafin su fayyace abin da ya kamata baƙo ya fahimta a cikin daƙiƙa biyar na farko. Idan kanun labarai da maɓallai suka yi cunkoso, baƙi suna fita.',
+          'Tsarin yanar gizo mai aiki yana farawa da tsari bayyananne: faɗi waɗanda kake taimaka wa, bayyana darajar tayinka, kuma ka sauƙaƙa mataki na gaba akan kwamfuta da wayar hannu.',
+          'A BYHENRYDIGITALS, muna gina kowane shafin yanar gizo akan bayani kai tsaye, sauƙin amfani a waya, sauri, da hanya madaidaiciya zuwa shagon Selar ko tattaunawa.',
+        ],
+      },
+      'ethical-affiliate-basics': {
+        title: 'Tunkarar Tallan Haɗin Gwiwa Tare da Gaskiya da Inganci',
+        publishedLabel: 'Jagorar Haɗin Gwiwa ta BHD',
+        readTime: 'Minti 5 karatu',
+        excerpt:
+          'Haɗin gwiwa mai ɗorewa ya dogara ne akan fahimtar kaya na gaskiya da tsammanin gaskiya maimakon ƙarin gishiri.',
+        body: [
+          'Ɗaukar hanyoyin affiliate a matsayin gajeriyar hanya ba ya gina aminci. Masu karatu suna gane da sauri idan shawarar ba ta da bayani ko tana alƙawarin riba.',
+          'Ƙwararrun abokan haɗin gwiwa suna bayyana a sarari waɗanda aka tsara kayan don su, matsalar koyo da yake magancewa, da inda sahihin farashi yake akan Selar.',
+          'A cikin Shirin Haɗin Gwiwa na BYHENRYDIGITALS, abokan haɗin gwiwa suna samun 35% na kwamishon akan tallace-tallacen Selar ba tare da kuɗin rajista ko tsarin MLM ba.',
+        ],
+      },
+      'practical-workflows': {
+        title: 'Haɗa Rumbun FAQ Mai Tsari da Kayan No-Code Don Tallafin Baƙi',
+        publishedLabel: 'Jagorar Fasaha ta BHD',
+        readTime: 'Minti 4 karatu',
+        excerpt:
+          'Yadda cibiyoyin bayanai masu tsari da kayan no-code ke taimaka wa kamfanoni amsa tambayoyin baƙi cikin sauƙi.',
+        body: [
+          'Kayan aikin dijital suna yin aiki mafi kyau idan an gina su akan sahihan bayanai da hanyoyin bincike bayyanannu.',
+          'Tsara tambayoyin baƙi cikin rumbun FAQ mai bincike—kamar Vanessa akan BHD—yana barin abokan ciniki da masu koyo su tabbatar da harshen kaya, Selar, da ƙa’idojin haɗin gwiwa nan take.',
+          'Lokacin da ayyukan abokan ciniki ke buƙatar atomatik ko chatbot na musamman, haɗa bayani mai tsabta da no-code yana kiyaye ikon ƙungiya.',
+        ],
+      },
+      'digital-skills-foundation': {
+        title: 'Farawa Daga Sifili: Zaɓar Ƙwarewar Dijital Masu Amfani Masu Haɓaka',
+        publishedLabel: 'Hanyar Koyo ta BHD',
+        readTime: 'Minti 5 karatu',
+        excerpt:
+          'Maimakon bin kowane sabon salo, mai da hankali kan tushen ilimin dijital, sadarwa mai kyau da warware matsaloli.',
+        body: [
+          'Damammakin dijital suna ba da lada ga juriya fiye da hayaniya. Ko kana koyon tsarin yanar gizo ko tsara kayayyakin dijital, aiki na yau da kullum yana gina ƙwarewa.',
+          'Fara ta hanyar ƙwarewa a fanni ɗaya mai amfani kuma ka tattara samfurin aikinka na gaskiya kafin faɗaɗawa.',
+          'Yi amfani da jagororin BHD da albarkatun Selar a matsayin ma’auni yayin da kake gina naka aikin.',
+        ],
+      },
+      'essential-digital-tools': {
+        title: 'Gina Tsarin Kayan Aikin Dijital Masu Sauƙi da Aminci',
+        publishedLabel: 'Jagorar Kayan Aiki ta BHD',
+        readTime: 'Minti 4 karatu',
+        excerpt:
+          'Ba ka buƙatar biyan kuɗi masu yawa don fara aikin dijital—kawai kayan aiki na asali don ƙirƙira, shago, da sadarwa.',
+        body: [
+          'Masu farawa sukan tsaya saboda suna tsammanin farawa yana buƙatar manhajoji masu rikitarwa. A zahiri, matakai uku sun isa: ƙirƙirar abun ciki, shagon biyan kuɗi mai aminci, da sadarwa kai tsaye.',
+          'Dandamali kamar Selar suna sauƙaƙe biyan kuɗi da isar da kaya a ƙasashe daban-daban, yayin da shafi mai tsafta da WhatsApp ko imel ke amsa tambayoyi.',
+          'Zaɓi kayan aikin da za ka iya amfani da su kowane mako maimakon bin fasalolin da ba ka amfani da su.',
+        ],
+      },
+      'digital-entrepreneurship-value': {
+        title: 'Kasuwancin Dijital: Warware Takamaiman Matsala Kafin Faɗaɗawa',
+        publishedLabel: 'Jagorar Dabaru ta BHD',
+        readTime: 'Minti 5 karatu',
+        excerpt:
+          'Darajar dijital mai sayarwa tana farawa da fahimtar buƙatar gaske ta masu saurare—ko tsara jagora ko gina shafin yanar gizo.',
+        body: [
+          'Kafin ka rubuta lamba ko zana murfin kaya, yi tambaya guda: wace irin matsala ko rudani wannan ke warwarewa ga mutum na gaske?',
+          'Kayayyakin dijital da suka mai da hankali—kamar jagorori don kasuwancin duniya ko ilimin matasa—suna yin nasara lokacin da masu siya suka gane halin da suke ciki.',
+          'Haɗa bayanin matsala mai haske tare da matsayi na gaskiya, hanyoyin biyan kuɗi da aka tabbatar, da tallafi kai tsaye.',
+        ],
+      },
+      'safe-online-learning-guide': {
+        title: 'Jerin Bincike Don Koyo Mai Aminci A Kan Layi Ba Tare Da Zamba Ba',
+        publishedLabel: 'Jagorar Aminci ta BHD',
+        readTime: 'Minti 4 karatu',
+        excerpt:
+          'San yadda ake tantance damammakin dijital cikin gaskiya, kauce wa alƙawuran kuɗi na ƙarya, da kare lokacinka.',
+        body: [
+          'Duk lokacin da tayin kan layi ya yi alƙawarin kuɗi cikin dare ɗaya ko ya matsa maka ka kawo mutane don lada, tsaya ka bincika ainihin darajarsa.',
+          'Ilimin dijital na halal yana bayyana wanda ya ƙirƙire shi, takamaiman ƙwarewar da aka koya, dandamalin biyan kuɗi, da cewa sakamako ya dogara da ƙoƙarin mutum.',
+          'Ga matasa masu koyo ’yan ƙasa da 18 da masu farawa, shigar da iyaye, bin ƙa’idojin dandamali, da mayar da hankali kan ƙwarewar gaske suna kiyaye aminci.',
+        ],
+      },
+    },
+  },
+  contact: {
+    kicker: 'Tuntuɓe Mu',
+    title: 'Tuntuɓi BYHENRYDIGITALS',
+    intro:
+      'Kana da tambaya game da ayyukanmu na gidan yanar gizo, kayayyakin dijital ko shirin haɗin gwiwa? Aika saƙo a ƙasa.',
+    formTitle: 'Aika Tambaya',
+    nameLabel: 'Cikakken Suna',
+    namePlaceholder: 'Cikakken sunanka',
+    emailLabel: 'Adireshin Imel',
+    emailPlaceholder: 'kai@example.com',
+    subjectLabel: 'Taken Saƙo',
+    subjectPlaceholder: 'Aikin gidan yanar gizo, tambayar kaya ko haɗin gwiwa',
+    messageLabel: 'Saƙo',
+    messagePlaceholder: 'Raba bayanai game da abin da kake buƙatar taimako akai...',
+    submitCta: 'Aika Saƙo',
+    submitting: 'Ana aikawa...',
+    successTitle: 'An Karɓi Saƙonka',
+    successBody:
+      'Mun gode da tuntuɓar BYHENRYDIGITALS. An yi rajistar tambayarka da lambar shaida',
+    sendAnother: 'Aika Wani Saƙo',
+    detailsTitle: 'Tashoshin Tuntuɓa na Hukuma na BHD',
+    directChannelsNotice:
+      'Haɗu da BYHENRYDIGITALS kai tsaye ta imel na hukuma, WhatsApp, ko fom ɗin tambaya.',
+    emailChannelLabel: 'Imel na Hukuma',
+    emailUsButton: 'Aika Mana Imel',
+    whatsappChannelLabel: 'WhatsApp na Hukuma',
+    whatsappUsButton: 'Yi Hira da Mu a WhatsApp',
+    responseChannelLabel: 'Hanyoyin Tallafi',
+    responseChannelValue: 'Imel, WhatsApp & Fom ɗin Gidan Yanar Gizo',
+    storefrontLabel: 'Shagon Selar da Aka Tabbatar',
+    validation: {
+      nameError: 'Da fatan za a shigar da cikakken sunanka (akalla haruffa 2).',
+      emailError: 'Da fatan za a shigar da sahihin adireshin imel.',
+      subjectError: 'Da fatan za a shigar da take mai bayani.',
+      messageError: 'Da fatan za a rubuta saƙo mai aƙalla haruffa 15.',
+      genericSubmitError: 'Ba za a iya aika saƙonka ba yanzu. Da fatan za a sake gwadawa.',
+      networkError: 'Kuskuren hanyar sadarwa yayin aika saƙo. Duba haɗinka ka sake gwadawa.',
+    },
+  },
+  footer: {
+    tagline: 'Hanyoyin Dijital. Tasirin Duniya.',
+    secondaryTagline: 'Muna Gina Darajar Dijital Mai Sayarwa.',
+    navigationTitle: 'Binciki BHD',
+    officialLinksTitle: 'Tuntuɓa ta Hukuma & Shago',
+    selarLinkLabel: 'Shagon Kayayyaki na Selar',
+    emailUsLabel: 'Aika Mana Imel',
+    whatsappUsLabel: 'Yi Hira da Mu a WhatsApp',
+    socialTitle: 'Tashoshin Sadarwa',
+    languagesLabel: 'Harsuna masu aiki: English, Igbo, Yorùbá, Hausa da French',
+    copyright: 'BYHENRYDIGITALS (BHD). Duk haƙƙoƙi suna da kariya.',
+    globalOperationLabel: 'Yana aiki a dijital don al’ummar duniya',
+  },
+  social: {
+    kicker: 'Tashoshin Hukuma',
+    heading: 'Mu Haɗa Kai!',
+    description:
+      'Ci gaba da kasancewa tare da BYHENRYDIGITALS. Bi mu don samun fahimtar dijital, albarkatu masu amfani, sabbin bayanai na kasuwanci, sabbin damammaki da kallon abin da muke ginawa.',
+  },
+};
