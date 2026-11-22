@@ -111,7 +111,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
   };
 
   return (
-    <div className="mx-auto max-w-[1280px] px-5 py-12 sm:px-6 sm:py-16">
+    <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="max-w-3xl space-y-4">
         <p className="text-xs font-medium text-[#eab308]">{t.contact.kicker}</p>
         <h1 className="font-display text-3xl font-semibold tracking-tight text-balance text-[#f5f5f4] sm:text-4xl">
@@ -122,9 +122,9 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
         </p>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-12">
+      <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
         {/* Form Card */}
-        <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-6 sm:p-8 lg:col-span-7">
+        <div className="min-w-0 rounded-2xl border border-white/[0.1] bg-[#141414] p-5 sm:p-8 lg:col-span-7">
           {referenceId ? (
             <div className="space-y-5 py-4">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#eab308]/15 text-[#eab308]">
@@ -167,7 +167,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
               )}
 
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                <div className="space-y-1.5">
+                <div className="min-w-0 space-y-1.5">
                   <label
                     htmlFor="contact-name"
                     className="block text-xs font-medium text-[#d4d4d8]"
@@ -187,7 +187,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                   )}
                 </div>
 
-                <div className="space-y-1.5">
+                <div className="min-w-0 space-y-1.5">
                   <label
                     htmlFor="contact-email"
                     className="block text-xs font-medium text-[#d4d4d8]"
@@ -251,9 +251,9 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#eab308] px-6 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] disabled:opacity-60 transition-colors cursor-pointer"
+                className="inline-flex min-h-[44px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-[#eab308] px-6 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] disabled:opacity-60 transition-colors cursor-pointer"
               >
-                <Send className="h-4 w-4" />
+                <Send className="h-4 w-4 shrink-0" />
                 <span>
                   {submitting ? t.contact.submitting : t.contact.submitCta}
                 </span>
@@ -263,8 +263,8 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
         </div>
 
         {/* Official BHD Contact Channels & Verified Storefront */}
-        <aside className="space-y-6 lg:col-span-5">
-          <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-6 sm:p-7 space-y-5">
+        <aside className="min-w-0 space-y-6 lg:col-span-5">
+          <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-5 sm:p-7 space-y-5">
             <div className="space-y-1.5">
               <h2 className="font-display text-lg font-semibold text-[#f5f5f4]">
                 {t.contact.detailsTitle}
@@ -275,23 +275,23 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
             </div>
 
             {/* Primary Direct Action Buttons */}
-            <div className="flex flex-wrap gap-3">
+            <div className="grid grid-cols-1 min-[380px]:grid-cols-2 gap-3">
               <a
                 href={SITE_CONFIG.mailtoUrl}
-                className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-lg border border-white/[0.16] bg-[#0b0b0b] px-4 py-2.5 text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors whitespace-nowrap"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg border border-white/[0.16] bg-[#0b0b0b] px-4 py-2.5 text-center text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors"
               >
-                <Mail className="h-4 w-4 text-[#eab308]" />
+                <Mail className="h-4 w-4 shrink-0 text-[#eab308]" />
                 <span>{t.contact.emailUsButton}</span>
               </a>
               <a
                 href={SITE_CONFIG.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-lg bg-[#eab308] px-4 py-2.5 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg bg-[#eab308] px-4 py-2.5 text-center text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
               >
-                <MessageCircle className="h-4 w-4" />
+                <MessageCircle className="h-4 w-4 shrink-0" />
                 <span>{t.contact.whatsappUsButton}</span>
-                <ArrowUpRight className="h-3.5 w-3.5" />
+                <ArrowUpRight className="h-3.5 w-3.5 shrink-0" />
               </a>
             </div>
 
@@ -317,7 +317,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                     className="inline-flex items-center gap-1 font-medium text-[#eab308] hover:underline"
                   >
                     <span>{SITE_CONFIG.whatsappNumberDisplay}</span>
-                    <ArrowUpRight className="h-3.5 w-3.5" />
+                    <ArrowUpRight className="h-3.5 w-3.5 shrink-0" />
                   </a>
                 </dd>
               </div>
@@ -344,7 +344,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
             </dl>
           </div>
 
-          <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-6 sm:p-7 space-y-4">
+          <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-5 sm:p-7 space-y-4">
             <div className="space-y-1">
               <h2 className="font-display text-lg font-semibold text-[#f5f5f4]">
                 {t.social.heading}
@@ -361,7 +361,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${item.name} — BYHENRYDIGITALS`}
-                  className="group flex min-h-[44px] items-center justify-between gap-2.5 rounded-xl border border-white/[0.1] bg-[#0b0b0b] px-3.5 py-2.5 text-xs text-[#f5f5f4] transition-colors hover:border-[#eab308]/60 hover:text-[#eab308]"
+                  className="group flex min-h-[44px] min-w-0 items-center justify-between gap-2.5 rounded-xl border border-white/[0.1] bg-[#0b0b0b] px-3.5 py-2.5 text-xs text-[#f5f5f4] transition-colors hover:border-[#eab308]/60 hover:text-[#eab308]"
                 >
                   <span className="flex items-center gap-2.5 min-w-0">
                     <SocialPlatformIcon platform={item.id} className="h-4 w-4 shrink-0" />

@@ -21,10 +21,7 @@ export const en: TranslationBundle = {
     contact: 'Contact',
     primaryCta: 'Explore Solutions',
     languageMenuLabel: 'Language',
-    activeLanguagesLabel: 'Available Languages',
-    plannedLanguagesNote:
-      'Additional international languages are queued for reviewed translation.',
-    plannedBadge: 'Planned',
+    activeLanguagesLabel: 'Supported Languages',
     activeBadge: 'Active',
     openMenuAria: 'Open navigation menu',
     closeMenuAria: 'Close navigation menu',
@@ -52,7 +49,7 @@ export const en: TranslationBundle = {
       },
       {
         title: 'International Vision',
-        detail: 'Accessible digital systems designed for a growing multilingual audience.',
+        detail: 'Accessible digital systems available in English, Igbo, Yoruba, Hausa, and French.',
       },
     ],
     productsSectionKicker: 'Digital Products',
@@ -89,8 +86,7 @@ export const en: TranslationBundle = {
     visionKicker: 'International Vision',
     visionTitle: 'Designed for Global Accessibility',
     visionDesc:
-      'BYHENRYDIGITALS now operates in English, Igbo, Yoruba, Hausa, and French, with an expanding roadmap of international languages built around reviewed translations.',
-    visionMorePlanned: 'planned languages ahead',
+      'BYHENRYDIGITALS operates across English, Igbo, Yoruba, Hausa, and French so local and international visitors can navigate products, services, and guides with clarity.',
     vanessaKicker: 'Vanessa — Detailed BHD FAQ',
     vanessaTitle: 'VANESSA — DETAILED BHD FAQ',
     vanessaDesc:
@@ -128,7 +124,7 @@ export const en: TranslationBundle = {
       },
       {
         title: 'Global Readiness',
-        body: 'Our architecture supports English, Igbo, Yoruba, Hausa, and French today, with a scalable roadmap for additional global languages.',
+        body: 'Our platform supports English, Igbo, Yoruba, Hausa, and French across all core pages, navigation, and educational sections.',
       },
     ],
     founderKicker: 'Leadership',

@@ -14,9 +14,9 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
 
   return (
     <footer className="border-t border-white/[0.08] bg-[#0b0b0b] text-[#a1a1aa]">
-      <div className="mx-auto max-w-[1280px] px-5 pt-14 pb-24 sm:px-6 sm:pb-20">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="space-y-3 md:col-span-5">
+      <div className="mx-auto max-w-[1280px] px-4 pt-14 pb-24 sm:px-6 sm:pb-20 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
+          <div className="space-y-3 md:col-span-2 lg:col-span-5 min-w-0">
             <a
               href="/"
               onClick={(e) => {
@@ -27,10 +27,10 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
             >
               <BrandLogo />
             </a>
-            <p className="text-sm font-medium text-[#f5f5f4]">
+            <p className="text-sm font-medium text-[#f5f5f4] max-w-md">
               {t.footer.tagline}
             </p>
-            <p className="text-xs text-[#a1a1aa]">
+            <p className="text-xs text-[#a1a1aa] max-w-md">
               {t.footer.secondaryTagline}
             </p>
             <div className="pt-2">
@@ -46,7 +46,7 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
                     rel="noopener noreferrer"
                     aria-label={`${item.name} — BYHENRYDIGITALS`}
                     title={`${item.name} (${item.handle})`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/[0.12] bg-[#141414] text-[#f5f5f4] transition-colors duration-150 hover:border-[#eab308] hover:text-[#eab308] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/[0.12] bg-[#141414] text-[#f5f5f4] transition-colors duration-150 hover:border-[#eab308] hover:text-[#eab308] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
                   >
                     <SocialPlatformIcon platform={item.id} className="h-4 w-4" />
                   </a>
@@ -58,30 +58,30 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
             </p>
           </div>
 
-          <div className="space-y-3 md:col-span-4">
+          <div className="space-y-3 lg:col-span-3 min-w-0">
             <h2 className="font-display text-xs font-semibold uppercase tracking-wider text-[#f5f5f4]">
               {t.footer.navigationTitle}
             </h2>
-            <ul className="grid grid-cols-2 gap-2 text-sm">
+            <ul className="grid grid-cols-1 min-[360px]:grid-cols-2 gap-x-4 gap-y-2 text-sm">
               {ROUTES.map((item) => (
-                <li key={item.route}>
+                <li key={item.route} className="min-w-0">
                   <a
                     href={item.route}
                     onClick={(e) => {
                       e.preventDefault();
                       onNavigate(item.route);
                     }}
-                    className="inline-block py-1 hover:text-[#eab308] transition-colors"
+                    className="inline-flex min-h-[36px] items-center py-1 hover:text-[#eab308] transition-colors"
                   >
                     {t.nav[item.navKey]}
                   </a>
                 </li>
               ))}
-              <li>
+              <li className="min-w-0">
                 <button
                   type="button"
                   onClick={onOpenVanessa}
-                  className="inline-block py-1 text-start hover:text-[#eab308] transition-colors cursor-pointer"
+                  className="inline-flex min-h-[36px] items-center py-1 text-start hover:text-[#eab308] transition-colors cursor-pointer"
                 >
                   {t.nav.faq}
                 </button>
@@ -89,7 +89,7 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
             </ul>
           </div>
 
-          <div className="space-y-3 md:col-span-3">
+          <div className="space-y-3 lg:col-span-4 min-w-0">
             <h2 className="font-display text-xs font-semibold uppercase tracking-wider text-[#f5f5f4]">
               {t.footer.officialLinksTitle}
             </h2>
@@ -123,24 +123,24 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
                   className="inline-flex items-center gap-1.5 text-[#d4d4d8] hover:text-[#eab308] transition-colors"
                 >
                   <span>{t.footer.selarLinkLabel}</span>
-                  <ArrowUpRight className="h-3.5 w-3.5" />
+                  <ArrowUpRight className="h-3.5 w-3.5 shrink-0" />
                 </a>
               </li>
-              <li className="flex flex-wrap gap-2 pt-1">
+              <li className="flex flex-wrap gap-2.5 pt-1">
                 <a
                   href={SITE_CONFIG.mailtoUrl}
-                  className="inline-flex min-h-[36px] items-center gap-1.5 rounded-lg border border-white/[0.14] bg-[#141414] px-3 py-1.5 text-xs font-medium text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors whitespace-nowrap"
+                  className="inline-flex min-h-[40px] max-w-full items-center gap-1.5 rounded-lg border border-white/[0.14] bg-[#141414] px-3.5 py-1.5 text-xs font-medium text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors"
                 >
-                  <Mail className="h-3.5 w-3.5 text-[#eab308]" />
+                  <Mail className="h-3.5 w-3.5 shrink-0 text-[#eab308]" />
                   <span>{t.footer.emailUsLabel}</span>
                 </a>
                 <a
                   href={SITE_CONFIG.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-[36px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3 py-1.5 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap"
+                  className="inline-flex min-h-[40px] max-w-full items-center gap-1.5 rounded-lg bg-[#eab308] px-3.5 py-1.5 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                 >
-                  <MessageCircle className="h-3.5 w-3.5" />
+                  <MessageCircle className="h-3.5 w-3.5 shrink-0" />
                   <span>{t.footer.whatsappUsLabel}</span>
                 </a>
               </li>

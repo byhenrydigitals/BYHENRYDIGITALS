@@ -22,9 +22,6 @@ export const fr: TranslationBundle = {
     primaryCta: 'Nos Solutions',
     languageMenuLabel: 'Langue',
     activeLanguagesLabel: 'Langues Disponibles',
-    plannedLanguagesNote:
-      'D’autres langues internationales sont planifiées pour une traduction humaine révisée.',
-    plannedBadge: 'Planifié',
     activeBadge: 'Actif',
     openMenuAria: 'Ouvrir le menu de navigation',
     closeMenuAria: 'Fermer le menu de navigation',
@@ -89,8 +86,7 @@ export const fr: TranslationBundle = {
     visionKicker: 'Vision Internationale',
     visionTitle: 'Conçu pour l’Accessibilité Mondiale',
     visionDesc:
-      'BYHENRYDIGITALS est disponible en anglais, igbo, yoruba, haoussa et français, avec une feuille de route internationale fondée sur des traductions vérifiées.',
-    visionMorePlanned: 'autres langues planifiées',
+      'BYHENRYDIGITALS est accessible en anglais, igbo, yoruba, haoussa et français afin que les visiteurs locaux et internationaux puissent consulter nos guides et services avec clarté.',
     vanessaKicker: 'Vanessa — FAQ Détaillée BHD',
     vanessaTitle: 'VANESSA — FAQ DÉTAILLÉE BHD',
     vanessaDesc:
@@ -128,7 +124,7 @@ export const fr: TranslationBundle = {
       },
       {
         title: 'Ouverture Mondiale',
-        body: 'Notre plateforme prend en charge l’anglais, l’igbo, le yoruba, le haoussa et le français, avec d’autres langues à venir.',
+        body: 'Notre plateforme prend en charge l’anglais, l’igbo, le yoruba, le haoussa et le français sur l’ensemble des pages, menus et guides.',
       },
     ],
     founderKicker: 'Direction',

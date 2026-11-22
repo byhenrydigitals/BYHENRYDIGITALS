@@ -505,9 +505,9 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'ai-09': {
-    question: 'Comment BHD distingue-t-il services actuels, outils utilisés et pistes futures ?',
+    question: 'Comment BHD distingue-t-il services actuels, outils utilisés et projets sur mesure ?',
     answer: [
-      'Actuels : développement web, landing pages, présence digitale, workflows no-code, support business et guides Selar. Outils : technologies web modernes, Selar et outils de productivité. Pistes futures (nouvelles langues, etc.) : présentées clairement comme planifiées.',
+      'Actuels : développement web, landing pages, présence digitale, workflows no-code, support business et guides Selar. Outils : technologies web modernes, Selar et outils de productivité. Les projets sur mesure sont cadrés directement selon les besoins du client.',
     ],
   },
 
@@ -515,7 +515,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Quelles langues le site BYHENRYDIGITALS prend-il actuellement en charge ?',
     answer: [
-      'Le site prend en charge cinq langues actives : anglais, igbo, yoruba, haoussa et français, avec d’autres langues internationales prévues dans la feuille de route.',
+      'Le site prend en charge cinq langues actives : anglais, igbo, yoruba, haoussa et français.',
     ],
     actionLabel: 'Explorer les Ressources',
   },

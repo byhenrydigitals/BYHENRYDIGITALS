@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
 import { PageRoute, ROUTES, SITE_CONFIG } from './config/siteConfig';
+import {
+  buildStructuredDataGraph,
+  getCanonicalUrl,
+  getConfiguredSiteUrl,
+  getLocalizedRouteSeo,
+  SEO_IMAGE_ALT,
+  SEO_IMAGE_PATH,
+} from './config/seoConfig';
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext';
 import { SiteHeader } from './components/SiteHeader';
 import { SiteFooter } from './components/SiteFooter';
@@ -12,6 +20,10 @@ import { ResourcesPage } from './pages/ResourcesPage';
 import { ContactPage } from './pages/ContactPage';
 import { VanessaFaqBubble } from './components/VanessaFaqBubble';
 
+function getBrowserPathname(): string {
+  return typeof window !== 'undefined' ? window.location.pathname : '/';
+}
+
 function isLegacyFaqPath(pathname: string): boolean {
   return pathname.replace(/\/+$/, '') === '/faq';
 }
@@ -22,13 +34,58 @@ function resolveRouteFromPath(pathname: string): PageRoute {
   return match ? match.route : '/';
 }
 
-function AppShell() {
-  const { t } = useLanguage();
-  const [currentRoute, setCurrentRoute] = useState<PageRoute>(() =>
-    resolveRouteFromPath(window.location.pathname)
+function upsertMetaTag(
+  selectorAttr: 'name' | 'property',
+  attrValue: string,
+  content: string
+) {
+  let tag = document.head.querySelector(
+    `meta[${selectorAttr}="${attrValue}"]`
+  ) as HTMLMetaElement | null;
+  if (!tag) {
+    tag = document.createElement('meta');
+    tag.setAttribute(selectorAttr, attrValue);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('content', content);
+}
+
+function upsertCanonicalLink(href: string) {
+  let link = document.head.querySelector(
+    'link[rel="canonical"]'
+  ) as HTMLLinkElement | null;
+  if (!link) {
+    link = document.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    document.head.appendChild(link);
+  }
+  link.setAttribute('href', href);
+}
+
+function upsertJsonLd(data: Record<string, unknown>) {
+  let script = document.getElementById(
+    'bhd-structured-data'
+  ) as HTMLScriptElement | null;
+  if (!script) {
+    script = document.createElement('script');
+    script.id = 'bhd-structured-data';
+    script.type = 'application/ld+json';
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(data);
+}
+
+interface AppProps {
+  initialRoute?: PageRoute;
+}
+
+function AppShell({ initialRoute }: AppProps) {
+  const { t, language } = useLanguage();
+  const [currentRoute, setCurrentRoute] = useState<PageRoute>(
+    () => initialRoute ?? resolveRouteFromPath(getBrowserPathname())
   );
   const [vanessaOpen, setVanessaOpen] = useState<boolean>(() =>
-    isLegacyFaqPath(window.location.pathname)
+    initialRoute ? false : isLegacyFaqPath(getBrowserPathname())
   );
   const [contactSubject, setContactSubject] = useState('');
 
@@ -38,18 +95,23 @@ function AppShell() {
         setContactSubject(preselectedSubject);
       }
       if (route !== currentRoute) {
-        window.history.pushState({ route }, '', route);
+        if (typeof window !== 'undefined') {
+          window.history.pushState({ route }, '', route);
+        }
         setCurrentRoute(route);
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (typeof window !== 'undefined') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     },
     [currentRoute]
   );
 
   useEffect(() => {
     const onPopState = () => {
-      setCurrentRoute(resolveRouteFromPath(window.location.pathname));
-      if (isLegacyFaqPath(window.location.pathname)) {
+      const path = getBrowserPathname();
+      setCurrentRoute(resolveRouteFromPath(path));
+      if (isLegacyFaqPath(path)) {
         setVanessaOpen(true);
       }
     };
@@ -58,9 +120,36 @@ function AppShell() {
   }, []);
 
   useEffect(() => {
-    const titleSuffix = t.routeTitles[currentRoute] || t.footer.tagline;
-    document.title = `${SITE_CONFIG.brandName} | ${titleSuffix}`;
-  }, [currentRoute, t]);
+    const { title, description } = getLocalizedRouteSeo(currentRoute, language, t);
+    const siteBaseUrl = getConfiguredSiteUrl();
+    const canonicalUrl = getCanonicalUrl(currentRoute, siteBaseUrl);
+    const ogImageUrl = `${siteBaseUrl}${SEO_IMAGE_PATH}`;
+    const robotsValue = isLegacyFaqPath(getBrowserPathname())
+      ? 'noindex, follow'
+      : 'index, follow';
+
+    document.title = title;
+    upsertMetaTag('name', 'description', description);
+    upsertMetaTag('name', 'robots', robotsValue);
+    upsertCanonicalLink(canonicalUrl);
+
+    upsertMetaTag('property', 'og:type', 'website');
+    upsertMetaTag('property', 'og:site_name', SITE_CONFIG.brandName);
+    upsertMetaTag('property', 'og:title', title);
+    upsertMetaTag('property', 'og:description', description);
+    upsertMetaTag('property', 'og:url', canonicalUrl);
+    upsertMetaTag('property', 'og:locale', language === 'fr' ? 'fr_FR' : `${language}_NG`);
+    upsertMetaTag('property', 'og:image', ogImageUrl);
+    upsertMetaTag('property', 'og:image:alt', SEO_IMAGE_ALT);
+
+    upsertMetaTag('name', 'twitter:card', 'summary_large_image');
+    upsertMetaTag('name', 'twitter:title', title);
+    upsertMetaTag('name', 'twitter:description', description);
+    upsertMetaTag('name', 'twitter:image', ogImageUrl);
+    upsertMetaTag('name', 'twitter:image:alt', SEO_IMAGE_ALT);
+
+    upsertJsonLd(buildStructuredDataGraph(currentRoute, siteBaseUrl, language));
+  }, [currentRoute, language, t]);
 
   const renderPage = () => {
     switch (currentRoute) {
@@ -94,9 +183,17 @@ function AppShell() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#0b0b0b] text-[#f5f5f4]">
+    <div className="flex min-h-screen min-w-0 flex-col bg-[#0b0b0b] text-[#f5f5f4]">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:rounded-lg focus:bg-[#eab308] focus:px-4 focus:py-2 focus:text-xs focus:font-semibold focus:text-[#0b0b0b] focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
       <SiteHeader currentRoute={currentRoute} onNavigate={navigate} />
-      <main className="flex-1">{renderPage()}</main>
+      <main id="main-content" className="min-w-0 flex-1">
+        {renderPage()}
+      </main>
       <SiteFooter
         onNavigate={navigate}
         onOpenVanessa={() => setVanessaOpen(true)}
@@ -110,10 +207,10 @@ function AppShell() {
   );
 }
 
-export default function App() {
+export default function App({ initialRoute }: AppProps = {}) {
   return (
     <LanguageProvider>
-      <AppShell />
+      <AppShell initialRoute={initialRoute} />
     </LanguageProvider>
   );
 }

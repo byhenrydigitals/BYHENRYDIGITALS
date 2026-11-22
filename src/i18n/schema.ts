@@ -39,8 +39,6 @@ export interface TranslationBundle {
     primaryCta: string;
     languageMenuLabel: string;
     activeLanguagesLabel: string;
-    plannedLanguagesNote: string;
-    plannedBadge: string;
     activeBadge: string;
     openMenuAria: string;
     closeMenuAria: string;
@@ -83,7 +81,6 @@ export interface TranslationBundle {
     visionKicker: string;
     visionTitle: string;
     visionDesc: string;
-    visionMorePlanned: string;
     vanessaKicker: string;
     vanessaTitle: string;
     vanessaDesc: string;

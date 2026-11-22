@@ -486,9 +486,9 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'ai-09': {
-    question: 'Báwo ni BHD ṣe ń ya iṣẹ́ lọ́wọ́lọ́wọ́, irinṣẹ́, àti èrò ọjọ́ iwájú sọ́tọ̀?',
+    question: 'Báwo ni BHD ṣe ń ya iṣẹ́ lọ́wọ́lọ́wọ́, irinṣẹ́, àti iṣẹ́ àdáni sọ́tọ̀?',
     answer: [
-      'Iṣẹ́ lọ́wọ́lọ́wọ́: wẹ́ẹ̀bù, landing pages, no-code, àti ìwé Selar. Èrò ọjọ́ iwájú bíi èdè tuntun jẹ́ ètò tó ń bọ̀.',
+      'Iṣẹ́ lọ́wọ́lọ́wọ́: wẹ́ẹ̀bù, landing pages, no-code, àti ìwé Selar. Irinṣẹ́: ìmọ̀-ẹ̀rọ wẹ́ẹ̀bù òde òní, Selar, àti irinṣẹ́ AI. A máa ń ṣètò iṣẹ́ àdáni gẹ́gẹ́ bí ìbéèrè oníbàárà.',
     ],
   },
 

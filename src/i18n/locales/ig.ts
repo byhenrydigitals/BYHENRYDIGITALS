@@ -21,10 +21,7 @@ export const ig: TranslationBundle = {
     contact: 'Kpọtụrụ Anyị',
     primaryCta: 'Chọpụta Ngwọta',
     languageMenuLabel: 'Asụsụ',
-    activeLanguagesLabel: 'Asụsụ Dị Ugbu A',
-    plannedLanguagesNote:
-      'Asụsụ mba ụwa ndị ọzọ dị na nhazi maka ntụgharị e nyochara nke ọma.',
-    plannedBadge: 'Na-abịa',
+    activeLanguagesLabel: 'Asụsụ A Na-akwado',
     activeBadge: 'Ọ na-arụ ọrụ',
     openMenuAria: 'Mepee menu njem',
     closeMenuAria: 'Mechie menu njem',
@@ -89,8 +86,7 @@ export const ig: TranslationBundle = {
     visionKicker: 'Ọhụụ Mba Ụwa',
     visionTitle: 'E Mere Ya Maka Ịnweta Zuru Ụwa Ọnụ',
     visionDesc:
-      'BYHENRYDIGITALS na-arụ ọrụ ugbu a n’asụsụ English, Igbo, Yorùbá, Hausa, na French, ma na-agbasawanye n’asụsụ mba ụwa ndị ọzọ site na ntụgharị e nyochara nke ọma.',
-    visionMorePlanned: 'asụsụ ndị ọzọ a na-eme atụmatụ',
+      'BYHENRYDIGITALS na-arụ ọrụ n’asụsụ English, Igbo, Yorùbá, Hausa, na French ka ndị ọbịa nwee ike ịgụ na iji weebụsaịtị a n’asụsụ ha họọrọ.',
     vanessaKicker: 'Vanessa — Ajụjụ BHD Zuru Ezu',
     vanessaTitle: 'VANESSA — AJỤJỤ BHD ZURU EZU',
     vanessaDesc:
@@ -128,7 +124,7 @@ export const ig: TranslationBundle = {
       },
       {
         title: 'Njikere Zuru Ụwa Ọnụ',
-        body: 'Sistemụ anyị na-akwado English, Igbo, Yorùbá, Hausa, na French taa, nwere atụmatụ maka asụsụ ụwa ndị ọzọ.',
+        body: 'Sistemụ anyị na-akwado English, Igbo, Yorùbá, Hausa, na French n’ibe niile, menu, na ntuziaka mmụta.',
       },
     ],
     founderKicker: 'Nduzi',

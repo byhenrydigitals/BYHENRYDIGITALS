@@ -10,44 +10,50 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
   const { t } = useLanguage();
 
   return (
-    <div className="mx-auto max-w-[1280px] px-5 py-12 sm:px-6 sm:py-16">
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start">
-        <div className="space-y-5 lg:col-span-7">
+    <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start lg:gap-12">
+        <div className="min-w-0 space-y-5 lg:col-span-7">
           <p className="text-xs font-medium text-[#eab308]">
             {t.affiliate.kicker}
           </p>
           <h1 className="font-display text-3xl font-semibold tracking-tight text-balance text-[#f5f5f4] sm:text-4xl">
             {t.affiliate.title}
           </h1>
-          <p className="text-base leading-relaxed text-[#a1a1aa]">
+          <p className="max-w-2xl text-base leading-relaxed text-[#a1a1aa]">
             {t.affiliate.intro}
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button
-              type="button"
-              onClick={() =>
-                onNavigate('/contact', t.affiliate.applyNowSubject)
-              }
-              className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap cursor-pointer"
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                  e.preventDefault();
+                  onNavigate('/contact', t.affiliate.applyNowSubject);
+                }
+              }}
+              className="inline-flex min-h-[44px] max-w-full items-center justify-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-center text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors min-[380px]:whitespace-nowrap"
             >
               <span>{t.affiliate.applyNowCta}</span>
-              <ArrowRight className="h-4 w-4" />
-            </button>
-            <button
-              type="button"
-              onClick={() =>
-                onNavigate('/contact', t.affiliate.askQuestionSubject)
-              }
-              className="inline-flex min-h-[44px] items-center rounded-lg border border-white/[0.14] px-5 py-2.5 text-sm font-medium text-[#f5f5f4] hover:bg-white/[0.06] transition-colors cursor-pointer"
+              <ArrowRight className="h-4 w-4 shrink-0" />
+            </a>
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                  e.preventDefault();
+                  onNavigate('/contact', t.affiliate.askQuestionSubject);
+                }
+              }}
+              className="inline-flex min-h-[44px] max-w-full items-center justify-center rounded-lg border border-white/[0.14] px-5 py-2.5 text-center text-sm font-medium text-[#f5f5f4] hover:bg-white/[0.06] transition-colors"
             >
               <span>{t.affiliate.askQuestionCta}</span>
-            </button>
+            </a>
           </div>
         </div>
 
         {/* Verified Programme Facts Table */}
-        <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-6 sm:p-7 lg:col-span-5">
+        <div className="min-w-0 rounded-2xl border border-white/[0.1] bg-[#141414] p-6 sm:p-7 lg:col-span-5">
           <h2 className="font-display text-lg font-semibold text-[#f5f5f4] pb-4 border-b border-white/[0.08]">
             {t.affiliate.factsTitle}
           </h2>
@@ -55,10 +61,10 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
             {t.affiliate.facts.map((fact) => (
               <div
                 key={fact.label}
-                className="flex items-baseline justify-between gap-4 py-3.5"
+                className="flex flex-col gap-1 py-3.5 min-[360px]:flex-row min-[360px]:items-baseline min-[360px]:justify-between min-[360px]:gap-4"
               >
                 <dt className="text-[#a1a1aa]">{fact.label}</dt>
-                <dd className="text-end font-medium text-[#f5f5f4]">
+                <dd className="font-medium text-[#f5f5f4] min-[360px]:text-end">
                   {fact.value}
                 </dd>
               </div>
@@ -72,11 +78,11 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
         <h2 className="font-display text-2xl font-semibold tracking-tight text-[#f5f5f4]">
           {t.affiliate.howItWorksTitle}
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8">
           {t.affiliate.steps.map((step) => (
             <div
               key={step.num}
-              className="rounded-2xl border border-white/[0.09] bg-[#141414] p-6 space-y-3"
+              className="min-w-0 rounded-2xl border border-white/[0.09] bg-[#141414] p-6 space-y-3"
             >
               <div className="font-mono-tabular text-sm font-semibold text-[#eab308]">
                 {step.num}
@@ -93,8 +99,8 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
       </div>
 
       {/* Who Can Apply & Commissions */}
-      <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div className="rounded-2xl border border-white/[0.09] bg-[#101010] p-7 space-y-4">
+      <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+        <div className="min-w-0 rounded-2xl border border-white/[0.09] bg-[#101010] p-6 sm:p-7 space-y-4">
           <h2 className="font-display text-xl font-semibold text-[#f5f5f4]">
             {t.affiliate.whoCanApplyTitle}
           </h2>
@@ -108,7 +114,7 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
           </ul>
         </div>
 
-        <div className="rounded-2xl border border-white/[0.09] bg-[#101010] p-7 space-y-4">
+        <div className="min-w-0 rounded-2xl border border-white/[0.09] bg-[#101010] p-6 sm:p-7 space-y-4">
           <h2 className="font-display text-xl font-semibold text-[#f5f5f4]">
             {t.affiliate.commissionsTitle}
           </h2>
@@ -119,7 +125,7 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
       </div>
 
       {/* Terms & Transparency Disclosure */}
-      <div className="mt-14 rounded-2xl border border-[#e4e4e7] bg-white p-7 text-[#0b0b0b] sm:p-8 space-y-5">
+      <div className="mt-14 rounded-2xl border border-[#e4e4e7] bg-white p-6 text-[#0b0b0b] sm:p-8 space-y-5">
         <h2 className="font-display text-xl font-semibold text-[#0b0b0b]">
           {t.affiliate.termsTitle}
         </h2>
@@ -138,30 +144,35 @@ export function AffiliatePage({ onNavigate }: AffiliatePageProps) {
         </div>
 
         <div className="flex flex-wrap items-center gap-3 pt-2">
-          <button
-            type="button"
-            onClick={() => onNavigate('/contact', t.affiliate.applyNowSubject)}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#0b0b0b] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#27272a] transition-colors whitespace-nowrap cursor-pointer"
+          <a
+            href="/contact"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                e.preventDefault();
+                onNavigate('/contact', t.affiliate.applyNowSubject);
+              }
+            }}
+            className="inline-flex min-h-[44px] max-w-full items-center justify-center gap-2 rounded-lg bg-[#0b0b0b] px-5 py-2.5 text-center text-sm font-semibold text-white hover:bg-[#27272a] transition-colors min-[380px]:whitespace-nowrap"
           >
             <span>{t.affiliate.applyNowCta}</span>
-            <ArrowRight className="h-4 w-4 text-[#eab308]" />
-          </button>
+            <ArrowRight className="h-4 w-4 shrink-0 text-[#eab308]" />
+          </a>
           <a
             href={SITE_CONFIG.mailtoUrl}
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-[#d4d4d8] bg-white px-4 py-2.5 text-sm font-medium text-[#0b0b0b] hover:bg-[#f4f4f5] transition-colors whitespace-nowrap"
+            className="inline-flex min-h-[44px] max-w-full items-center justify-center gap-2 rounded-lg border border-[#d4d4d8] bg-white px-4 py-2.5 text-center text-sm font-medium text-[#0b0b0b] hover:bg-[#f4f4f5] transition-colors"
           >
-            <Mail className="h-4 w-4 text-[#a16207]" />
+            <Mail className="h-4 w-4 shrink-0 text-[#a16207]" />
             <span>{t.contact.emailUsButton}</span>
           </a>
           <a
             href={SITE_CONFIG.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#eab308] px-4 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap"
+            className="inline-flex min-h-[44px] max-w-full items-center justify-center gap-2 rounded-lg bg-[#eab308] px-4 py-2.5 text-center text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
           >
-            <MessageCircle className="h-4 w-4" />
+            <MessageCircle className="h-4 w-4 shrink-0" />
             <span>{t.contact.whatsappUsButton}</span>
-            <ArrowUpRight className="h-4 w-4" />
+            <ArrowUpRight className="h-4 w-4 shrink-0" />
           </a>
         </div>
       </div>

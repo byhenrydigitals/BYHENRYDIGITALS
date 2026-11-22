@@ -490,9 +490,9 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'ai-09': {
-    question: 'Kedu ka BHD si ekewapụta ọrụ dị ugbu a, ngwaọrụ, na echiche ọdịnihu?',
+    question: 'Kedu ka BHD si ekewapụta ọrụ dị ugbu a, ngwaọrụ, na nhọrọ ọrụ pụrụ iche?',
     answer: [
-      'Ọrụ ugbu a: weebụsaịtị, landing pages, no-code, na ntuziaka Selar. Echiche ọdịnihu dị ka ịgbakwunye asụsụ ndị ọzọ ka edobere dị ka atụmatụ n’ihu.',
+      'Ọrụ ugbu a: weebụsaịtị, landing pages, no-code, na ntuziaka Selar. Ngwaọrụ: teknụzụ weebụ ọhụrụ, Selar, na ngwaọrụ AI. A na-ahazi ọrụ pụrụ iche dabere na mkpa onye ahịa.',
     ],
   },
 

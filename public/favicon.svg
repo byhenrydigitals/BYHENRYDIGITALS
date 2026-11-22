@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BYHENRYDIGITALS">
+  <rect width="64" height="64" rx="14" fill="#0b0b0b" />
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#eab308" stroke-width="2" stroke-opacity="0.7" />
+  <text x="32" y="39" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5" fill="#eab308">BHD</text>
+</svg>

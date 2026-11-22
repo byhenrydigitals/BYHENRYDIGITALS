@@ -29,7 +29,7 @@ export function ResourcesPage() {
     : null;
 
   return (
-    <div className="mx-auto max-w-[1280px] px-5 py-12 sm:px-6 sm:py-16">
+    <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="max-w-3xl space-y-4">
         <p className="text-xs font-medium text-[#eab308]">
           {t.resources.kicker}
@@ -59,7 +59,7 @@ export function ResourcesPage() {
           role="tab"
           aria-selected={selectedTopic === 'all'}
           onClick={() => setSelectedTopic('all')}
-          className={`min-h-[40px] rounded-lg px-3.5 py-2 text-xs font-medium transition-colors cursor-pointer whitespace-nowrap ${
+          className={`min-h-[44px] max-w-full rounded-lg px-3.5 py-2 text-start sm:text-center text-xs font-medium transition-colors cursor-pointer ${
             selectedTopic === 'all'
               ? 'bg-[#eab308] text-[#0b0b0b] font-semibold'
               : 'border border-white/[0.1] bg-[#141414] text-[#a1a1aa] hover:text-[#f5f5f4]'
@@ -77,7 +77,7 @@ export function ResourcesPage() {
               role="tab"
               aria-selected={active}
               onClick={() => setSelectedTopic(topicId)}
-              className={`min-h-[40px] rounded-lg px-3.5 py-2 text-xs font-medium transition-colors cursor-pointer whitespace-nowrap ${
+              className={`min-h-[44px] max-w-full rounded-lg px-3.5 py-2 text-start sm:text-center text-xs font-medium transition-colors cursor-pointer ${
                 active
                   ? 'bg-[#eab308] text-[#0b0b0b] font-semibold'
                   : 'border border-white/[0.1] bg-[#141414] text-[#a1a1aa] hover:text-[#f5f5f4]'
@@ -91,7 +91,7 @@ export function ResourcesPage() {
 
       {/* Articles Grid */}
       {visibleArticles.length === 0 ? (
-        <div className="mt-10 rounded-2xl border border-white/[0.08] bg-[#141414] p-10 text-center space-y-2">
+        <div className="mt-10 rounded-2xl border border-white/[0.08] bg-[#141414] p-8 sm:p-10 text-center space-y-2">
           <p className="font-display text-base font-semibold text-[#f5f5f4]">
             {t.resources.emptyTopicTitle}
             {selectedTopic !== 'all' ? ` — ${t.resources.topics[selectedTopic]}` : ''}
@@ -99,13 +99,13 @@ export function ResourcesPage() {
           <p className="text-xs text-[#a1a1aa]">{t.resources.emptyTopicBody}</p>
         </div>
       ) : (
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
           {visibleArticles.map((article) => {
             const articleText = t.resources.articles[article.id];
             return (
               <article
                 key={article.id}
-                className="flex flex-col overflow-hidden rounded-2xl border border-white/[0.09] bg-[#141414]"
+                className="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-white/[0.09] bg-[#141414]"
               >
                 <div className="aspect-[16/9] w-full overflow-hidden border-b border-white/[0.08]">
                   <ResilientImage
@@ -138,10 +138,10 @@ export function ResourcesPage() {
                     <button
                       type="button"
                       onClick={() => setActiveArticle(article)}
-                      className="inline-flex min-h-[40px] items-center gap-1.5 text-xs font-semibold text-[#eab308] hover:underline cursor-pointer"
+                      className="inline-flex min-h-[44px] items-center gap-1.5 text-xs font-semibold text-[#eab308] hover:underline cursor-pointer"
                     >
                       <span>{t.resources.readArticle}</span>
-                      <ArrowRight className="h-3.5 w-3.5" />
+                      <ArrowRight className="h-3.5 w-3.5 shrink-0" />
                     </button>
                   </div>
                 </div>
@@ -154,18 +154,18 @@ export function ResourcesPage() {
       {/* Article Reader Modal */}
       {activeArticle && activeArticleText && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 sm:p-6 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3 sm:p-6 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-labelledby="article-reader-title"
           onClick={() => setActiveArticle(null)}
         >
           <div
-            className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl border border-white/[0.12] bg-[#141414] text-[#f5f5f4] shadow-2xl"
+            className="max-h-[90dvh] w-full max-w-2xl overflow-y-auto rounded-2xl border border-white/[0.12] bg-[#141414] text-[#f5f5f4] shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between border-b border-white/[0.08] px-6 py-4">
-              <div className="text-xs text-[#a1a1aa]">
+            <div className="flex items-center justify-between gap-3 border-b border-white/[0.08] px-4 py-4 sm:px-6">
+              <div className="min-w-0 text-xs text-[#a1a1aa] truncate">
                 <span className="text-[#eab308]">
                   {t.resources.topics[activeArticle.topicId]}
                 </span>
@@ -176,16 +176,16 @@ export function ResourcesPage() {
                 type="button"
                 onClick={() => setActiveArticle(null)}
                 aria-label={t.resources.closeArticle}
-                className="inline-flex min-h-[38px] min-w-[38px] items-center justify-center rounded-lg border border-white/[0.12] text-[#d4d4d8] hover:bg-white/[0.06] cursor-pointer"
+                className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-lg border border-white/[0.12] text-[#d4d4d8] hover:bg-white/[0.06] cursor-pointer"
               >
                 <X className="h-4 w-4" />
               </button>
             </div>
 
-            <div className="p-6 sm:p-8 space-y-5">
+            <div className="p-5 sm:p-8 space-y-5">
               <h2
                 id="article-reader-title"
-                className="font-display text-2xl font-semibold text-[#f5f5f4]"
+                className="font-display text-xl sm:text-2xl font-semibold text-[#f5f5f4]"
               >
                 {activeArticleText.title}
               </h2>

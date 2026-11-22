@@ -62,7 +62,7 @@ export const FAQ_RECORDS_META: FaqRecordMeta[] = [
     status: 'published',
     verified: true,
     lastUpdated: '2026-11',
-    canonicalKeywords: ['vision', 'global ecosystem', 'international', 'future', 'roadmap'],
+    canonicalKeywords: ['vision', 'global ecosystem', 'international', 'cross-border'],
     relatedIds: ['about-07', 'lang-01', 'about-04'],
   },
   {
@@ -718,7 +718,7 @@ export const FAQ_RECORDS_META: FaqRecordMeta[] = [
     status: 'published',
     verified: true,
     lastUpdated: '2026-11',
-    canonicalKeywords: ['current services vs tools vs future', 'roadmap', 'capabilities', 'honest scope'],
+    canonicalKeywords: ['current services vs tools', 'honest scope', 'verified capabilities', 'offered today'],
     relatedIds: ['ai-06', 'srv-01', 'van-02'],
   },
 

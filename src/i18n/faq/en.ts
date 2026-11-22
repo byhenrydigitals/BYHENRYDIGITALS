@@ -512,9 +512,9 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'ai-09': {
-    question: 'How does BHD distinguish current services, everyday tools, and future ideas?',
+    question: 'How does BHD distinguish current services, everyday tools, and custom project options?',
     answer: [
-      'Currently offered: functional web development, landing pages, digital presence, no-code workflows, digital business support, and verified Selar guides. Tools used/taught: modern web frameworks, Selar, and practical digital/AI productivity tools. Future ideas (such as expanding into additional international languages) are clearly marked as planned rather than active today.',
+      'Currently offered: functional web development, landing pages, digital presence, no-code workflows, digital business support, and verified Selar guides. Tools used/taught: modern web frameworks, Selar, and practical digital/AI productivity tools. Custom client solutions are scoped directly based on verified project requirements.',
     ],
   },
 
@@ -522,8 +522,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'lang-01': {
     question: 'Which languages does the BYHENRYDIGITALS website currently support?',
     answer: [
-      'The website currently supports full multilingual switching across five active languages: English, Igbo, Yorùbá, Hausa, and French.',
-      'Additional international languages are listed in the language menu roadmap for future reviewed translations.',
+      'The website supports full multilingual switching across five active languages: English, Igbo, Yorùbá, Hausa, and French.',
     ],
     actionLabel: 'Explore Learning Resources',
   },

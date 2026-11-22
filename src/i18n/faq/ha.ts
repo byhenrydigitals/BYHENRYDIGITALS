@@ -481,9 +481,9 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'ai-09': {
-    question: 'Ta yaya BHD ke raba ayyukan yanzu, kayan aiki, da shirin gaba?',
+    question: 'Ta yaya BHD ke raba ayyukan yanzu, kayan aiki, da zaɓuɓɓukan aiki na musamman?',
     answer: [
-      'Ayyukan yanzu: shafuka, no-code, da jagororin Selar. Shirin gaba kamar ƙara harsuna an bayyana shi a fili a matsayin shiri.',
+      'Ayyukan yanzu: shafuka, no-code, da jagororin Selar. Kayan aiki: fasahar yanar gizo, Selar, da kayan aikin AI. Ana tsara ayyuka na musamman bisa buƙatar abokin ciniki.',
     ],
   },
 

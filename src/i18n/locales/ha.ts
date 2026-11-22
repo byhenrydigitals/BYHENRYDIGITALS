@@ -22,9 +22,6 @@ export const ha: TranslationBundle = {
     primaryCta: 'Binciki Hanyoyinmu',
     languageMenuLabel: 'Harshe',
     activeLanguagesLabel: 'Harsunan da Suke Aiki',
-    plannedLanguagesNote:
-      'Sauran harsunan duniya suna cikin shiri don fassara mai inganci.',
-    plannedBadge: 'A Shirye',
     activeBadge: 'Yana Aiki',
     openMenuAria: 'Buɗe menu na kewayawa',
     closeMenuAria: 'Rufe menu na kewayawa',
@@ -89,8 +86,7 @@ export const ha: TranslationBundle = {
     visionKicker: 'Hangen Nesa na Duniya',
     visionTitle: 'An Tsara Don Samun Dama a Duniya',
     visionDesc:
-      'BYHENRYDIGITALS yanzu yana aiki da Turanci, Igbo, Yorùbá, Hausa da Faransanci, tare da shirin faɗaɗawa zuwa ƙarin harsunan duniya ta hanyar ingantacciyar fassara.',
-    visionMorePlanned: 'ƙarin harsuna a cikin shiri',
+      'BYHENRYDIGITALS yana aiki da Turanci, Igbo, Yorùbá, Hausa da Faransanci domin maziyarta su binciki kayayyaki, ayyuka da jagorori cikin sauƙi.',
     vanessaKicker: 'Vanessa — Cikakken FAQ na BHD',
     vanessaTitle: 'VANESSA — CIKAKKEN FAQ NA BHD',
     vanessaDesc:
@@ -128,7 +124,7 @@ export const ha: TranslationBundle = {
       },
       {
         title: 'Shirin Duniya',
-        body: 'Tsarinmu yana goyan bayan Turanci, Igbo, Yorùbá, Hausa da Faransanci a yau, tare da tsarin ƙarin harsuna.',
+        body: 'Tsarinmu yana goyan bayan Turanci, Igbo, Yorùbá, Hausa da Faransanci a dukan shafuka da sassan ilimi.',
       },
     ],
     founderKicker: 'Jagoranci',

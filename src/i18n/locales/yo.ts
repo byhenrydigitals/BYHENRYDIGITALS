@@ -22,9 +22,6 @@ export const yo: TranslationBundle = {
     primaryCta: 'Ṣàwárí Àwọn Ìpinnu',
     languageMenuLabel: 'Èdè',
     activeLanguagesLabel: 'Àwọn Èdè Tó Wà Lórí Ìkànnì',
-    plannedLanguagesNote:
-      'Àwọn èdè àgbáyé mìíràn wà lórí ètò fún ìtumọ̀ tí a ṣe àyẹ̀wò rẹ̀ dáadáa.',
-    plannedBadge: 'Lórí Ètò',
     activeBadge: 'Ń Ṣiṣẹ́',
     openMenuAria: 'Ṣí àkójọ ìtọ́sọ́nà',
     closeMenuAria: 'Pa àkójọ ìtọ́sọ́nà',
@@ -89,8 +86,7 @@ export const yo: TranslationBundle = {
     visionKicker: 'Ìran Àgbáyé',
     visionTitle: 'A Ṣe É Fún Àǹfààní Káríayé',
     visionDesc:
-      'BYHENRYDIGITALS ti ń ṣiṣẹ́ báyìí ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa àti Faransé, pẹ̀lú ìtẹ̀síwájú sí àwọn èdè àgbáyé mìíràn.',
-    visionMorePlanned: 'àwọn èdè mìíràn lórí ètò',
+      'BYHENRYDIGITALS ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa àti Faransé kí àwọn àlejò láti ilẹ̀ bílẹ̀ àti àgbáyé lè rí ìtọ́sọ́nà lọ́nà tó yéni.',
     vanessaKicker: 'Vanessa — Ìbéèrè BHD Kíkún',
     vanessaTitle: 'VANESSA — ÌBÉÈRÈ BHD KÍKÚN',
     vanessaDesc:
@@ -128,7 +124,7 @@ export const yo: TranslationBundle = {
       },
       {
         title: 'Ìmúrasílẹ̀ Àgbáyé',
-        body: 'Ètò wa ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa àti Faransé lónìí, pẹ̀lú ètò ìfẹ̀sí sí àwọn èdè mìíràn.',
+        body: 'Ètò wa ń ṣiṣẹ́ ní Èdè Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa àti Faransé káàkiri gbogbo ojú-ewé àti ìtọ́sọ́nà.',
       },
     ],
     founderKicker: 'Ìdarí',

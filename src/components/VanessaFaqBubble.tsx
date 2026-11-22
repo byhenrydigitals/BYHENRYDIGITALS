@@ -246,20 +246,25 @@ export function VanessaFaqBubble({
                     href={entry.actionExternalUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex min-h-[38px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3.5 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap"
+                    className="inline-flex min-h-[40px] max-w-full items-center gap-1.5 rounded-lg bg-[#eab308] px-3.5 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                   >
                     <span>{entry.actionLabel}</span>
-                    <ArrowUpRight className="h-3.5 w-3.5" />
+                    <ArrowUpRight className="h-3.5 w-3.5 shrink-0" />
                   </a>
                 ) : entry.actionRoute ? (
-                  <button
-                    type="button"
-                    onClick={() => handleNavigateAndClose(entry.actionRoute!)}
-                    className="inline-flex min-h-[38px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3.5 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap cursor-pointer"
+                  <a
+                    href={entry.actionRoute}
+                    onClick={(e) => {
+                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                        e.preventDefault();
+                        handleNavigateAndClose(entry.actionRoute!);
+                      }
+                    }}
+                    className="inline-flex min-h-[40px] max-w-full items-center gap-1.5 rounded-lg bg-[#eab308] px-3.5 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                   >
                     <span>{entry.actionLabel}</span>
-                    <ArrowRight className="h-3.5 w-3.5" />
-                  </button>
+                    <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                  </a>
                 ) : null}
               </div>
             )}
@@ -362,7 +367,7 @@ export function VanessaFaqBubble({
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={faq.searchPlaceholder}
                   aria-label={faq.searchAriaLabel}
-                  className="min-h-[46px] w-full rounded-xl border border-white/[0.16] bg-[#141414] ps-10 pe-20 text-sm text-[#f5f5f4] placeholder:text-[#71717a] focus:border-[#eab308] focus:outline-none"
+                  className="min-h-[46px] min-w-0 w-full rounded-xl border border-white/[0.16] bg-[#141414] ps-10 pe-24 text-sm text-[#f5f5f4] placeholder:text-[#71717a] focus:border-[#eab308] focus:outline-none"
                 />
                 {query.trim().length > 0 && (
                   <button
@@ -554,9 +559,9 @@ export function VanessaFaqBubble({
                   <a
                     href={SITE_CONFIG.mailtoUrl}
                     aria-label={`${faq.emailButtonLabel} (${SITE_CONFIG.contactEmail})`}
-                    className="inline-flex min-h-[38px] items-center gap-1.5 rounded-lg border border-white/[0.16] bg-[#0b0b0b] px-3 py-1.5 text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors whitespace-nowrap"
+                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg border border-white/[0.16] bg-[#0b0b0b] px-3 py-1.5 text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors"
                   >
-                    <Mail className="h-3.5 w-3.5 text-[#eab308]" />
+                    <Mail className="h-3.5 w-3.5 shrink-0 text-[#eab308]" />
                     <span>{faq.emailButtonLabel}</span>
                   </a>
 
@@ -565,20 +570,25 @@ export function VanessaFaqBubble({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${faq.whatsappButtonLabel} (${SITE_CONFIG.whatsappNumberDisplay})`}
-                    className="inline-flex min-h-[38px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3 py-1.5 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors whitespace-nowrap"
+                    className="inline-flex min-h-[40px] items-center gap-1.5 rounded-lg bg-[#eab308] px-3 py-1.5 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                   >
-                    <MessageCircle className="h-3.5 w-3.5" />
+                    <MessageCircle className="h-3.5 w-3.5 shrink-0" />
                     <span>{faq.whatsappButtonLabel}</span>
-                    <ArrowUpRight className="h-3 w-3" />
+                    <ArrowUpRight className="h-3 w-3 shrink-0" />
                   </a>
 
-                  <button
-                    type="button"
-                    onClick={() => handleNavigateAndClose('/contact')}
-                    className="inline-flex min-h-[38px] items-center gap-1 rounded-lg border border-white/[0.12] px-2.5 py-1.5 text-[11px] font-medium text-[#d4d4d8] hover:border-[#eab308]/50 hover:text-[#eab308] transition-colors whitespace-nowrap cursor-pointer"
+                  <a
+                    href="/contact"
+                    onClick={(e) => {
+                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                        e.preventDefault();
+                        handleNavigateAndClose('/contact');
+                      }
+                    }}
+                    className="inline-flex min-h-[40px] items-center gap-1 rounded-lg border border-white/[0.12] px-2.5 py-1.5 text-[11px] font-medium text-[#d4d4d8] hover:border-[#eab308]/50 hover:text-[#eab308] transition-colors"
                   >
                     <span>{faq.contactPageButtonLabel}</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </footer>

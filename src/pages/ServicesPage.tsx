@@ -12,21 +12,21 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
   const { t } = useLanguage();
 
   return (
-    <div className="mx-auto max-w-[1280px] px-5 py-12 sm:px-6 sm:py-16">
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
-        <div className="space-y-4 lg:col-span-7">
+    <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
+        <div className="min-w-0 space-y-4 lg:col-span-7">
           <p className="text-xs font-medium text-[#eab308]">
             {t.services.kicker}
           </p>
           <h1 className="font-display text-3xl font-semibold tracking-tight text-balance text-[#f5f5f4] sm:text-4xl">
             {t.services.title}
           </h1>
-          <p className="text-base leading-relaxed text-[#a1a1aa]">
+          <p className="max-w-2xl text-base leading-relaxed text-[#a1a1aa]">
             {t.services.intro}
           </p>
         </div>
 
-        <div className="rounded-2xl border border-white/[0.1] bg-[#141414] p-6 lg:col-span-5">
+        <div className="min-w-0 rounded-2xl border border-white/[0.1] bg-[#141414] p-6 lg:col-span-5">
           <h2 className="font-display text-base font-semibold text-[#eab308]">
             {t.services.philosophyTitle}
           </h2>
@@ -37,7 +37,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       </div>
 
       {/* Services Cards */}
-      <div className="mt-12 space-y-6">
+      <div className="mt-12 space-y-6 lg:space-y-8">
         {BHD_SERVICES.map((service) => {
           const serviceText = t.services.items[service.id];
           return (
@@ -45,18 +45,18 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               key={service.id}
               className="grid grid-cols-1 overflow-hidden rounded-2xl border border-white/[0.09] bg-[#141414] lg:grid-cols-12"
             >
-              <div className="lg:col-span-4 border-b border-white/[0.08] lg:border-b-0 lg:border-e">
+              <div className="min-w-0 border-b border-white/[0.08] lg:col-span-5 lg:border-b-0 lg:border-e">
                 <ResilientImage
                   src={service.imageSrc}
                   alt={service.imageAlt}
                   fallbackTitle={serviceText.title}
-                  className="h-full w-full object-cover aspect-[16/10] lg:aspect-auto"
+                  className="h-full w-full object-cover aspect-[16/10] lg:aspect-auto lg:min-h-[300px]"
                 />
               </div>
 
-              <div className="flex flex-col justify-between p-6 sm:p-8 lg:col-span-8">
+              <div className="flex min-w-0 flex-col justify-between p-6 sm:p-8 lg:col-span-7">
                 <div className="space-y-4">
-                  <div className="flex items-center gap-2 text-xs text-[#a1a1aa]">
+                  <div className="flex flex-wrap items-center gap-2 text-xs text-[#a1a1aa]">
                     <span className="font-mono-tabular text-[#eab308]">
                       {service.index}
                     </span>
@@ -93,14 +93,19 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                   <span className="text-xs text-[#71717a]">
                     {t.services.customScopedLabel}
                   </span>
-                  <button
-                    type="button"
-                    onClick={() => onNavigate('/contact', serviceText.title)}
-                    className="inline-flex min-h-[42px] items-center gap-2 rounded-lg bg-[#eab308] px-4 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors cursor-pointer"
+                  <a
+                    href="/contact"
+                    onClick={(e) => {
+                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                        e.preventDefault();
+                        onNavigate('/contact', serviceText.title);
+                      }
+                    }}
+                    className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#eab308] px-4 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                   >
                     <span>{t.services.discussCta}</span>
-                    <ArrowRight className="h-3.5 w-3.5" />
-                  </button>
+                    <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                  </a>
                 </div>
               </div>
             </article>
