@@ -9,6 +9,7 @@ export const ha: TranslationBundle = {
     '/services': 'Ayyukan Dijital',
     '/resources': 'Albarkatu da Labarai',
     '/contact': 'Tuntuɓi BHD',
+    '/faq': 'Vanessa FAQ & Cibiyar Bayanai',
   },
   nav: {
     home: 'Gida',

@@ -18,7 +18,9 @@ import { AffiliatePage } from './pages/AffiliatePage';
 import { ServicesPage } from './pages/ServicesPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { ContactPage } from './pages/ContactPage';
+import { VanessaFaqPage } from './pages/VanessaFaqPage';
 import { VanessaFaqBubble } from './components/VanessaFaqBubble';
+
 
 function getBrowserPathname(): string {
   return typeof window !== 'undefined' ? window.location.pathname : '/';
@@ -84,9 +86,6 @@ function AppShell({ initialRoute }: AppProps) {
   const [currentRoute, setCurrentRoute] = useState<PageRoute>(
     () => initialRoute ?? resolveRouteFromPath(getBrowserPathname())
   );
-  const [vanessaOpen, setVanessaOpen] = useState<boolean>(() =>
-    initialRoute ? false : isLegacyFaqPath(getBrowserPathname())
-  );
   const [contactSubject, setContactSubject] = useState('');
 
   const navigate = useCallback(
@@ -111,9 +110,6 @@ function AppShell({ initialRoute }: AppProps) {
     const onPopState = () => {
       const path = getBrowserPathname();
       setCurrentRoute(resolveRouteFromPath(path));
-      if (isLegacyFaqPath(path)) {
-        setVanessaOpen(true);
-      }
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
@@ -158,12 +154,7 @@ function AppShell({ initialRoute }: AppProps) {
   const renderPage = () => {
     switch (currentRoute) {
       case '/':
-        return (
-          <HomePage
-            onNavigate={navigate}
-            onOpenVanessa={() => setVanessaOpen(true)}
-          />
-        );
+        return <HomePage onNavigate={navigate} />;
       case '/about':
         return <AboutPage onNavigate={navigate} />;
       case '/products':
@@ -176,13 +167,10 @@ function AppShell({ initialRoute }: AppProps) {
         return <ResourcesPage />;
       case '/contact':
         return <ContactPage initialSubject={contactSubject} />;
+      case '/faq':
+        return <VanessaFaqPage onNavigate={navigate} />;
       default:
-        return (
-          <HomePage
-            onNavigate={navigate}
-            onOpenVanessa={() => setVanessaOpen(true)}
-          />
-        );
+        return <HomePage onNavigate={navigate} />;
     }
   };
 
@@ -198,15 +186,8 @@ function AppShell({ initialRoute }: AppProps) {
       <main id="main-content" className="min-w-0 flex-1">
         {renderPage()}
       </main>
-      <SiteFooter
-        onNavigate={navigate}
-        onOpenVanessa={() => setVanessaOpen(true)}
-      />
-      <VanessaFaqBubble
-        isOpen={vanessaOpen}
-        onToggle={setVanessaOpen}
-        onNavigate={navigate}
-      />
+      <SiteFooter onNavigate={navigate} />
+      <VanessaFaqBubble onNavigate={navigate} />
     </div>
   );
 }

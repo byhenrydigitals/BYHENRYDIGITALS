@@ -101,6 +101,14 @@ export const ROUTE_SEO: Record<PageRoute, RouteSeoMeta> = {
     priority: '0.7',
     schemaType: 'ContactPage',
   },
+  '/faq': {
+    title: 'Vanessa FAQ & Information Centre | BYHENRYDIGITALS',
+    description:
+      'Search over 100 verified FAQ entries across 10 categories about BYHENRYDIGITALS products, 35% affiliate programme, services, and support.',
+    changefreq: 'weekly',
+    priority: '0.9',
+    schemaType: 'WebPage',
+  },
 };
 
 function trimMetaDescription(text: string, maxLen = 158): string {
@@ -135,6 +143,7 @@ export function getLocalizedRouteSeo(
     '/services': bundle.services.intro,
     '/resources': bundle.resources.intro,
     '/contact': bundle.contact.intro,
+    '/faq': bundle.home.vanessaDesc,
   };
 
   return {

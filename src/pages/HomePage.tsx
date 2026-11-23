@@ -7,10 +7,9 @@ import { SocialConnectSection } from '../components/SocialConnectSection';
 
 interface HomePageProps {
   onNavigate: (route: PageRoute, preselectedSubject?: string) => void;
-  onOpenVanessa: () => void;
 }
 
-export function HomePage({ onNavigate, onOpenVanessa }: HomePageProps) {
+export function HomePage({ onNavigate }: HomePageProps) {
   const { t, registry } = useLanguage();
 
   return (
@@ -459,14 +458,15 @@ export function HomePage({ onNavigate, onOpenVanessa }: HomePageProps) {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-3 pt-5 border-t border-white/[0.08]">
-                <button
-                  type="button"
-                  onClick={onOpenVanessa}
-                  className="inline-flex min-h-[44px] max-w-full items-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors cursor-pointer"
+                <a
+                  href={SITE_CONFIG.vanessaSiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] max-w-full items-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
                 >
                   <span>{t.home.openVanessaFaq}</span>
-                  <ArrowRight className="h-4 w-4 shrink-0" />
-                </button>
+                  <ArrowUpRight className="h-4 w-4 shrink-0" />
+                </a>
               </div>
             </div>
           </div>

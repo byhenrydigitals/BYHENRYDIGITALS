@@ -9,6 +9,7 @@ export const yo: TranslationBundle = {
     '/services': 'Àwọn Iṣẹ́ Dígítà',
     '/resources': 'Àwọn Ohun Èlò àti Búlọ́ọ̀gì',
     '/contact': 'Kàn Sí BHD',
+    '/faq': 'Vanessa FAQ & Ile-iṣẹ Alaye',
   },
   nav: {
     home: 'Ilé',

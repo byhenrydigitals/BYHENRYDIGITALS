@@ -5,7 +5,8 @@ export type PageRoute =
   | '/affiliate-programme'
   | '/services'
   | '/resources'
-  | '/contact';
+  | '/contact'
+  | '/faq';
 
 const WHATSAPP_PREFILL_TEXT =
   'Hello BYHENRYDIGITALS, I visited your website and would like to make an enquiry.';
@@ -27,6 +28,7 @@ export const SITE_CONFIG = {
   affiliateCommissionRate: '35%',
   affiliateStarterKitPrice: '₦8,000',
   founderName: 'Henry (Coach Henry)',
+  vanessaSiteUrl: 'https://vanessabhd.my.canva.site/',
   locationLabel: 'Operating digitally for a global audience',
 } as const;
 
@@ -74,6 +76,7 @@ export const ROUTES: { route: PageRoute; navKey: keyof NavLabels; titleSuffix: s
   { route: '/services', navKey: 'services', titleSuffix: 'Digital Services' },
   { route: '/resources', navKey: 'resources', titleSuffix: 'Resources & Blog' },
   { route: '/contact', navKey: 'contact', titleSuffix: 'Contact BHD' },
+  { route: '/faq', navKey: 'faq', titleSuffix: 'Vanessa FAQ & Information Centre' },
 ];
 
 export type ResourceTopicId =
@@ -102,5 +105,6 @@ export interface NavLabels {
   affiliate: string;
   services: string;
   resources: string;
+  faq: string;
   contact: string;
 }

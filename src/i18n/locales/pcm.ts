@@ -9,6 +9,7 @@ export const pcm: TranslationBundle = {
     '/services': 'Digital Services',
     '/resources': 'Resources & Blog',
     '/contact': 'Contact BHD',
+    '/faq': 'Vanessa FAQ & Information Centre',
   },
   nav: {
     home: 'Home',

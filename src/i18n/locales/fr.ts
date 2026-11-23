@@ -9,6 +9,7 @@ export const fr: TranslationBundle = {
     '/services': 'Services Numériques',
     '/resources': 'Ressources & Blog',
     '/contact': 'Contacter BHD',
+    '/faq': 'Vanessa FAQ & Centre d’Information',
   },
   nav: {
     home: 'Accueil',

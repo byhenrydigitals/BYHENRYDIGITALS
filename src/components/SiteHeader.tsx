@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronDown, Globe, Menu, X } from 'lucide-react';
-import { PageRoute, ROUTES } from '../config/siteConfig';
+import { ArrowUpRight, ChevronDown, Globe, Menu, X } from 'lucide-react';
+import { PageRoute, ROUTES, SITE_CONFIG } from '../config/siteConfig';
 import { useLanguage } from '../i18n/LanguageContext';
 import { ActiveLanguageCode } from '../i18n/types';
 import { BrandLogo } from './BrandLogo';
@@ -92,6 +92,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
               </a>
             );
           })}
+
         </nav>
 
         {/* Actions Zone: Language Selector + Primary CTA + Mobile Toggle */}
@@ -223,6 +224,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                 </a>
               );
             })}
+
           </nav>
 
           <div className="mt-4 pt-3 border-t border-white/[0.08]">

@@ -9,6 +9,7 @@ export const ig: TranslationBundle = {
     '/services': 'Ọrụ Dijitalụ',
     '/resources': 'Ihe Ọmụma na Blọọgụ',
     '/contact': 'Kpọtụrụ BHD',
+    '/faq': 'Vanessa FAQ & Ebe Ozi',
   },
   nav: {
     home: 'Nnabata',

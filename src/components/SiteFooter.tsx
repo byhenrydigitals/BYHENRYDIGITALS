@@ -6,10 +6,9 @@ import { SocialPlatformIcon } from './SocialIcons';
 
 interface SiteFooterProps {
   onNavigate: (route: PageRoute) => void;
-  onOpenVanessa: () => void;
 }
 
-export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
+export function SiteFooter({ onNavigate }: SiteFooterProps) {
   const { t } = useLanguage();
 
   return (
@@ -77,15 +76,6 @@ export function SiteFooter({ onNavigate, onOpenVanessa }: SiteFooterProps) {
                   </a>
                 </li>
               ))}
-              <li className="min-w-0">
-                <button
-                  type="button"
-                  onClick={onOpenVanessa}
-                  className="inline-flex min-h-[36px] items-center py-1 text-start hover:text-[#eab308] transition-colors cursor-pointer"
-                >
-                  {t.nav.faq}
-                </button>
-              </li>
             </ul>
           </div>
 
