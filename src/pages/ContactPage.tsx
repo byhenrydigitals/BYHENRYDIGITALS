@@ -1,8 +1,9 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import {
   AlertCircle,
   ArrowUpRight,
   CheckCircle2,
+  Loader2,
   Mail,
   MessageCircle,
   Send,
@@ -22,16 +23,28 @@ interface FieldErrors {
   message?: string;
 }
 
+function generateIdempotencyKey(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `bhd-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+}
+
 export function ContactPage({ initialSubject = '' }: ContactPageProps) {
   const { t, language } = useLanguage();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState(initialSubject);
   const [message, setMessage] = useState('');
+  const [honeypot, setHoneypot] = useState('');
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [referenceId, setReferenceId] = useState<string | null>(null);
+
+  const inFlightRef = useRef(false);
+  const formLoadedAtRef = useRef<number>(Date.now());
+  const idempotencyKeyRef = useRef<string>(generateIdempotencyKey());
 
   useEffect(() => {
     if (initialSubject) {
@@ -41,17 +54,17 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
 
   const validateClient = (): FieldErrors => {
     const next: FieldErrors = {};
-    if (name.trim().length < 2) {
+    if (name.trim().length < 2 || name.trim().length > 120) {
       next.name = t.contact.validation.nameError;
     }
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email.trim())) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailPattern.test(email.trim()) || email.trim().length > 180) {
       next.email = t.contact.validation.emailError;
     }
-    if (subject.trim().length < 2) {
+    if (subject.trim().length < 2 || subject.trim().length > 160) {
       next.subject = t.contact.validation.subjectError;
     }
-    if (message.trim().length < 15) {
+    if (message.trim().length < 15 || message.trim().length > 3000) {
       next.message = t.contact.validation.messageError;
     }
     return next;
@@ -59,6 +72,10 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (inFlightRef.current || submitting) {
+      return;
+    }
+
     setSubmitError(null);
 
     const clientErrors = validateClient();
@@ -67,6 +84,7 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
       return;
     }
 
+    inFlightRef.current = true;
     setErrors({});
     setSubmitting(true);
 
@@ -79,7 +97,10 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
           email: email.trim(),
           subject: subject.trim(),
           message: message.trim(),
+          website: honeypot,
           language,
+          formLoadedAt: formLoadedAtRef.current,
+          idempotencyKey: idempotencyKeyRef.current,
         }),
       });
 
@@ -94,7 +115,14 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
             message: payload.fieldErrors.message ? t.contact.validation.messageError : undefined,
           });
         }
-        setSubmitError(t.contact.validation.genericSubmitError);
+
+        if (response.status === 429 || payload?.code === 'rate_limited') {
+          setSubmitError(t.contact.validation.rateLimitError);
+        } else if (response.status === 409 || payload?.code === 'duplicate_submission') {
+          setSubmitError(t.contact.validation.duplicateError);
+        } else {
+          setSubmitError(t.contact.validation.genericSubmitError);
+        }
         return;
       }
 
@@ -103,11 +131,23 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
       setEmail('');
       setSubject('');
       setMessage('');
+      setHoneypot('');
+      idempotencyKeyRef.current = generateIdempotencyKey();
+      formLoadedAtRef.current = Date.now();
     } catch {
       setSubmitError(t.contact.validation.networkError);
     } finally {
+      inFlightRef.current = false;
       setSubmitting(false);
     }
+  };
+
+  const handleResetSuccess = () => {
+    setReferenceId(null);
+    setSubmitError(null);
+    setErrors({});
+    idempotencyKeyRef.current = generateIdempotencyKey();
+    formLoadedAtRef.current = Date.now();
   };
 
   return (
@@ -126,26 +166,32 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
         {/* Form Card */}
         <div className="min-w-0 rounded-2xl border border-white/[0.1] bg-[#141414] p-5 sm:p-8 lg:col-span-7">
           {referenceId ? (
-            <div className="space-y-5 py-4">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#eab308]/15 text-[#eab308]">
+            <div
+              role="status"
+              aria-live="polite"
+              className="space-y-6 rounded-xl border border-[#eab308]/40 bg-[#0b0b0b] p-5 sm:p-7"
+            >
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-[#eab308]/40 bg-[#eab308]/15 text-[#eab308]">
                 <CheckCircle2 className="h-6 w-6" />
               </div>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <h2 className="font-display text-2xl font-semibold text-[#f5f5f4]">
                   {t.contact.successTitle}
                 </h2>
-                <p className="text-sm leading-relaxed text-[#a1a1aa]">
-                  {t.contact.successBody}{' '}
+                <p className="text-sm sm:text-base leading-relaxed text-[#f5f5f4]">
+                  {t.contact.successBody}
+                </p>
+                <div className="inline-flex flex-wrap items-center gap-2 rounded-lg border border-white/[0.1] bg-[#141414] px-3.5 py-2 text-xs text-[#a1a1aa]">
+                  <span>{t.contact.referenceLabel}:</span>
                   <span className="font-mono-tabular font-semibold text-[#eab308]">
                     {referenceId}
                   </span>
-                  .
-                </p>
+                </div>
               </div>
               <button
                 type="button"
-                onClick={() => setReferenceId(null)}
-                className="min-h-[44px] rounded-lg border border-white/[0.14] px-5 py-2 text-xs font-semibold text-[#f5f5f4] hover:bg-white/[0.06] transition-colors cursor-pointer"
+                onClick={handleResetSuccess}
+                className="min-h-[44px] rounded-lg border border-[#eab308]/50 bg-[#141414] px-5 py-2 text-xs font-semibold text-[#f5f5f4] hover:border-[#eab308] hover:text-[#eab308] transition-colors cursor-pointer"
               >
                 {t.contact.sendAnother}
               </button>
@@ -156,13 +202,49 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                 {t.contact.formTitle}
               </h2>
 
+              {/* Honeypot field for basic automated spam prevention */}
+              <div className="sr-only" aria-hidden="true">
+                <label htmlFor="contact-website">Website</label>
+                <input
+                  id="contact-website"
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </div>
+
               {submitError && (
                 <div
                   role="alert"
-                  className="flex items-start gap-2.5 rounded-xl border border-[#f87171]/40 bg-[#f87171]/10 p-3.5 text-xs text-[#fca5a5]"
+                  className="space-y-2.5 rounded-xl border border-[#f87171]/40 bg-[#f87171]/10 p-4 text-xs sm:text-sm text-[#fca5a5]"
                 >
-                  <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
-                  <span>{submitError}</span>
+                  <div className="flex items-start gap-2.5">
+                    <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+                    <span>{submitError}</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3 ps-6 text-xs">
+                    <a
+                      href={SITE_CONFIG.mailtoUrl}
+                      className="font-semibold text-[#eab308] underline underline-offset-2 hover:text-[#facc15]"
+                    >
+                      {SITE_CONFIG.contactEmail}
+                    </a>
+                    <span aria-hidden="true" className="text-white/30">
+                      ·
+                    </span>
+                    <a
+                      href={SITE_CONFIG.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-semibold text-[#eab308] underline underline-offset-2 hover:text-[#facc15]"
+                    >
+                      <span>{t.contact.whatsappUsButton}</span>
+                      <ArrowUpRight className="h-3 w-3 shrink-0" />
+                    </a>
+                  </div>
                 </div>
               )}
 
@@ -177,10 +259,15 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                   <input
                     id="contact-name"
                     type="text"
+                    disabled={submitting}
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                      idempotencyKeyRef.current = generateIdempotencyKey();
+                      if (errors.name) setErrors((prev) => ({ ...prev, name: undefined }));
+                    }}
                     placeholder={t.contact.namePlaceholder}
-                    className="min-h-[44px] w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none"
+                    className="min-h-[44px] w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none disabled:opacity-60"
                   />
                   {errors.name && (
                     <p className="text-xs text-[#f87171]">{errors.name}</p>
@@ -197,10 +284,15 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                   <input
                     id="contact-email"
                     type="email"
+                    disabled={submitting}
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      idempotencyKeyRef.current = generateIdempotencyKey();
+                      if (errors.email) setErrors((prev) => ({ ...prev, email: undefined }));
+                    }}
                     placeholder={t.contact.emailPlaceholder}
-                    className="min-h-[44px] w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none"
+                    className="min-h-[44px] w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none disabled:opacity-60"
                   />
                   {errors.email && (
                     <p className="text-xs text-[#f87171]">{errors.email}</p>
@@ -218,10 +310,15 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                 <input
                   id="contact-subject"
                   type="text"
+                  disabled={submitting}
                   value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
+                  onChange={(e) => {
+                    setSubject(e.target.value);
+                    idempotencyKeyRef.current = generateIdempotencyKey();
+                    if (errors.subject) setErrors((prev) => ({ ...prev, subject: undefined }));
+                  }}
                   placeholder={t.contact.subjectPlaceholder}
-                  className="min-h-[44px] w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none"
+                  className="min-h-[44px] w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none disabled:opacity-60"
                 />
                 {errors.subject && (
                   <p className="text-xs text-[#f87171]">{errors.subject}</p>
@@ -238,10 +335,15 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
                 <textarea
                   id="contact-message"
                   rows={5}
+                  disabled={submitting}
                   value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                    idempotencyKeyRef.current = generateIdempotencyKey();
+                    if (errors.message) setErrors((prev) => ({ ...prev, message: undefined }));
+                  }}
                   placeholder={t.contact.messagePlaceholder}
-                  className="w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none"
+                  className="w-full rounded-lg border border-white/[0.12] bg-[#0b0b0b] px-3.5 py-2.5 text-sm text-[#f5f5f4] placeholder:text-[#52525b] focus:border-[#eab308] focus:outline-none disabled:opacity-60"
                 />
                 {errors.message && (
                   <p className="text-xs text-[#f87171]">{errors.message}</p>
@@ -251,9 +353,13 @@ export function ContactPage({ initialSubject = '' }: ContactPageProps) {
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex min-h-[44px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-[#eab308] px-6 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] disabled:opacity-60 transition-colors cursor-pointer"
+                className="inline-flex min-h-[44px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-[#eab308] px-6 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] disabled:opacity-70 disabled:cursor-not-allowed transition-colors cursor-pointer"
               >
-                <Send className="h-4 w-4 shrink-0" />
+                {submitting ? (
+                  <Loader2 className="h-4 w-4 shrink-0 animate-spin" />
+                ) : (
+                  <Send className="h-4 w-4 shrink-0" />
+                )}
                 <span>
                   {submitting ? t.contact.submitting : t.contact.submitCta}
                 </span>

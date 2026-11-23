@@ -462,10 +462,11 @@ export const fr: TranslationBundle = {
     messageLabel: 'Message',
     messagePlaceholder: 'Décrivez votre besoin ou votre question...',
     submitCta: 'Envoyer le Message',
-    submitting: 'Envoi en cours...',
-    successTitle: 'Message Reçu',
+    submitting: 'Envoi de votre message...',
+    successTitle: 'Message Envoyé',
     successBody:
-      'Merci d’avoir contacté BYHENRYDIGITALS. Votre demande a été enregistrée sous la référence',
+      'Votre message a bien été envoyé et recevra une réponse sous 24 à 48 heures.',
+    referenceLabel: 'Référence',
     sendAnother: 'Envoyer un Autre Message',
     detailsTitle: 'Canaux Officiels de Contact BHD',
     directChannelsNotice:
@@ -482,8 +483,14 @@ export const fr: TranslationBundle = {
       emailError: 'Veuillez saisir une adresse e-mail valide.',
       subjectError: 'Veuillez indiquer un objet clair.',
       messageError: 'Veuillez rédiger un message d’au moins 15 caractères.',
-      genericSubmitError: 'Impossible d’envoyer votre message pour le moment. Veuillez réessayer.',
-      networkError: 'Erreur réseau lors de l’envoi. Vérifiez votre connexion et réessayez.',
+      genericSubmitError:
+        'Nous n’avons pas pu envoyer votre message pour le moment. Veuillez réessayer ou nous contacter directement.',
+      networkError:
+        'Nous n’avons pas pu envoyer votre message pour le moment. Veuillez réessayer ou nous contacter directement.',
+      rateLimitError:
+        'Trop de demandes envoyées récemment. Veuillez patienter quelques minutes ou nous contacter directement.',
+      duplicateError:
+        'Ce message vient déjà d’être envoyé. Veuillez patienter un instant avant de réessayer.',
     },
   },
   footer: {

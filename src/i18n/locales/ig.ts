@@ -462,10 +462,11 @@ export const ig: TranslationBundle = {
     messageLabel: 'Ozi',
     messagePlaceholder: 'Kekọrịta nkọwa gbasara ihe ị chọrọ enyemaka na ya...',
     submitCta: 'Ziga Ozi',
-    submitting: 'Ọ na-eziga...',
-    successTitle: 'E Nwetala Ozi Gị',
+    submitting: 'Ana ezipụ ozi gị...',
+    successTitle: 'E Zipụla Ozi Gị',
     successBody:
-      'Daalụ maka ịkpọtụrụ BYHENRYDIGITALS. E dekọọla ajụjụ gị na nọmba ntụaka',
+      'E zipụla ozi gị nke ọma, anyị ga-azaghachi gị n’ime awa 24–48.',
+    referenceLabel: 'Nọmba Ntụaka',
     sendAnother: 'Ziga Ozi Ọzọ',
     detailsTitle: 'Ọwa Nkwukọrịta Gọọmentị BHD',
     directChannelsNotice:
@@ -482,8 +483,14 @@ export const ig: TranslationBundle = {
       emailError: 'Biko tinye adreesị ozi-e ziri ezi.',
       subjectError: 'Biko tinye isiokwu doro anya.',
       messageError: 'Biko dee ozi nwere opekata mpe mkpụrụedemede 15.',
-      genericSubmitError: 'Enweghị ike iziga ozi gị ugbu a. Biko nwaa ọzọ.',
-      networkError: 'Nsogbu njikọ ịntanetị mgbe a na-eziga ozi. Biko lelee njikọ gị ma nwaa ọzọ.',
+      genericSubmitError:
+        'Anyị enweghị ike izipụ ozi gị ugbu a. Biko nwaa ọzọ ma ọ bụ kpọtụrụ anyị ozugbo.',
+      networkError:
+        'Anyị enweghị ike izipụ ozi gị ugbu a. Biko nwaa ọzọ ma ọ bụ kpọtụrụ anyị ozugbo.',
+      rateLimitError:
+        'I zipụla ọtụtụ ozi n’oge na-adịbeghị anya. Biko chere nkeji ole na ole ma ọ bụ kpọtụrụ anyị ozugbo.',
+      duplicateError:
+        'E zipụla ozi a ugbua. Biko chere ntakịrị tupu i ziga ọzọ.',
     },
   },
   footer: {

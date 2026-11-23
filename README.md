@@ -54,7 +54,11 @@ This project is compatible with **Cloudflare Pages** with zero external Node ser
    - **Framework preset**: `Vite`
    - **Build command**: `npm run build`
    - **Build output directory**: `dist`
-4. **(Optional)** Configure environment variables in **Settings → Environment variables** (Production & Preview) if you want `POST /api/contact` to forward verified enquiries to an external webhook/automation:
-   - `CONTACT_WEBHOOK_URL`: HTTPS endpoint URL to receive JSON inquiry payloads
-   - `CONTACT_FORWARD_SECRET`: Secret header (`X-BHD-Secret`) sent with forwarded payloads
+4. Configure email delivery secrets in **Settings → Environment variables** (Production & Preview, marked as **Secret**) so `POST /api/contact` delivers enquiries directly to `byhenrydigitals@gmail.com` (configure **one** provider):
+   - **Resend (Recommended)**: `RESEND_API_KEY` (and optionally `CONTACT_FROM_EMAIL`)
+   - **Brevo**: `BREVO_API_KEY` (and optionally `CONTACT_FROM_EMAIL`)
+   - **SendGrid**: `SENDGRID_API_KEY` (and optionally `CONTACT_FROM_EMAIL`)
+   - **Mailgun**: `MAILGUN_API_KEY` and `MAILGUN_DOMAIN`
+   - **Verified HTTPS Webhook**: `CONTACT_WEBHOOK_URL` (and optionally `CONTACT_FORWARD_SECRET`)
+   *(When running via the Node/Express `server.ts`, you may also use SMTP credentials: `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`.)*
 5. Deploy. Cloudflare Pages automatically serves `dist/` at the edge, handles SPA routing fallback to `index.html`, and activates `functions/api/contact.ts` and `functions/api/health.ts` under `/api/*`.

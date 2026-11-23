@@ -462,10 +462,11 @@ export const ha: TranslationBundle = {
     messageLabel: 'Saƙo',
     messagePlaceholder: 'Raba bayanai game da abin da kake buƙatar taimako akai...',
     submitCta: 'Aika Saƙo',
-    submitting: 'Ana aikawa...',
-    successTitle: 'An Karɓi Saƙonka',
+    submitting: 'Ana tura saƙonka...',
+    successTitle: 'An Isar Da Saƙonka',
     successBody:
-      'Mun gode da tuntuɓar BYHENRYDIGITALS. An yi rajistar tambayarka da lambar shaida',
+      'An isar da saƙonka cikin nasara kuma za a mayar maka da martani cikin sa’o’i 24–48.',
+    referenceLabel: 'Lambar Shaida',
     sendAnother: 'Aika Wani Saƙo',
     detailsTitle: 'Tashoshin Tuntuɓa na Hukuma na BHD',
     directChannelsNotice:
@@ -482,8 +483,14 @@ export const ha: TranslationBundle = {
       emailError: 'Da fatan za a shigar da sahihin adireshin imel.',
       subjectError: 'Da fatan za a shigar da take mai bayani.',
       messageError: 'Da fatan za a rubuta saƙo mai aƙalla haruffa 15.',
-      genericSubmitError: 'Ba za a iya aika saƙonka ba yanzu. Da fatan za a sake gwadawa.',
-      networkError: 'Kuskuren hanyar sadarwa yayin aika saƙo. Duba haɗinka ka sake gwadawa.',
+      genericSubmitError:
+        'Ba mu iya isar da saƙonka a yanzu ba. Da fatan za a sake gwadawa ko a tuntuɓe mu kai tsaye.',
+      networkError:
+        'Ba mu iya isar da saƙonka a yanzu ba. Da fatan za a sake gwadawa ko a tuntuɓe mu kai tsaye.',
+      rateLimitError:
+        'An aika saƙonni da yawa kwanan nan. Da fatan za a jira mintuna kaɗan ko a tuntuɓe mu kai tsaye.',
+      duplicateError:
+        'An riga an tura wannan saƙon. Da fatan za a jira kaɗan kafin sake aikawa.',
     },
   },
   footer: {

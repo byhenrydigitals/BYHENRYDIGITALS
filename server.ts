@@ -1,86 +1,178 @@
 import 'dotenv/config';
 import express from 'express';
+import nodemailer from 'nodemailer';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {
+  acquireSubmissionLock,
+  buildCorsHeaders,
+  checkRateLimit,
+  completeSubmissionLock,
+  type ContactSubmission,
+  deliverContactEmail,
+  type EmailDeliveryOutcome,
+  extractClientIp,
+  type FormattedContactEmail,
+  getConfiguredProviders,
+  OFFICIAL_RECIPIENT_EMAIL,
+  releaseSubmissionLockOnFailure,
+  validateContactBody,
+} from './functions/_lib/contactDelivery.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+app.set('trust proxy', 1);
 const PORT = Number(process.env.PORT) || 3000;
 const isProduction = process.env.NODE_ENV === 'production';
 
 app.use(express.json({ limit: '64kb' }));
 
-interface ContactSubmission {
-  id: string;
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-  language: string;
-  receivedAt: string;
-}
+async function sendViaNodeSmtp(
+  submission: ContactSubmission,
+  formatted: FormattedContactEmail
+): Promise<EmailDeliveryOutcome | null> {
+  const host = (process.env.SMTP_HOST || '').trim();
+  const user = (process.env.SMTP_USER || '').trim();
+  const pass = (process.env.SMTP_PASS || '').trim();
 
-const recentInquiries: ContactSubmission[] = [];
+  if (!host || !user || !pass) {
+    return null;
+  }
 
-function isSafeHttpsUrl(value: string): boolean {
-  if (!value) return false;
+  const port = Number(process.env.SMTP_PORT) || 465;
+  const secure =
+    process.env.SMTP_SECURE !== undefined
+      ? process.env.SMTP_SECURE.toLowerCase() === 'true'
+      : port === 465;
+
+  const fromAddress =
+    (process.env.CONTACT_FROM_EMAIL || '').trim() ||
+    `BYHENRYDIGITALS Website <${user}>`;
+
   try {
-    const parsed = new URL(value);
-    if (parsed.protocol !== 'https:') return false;
-    const host = parsed.hostname.toLowerCase();
-    if (
-      host === 'localhost' ||
-      host === '127.0.0.1' ||
-      host === '::1' ||
-      host.startsWith('10.') ||
-      host.startsWith('192.168.') ||
-      host === '169.254.169.254'
-    ) {
-      return false;
-    }
-    return true;
-  } catch {
-    return false;
+    const transporter = nodemailer.createTransport({
+      host,
+      port,
+      secure,
+      auth: { user, pass },
+      connectionTimeout: 8000,
+      greetingTimeout: 8000,
+      socketTimeout: 10000,
+    });
+
+    await transporter.sendMail({
+      from: fromAddress,
+      to: formatted.recipientEmail,
+      replyTo: `${submission.name} <${submission.email}>`,
+      subject: formatted.emailSubject,
+      text: formatted.textBody,
+      html: formatted.htmlBody,
+    });
+
+    return { delivered: true, provider: 'smtp' };
+  } catch (err) {
+    console.error('SMTP delivery failed:', err);
+    return {
+      delivered: false,
+      statusCode: 502,
+      code: 'delivery_failed',
+      error:
+        "We couldn't deliver your message right now. Please try again or contact us directly.",
+    };
   }
 }
 
 app.get('/api/health', (_req, res) => {
-  res.json({ ok: true, service: 'BYHENRYDIGITALS' });
+  const configuredProviders = getConfiguredProviders(process.env);
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({
+    ok: true,
+    service: 'BYHENRYDIGITALS',
+    recipient: OFFICIAL_RECIPIENT_EMAIL,
+    contactDeliveryConfigured: configuredProviders.length > 0,
+    activeProvider: configuredProviders[0] ?? null,
+  });
+});
+
+app.options('/api/contact', (req, res) => {
+  const corsHeaders = buildCorsHeaders(
+    typeof req.headers.origin === 'string' ? req.headers.origin : null,
+    typeof req.headers.host === 'string' ? req.headers.host : null,
+    process.env
+  );
+  for (const [k, v] of Object.entries(corsHeaders)) {
+    res.setHeader(k, v);
+  }
+  return res.status(204).end();
 });
 
 app.post('/api/contact', async (req, res) => {
+  const corsHeaders = buildCorsHeaders(
+    typeof req.headers.origin === 'string' ? req.headers.origin : null,
+    typeof req.headers.host === 'string' ? req.headers.host : null,
+    process.env
+  );
+  for (const [k, v] of Object.entries(corsHeaders)) {
+    res.setHeader(k, v);
+  }
+  res.setHeader('Cache-Control', 'no-store');
+
   const body = req.body as Record<string, unknown> | undefined;
-  const name = typeof body?.name === 'string' ? body.name.trim() : '';
-  const email = typeof body?.email === 'string' ? body.email.trim() : '';
-  const subject = typeof body?.subject === 'string' ? body.subject.trim() : '';
-  const message = typeof body?.message === 'string' ? body.message.trim() : '';
-  const language =
-    typeof body?.language === 'string' ? body.language.trim() : 'en';
+  const parsedResult = validateContactBody(body);
 
-  const fieldErrors: Record<string, string> = {};
-
-  if (name.length < 2 || name.length > 120) {
-    fieldErrors.name = 'Please enter a valid name (2–120 characters).';
-  }
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email) || email.length > 180) {
-    fieldErrors.email = 'Please enter a valid email address.';
-  }
-  if (subject.length < 2 || subject.length > 160) {
-    fieldErrors.subject = 'Please provide a clear subject.';
-  }
-  if (message.length < 15 || message.length > 3000) {
-    fieldErrors.message =
-      'Please enter a message of at least 15 characters.';
-  }
-
-  if (Object.keys(fieldErrors).length > 0) {
-    return res.status(400).json({
+  if (!parsedResult.ok) {
+    return res.status(parsedResult.status).json({
       ok: false,
-      error: 'Validation failed. Please review the highlighted fields.',
-      fieldErrors,
+      code: parsedResult.code,
+      error: parsedResult.error,
+      ...(parsedResult.fieldErrors ? { fieldErrors: parsedResult.fieldErrors } : {}),
+    });
+  }
+
+  const clientIp = extractClientIp(
+    {
+      get(headerName: string) {
+        const value = req.headers[headerName.toLowerCase()];
+        if (Array.isArray(value)) return value[0] ?? null;
+        return typeof value === 'string' ? value : null;
+      },
+    },
+    req.ip || req.socket?.remoteAddress
+  );
+
+  const rateLimit = checkRateLimit(clientIp);
+  if (!rateLimit.allowed) {
+    res.setHeader('Retry-After', String(rateLimit.retryAfterSeconds));
+    return res.status(429).json({
+      ok: false,
+      code: 'rate_limited',
+      error:
+        'Too many enquiries sent recently. Please wait a few minutes or contact us directly.',
+      retryAfterSeconds: rateLimit.retryAfterSeconds,
+    });
+  }
+
+  const { name, email, subject, message, language, idempotencyKey } =
+    parsedResult.data;
+
+  const lock = acquireSubmissionLock(idempotencyKey, email, subject, message);
+  if (lock.status === 'already_delivered') {
+    return res.status(200).json({
+      ok: true,
+      referenceId: lock.referenceId,
+      receivedAt: lock.receivedAt,
+      recipientEmail: OFFICIAL_RECIPIENT_EMAIL,
+      deduplicated: true,
+    });
+  }
+  if (lock.status === 'duplicate_conflict') {
+    return res.status(409).json({
+      ok: false,
+      code: 'duplicate_submission',
+      error:
+        'This enquiry was just submitted. Please wait a moment before sending again.',
     });
   }
 
@@ -94,35 +186,41 @@ app.post('/api/contact', async (req, res) => {
     receivedAt: new Date().toISOString(),
   };
 
-  recentInquiries.unshift(submission);
-  if (recentInquiries.length > 50) {
-    recentInquiries.length = 50;
+  const outcome = await deliverContactEmail(
+    submission,
+    {
+      RESEND_API_KEY: process.env.RESEND_API_KEY,
+      BREVO_API_KEY: process.env.BREVO_API_KEY,
+      SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
+      MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
+      MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
+      MAILGUN_BASE_URL: process.env.MAILGUN_BASE_URL,
+      CONTACT_FROM_EMAIL: process.env.CONTACT_FROM_EMAIL,
+      CONTACT_RECIPIENT_EMAIL: process.env.CONTACT_RECIPIENT_EMAIL,
+      CONTACT_WEBHOOK_URL: process.env.CONTACT_WEBHOOK_URL,
+      CONTACT_FORWARD_SECRET: process.env.CONTACT_FORWARD_SECRET,
+      VITE_SITE_URL: process.env.VITE_SITE_URL,
+      APP_URL: process.env.APP_URL,
+    },
+    sendViaNodeSmtp
+  );
+
+  if (!outcome.delivered) {
+    releaseSubmissionLockOnFailure(idempotencyKey, email, subject, message);
+    return res.status(outcome.statusCode).json({
+      ok: false,
+      code: outcome.code,
+      error: outcome.error,
+    });
   }
 
-  const webhookUrl = (process.env.CONTACT_WEBHOOK_URL || '').trim();
-  if (webhookUrl && isSafeHttpsUrl(webhookUrl)) {
-    try {
-      const headers: Record<string, string> = {
-        'Content-Type': 'application/json',
-      };
-      if (process.env.CONTACT_FORWARD_SECRET) {
-        headers['X-BHD-Secret'] = process.env.CONTACT_FORWARD_SECRET;
-      }
-      await fetch(webhookUrl, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(submission),
-        signal: AbortSignal.timeout(5000),
-      });
-    } catch {
-      // Non-fatal forwarding error; inquiry is still acknowledged cleanly.
-    }
-  }
+  completeSubmissionLock(idempotencyKey, submission.id, submission.receivedAt);
 
   return res.status(201).json({
     ok: true,
     referenceId: submission.id,
     receivedAt: submission.receivedAt,
+    recipientEmail: OFFICIAL_RECIPIENT_EMAIL,
   });
 });
 
@@ -143,7 +241,12 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`BYHENRYDIGITALS server listening on port ${PORT}`);
+    const configuredProviders = getConfiguredProviders(process.env);
+    console.log(
+      `BYHENRYDIGITALS server listening on port ${PORT} (email providers configured: ${
+        configuredProviders.length > 0 ? configuredProviders.join(', ') : 'none'
+      })`
+    );
   });
 }
 

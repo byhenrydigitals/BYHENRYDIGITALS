@@ -463,10 +463,11 @@ export const pcm: TranslationBundle = {
     messageLabel: 'Message',
     messagePlaceholder: 'Write details about wetin you need help with...',
     submitCta: 'Send Message',
-    submitting: 'Dey send...',
-    successTitle: 'We Don Receive Your Message',
+    submitting: 'We dey send your message...',
+    successTitle: 'Message Don Deliver',
     successBody:
-      'Thank you for contacting BYHENRYDIGITALS. We don log your enquiry with reference',
+      'Your message don deliver well-well and we go reply you within 24–48 hours.',
+    referenceLabel: 'Reference ID',
     sendAnother: 'Send Another Message',
     detailsTitle: 'Official BHD Contact Channels',
     directChannelsNotice:
@@ -483,8 +484,14 @@ export const pcm: TranslationBundle = {
       emailError: 'Abeg enter correct email address.',
       subjectError: 'Abeg enter clear subject.',
       messageError: 'Abeg write message wey reach at least 15 characters.',
-      genericSubmitError: 'Message no fit send right now. Abeg try again.',
-      networkError: 'Network issue happen as message dey send. Check your internet and try again.',
+      genericSubmitError:
+        'We no fit deliver your message right now. Abeg try again or contact us directly.',
+      networkError:
+        'We no fit deliver your message right now. Abeg try again or contact us directly.',
+      rateLimitError:
+        'You don send plenty messages recently. Abeg wait small try again, or contact us directly.',
+      duplicateError:
+        'You just send dis same message. Abeg wait small before you send am again.',
     },
   },
   footer: {

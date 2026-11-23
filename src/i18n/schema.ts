@@ -202,6 +202,7 @@ export interface TranslationBundle {
     submitting: string;
     successTitle: string;
     successBody: string;
+    referenceLabel: string;
     sendAnother: string;
     detailsTitle: string;
     directChannelsNotice: string;
@@ -219,6 +220,8 @@ export interface TranslationBundle {
       messageError: string;
       genericSubmitError: string;
       networkError: string;
+      rateLimitError: string;
+      duplicateError: string;
     };
   };
   footer: {

@@ -462,10 +462,11 @@ export const en: TranslationBundle = {
     messageLabel: 'Message',
     messagePlaceholder: 'Share details about what you need help with...',
     submitCta: 'Send Message',
-    submitting: 'Sending...',
-    successTitle: 'Message Received',
+    submitting: 'Sending your message...',
+    successTitle: 'Message Delivered',
     successBody:
-      'Thank you for contacting BYHENRYDIGITALS. Your enquiry has been logged with reference',
+      'Your message has been successfully delivered and would be responded to within 24–48 hours.',
+    referenceLabel: 'Reference ID',
     sendAnother: 'Send Another Message',
     detailsTitle: 'Official BHD Contact Channels',
     directChannelsNotice:
@@ -482,8 +483,14 @@ export const en: TranslationBundle = {
       emailError: 'Please enter a valid email address.',
       subjectError: 'Please enter a clear subject.',
       messageError: 'Please enter a message of at least 15 characters.',
-      genericSubmitError: 'Unable to send your message right now. Please try again.',
-      networkError: 'Network error while sending your message. Please verify your connection and retry.',
+      genericSubmitError:
+        "We couldn't deliver your message right now. Please try again or contact us directly.",
+      networkError:
+        "We couldn't deliver your message right now. Please try again or contact us directly.",
+      rateLimitError:
+        'Too many enquiries sent recently. Please wait a few minutes and try again, or contact us directly.',
+      duplicateError:
+        'This enquiry was already submitted. Please wait a moment before sending again.',
     },
   },
   footer: {

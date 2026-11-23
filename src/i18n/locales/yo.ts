@@ -462,10 +462,11 @@ export const yo: TranslationBundle = {
     messageLabel: 'Ìránṣẹ́',
     messagePlaceholder: 'Pín àlàyé nípa ohun tí o fẹ́ ìrànlọ́wọ́ sí...',
     submitCta: 'Fi Ìránṣẹ́ Ránṣẹ́',
-    submitting: 'Ó ń fi ránṣẹ́...',
-    successTitle: 'A Ti Gba Ìránṣẹ́ Rẹ',
+    submitting: 'À ń fi ìránṣẹ́ rẹ ránṣẹ́...',
+    successTitle: 'Ìránṣẹ́ Ti Délẹ̀',
     successBody:
-      'O ṣéun fún kíkàn sí BYHENRYDIGITALS. A ti kọ ìbéèrè rẹ sílẹ̀ pẹ̀lú nọ́ńbà ìtọ́ka',
+      'A ti fi ìránṣẹ́ rẹ ránṣẹ́ ní àṣeyọrí, a ó sì dá ọ lóhùn láàárín wákàtí 24–48.',
+    referenceLabel: 'Nọ́ńbà Ìtọ́ka',
     sendAnother: 'Fi Ìránṣẹ́ Mìíràn Ránṣẹ́',
     detailsTitle: 'Àwọn Ọ̀nà Ìbánisọ̀rọ̀ Gidi BHD',
     directChannelsNotice:
@@ -482,8 +483,14 @@ export const yo: TranslationBundle = {
       emailError: 'Jọ̀wọ́ tẹ àdírẹ́sì ímeèlì tó péye.',
       subjectError: 'Jọ̀wọ́ tẹ àkọlé ọ̀rọ̀ tó ṣe kedere.',
       messageError: 'Jọ̀wọ́ kọ ìránṣẹ́ tó ní ó kéré jù lẹ́tà 15.',
-      genericSubmitError: 'A kò lè fi ìránṣẹ́ rẹ ránṣẹ́ báyìí. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i.',
-      networkError: 'Àṣìṣe nẹ́tíwọ́ọ̀kì nígbà tí a ń fi ìránṣẹ́ ránṣẹ́. Ṣàyẹ̀wò ìsopọ̀ rẹ.',
+      genericSubmitError:
+        'A kò lè fi ìránṣẹ́ rẹ ránṣẹ́ lọ́wọ́lọ́wọ́. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i tàbí kàn sí wa tààrà.',
+      networkError:
+        'A kò lè fi ìránṣẹ́ rẹ ránṣẹ́ lọ́wọ́lọ́wọ́. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i tàbí kàn sí wa tààrà.',
+      rateLimitError:
+        'O ti fi ọ̀pọ̀ ìránṣẹ́ ránṣẹ́ láìpẹ́. Jọ̀wọ́ dúró díẹ̀ tàbí kàn sí wa tààrà.',
+      duplicateError:
+        'A ti fi ìránṣẹ́ yìí ránṣẹ́ tẹ́lẹ̀. Jọ̀wọ́ dúró díẹ̀ kí o tó fi mìíràn ránṣẹ́.',
     },
   },
   footer: {
