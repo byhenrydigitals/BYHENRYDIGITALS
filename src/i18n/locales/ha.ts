@@ -452,7 +452,7 @@ export const ha: TranslationBundle = {
     title: 'Tuntuɓi BYHENRYDIGITALS',
     intro:
       'Kana da tambaya game da ayyukanmu na gidan yanar gizo, kayayyakin dijital ko shirin haɗin gwiwa? Aika saƙo a ƙasa.',
-    formTitle: 'Aika Tambaya',
+    formTitle: 'BYHENRYDIGITALS Enquiry Form',
     nameLabel: 'Cikakken Suna',
     namePlaceholder: 'Cikakken sunanka',
     emailLabel: 'Adireshin Imel',
@@ -476,7 +476,7 @@ export const ha: TranslationBundle = {
     whatsappChannelLabel: 'WhatsApp na Hukuma',
     whatsappUsButton: 'Yi Hira da Mu a WhatsApp',
     responseChannelLabel: 'Hanyoyin Tallafi',
-    responseChannelValue: 'Imel, WhatsApp & Fom ɗin Gidan Yanar Gizo',
+    responseChannelValue: 'Imel, WhatsApp & BYHENRYDIGITALS Enquiry Form',
     storefrontLabel: 'Shagon Selar da Aka Tabbatar',
     validation: {
       nameError: 'Da fatan za a shigar da cikakken sunanka (akalla haruffa 2).',

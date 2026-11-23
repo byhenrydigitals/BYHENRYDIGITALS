@@ -452,7 +452,7 @@ export const fr: TranslationBundle = {
     title: 'Contacter BYHENRYDIGITALS',
     intro:
       'Une question sur nos services web, nos produits numériques ou le programme d’affiliation ? Envoyez-nous un message.',
-    formTitle: 'Envoyer un Message',
+    formTitle: 'BYHENRYDIGITALS Enquiry Form',
     nameLabel: 'Nom complet',
     namePlaceholder: 'Votre nom complet',
     emailLabel: 'Adresse e-mail',
@@ -476,7 +476,7 @@ export const fr: TranslationBundle = {
     whatsappChannelLabel: 'WhatsApp Officiel',
     whatsappUsButton: 'Discuter avec nous sur WhatsApp',
     responseChannelLabel: 'Canaux d’Assistance',
-    responseChannelValue: 'E-mail, WhatsApp & Formulaire du Site',
+    responseChannelValue: 'E-mail, WhatsApp & BYHENRYDIGITALS Enquiry Form',
     storefrontLabel: 'Boutique Selar Vérifiée',
     validation: {
       nameError: 'Veuillez saisir votre nom complet (au moins 2 caractères).',

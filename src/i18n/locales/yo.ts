@@ -452,7 +452,7 @@ export const yo: TranslationBundle = {
     title: 'Kàn Sí BYHENRYDIGITALS',
     intro:
       'Ṣé o ní ìbéèrè nípa iṣẹ́ wẹ́ẹ̀bù wa, àwọn ọjà dígítà tàbí ètò alábàáṣepọ̀? Fi ìránṣẹ́ ránṣẹ́ ní ìsàlẹ̀.',
-    formTitle: 'Fi Ìbéèrè Ránṣẹ́',
+    formTitle: 'BYHENRYDIGITALS Enquiry Form',
     nameLabel: 'Orúkọ Kíkún',
     namePlaceholder: 'Orúkọ rẹ ní kíkún',
     emailLabel: 'Àdírẹ́sì Ímeèlì',
@@ -476,7 +476,7 @@ export const yo: TranslationBundle = {
     whatsappChannelLabel: 'WhatsApp Gidi',
     whatsappUsButton: 'Bá Wa Sọ̀rọ̀ lórí WhatsApp',
     responseChannelLabel: 'Àwọn Ọ̀nà Ìtìlẹ́yìn',
-    responseChannelValue: 'Ímeèlì, WhatsApp & Fọ́ọ̀mù Wẹ́ẹ̀bù',
+    responseChannelValue: 'Ímeèlì, WhatsApp & BYHENRYDIGITALS Enquiry Form',
     storefrontLabel: 'Ilé-Ìtajà Selar Gidi',
     validation: {
       nameError: 'Jọ̀wọ́ tẹ orúkọ rẹ ní kíkún (ó kéré jù lẹ́tà 2).',

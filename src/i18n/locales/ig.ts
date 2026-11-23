@@ -452,7 +452,7 @@ export const ig: TranslationBundle = {
     title: 'Kpọtụrụ BYHENRYDIGITALS',
     intro:
       'Ị nwere ajụjụ gbasara ọrụ mmepe weebụ anyị, ngwaahịa dijitalụ, ma ọ bụ mmemme njikọ? Ziga ozi n’okpuru.',
-    formTitle: 'Ziga Ajụjụ',
+    formTitle: 'BYHENRYDIGITALS Enquiry Form',
     nameLabel: 'Aha Zuru Ezu',
     namePlaceholder: 'Aha gị zuru ezu',
     emailLabel: 'Adreesị Ozi-e (Email)',
@@ -476,7 +476,7 @@ export const ig: TranslationBundle = {
     whatsappChannelLabel: 'WhatsApp Gọọmentị',
     whatsappUsButton: 'Kparịta Ụka na WhatsApp',
     responseChannelLabel: 'Ọwa Nkwado',
-    responseChannelValue: 'Ozi-e, WhatsApp na Fọm Weebụsaịtị',
+    responseChannelValue: 'Ozi-e, WhatsApp na BYHENRYDIGITALS Enquiry Form',
     storefrontLabel: 'Ụlọ Ahịa Selar E Kwadoro',
     validation: {
       nameError: 'Biko tinye aha gị zuru ezu (opekata mpe mkpụrụedemede 2).',

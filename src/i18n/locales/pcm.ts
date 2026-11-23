@@ -453,7 +453,7 @@ export const pcm: TranslationBundle = {
     title: 'Contact BYHENRYDIGITALS',
     intro:
       'You get question about website development, digital products, or the affiliate programme? Send us message below.',
-    formTitle: 'Send Us Message',
+    formTitle: 'BYHENRYDIGITALS Enquiry Form',
     nameLabel: 'Full Name',
     namePlaceholder: 'Your full name',
     emailLabel: 'Email Address',
@@ -477,7 +477,7 @@ export const pcm: TranslationBundle = {
     whatsappChannelLabel: 'Official WhatsApp',
     whatsappUsButton: 'Chat With Us on WhatsApp',
     responseChannelLabel: 'Support Channels',
-    responseChannelValue: 'Email, WhatsApp & Website Contact Form',
+    responseChannelValue: 'Email, WhatsApp & BYHENRYDIGITALS Enquiry Form',
     storefrontLabel: 'Verified Selar Storefront',
     validation: {
       nameError: 'Abeg enter your full name (at least 2 letters).',

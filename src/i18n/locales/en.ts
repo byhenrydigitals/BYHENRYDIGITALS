@@ -452,7 +452,7 @@ export const en: TranslationBundle = {
     title: 'Contact BYHENRYDIGITALS',
     intro:
       'Have an enquiry about our web development services, digital products, or the affiliate programme? Send a message below.',
-    formTitle: 'Send an Enquiry',
+    formTitle: 'BYHENRYDIGITALS Enquiry Form',
     nameLabel: 'Full Name',
     namePlaceholder: 'Your full name',
     emailLabel: 'Email Address',
@@ -476,7 +476,7 @@ export const en: TranslationBundle = {
     whatsappChannelLabel: 'Official WhatsApp',
     whatsappUsButton: 'Chat With Us on WhatsApp',
     responseChannelLabel: 'Support Channels',
-    responseChannelValue: 'Email, WhatsApp & Website Contact Form',
+    responseChannelValue: 'Email, WhatsApp & BYHENRYDIGITALS Enquiry Form',
     storefrontLabel: 'Verified Selar Storefront',
     validation: {
       nameError: 'Please enter your full name (at least 2 characters).',
