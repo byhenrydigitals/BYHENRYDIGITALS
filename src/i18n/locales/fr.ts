@@ -29,20 +29,24 @@ export const fr: TranslationBundle = {
   },
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
-    heroTitle: 'Solutions Numériques. Impact Mondial.',
+    tagline: 'Solutions Numériques. Impact Mondial.',
+    heroTitle: 'Savoir Numérique, Ressources et Solutions Pratiques pour Avancer.',
     heroSubtitle:
-      'Découvrez des ressources numériques pratiques, des opportunités d’apprentissage et des solutions conçues pour bâtir, développer et créer de la valeur dans le monde numérique.',
+      'BYHENRYDIGITALS (BHD) réduit les barrières à la participation numérique en rendant accessibles des connaissances numériques utiles, des ressources pédagogiques et des solutions pratiques—à travers BHD Academy pour les particuliers et BHD Services pour les petites entreprises.',
     secondaryTagline: 'Nous Créons une Valeur Numérique Qui Vend.',
-    primaryCta: 'Découvrir Nos Solutions',
-    secondaryCta: 'Découvrir BHD',
+    needsApproachTitle: 'Deux Parcours Clairs Sous Une Même Marque Numérique',
+    needsApproachBody:
+      'Que vous souhaitiez acquérir des compétences pratiques via BHD Academy ou mettre en place des sites web et outils fiables via BHD Services, BHD commence par comprendre votre situation avant de recommander la prochaine étape.',
+    primaryCta: 'Découvrir BHD Services',
+    secondaryCta: 'Découvrir BHD Academy',
     pillars: [
       {
-        title: 'Éducation Numérique Pratique',
-        detail: 'Des guides clairs et ressources structurées pour une mise en pratique réelle.',
+        title: 'Solutions Orientées Besoins',
+        detail: 'BHD Services comprend votre fonctionnement actuel avant de recommander sites web ou outils numériques.',
       },
       {
-        title: 'Solutions Web Fonctionnelles',
-        detail: 'Sites web et pages d’atterrissage conçus pour la clarté, la rapidité et l’usage.',
+        title: 'BHD Academy pour Particuliers',
+        detail: 'Guides éducatifs structurés, ressources pratiques et produits sur Selar pour développer de vraies compétences.',
       },
       {
         title: 'Affiliation Transparente',
@@ -50,26 +54,52 @@ export const fr: TranslationBundle = {
       },
       {
         title: 'Vision Internationale',
-        detail: 'Des systèmes numériques accessibles pensés pour un public multilingue.',
+        detail: 'Systèmes numériques accessibles en anglais, igbo, yoruba, haoussa, français et Nigerian Pidgin.',
       },
     ],
-    productsSectionKicker: 'Produits Numériques',
+    pathways: {
+      sectionKicker: 'BHD Academy & BHD Services',
+      sectionTitle: 'Deux Parcours Complémentaires au Sein de BYHENRYDIGITALS',
+      sectionSubtitle:
+        'BYHENRYDIGITALS réduit les obstacles à l’économie numérique grâce à deux pôles complémentaires—accompagner les particuliers dans l’apprentissage pratique et aider les entreprises à adopter des solutions adaptées.',
+      business: {
+        label: 'BHD Services · Pour les Entreprises',
+        title: 'BHD Services — Solutions Numériques Pratiques pour Entreprises.',
+        description:
+          'Nous aidons les petites entreprises et les startups à identifier, accéder à et mettre en œuvre des solutions numériques pratiques adaptées à leurs besoins, à leur budget et à leur stade de croissance.',
+        cta: 'Découvrir BHD Services',
+        servicesLinkLabel: 'Services Pro',
+        projectsLinkLabel: 'Projets Sélectionnés',
+        contactLinkLabel: 'Discuter d’un Projet',
+      },
+      individual: {
+        label: 'BHD Academy · Pour les Particuliers',
+        title: 'BHD Academy — Apprendre. Construire. Grandir.',
+        description:
+          'Explorez une éducation numérique pratique, des ressources et des conseils conçus pour aider chacun à développer des compétences utiles et à comprendre les opportunités de l’économie numérique.',
+        cta: 'Découvrir BHD Academy',
+        productsLinkLabel: 'Produits Numériques',
+        resourcesLinkLabel: 'Ressources Pédagogiques',
+        affiliateLinkLabel: 'Programme d’Affiliation',
+      },
+    },
+    productsSectionKicker: 'BHD Academy · Produits Numériques',
     productsSectionTitle: 'Guides Numériques & Ressources Structurées',
     productsSectionDesc:
-      'Explorez les produits numériques BHD hébergés sur Selar, conçus pour développer des compétences pratiques.',
+      'Au sein de BHD Academy : explorez nos guides pédagogiques et produits numériques hébergés sur Selar pour développer des compétences concrètes.',
     viewAllProducts: 'Voir le Catalogue',
     selarBadge: 'Catalogue Selar',
     selarLinkShort: 'BHD Store',
-    servicesSectionKicker: 'Services Numériques',
-    servicesSectionTitle: 'Des Expériences Numériques Fonctionnelles',
+    servicesSectionKicker: 'BHD Services · Pour les Entreprises',
+    servicesSectionTitle: 'Des Solutions Numériques Adaptées à Vos Besoins',
     servicesSectionDesc:
-      'Des pages de destination aux solutions assistées par l’IA, BHD conçoit des outils fiables et performants.',
+      'BHD Services commence par comprendre l’organisation actuelle, le budget et le stade de croissance de votre entreprise avant de recommander une solution numérique fiable.',
     exploreServices: 'Explorer les Services',
     enquireShort: 'Demander',
-    affiliateSectionKicker: 'Apprendre ou Postuler · Deux Offres Distinctes',
+    affiliateSectionKicker: 'BHD Academy · Apprendre ou Postuler · Deux Offres Distinctes',
     affiliateSectionTitle: 'Affiliate Starter Kit vs. Programme d’Affiliation BHD',
     affiliateSectionDesc:
-      'BYHENRYDIGITALS propose à la fois un Starter Kit éducatif autonome à ₦8,000 pour apprendre le marketing d’affiliation et un programme d’affiliation gratuit distinct soumis à la sélection de notre équipe.',
+      'Au sein de BHD Academy, BYHENRYDIGITALS propose à la fois un Starter Kit éducatif autonome à ₦8,000 pour apprendre le marketing d’affiliation et un programme d’affiliation gratuit distinct soumis à la sélection de notre équipe.',
     learnAffiliate: 'Détails du Programme',
     applyAffiliate: 'Postuler pour Devenir Affilié BHD',
     affiliateClarification:
@@ -102,7 +132,7 @@ export const fr: TranslationBundle = {
       selectionTitle: 'Sélectionné',
       selectionLabel: 'Sélectionné par BYHENRYDIGITALS après examen',
     },
-    resourcesSectionKicker: 'Ressources & Blog',
+    resourcesSectionKicker: 'BHD Academy · Ressources & Blog',
     resourcesSectionTitle: 'Guides Pratiques : Web, Compétences & IA',
     resourcesSectionDesc:
       'Consultez nos articles consacrés à l’éducation numérique, aux outils digitaux, au développement web et à l’entrepreneuriat.',
@@ -329,79 +359,164 @@ export const fr: TranslationBundle = {
       'Transparence : BYHENRYDIGITALS ne garantit ni sélection, ni ventes, ni revenus. Les résultats des affiliés approuvés dépendent de votre travail, de la pertinence pour votre audience et de la demande.',
   },
   services: {
-    kicker: 'Solutions Clients',
-    title: 'Services Numériques Axés sur l’Efficacité',
+    kicker: 'Services aux Petites Entreprises',
+    title: 'Des Services Numériques Expliqués Simplement',
     intro:
-      'Nous concevons des expériences numériques fonctionnelles, bien au-delà de simples pages esthétiques.',
-    philosophyTitle: 'Une Valeur Numérique Qui Vend',
-    philosophyBody:
-      'BHD associe design éditorial noir, blanc et or à une architecture rapide, claire et orientée résultat.',
-    brandServicesTag: 'Services BYHENRYDIGITALS',
-    customScopedLabel: 'Périmètre défini sur mesure selon vos besoins',
+      'Aucune compétence technique n’est requise pour travailler avec BHD. Chaque service répond à un besoin concret selon votre situation actuelle, votre budget et vos objectifs réalistes.',
+    approachKicker: 'L’Approche BHD',
+    approachHeading:
+      'Comprendre l’entreprise. Identifier le besoin. Recommander une solution adaptée. La mettre en œuvre.',
+    approachLead:
+      'BHD recommande des solutions adaptées à vos besoins actuels, à votre budget et à vos plans de croissance réalistes—sans jamais imposer d’outils superflus.',
+    approachSteps: [
+      {
+        num: '01.',
+        title: 'Comprendre l’entreprise.',
+        detail: 'Nous découvrons ce que vous proposez, votre clientèle et votre organisation actuelle.',
+      },
+      {
+        num: '02.',
+        title: 'Identifier le besoin.',
+        detail: 'Nous repérons ce qui ralentit vos échanges ou freine la compréhension des clients.',
+      },
+      {
+        num: '03.',
+        title: 'Recommander une solution adaptée.',
+        detail: 'Nous proposons une option réaliste adaptée à votre budget et à votre étape actuelle.',
+      },
+      {
+        num: '04.',
+        title: 'La mettre en œuvre.',
+        detail: 'Nous construisons et organisons la solution convenue pour un usage immédiat.',
+      },
+    ],
+    labels: {
+      problem: 'Problème résolu',
+      provides: 'Ce que BHD fournit concrètement',
+      receives: 'Ce que vous recevez',
+      getStarted: 'Comment démarrer',
+    },
+    brandServicesTag: 'Services Entreprises BYHENRYDIGITALS',
+    customScopedLabel: 'Périmètre défini selon vos besoins, votre budget et les livrables confirmés',
     discussCta: 'Discuter de Votre Projet',
     pricingNotice:
-      'Les tarifs dépendent du périmètre exact défini lors de la discussion de projet.',
+      'Consultation & Tarifs : Chaque périmètre et tarif est défini en toute transparence selon vos besoins actuels.',
+    availabilityNotice:
+      'Périmètre & Disponibilité : BHD s’engage uniquement sur les éléments confirmés lors de l’échange initial. Aucune intégration tierce, automatisation, paiement en ligne ou maintenance continue n’est promis sans accord explicite.',
     items: {
       'web-design-dev': {
         title: 'Conception & Développement Web',
         summary:
-          'Sites web rapides et adaptatifs pensés autour de parcours utilisateurs clairs, d’un positionnement solide et d’une ingénierie fiable.',
-        functionalFocus:
-          'Conçus pour soutenir de véritables opérations—pas de simples vitrines statiques.',
-        deliverables: [
-          'Architecture responsive ordinateur, tablette et mobile',
-          'Structure sémantique propre et métadonnées SEO',
-          'Parcours de demande et de conversion fluides',
+          'Un site web clair et adapté aux mobiles qui explique votre activité et facilite la prise de contact.',
+        problemAddressed:
+          'Les clients peinent à faire confiance à une entreprise lorsque ses informations sont dispersées entre messages et publications sociales.',
+        whatBhdProvides:
+          'BHD conçoit un site web structuré et facile à lire pour téléphones et ordinateurs. Les options telles que liens de paiement ou outils tiers ne sont incluses que si confirmées séparément.',
+        whatYouReceive: [
+          'Un site adapté aux mobiles avec des pages claires présentant vos offres',
+          'Une navigation simple et des moyens directs pour recevoir des demandes',
+          'Des notes claires expliquant la structure de votre site',
         ],
+        howToStart:
+          'Cliquez sur « Discuter de Votre Projet » pour présenter votre activité, vos clients et votre budget.',
       },
       'landing-pages': {
         title: 'Pages d’Atterrissage (Landing Pages)',
         summary:
-          'Pages ciblées sur un objectif unique pour présenter une offre clairement et orienter les visiteurs vers une action précise.',
-        functionalFocus:
-          'Supprime les distractions afin que campagnes et formulaires convertissent efficacement.',
-        deliverables: [
-          'Flux éditorial structuré de la proposition à l’action',
-          'Formulaires validés et redirections boutique',
-          'Mise en page optimisée pour la rapidité',
+          'Une page unique centrée sur une offre ou un service précis afin d’orienter les visiteurs vers une seule action claire.',
+        problemAddressed:
+          'Envoyer vos prospects vers une page générale ou chargée crée de la confusion et réduit les demandes.',
+        whatBhdProvides:
+          'BHD rédige et met en place une page dédiée expliquant une offre précise et dirigeant les visiteurs vers votre formulaire ou lien boutique confirmé.',
+        whatYouReceive: [
+          'Une page unique structurée autour d’une seule offre ou campagne',
+          'Un titre clair, une présentation concise et un bouton d’action visible',
+          'Une mise en page optimisée pour les visiteurs venant des réseaux sociaux',
         ],
+        howToStart:
+          'Indiquez à BHD l’offre à mettre en avant et la destination souhaitée pour vos visiteurs.',
       },
       'digital-presence': {
         title: 'Développement de Présence Numérique',
         summary:
-          'Positionnement cohérent entre votre site principal, votre boutique et vos canaux de contenu pour inspirer confiance immédiatement.',
-        functionalFocus:
-          'Aligne message de marque, cohérence visuelle et visibilité.',
-        deliverables: [
-          'Systèmes visuels noir-blanc-or ou personnalisés',
-          'Organisation des boutiques et liens (Selar, formulaires, hubs)',
-          'Hiérarchie éditoriale adaptée à un public international',
+          'Rassembler votre site, vos profils publics et vos liens professionnels dans une expérience cohérente et ordonnée.',
+        problemAddressed:
+          'De nombreuses petites entreprises perdent en crédibilité lorsque leurs descriptions et liens divergent ou mènent vers des pages obsolètes.',
+        whatBhdProvides:
+          'BHD examine votre présence en ligne actuelle, harmonise vos messages clés et organise proprement vos liens vers site, boutique et contact.',
+        whatYouReceive: [
+          'Une présentation de marque uniforme sur vos principaux points de contact',
+          'Un ensemble organisé de liens vérifiés guidant vos clients au bon endroit',
+          'Des recommandations réalistes adaptées à la taille actuelle de votre équipe',
         ],
+        howToStart:
+          'Partagez votre site, vos réseaux ou votre boutique actuels afin que BHD propose des améliorations concrètes.',
       },
       'nocode-ai-solutions': {
-        title: 'Solutions No-Code & Assistées par IA',
+        title: 'Flux de Travail No-Code & Assistés par IA',
         summary:
-          'Automatisations pratiques, intégrations de chatbots pour clients sur demande et systèmes no-code légers réduisant les tâches manuelles.',
-        functionalFocus:
-          'Déploie des outils modernes là où ils apportent un réel gain de temps à votre activité.',
-        deliverables: [
-          'Automatisations de flux et intégrations de chatbots pour projets clients',
-          'Formulaires no-code, notifications et passerelles de processus',
-          'Documentation claire pour équipes non techniques',
+          'Utilisation encadrée d’outils no-code et de flux assistés par IA pour concevoir plus vite des pages simples et fiables.',
+        problemAddressed:
+          'Les petites entreprises ont besoin de pages simples ou d’organisation sans le coût élevé ni les délais d’un logiciel sur mesure.',
+        whatBhdProvides:
+          'BHD utilise des méthodes no-code et assistées par IA pour préparer des maquettes et pages simples confirmées. Les automatisations complexes ou connexions tierces ne sont pas promises sans validation préalable.',
+        whatYouReceive: [
+          'Des pages ou configurations no-code pratiques adaptées à votre aisance technique',
+          'Un avis honnête sur ce qui fonctionne maintenant versus ce qui peut attendre',
+          'Une documentation simple pour comprendre votre outil',
         ],
+        howToStart:
+          'Décrivez le besoin simple que vous souhaitez explorer afin que BHD confirme ce qui est faisable dans votre budget.',
       },
       'digital-business-support': {
-        title: 'Accompagnement Business Numérique',
+        title: 'Outils Numériques Pratiques & Organisation du Travail',
         summary:
-          'Conseils pratiques continus pour fondateurs lançant des produits numériques, structurant des services en ligne ou maintenant leur site.',
-        functionalFocus:
-          'Soutien technique et stratégique concret pour faire avancer vos initiatives.',
-        deliverables: [
-          'Dépannage technique et revue de boutique',
-          'Évolutions progressives et structuration de contenu',
-          'Accompagnement clair et accessible',
+          'Aider les dirigeants à choisir et organiser leurs outils quotidiens—formulaires, liens partagés et dossiers—pour un travail plus fluide.',
+        problemAddressed:
+          'Les demandes clients, liens utiles et fichiers se perdent souvent dans des conversations personnelles ou notes éparses.',
+        whatBhdProvides:
+          'BHD analyse votre gestion actuelle des demandes et documents, puis aide à organiser des outils quotidiens adaptés à votre budget. Aucun suivi continu, intégration ou paiement n’est inclus sans accord explicite.',
+        whatYouReceive: [
+          'Des recommandations claires d’outils simples que votre équipe utilisera vraiment',
+          'Une meilleure organisation de vos canaux de contact et liens clés',
+          'Des explications pas à pas sans jargon technique',
         ],
+        howToStart:
+          'Expliquez brièvement comment vous gérez aujourd’hui vos messages clients et fichiers afin d’identifier des améliorations simples.',
       },
+    },
+  },
+  portfolio: {
+    kicker: 'BHD Services · Portfolio',
+    title: 'Projets Sélectionnés',
+    intro:
+      'Une vitrine dédiée aux sites web, systèmes numériques et solutions pratiques conçus et développés par BYHENRYDIGITALS.',
+    emptyStateTitle: 'Projets Clients Publiés Après Achèvement et Validation',
+    emptyStateBody:
+      'Aucun projet client finalisé et autorisé à la publication publique n’est encore affiché ici. BYHENRYDIGITALS ne publie que des réalisations achevées avec l’accord explicite du client—jamais de prototypes inachevés, de clients inventés ni de résultats fictifs.',
+    emptyStateNote:
+      'À mesure que BHD finalise de nouveaux sites web, systèmes numériques et outils pratiques avec l’accord de ses clients, chaque projet sera présenté ici selon le format ci-contre.',
+    formatHeading: 'Contenu de Chaque Fiche Projet',
+    formatItems: [
+      'Nom du projet',
+      'Secteur d’activité ou catégorie du projet',
+      'Brève description du besoin initial',
+      'Solution développée par BHD',
+      'Technologies et outils utilisés, le cas échéant',
+      'Captures d’écran ou aperçus visuels du projet',
+      'Lien vers le projet en ligne, lorsqu’il est disponible',
+    ],
+    discussCta: 'Discuter de Votre Projet',
+    exploreServicesCta: 'Découvrir les Services Pro',
+    labels: {
+      category: 'Catégorie du projet',
+      requirement: 'Besoin initial',
+      solution: 'Solution développée par BHD',
+      technologies: 'Technologies et outils utilisés',
+      liveLink: 'Voir le Projet en Ligne',
+      previewZoom: 'Agrandir l’aperçu',
+      closePreview: 'Fermer l’aperçu',
+      similarProjectCta: 'Demander une Solution Similaire',
     },
   },
   resources: {
@@ -519,6 +634,7 @@ export const fr: TranslationBundle = {
     intro:
       'Une question sur nos services web, nos produits numériques ou le programme d’affiliation ? Envoyez-nous un message.',
     formTitle: 'BYHENRYDIGITALS Enquiry Form',
+    selectedTopicLabel: 'Sujet sélectionné',
     nameLabel: 'Nom complet',
     namePlaceholder: 'Votre nom complet',
     emailLabel: 'Adresse e-mail',

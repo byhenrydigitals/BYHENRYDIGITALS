@@ -29,20 +29,24 @@ export const ig: TranslationBundle = {
   },
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
-    heroTitle: 'Ngwọta Dijitalụ. Mmetụta Zuru Ụwa Ọnụ.',
+    tagline: 'Ngwọta Dijitalụ. Mmetụta Zuru Ụwa Ọnụ.',
+    heroTitle: 'Ihe Ọmụma Dijitalụ Bara Uru, Akụrụngwa Mmụta na Ngwọta Azụmaahịa.',
     heroSubtitle:
-      'Chọpụta akụrụngwa dijitalụ bara uru, ohere mmụta, na ngwọta e mere iji nyere gị aka ịrụ, itolite, ma mepụta uru n’ụwa dijitalụ.',
+      'BYHENRYDIGITALS (BHD) na-ebelata ihe mgbochi na nsonye dijitalụ site n’ime ka ihe ọmụma dijitalụ bara uru, akụrụngwa mmụta, na ngwọta azụmaahịa dabara adaba dị mfe inweta—site na BHD Academy maka ndị mmadụ n’otu n’otu na BHD Services maka obere azụmaahịa.',
     secondaryTagline: 'Anyị Na-ewu Uru Dijitalụ Na-ere Ahịa.',
-    primaryCta: 'Chọpụta Ngwọta Anyị',
-    secondaryCta: 'Mata Maka BHD',
+    needsApproachTitle: 'Ụzọ Abụọ Doro Anya N’okpuru Otu Akara Ngwọta Dijitalụ',
+    needsApproachBody:
+      'Ma ị bụ onye na-ewulite nkà dijitalụ bara uru site na BHD Academy ma ọ bụ onye nwe azụmaahịa na-achọ weebụsaịtị na usoro ọrụ pụrụ ịdabere na ya site na BHD Services, BHD na-ebu ụzọ ghọta ebe ị nọ tupu ọ tụọ aro nzọụkwụ ọzọ.',
+    primaryCta: 'Chọpụta BHD Services',
+    secondaryCta: 'Chọpụta BHD Academy',
     pillars: [
       {
-        title: 'Mmụta Dijitalụ Bara Uru',
-        detail: 'Ntuziaka doro anya na akụrụngwa ahaziri maka iji mee ihe n’ezie.',
+        title: 'Ngwọta Azụmaahịa Dabere na Mkpa',
+        detail: 'BHD Services na-aghọta otu azụmaahịa gị si arụ ọrụ ugbu a tupu anyị akwado weebụsaịtị ma ọ bụ ngwaọrụ dijitalụ.',
       },
       {
-        title: 'Ngwọta Weebụ Na-arụ Ọrụ',
-        detail: 'Weebụsaịtị na ibe nnabata e mere maka nghọta, ọsọ, na ịdị mfe iji.',
+        title: 'BHD Academy Maka Ndị Mmụta',
+        detail: 'Ntuziaka mmụta ahaziri, akụrụngwa mmụta, na ngwaahịa Selar maka inweta nkà bara uru n’ezie.',
       },
       {
         title: 'Mmemme Njikọ Doro Anya',
@@ -50,26 +54,52 @@ export const ig: TranslationBundle = {
       },
       {
         title: 'Ọhụụ Mba Ụwa',
-        detail: 'Sistemụ dijitalụ dị mfe ịbanye nke e mere maka ndị mmadụ n’asụsụ dị iche iche.',
+        detail: 'Sistemụ dijitalụ dị mfe ịbanye n’asụsụ English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin.',
       },
     ],
-    productsSectionKicker: 'Ngwaahịa Dijitalụ',
+    pathways: {
+      sectionKicker: 'BHD Academy na BHD Services',
+      sectionTitle: 'Ụzọ Abụọ Dị Iche N’okpuru BYHENRYDIGITALS',
+      sectionSubtitle:
+        'BYHENRYDIGITALS na-ebelata ihe mgbochi nsonye dijitalụ site na ngalaba abụọ pụrụ iche—ịkwado ndị na-amụ nkà dijitalụ na inyere obere azụmaahịa aka itinye ngwaọrụ dijitalụ bara uru n’ọrụ.',
+      business: {
+        label: 'BHD Services · Maka Azụmaahịa',
+        title: 'BHD Services — Ngwọta Dijitalụ Bara Uru Maka Azụmaahịa.',
+        description:
+          'Anyị na-enyere obere azụmaahịa na ndị na-amalite azụmaahịa aka ịchọpụta, inweta na itinye ngwọta dijitalụ bara uru n’ọrụ dabara na mkpa ha, ego ha nwere na ọkwa uto ha.',
+        cta: 'Chọpụta BHD Services',
+        servicesLinkLabel: 'Ọrụ Azụmaahịa',
+        projectsLinkLabel: 'Ọrụ A Họọrọ',
+        contactLinkLabel: 'Kwurịta Maka Ọrụ',
+      },
+      individual: {
+        label: 'BHD Academy · Maka Ndị Mmadụ N’otu N’otu',
+        title: 'BHD Academy — Mụta. Wulite. Too.',
+        description:
+          'Chọpụta mmụta dijitalụ bara uru, akụrụngwa mmụta na ntuziaka e mere iji nyere ndị mmadụ aka ịzụlite nkà dijitalụ bara uru ma ghọta ohere dị n’akụnaụba dijitalụ.',
+        cta: 'Chọpụta BHD Academy',
+        productsLinkLabel: 'Ngwaahịa Dijitalụ',
+        resourcesLinkLabel: 'Akụrụngwa Mmụta',
+        affiliateLinkLabel: 'Mmemme Njikọ',
+      },
+    },
+    productsSectionKicker: 'BHD Academy · Ngwaahịa Dijitalụ',
     productsSectionTitle: 'Ntuziaka Dijitalụ na Akụrụngwa Mmụta Ahaziri Ezi',
     productsSectionDesc:
-      'Chọgharịa ngwaahịa dijitalụ BHD dị na Selar, e kere iji nyere ndị na-amụ ihe na ndị na-ewu azụmaahịa dijitalụ aka inweta nkà bara uru.',
+      'Akụkụ nke BHD Academy: chọgharịa ntuziaka mmụta ahaziri na ngwaahịa dijitalụ dị na Selar iji nyere ndị mmadụ aka ịzụlite nkà bara uru.',
     viewAllProducts: 'Lee Ndepụta Ngwaahịa',
     selarBadge: 'Ndepụta Selar',
     selarLinkShort: 'BHD Store',
-    servicesSectionKicker: 'Ọrụ Dijitalụ',
-    servicesSectionTitle: 'Ahụmịhe Dijitalụ Na-arụ Ọrụ Nke Ọma',
+    servicesSectionKicker: 'BHD Services · Maka Azụmaahịa',
+    servicesSectionTitle: 'Ngwọta Dijitalụ E Mere Dabere na Mkpa Azụmaahịa Gị',
     servicesSectionDesc:
-      'Site na ibe nnabata na-eweta nsonaazụ ruo na usoro AI na-enyere aka, BHD na-ewu ngwa dijitalụ pụrụ ịdabere na ya, ọ bụghị naanị ibe nkịtị.',
-    exploreServices: 'Chọpụta Ọrụ Anyị',
+      'BHD Services na-ebido site n’ịghọta otu azụmaahịa gị si arụ ọrụ ugbu a, ego gị, na ọkwa uto gị tupu ọ kwado ngwọta dijitalụ ọ bụla—na-ewu weebụsaịtị na usoro ọrụ pụrụ ịdabere na ya.',
+    exploreServices: 'Chọpụta Ọrụ Azụmaahịa',
     enquireShort: 'Jụọ Ajụjụ',
-    affiliateSectionKicker: 'Mụta Ma Ọ Bụ Tinye Akwụkwọ · Ihe Abụọ Dị Iche',
+    affiliateSectionKicker: 'BHD Academy · Mụta Ma Ọ Bụ Tinye Akwụkwọ · Ihe Abụọ Dị Iche',
     affiliateSectionTitle: 'Affiliate Starter Kit vs. Mmemme Njikọ BHD',
     affiliateSectionDesc:
-      'BYHENRYDIGITALS nwere ma ngwaahịa mmụta ₦8,000 Starter Kit dị iche maka ịmụ ahịa njikọ ma mmemme njikọ n’efu nke ndị otu anyị na-enyocha tupu ahọrọ mmadụ.',
+      'N’ime BHD Academy, BYHENRYDIGITALS nwere ma ngwaahịa mmụta ₦8,000 Starter Kit dị iche maka ịmụ ahịa njikọ ma mmemme njikọ n’efu nke ndị otu anyị na-enyocha tupu ahọrọ mmadụ.',
     learnAffiliate: 'Nkọwa Mmemme',
     applyAffiliate: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
     affiliateClarification:
@@ -102,7 +132,7 @@ export const ig: TranslationBundle = {
       selectionTitle: 'A Na-enyocha',
       selectionLabel: 'Ndi BYHENRYDIGITALS na-ahọrọ mgbe ha nyochachara akwụkwọ',
     },
-    resourcesSectionKicker: 'Ihe Ọmụma na Ntụziaka',
+    resourcesSectionKicker: 'BHD Academy · Ihe Ọmụma na Ntụziaka',
     resourcesSectionTitle: 'Ntuziaka Maka Nkà Dijitalụ, Weebụ na AI',
     resourcesSectionDesc:
       'Gụọ edemede bara uru banyere mmụta dijitalụ, ohere n’ịntanetị, ịmalite azụmaahịa, mmepe weebụsaịtị, na ngwaọrụ dijitalụ ọhụrụ.',
@@ -329,79 +359,164 @@ export const ig: TranslationBundle = {
       'Nkwupụta Eziokwu: BYHENRYDIGITALS anaghị ekwe nkwa nhọrọ njikọ, ire ahịa, ma ọ bụ ego. Nsonaazụ ndị njikọ a kwadoro dabere na mbọ onwe onye, ogo nkwukọrịta, na mkpa ahịa.',
   },
   services: {
-    kicker: 'Ngwọta Ndị Ahịa',
-    title: 'Ọrụ Dijitalụ E Mere Maka Iji Mee Ihe N’ezie',
+    kicker: 'Ọrụ Maka Obere Azụmaahịa',
+    title: 'Ọrụ Dijitalụ Bara Uru E Kọwara N’ụzọ Dị Mfe',
     intro:
-      'Anyị na-ewu ahụmịhe dijitalụ na-arụ ọrụ—ọ bụghị naanị ibe weebụ mara mma. Ọrụ ọ bụla na-elekwasị anya na nhazi, ọsọ, na nghọta.',
-    philosophyTitle: 'Uru Dijitalụ Na-ere Ahịa',
-    philosophyBody:
-      'Ịma mma naanị anaghị azụlite azụmaahịa. BHD na-ejikọ nhazi ojii, ọcha na ọla edo na usoro njem doro anya na sistemụ dijitalụ bara uru.',
-    brandServicesTag: 'Ọrụ BYHENRYDIGITALS',
-    customScopedLabel: 'A na-ahazi ya dịka mkpa ọrụ si dị',
+      'Ọ dịghị mkpa ka ị nwee nzụlite teknụzụ tupu gị na BHD arụọ ọrụ. Ọrụ ọ bụla na-elekwasị anya n’idozi nsogbu azụmaahịa dabere na mkpa gị ugbu a, ego ị nwere, na atụmatụ uto gị.',
+    approachKicker: 'Otu BHD Si Arụ Ọrụ',
+    approachHeading:
+      'Ghọta azụmaahịa. Chọpụta mkpa. Kwado ngwọta dabara adaba. Tinye ya n’ọrụ.',
+    approachLead:
+      'BHD na-akwado ngwọta dabere na mkpa ndị ahịa ugbu a, ego ha nwere, na atụmatụ uto kwesịrị ekwesị—ọ dịghị ere ngwaọrụ na-adịghị mkpa.',
+    approachSteps: [
+      {
+        num: '01.',
+        title: 'Ghọta azụmaahịa.',
+        detail: 'Anyị na-amụta ihe azụmaahịa gị na-ere, ndị ị na-ejere ozi, na otu ọrụ si aga.',
+      },
+      {
+        num: '02.',
+        title: 'Chọpụta mkpa.',
+        detail: 'Anyị na-achọpụta ebe ndị ahịa na-enwe mgbagwoju anya ma ọ bụ ebe ọrụ na-egbu oge.',
+      },
+      {
+        num: '03.',
+        title: 'Kwado ngwọta dabara adaba.',
+        detail: 'Anyị na-atụ aro ngwọta bara uru kwekọrọ na ego gị na atụmatụ uto gị.',
+      },
+      {
+        num: '04.',
+        title: 'Tinye ya n’ọrụ.',
+        detail: 'Anyị na-ewu ma hazie ihe a kwadoro nke ọma ka azụmaahịa gị wee jiri ya ozugbo.',
+      },
+    ],
+    labels: {
+      problem: 'Nsogbu azụmaahịa ọ na-edozi',
+      provides: 'Ihe BHD nwere ike inye n’ezie',
+      receives: 'Ihe onye nwe azụmaahịa na-enweta',
+      getStarted: 'Otu esi ebido',
+    },
+    brandServicesTag: 'Ọrụ Azụmaahịa BYHENRYDIGITALS',
+    customScopedLabel: 'Ahaziri dịka mkpa gị, ego gị na ihe a kwadoro si dị',
     discussCta: 'Kwurịta Maka Ọrụ Gị',
     pricingNotice:
-      'A na-ekpebi oke ọrụ na ọnụahịa n’oge mkparịta ụka. Enweghị ọnụahịa akwụsịrị ebe a.',
+      'Mkparịta ụka na Ọnụahịa: A na-ekpebi oke ọrụ na ụgwọ n’ihu dabere na ihe azụmaahịa gị chọrọ ugbu a.',
+    availabilityNotice:
+      'Ọkwa Oke Ọrụ: BHD na-ekwe nkwa naanị ihe a kwadoro n’oge mkparịta ụka. Anaghị ekwe nkwa njikọta mpụga, usoro akpaaka, nhazi ịkwụ ụgwọ, ma ọ bụ nkwado na-aga n’ihu ma ọ bụrụ na ekwekọrịtaghị ya n’ihu.',
     items: {
       'web-design-dev': {
         title: 'Nhazi na Mmepe Weebụsaịtị',
         summary:
-          'Weebụsaịtị na-anabata ngwaọrụ niile ma na-ebu ngwa ngwa, e wuru maka njem onye ọrụ doro anya na ntụkwasị obi akara.',
-        functionalFocus:
-          'E wubere ya maka ọrụ azụmaahịa n’ezie—ọ bụghị naanị ibe ngosi nkịtị.',
-        deliverables: [
-          'Nhazi zuru oke maka kọmputa, tablet, na ekwentị',
-          'Nhazi koodu dị ọcha na metadata dị njikere maka nchọta',
-          'Ụzọ doro anya maka ajụjụ na nnabata ndị ahịa',
+          'Weebụsaịtị doro anya na-arụ ọrụ nke ọma na ekwentị, na-akọwa ihe ị na-eme ma na-eme ka ndị ahịa kpọtụrụ gị ngwa ngwa.',
+        problemAddressed:
+          'Ndị ahịa na-enwe ike ịtụkwasị obi ma chọta ozi dị mkpa mgbe ozi azụmaahịa gbasasịrị naanị na soshal midia ma ọ bụ nkata.',
+        whatBhdProvides:
+          'BHD na-ahazi ma na-ewu weebụsaịtị dị ọcha dabara na ọkwa azụmaahịa gị ugbu a. Njikọ ịkwụ ụgwọ ma ọ bụ ngwaọrụ mpụga ga-adị naanị ma ọ bụrụ na e kwekọrịtara ha iche.',
+        whatYouReceive: [
+          'Weebụsaịtị na-arụ ọrụ na ekwentị na kọmputa nwere ibe doro anya maka ọrụ gị',
+          'Ụzọ dị mfe ndị ọbịa ga-esi jụọ ajụjụ ma kpọtụrụ gị',
+          'Nkọwa dị mfe nghọta maka otu e si hazie weebụsaịtị gị',
         ],
+        howToStart:
+          'Pịa "Kwurịta Maka Ọrụ Gị" ka ị kọwaa ihe azụmaahịa gị na-eme, ndị ahịa gị, na ego ị bu n’obi.',
       },
       'landing-pages': {
         title: 'Ibe Nnabata (Landing Pages)',
         summary:
-          'Ibe lekwasịrị anya n’otu ebumnuche e mere iji kọwaa onyinye nke ọma ma duzie ndị nwere mmasị gaa n’otu ihe omume.',
-        functionalFocus:
-          'Na-ewepụ ndọpụ uche ka mkpọsa na fọm nnabata wepụta ozi doro anya.',
-        deliverables: [
-          'Nhazi ozi site na nkọwa ruo n’ime ihe',
-          'Fọm ajụjụ e nyochara na njikọ ụlọ ahịa mpụga',
-          'Nhazi ihe onyonyo na-eme ngwa ngwa',
+          'Otu ibe lekwasịrị anya n’otu ọrụ ma ọ bụ ngwaahịa ka ndị ọbịa wee mara ozugbo nzọụkwụ ọzọ ha ga-eme.',
+        problemAddressed:
+          'Iziga ndị nwere mmasị n’ibe nwere ọtụtụ ihe na-adọpụ uche na-ebelata ajụjụ ndị ahịa n’ihi na ha amaghị ebe ha ga-apị.',
+        whatBhdProvides:
+          'BHD na-ahazi ma na-ewu otu ibe doro anya nke na-akọwa otu onyinye ma na-eduga ndị ọbịa na fọm ajụjụ ma ọ bụ njikọ ụlọ ahịa e kwadoro.',
+        whatYouReceive: [
+          'Otu ibe ahaziri maka otu ngwaahịa, ọrụ, ma ọ bụ mkpọsa',
+          'Isiokwu doro anya, nkọwa dị mkpirikpi, na bọtịnụ nzọụkwụ ọzọ',
+          'Nhazi dị mma maka ndị si na WhatsApp ma ọ bụ soshal midia abịa',
         ],
+        howToStart:
+          'Gwa BHD ngwaahịa ma ọ bụ ọrụ ị chọrọ igosi na ebe ị chọrọ ka ndị nwere mmasị gaa.',
       },
       'digital-presence': {
         title: 'Mmepe Ọnụnọ Dijitalụ',
         summary:
-          'Nhazi zuru oke n’etiti weebụsaịtị gị, ụlọ ahịa ngwaahịa, na ọwa ọdịnaya ka akara gị wee gosi ntụkwasị obi ozugbo.',
-        functionalFocus:
-          'Na-ejikọ ozi akara, ịdị n’otu anya, na ịchọta ngwa ngwa n’ebe niile.',
-        deliverables: [
-          'Usoro anya ojii-ọcha-ọla edo ma ọ bụ agba akara gị',
-          'Nhazi ụlọ ahịa na njikọ (Selar, fọm, na ebe etiti)',
-          'Nhazi ọdịnaya maka ndị ọbịa mba ụwa',
+          'Ịjikọ weebụsaịtị gị, njikọ azụmaahịa, na nkọwa ihu ọha gị ka ha bụrụ otu ahụmịhe akara ahaziri nke ọma.',
+        problemAddressed:
+          'Ọtụtụ obere azụmaahịa na-efunahụ ntụkwasị obi mgbe nkọwa na njikọ dị n’ọtụtụ ebe anaghị ekwekọ ma ọ bụ na-eduga na njikọ mebiri emebi.',
+        whatBhdProvides:
+          'BHD na-enyocha otu azụmaahịa gị si apụta n’ịntanetị ugbu a, na-enyere gị aka idozi ozi akara gị ma hazie njikọ weebụsaịtị, ụlọ ahịa na kọntaktị gị.',
+        whatYouReceive: [
+          'Ozi azụmaahịa na ọdịdị anya kwekọrọ n’ebe ndị ahịa na-ahụ gị',
+          'Ndepụta njikọ kwadoro nke na-eduga ndị ahịa n’ebe ziri ezi',
+          'Ndụmọdụ dị mfe dabara na nha azụmaahịa gị ugbu a',
         ],
+        howToStart:
+          'Zipu weebụsaịtị gị, akaụntụ soshal midia, ma ọ bụ njikọ ụlọ ahịa ka BHD wee nyochaa ma tụọ aro mmezi.',
       },
       'nocode-ai-solutions': {
-        title: 'Ngwọta Dijitalụ No-Code na AI',
+        title: 'Usoro Mmepe No-Code na AI Na-enyere Aka',
         summary:
-          'Usoro ọrụ akpaaka bara uru, njikọta chatbot maka ndị ahịa mgbe a rịọrọ ya, na ngwa no-code dị mfe iji belata ọrụ aka.',
-        functionalFocus:
-          'Na-etinye ngwaọrụ ọgbara ọhụrụ ebe ha na-azọpụta oge n’ezie maka ndị ahịa.',
-        deliverables: [
-          'Nhazi ọrụ akpaaka na njikọta chatbot maka azụmaahịa ndị ahịa',
-          'Fọm nnabata no-code, ọkwa, na njikọ ọrụ',
-          'Ntuziaka dị mfe nghọta maka otu ndị ọrụ',
+          'Iji ngwaọrụ no-code na usoro AI na-enyere aka mee ka nhazi ibe dijitalụ dị ngwa—naanị n’ihe e kwadoro ma nwee ntụkwasị obi.',
+        problemAddressed:
+          'Obere azụmaahịa na-achọkarị ibe dijitalụ dị mfe ma ọ bụ usoro nnabata ozi n’enweghị nnukwu ụgwọ ma ọ bụ ogologo oge nke sọftụwia ochie.',
+        whatBhdProvides:
+          'BHD na-eji usoro no-code na AI ahaziri hazie nhazi ibe, dozie ọdịnaya, ma wuo ibe dijitalụ dị mfe. Anaghị ekwe nkwa njikọta akpaaka mpụga ma ọ bụrụ na enyochaghị ma kwado ha iche.',
+        whatYouReceive: [
+          'Ibe dijitalụ bara uru ma ọ bụ nhazi no-code dabara na nghọta gị',
+          'Ndụmọdụ eziokwu maka ihe ga-arụ ọrụ ugbu a na ihe kwesịrị ichere uto',
+          'Nkọwa dị mfe nghọta ka otu gị wee mara otu ọ si arụ ọrụ',
         ],
+        howToStart:
+          'Kọwaa ọrụ ma ọ bụ nhazi dijitalụ dị mfe ị chọrọ ka BHD kwado ihe ga-ekwe omume n’ime ego gị.',
       },
       'digital-business-support': {
-        title: 'Nkwado Azụmaahịa Dijitalụ',
+        title: 'Ngwaọrụ Azụmaahịa Dijitalụ Bara Uru na Nhazi Usoro Ọrụ',
         summary:
-          'Ntuziaka bara uru na-aga n’ihu maka ndị hibere azụmaahịa na-ewepụta ngwaahịa dijitalụ ma ọ bụ na-elekọta weebụsaịtị.',
-        functionalFocus:
-          'Nkwado teknụzụ na atụmatụ iji mee ka atụmatụ dijitalụ gaa n’ihu.',
-        deliverables: [
-          'Ndozi nsogbu teknụzụ na nyocha njikere ụlọ ahịa',
-          'Mmelite atụmatụ nta nta na mmụba nhazi ọdịnaya',
-          'Ntuziaka mmejuputa doro anya n’enweghị okwu mgbagwoju anya',
+          'Inyere ndị nwe obere azụmaahịa aka ịhọrọ ma hazie ngwaọrụ dijitalụ kwa ụbọchị—dị ka fọm ajụjụ, njikọ, na ozi ndị ahịa—ka ọrụ wee dị ọcha.',
+        problemAddressed:
+          'Ajụjụ ndị ahịa, njikọ dị mkpa, na faịlụ na-efukarị n’etiti ọtụtụ nkata na ndetu gbasasịrị, nke na-egbu oge kwa ụbọchị.',
+        whatBhdProvides:
+          'BHD na-eleba anya n’otu azụmaahịa gị si ejikwa ozi ndị ahịa ugbu a, wee tụọ aro ma hazie ngwaọrụ dijitalụ bara uru dabara na ego na atụmatụ uto gị. Nkwado na-aga n’ihu ma ọ bụ nhazi ịkwụ ụgwọ abụghị akụkụ ya ma ọ bụrụ na ekwekọrịtaghị ya.',
+        whatYouReceive: [
+          'Ndụmọdụ doro anya maka ngwaọrụ kwa ụbọchị ndị otu gị nwere ike iji',
+          'Nhazi dị ọcha maka ụzọ ajụjụ ndị ahịa, njikọ, na ozi dị mkpa',
+          'Ntuziaka nzọụkwụ n’enweghị okwu teknụzụ siri ike',
         ],
+        howToStart:
+          'Ziga ozi dị mkpirikpi na-akọwa otu i si ejikwa ozi ndị ahịa na faịlụ ugbu a ka BHD tụọ aro mmezi.',
       },
+    },
+  },
+  portfolio: {
+    kicker: 'BHD Services · Ngalaba Ọrụ',
+    title: 'Ọrụ A Họọrọ (Selected Projects)',
+    intro:
+      'Ebe pụrụ iche e ji egosipụta weebụsaịtị, sistemụ dijitalụ na ngwọta azụmaahịa bara uru nke BYHENRYDIGITALS rụrụ.',
+    emptyStateTitle: 'A Na-ebipụta Ọrụ Ndị Ahịa Emechara N’ezie Mgbe E Kwenyere',
+    emptyStateBody:
+      'Ugbu a, enweghị ọrụ ndị ahịa emechara nke e kwadoro ka e gosipụta n’ihu ọha. BYHENRYDIGITALS na-egosipụta naanị ọrụ emechara nke ndị ahịa kwadoro—ọ dịghị mgbe anyị na-etinye ihe nnwale a na-emeghị emechi ma ọ bụ akụkọ e chepụtara echepụta.',
+    emptyStateNote:
+      'Ka BHD na-emecha weebụsaịtị, sistemụ dijitalụ, na nhazi usoro ọrụ ọhụrụ ma nata nkwado ndị ahịa, a ga-etinye nke ọ bụla ebe a n’usoro a kọwara n’akụkụ.',
+    formatHeading: 'Ihe Ndepụta Ọrụ Ọ Bụla Na-egosi',
+    formatItems: [
+      'Aha ọrụ (Project name)',
+      'Ụdị azụmaahịa ma ọ bụ ngalaba ọrụ',
+      'Nkọwa dị mkpirikpi maka mkpa mbụ dị',
+      'Ngwọta nke BHD mepụtara',
+      'Teknụzụ na ngwaọrụ e ji rụọ ọrụ, ebe ọ dị mkpa',
+      'Foto ihuenyo ma ọ bụ onyonyo nlele ọrụ',
+      'Njikọ gaa na ọrụ dị ndụ n’ịntanetị, mgbe ọ dị',
+    ],
+    discussCta: 'Kwuo Maka Ọrụ Gị',
+    exploreServicesCta: 'Chọpụta Ọrụ Azụmaahịa',
+    labels: {
+      category: 'Ụdị azụmaahịa ma ọ bụ ọrụ',
+      requirement: 'Mkpa mbụ e nwere',
+      solution: 'Ngwọta nke BHD rụrụ',
+      technologies: 'Teknụzụ na ngwaọrụ e jiri mee ihe',
+      liveLink: 'Lee Ọrụ Dị Ndụ',
+      previewZoom: 'Lee Onyonyo Nke Ọma',
+      closePreview: 'Mechie nlele onyonyo',
+      similarProjectCta: 'Jụọ Maka Ngwọta Yiri Ya',
     },
   },
   resources: {
@@ -519,6 +634,7 @@ export const ig: TranslationBundle = {
     intro:
       'Ị nwere ajụjụ gbasara ọrụ mmepe weebụ anyị, ngwaahịa dijitalụ, ma ọ bụ mmemme njikọ? Ziga ozi n’okpuru.',
     formTitle: 'BYHENRYDIGITALS Enquiry Form',
+    selectedTopicLabel: 'Isiokwu a họọrọ',
     nameLabel: 'Aha Zuru Ezu',
     namePlaceholder: 'Aha gị zuru ezu',
     emailLabel: 'Adreesị Ozi-e (Email)',

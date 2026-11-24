@@ -6,10 +6,10 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'about-01': {
     question: 'Qu’est-ce que BYHENRYDIGITALS ?',
     answer: [
-      'BYHENRYDIGITALS (BHD) est une marque d’éducation numérique et de solutions digitales fondée par Henry (Coach Henry). Elle aide particuliers et entreprises à découvrir des opportunités numériques concrètes, acquérir des compétences pratiques, accéder à des guides vérifiés sur Selar et concevoir des sites web fonctionnels.',
-      'Tant dans ses ressources pédagogiques que dans ses services clients, BHD privilégie l’éducation numérique pratique, l’entrepreneuriat digital, la monétisation en ligne et les solutions technologiques utiles.',
+      'BYHENRYDIGITALS (BHD) est une marque de solutions numériques et d’éducation fondée par Henry (Coach Henry) pour réduire les barrières à la participation numérique. Elle regroupe deux pôles distincts : BHD Academy pour les particuliers souhaitant développer des compétences numériques utiles, et BHD Services pour les petites entreprises et startups recherchant des sites web et outils adaptés.',
+      'Dans ces deux pôles, BHD privilégie la formation pratique, des guides vérifiés sur Selar, une affiliation transparente et des solutions web axées sur vos besoins réels.',
     ],
-    extraKeywords: ['présentation', 'éducation numérique', 'entrepreneuriat', 'solutions digitales'],
+    extraKeywords: ['présentation', 'bhd academy', 'bhd services', 'éducation numérique', 'solutions digitales'],
     actionLabel: 'Découvrir À propos de BHD',
   },
   'about-02': {
@@ -64,13 +64,13 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'about-09': {
     question: 'À qui s’adresse BYHENRYDIGITALS ?',
     answer: [
-      'BHD s’adresse aux débutants explorant les compétences numériques, aux jeunes apprenants et parents recherchant des parcours adaptés à l’âge, aux créateurs et rédacteurs souhaitant recommander des ressources sérieuses, ainsi qu’aux entrepreneurs et organisations ayant besoin de sites web performants.',
+      'BYHENRYDIGITALS accompagne deux publics complémentaires : (1) Les particuliers via BHD Academy—débutants explorant les compétences numériques, jeunes apprenants et parents recherchant un cadre sûr, et créateurs intéressés par l’affiliation transparente ; et (2) Les petites entreprises et startups via BHD Services—dirigeants ayant besoin de sites web, pages dédiées et outils pratiques adaptés à leur budget.',
     ],
   },
   'about-10': {
     question: 'BHD est-il une plateforme d’éducation numérique ou une marque de services digitaux ?',
     answer: [
-      'BYHENRYDIGITALS réunit ces deux volets sous une même marque : (1) l’éducation numérique via ses guides vérifiés sur Selar et sa bibliothèque d’articles, et (2) les services digitaux couvrant sites web, landing pages, présence digitale et automatisations no-code.',
+      'BYHENRYDIGITALS réunit les deux volets sous une même marque : (1) BHD Academy — Apprendre. Construire. Grandir. pour les particuliers (guides sur Selar, Ressources & Blog et Programme d’Affiliation), et (2) BHD Services — Solutions Numériques Pratiques pour Entreprises (conception web, landing pages, présence digitale, no-code et outils pratiques).',
     ],
   },
   'about-11': {

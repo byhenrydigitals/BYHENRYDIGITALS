@@ -13,7 +13,6 @@ import { SocialPlatformIcon } from '../components/SocialIcons';
 const TALLY_EMBED_URL =
   'https://tally.so/embed/9N7284?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1';
 const TALLY_WIDGET_SCRIPT_SRC = 'https://tally.so/widgets/embed.js';
-const OFFICIAL_FORM_NAME = 'BYHENRYDIGITALS Enquiry Form';
 
 declare global {
   interface Window {
@@ -27,7 +26,7 @@ interface ContactPageProps {
   initialSubject?: string;
 }
 
-export function ContactPage(_props: ContactPageProps) {
+export function ContactPage({ initialSubject }: ContactPageProps) {
   const { t } = useLanguage();
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
@@ -54,7 +53,9 @@ export function ContactPage(_props: ContactPageProps) {
     if (existingScript) {
       existingScript.addEventListener('load', loadTally);
       existingScript.addEventListener('error', loadTally);
+      const fallbackTimer = window.setTimeout(loadTally, 1200);
       return () => {
+        window.clearTimeout(fallbackTimer);
         existingScript.removeEventListener('load', loadTally);
         existingScript.removeEventListener('error', loadTally);
       };
@@ -66,8 +67,10 @@ export function ContactPage(_props: ContactPageProps) {
     script.addEventListener('load', loadTally);
     script.addEventListener('error', loadTally);
     document.body.appendChild(script);
+    const fallbackTimer = window.setTimeout(loadTally, 1500);
 
     return () => {
+      window.clearTimeout(fallbackTimer);
       script.removeEventListener('load', loadTally);
       script.removeEventListener('error', loadTally);
     };
@@ -89,10 +92,18 @@ export function ContactPage(_props: ContactPageProps) {
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Official BYHENRYDIGITALS Enquiry Form (Embedded via Tally) */}
           <div className="min-w-0 rounded-xl border border-white/[0.12] bg-[#121824] p-4 sm:p-7 lg:col-span-7">
-            <div className="mb-4 border-b border-white/[0.08] pb-3.5">
+            <div className="mb-4 space-y-2 border-b border-white/[0.08] pb-3.5">
               <h2 className="font-display text-xl font-semibold text-[#f5f4f0]">
-                {OFFICIAL_FORM_NAME}
+                {t.contact.formTitle}
               </h2>
+              {initialSubject && (
+                <p className="text-xs text-[#b0b4be]">
+                  <span className="font-semibold text-[#eab308]">
+                    {t.contact.selectedTopicLabel}:{' '}
+                  </span>
+                  <span className="text-[#f5f4f0]">{initialSubject}</span>
+                </p>
+              )}
             </div>
 
             <div className="w-full min-w-0 overflow-hidden">
@@ -104,7 +115,7 @@ export function ContactPage(_props: ContactPageProps) {
                 frameBorder={0}
                 marginHeight={0}
                 marginWidth={0}
-                title={OFFICIAL_FORM_NAME}
+                title={t.contact.formTitle}
                 className="block w-full max-w-full border-0 bg-transparent"
               />
             </div>

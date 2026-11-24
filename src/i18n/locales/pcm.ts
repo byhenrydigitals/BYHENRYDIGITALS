@@ -3,13 +3,13 @@ import { TranslationBundle } from '../schema';
 export const pcm: TranslationBundle = {
   routeTitles: {
     '/': 'Digital Solutions Wey Dey Make Global Impact.',
-    '/about': 'About BYHENRYDIGITALS',
-    '/products': 'Digital Products',
-    '/affiliate-programme': 'Affiliate Programme',
-    '/services': 'Digital Services',
-    '/resources': 'Guides & Articles',
-    '/contact': 'Contact BHD',
-    '/faq': 'Vanessa FAQ & Info Centre',
+    '/about': 'Sabi More About BYHENRYDIGITALS',
+    '/products': 'Digital Products for Learners',
+    '/affiliate-programme': 'BHD Affiliate Programme',
+    '/services': 'Business Digital Services',
+    '/resources': 'Practical Guides & Articles',
+    '/contact': 'Reach Out to BHD',
+    '/faq': 'Vanessa FAQ & Answer Centre',
   },
   nav: {
     home: 'Home',
@@ -19,34 +19,38 @@ export const pcm: TranslationBundle = {
     services: 'Services',
     resources: 'Guides & Blog',
     faq: 'Vanessa FAQ',
-    contact: 'Contact',
+    contact: 'Contact Us',
     primaryCta: 'See Our Solutions',
     languageMenuLabel: 'Language',
-    activeLanguagesLabel: 'Languages Wey Active',
+    activeLanguagesLabel: 'Languages Wey Dey Work',
     activeBadge: 'Active',
     openMenuAria: 'Open site menu',
     closeMenuAria: 'Close site menu',
   },
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
-    heroTitle: 'Digital Solutions Wey Dey Make Global Impact.',
+    tagline: 'Digital Solutions Wey Dey Make Global Impact.',
+    heroTitle: 'Better Digital Knowledge, Learning Guides & Digital Solutions Wey Dey Work.',
     heroSubtitle:
-      'See beta digital guides, chances to learn, and practical online solutions wey go help you build real skill, grow your work, and create value for internet.',
+      'BYHENRYDIGITALS (BHD) dey reduce the wahala wey dey block people from digital work — by making useful digital learning, educational guides, and practical business tools easy to reach through BHD Academy for individuals and BHD Services for small businesses and startups.',
     secondaryTagline: 'We Dey Build Digital Value Wey Dey Sell.',
-    primaryCta: 'See Our Solutions',
-    secondaryCta: 'Sabi BHD Well',
+    needsApproachTitle: 'Two Clear Roads Under One Digital Solutions Brand',
+    needsApproachBody:
+      'Whether you be person wey wan learn practical digital skills inside BHD Academy or business owner wey need clean website and better work arrangement through BHD Services, BHD go first understand where you dey before we suggest your next step.',
+    primaryCta: 'Check BHD Services',
+    secondaryCta: 'Check BHD Academy',
     pillars: [
       {
-        title: 'Digital Learning Wey Practical',
-        detail: 'Clear guides and well-arranged materials wey you fit use do real work.',
+        title: 'Business Solutions Wey Start From Wetin You Need',
+        detail: 'BHD Services dey understand how your business dey run now before we suggest websites, landing pages, or tools.',
       },
       {
-        title: 'Websites Wey Dey Work Well',
-        detail: 'Websites and landing pages wey dey load fast, clear for eye, and easy for people to use.',
+        title: 'BHD Academy for Individuals',
+        detail: 'Clear learning guides, practical articles, and Selar products wey help people sabi real digital skill.',
       },
       {
         title: 'Honest Affiliate Programme',
-        detail: 'Free application, BHD selection review, no MLM, and 35% commission for approved affiliates.',
+        detail: 'Free to apply, BHD dey review and pick people, no MLM, and 35% commission for approved affiliates.',
       },
       {
         title: 'Access Anywhere for World',
@@ -54,29 +58,55 @@ export const pcm: TranslationBundle = {
           'Platform wey dey work for English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin.',
       },
     ],
-    productsSectionKicker: 'Digital Products',
+    pathways: {
+      sectionKicker: 'BHD Academy & BHD Services',
+      sectionTitle: 'Two Separate Doors Under BYHENRYDIGITALS',
+      sectionSubtitle:
+        'BYHENRYDIGITALS dey make digital life easier for two different groups — helping everyday people learn useful digital skills and helping small businesses set up tools wey dey work.',
+      business: {
+        label: 'BHD Services · For Businesses',
+        title: 'BHD Services — Digital Solutions Wey Dey Work for Businesses.',
+        description:
+          'We dey help small businesses and startups find, reach, and set up practical digital solutions wey match wetin dem need, their budget, and where their business reach.',
+        cta: 'Check BHD Services',
+        servicesLinkLabel: 'Business Services',
+        projectsLinkLabel: 'Selected Projects',
+        contactLinkLabel: 'Yarn About Project',
+      },
+      individual: {
+        label: 'BHD Academy · For Individuals',
+        title: 'BHD Academy — Learn Work. Build Am. Grow.',
+        description:
+          'Check practical digital education, learning materials, and straight guidance wey we arrange to help individuals build useful digital skills and understand real chances inside the digital economy.',
+        cta: 'Check BHD Academy',
+        productsLinkLabel: 'Digital Products',
+        resourcesLinkLabel: 'Learning Guides',
+        affiliateLinkLabel: 'Affiliate Programme',
+      },
+    },
+    productsSectionKicker: 'BHD Academy · Digital Products',
     productsSectionTitle: 'Digital Guides & Learning Materials Wey Arrange Well',
     productsSectionDesc:
-      'Check BHD digital products for Selar — we write dem so learners and upcoming digital creators fit sabi practical skills wey dey work.',
+      'Inside BHD Academy: check learning guides and digital products on Selar wey dey help learners build practical skills and sabi digital work well.',
     viewAllProducts: 'See All Products',
     selarBadge: 'Selar Store',
     selarLinkShort: 'BHD Store',
-    servicesSectionKicker: 'Digital Services',
-    servicesSectionTitle: 'Websites & Digital Systems Wey Dey Deliver',
+    servicesSectionKicker: 'BHD Services · For Businesses',
+    servicesSectionTitle: 'Practical Digital Systems Built Around Wetin Your Business Need',
     servicesSectionDesc:
-      'From focused landing pages reach AI-assisted workflows, BHD dey build solid websites and online setups wey dey work — no be just fine page wey no dey do anything.',
-    exploreServices: 'See Our Services',
+      'BHD Services dey start by understanding how your business dey operate now, your budget, and your growth stage before we suggest any digital solution — solid websites and workflows wey dey deliver.',
+    exploreServices: 'See Business Services',
     enquireShort: 'Ask Us',
-    affiliateSectionKicker: 'Learn or Apply · Two Different Things',
+    affiliateSectionKicker: 'BHD Academy · Learn or Apply · Two Different Things',
     affiliateSectionTitle: 'Affiliate Starter Kit vs. BHD Affiliate Programme',
     affiliateSectionDesc:
-      'BYHENRYDIGITALS get one separate ₦8,000 educational Starter Kit for people wey wan learn affiliate marketing, and one different free-to-apply affiliate programme wey our team dey review.',
+      'Under BHD Academy, BYHENRYDIGITALS get one separate ₦8,000 educational Starter Kit for people wey wan learn affiliate marketing, and one different free-to-apply affiliate programme wey our team dey review.',
     learnAffiliate: 'Programme Details',
-    applyAffiliate: 'Apply to Become a BHD Affiliate',
+    applyAffiliate: 'Apply Make You Turn BHD Affiliate',
     affiliateClarification:
       'You wan learn affiliate marketing? You fit buy our ₦8,000 Affiliate Starter Kit. You wan turn official BHD affiliate? Submit your application make BHD review am. Both of dem na two different things altogether. Even if you buy the Starter Kit, e no mean say BHD must pick you enter the Affiliate Programme, and you no need buy am before you apply.',
     starterKitOffer: {
-      kicker: 'Educational Digital Product · ₦8,000',
+      kicker: 'Digital Learning Product · ₦8,000',
       title: 'Learn Affiliate Marketing',
       priceLabel: '₦8,000 Affiliate Starter Kit',
       description:
@@ -87,23 +117,23 @@ export const pcm: TranslationBundle = {
     },
     programmeOffer: {
       kicker: 'Application & Selection · Free (₦0)',
-      title: 'Become a BHD Affiliate',
+      title: 'Turn Official BHD Affiliate',
       priceLabel: 'Official BHD Affiliate Programme',
       description:
         'Submit application make BYHENRYDIGITALS check am. Na only people wey dem select and approve officially dey earn 35% commission on top eligible Selar sales.',
       clarification:
         'You no need buy anything before you apply. To submit application no mean say dem must select you.',
-      cta: 'Apply to Become a BHD Affiliate',
+      cta: 'Apply Make You Turn BHD Affiliate',
     },
     affiliateCards: {
       commissionLabel: 'Commission on top eligible Selar sales (approved affiliates)',
       signupLabel: 'Free to apply — no be by force to buy product first',
       noMlmTitle: 'No MLM',
       noMlmLabel: 'Straight one-level programme without any downline',
-      selectionTitle: 'Reviewed',
+      selectionTitle: 'BHD Review',
       selectionLabel: 'BYHENRYDIGITALS dey review and select candidates',
     },
-    resourcesSectionKicker: 'Guides & Articles',
+    resourcesSectionKicker: 'BHD Academy · Guides & Articles',
     resourcesSectionTitle: 'Clear Guides for Digital Skills, Websites & AI',
     resourcesSectionDesc:
       'Read practical articles about digital learning, online work, digital business, website building, and everyday tech tools.',
@@ -112,25 +142,25 @@ export const pcm: TranslationBundle = {
     visionTitle: 'Built Make Everybody Anywhere Fit Use Am',
     visionDesc:
       'BYHENRYDIGITALS dey work across English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin so visitors for Nigeria and anywhere for world fit understand our products, services, and guides without stress.',
-    vanessaKicker: 'Vanessa — Detailed BHD FAQ',
-    vanessaTitle: 'VANESSA — DETAILED BHD FAQ',
+    vanessaKicker: 'Vanessa — Complete BHD Question & Answer',
+    vanessaTitle: 'VANESSA — COMPLETE BHD FAQ CENTRE',
     vanessaDesc:
       'Your searchable guide for everything about BYHENRYDIGITALS. Search pass 100 verified answers across 10 clear sections wey cover products, 35% affiliate programme, services, languages, and support — e dey wait you anytime for the BHD FAQ button below.',
     openVanessaFaq: 'Open Vanessa FAQ',
     contactBannerTitle: 'You Get Project or Question for Mind?',
     contactBannerDesc:
       'Reach BYHENRYDIGITALS through email (byhenrydigitals@gmail.com), WhatsApp (+234 708 208 8942), or the BYHENRYDIGITALS Enquiry Form for our Contact page.',
-    contactBannerCta: 'Contact BHD',
+    contactBannerCta: 'Reach Out to BHD',
   },
   about: {
     kicker: 'About BHD',
     title: 'We Dey Build Real Digital Value With Clarity and Trust',
     intro:
       'BYHENRYDIGITALS (BHD) na digital solutions and education brand wey dey help people and businesses see real online opportunities, use practical learning materials, and build websites or digital systems wey dey work.',
-    missionTitle: 'Our Mission',
+    missionTitle: 'Wetin We Stand For (Mission)',
     missionBody:
       'To make useful digital skills and solid website solutions easy for people to learn and use — through clear teaching, honest business, and straight talk.',
-    visionTitle: 'Our Vision',
+    visionTitle: 'Where We Dey Go (Vision)',
     visionBody:
       'To grow one trusted international digital community wey dey connect learners, creators, and businesses across different languages and countries.',
     principlesTitle: 'How BHD Dey Run Things',
@@ -152,7 +182,7 @@ export const pcm: TranslationBundle = {
         body: 'Dis platform dey work for English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin across all main pages, menus, and FAQ.',
       },
     ],
-    founderKicker: 'Leadership',
+    founderKicker: 'Oga at the Top',
     founderTitle: 'Na Henry (Coach Henry) Start BHD',
     founderRole: 'Founder, BYHENRYDIGITALS',
     founderBio:
@@ -160,11 +190,11 @@ export const pcm: TranslationBundle = {
     founderNote:
       'Coach Henry dey lead BHD with strong focus on real digital education, clean web systems, and honest support for learners and businesses anywhere for world.',
     exploreProductsCta: 'Check BHD Products',
-    contactCta: 'Contact BYHENRYDIGITALS',
+    contactCta: 'Reach Out to BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Selar Product Catalogue',
-    title: 'Digital Products by BYHENRYDIGITALS',
+    kicker: 'Selar Product Shelf',
+    title: 'Digital Products Wey BYHENRYDIGITALS Get',
     intro:
       'All official BYHENRYDIGITALS digital products dey sell safely inside our Selar store. Complete product details and live prices dey show straight on each Selar page.',
     storeBannerTitle: 'Official BHD Store for Selar',
@@ -330,79 +360,164 @@ export const pcm: TranslationBundle = {
       'Income Notice: BYHENRYDIGITALS no dey guarantee affiliate selection, sales, or fixed earnings. Approved affiliate result depend on personal effort, clear talk, and buyer demand.',
   },
   services: {
-    kicker: 'Client Solutions',
-    title: 'Digital Services Built for Real Work',
+    kicker: 'Services for Small Businesses',
+    title: 'Practical Digital Services Wey Easy to Understand',
     intro:
-      'We dey build digital setups wey dey actually work — no be just fine webpage wey no dey convert visitors. Every project focus on clear structure, speed, and real value for your customers.',
-    philosophyTitle: 'Functional Value Wey Dey Sell',
-    philosophyBody:
-      'Only fine design no fit grow business. BHD join clean black-white-gold look with smooth user flow, beta phone view, and reliable digital tools.',
-    brandServicesTag: 'BYHENRYDIGITALS Services',
-    customScopedLabel: 'Price and scope depend on wetin your project need',
+      'You no need sabi tech grammar before you work with BHD. Every service focus on solving real everyday business problem based on wetin you need now, your budget, and realistic growth plan.',
+    approachKicker: 'How BHD Dey Work',
+    approachHeading:
+      'Understand the business first. Know wetin e need. Suggest solution wey fit. Build am well.',
+    approachLead:
+      'BHD dey suggest solutions based on wetin your business need right now, your budget, and realistic growth plan — we no dey push extra tools wey you never need.',
+    approachSteps: [
+      {
+        num: '01.',
+        title: 'Understand the business first.',
+        detail: 'We go first sabi wetin your business dey sell, who your customers be, and how work dey run.',
+      },
+      {
+        num: '02.',
+        title: 'Know wetin e need.',
+        detail: 'We go point out where customers dey confuse or where manual steps dey slow down work.',
+      },
+      {
+        num: '03.',
+        title: 'Suggest solution wey fit.',
+        detail: 'We go suggest practical option wey fit your current budget and realistic growth plan.',
+      },
+      {
+        num: '04.',
+        title: 'Build am well.',
+        detail: 'We go build and arrange the agreed setup cleanly so your business fit start to use am.',
+      },
+    ],
+    labels: {
+      problem: 'Business problem wey e dey solve',
+      provides: 'Wetin BHD fit actually provide',
+      receives: 'Wetin you go collect',
+      getStarted: 'How you fit start',
+    },
+    brandServicesTag: 'BYHENRYDIGITALS Business Services',
+    customScopedLabel: 'Arranged around wetin you need now, your budget, and agreed deliverables',
     discussCta: 'Yarn About Your Project',
     pricingNotice:
-      'We dey agree on project scope and price during consultation based on wetin you need. No general fixed price dey listed here.',
+      'Consultation & Price: We dey discuss scope and price straight up front based on wetin your business really need right now.',
+    availabilityNotice:
+      'Scope & Availability Notice: BHD dey promise only deliverables wey we confirm during consultation. External integrations, automated workflows, payment processing, or ongoing support no dey included unless we agree on am clearly.',
     items: {
       'web-design-dev': {
-        title: 'Website Design & Development',
+        title: 'Website Design & Building',
         summary:
-          'Clean, fast websites wey dey work well on top phone and laptop, built around easy navigation, strong brand look, and solid engineering.',
-        functionalFocus:
-          'Built to run real business work — no be just fine picture screen.',
-        deliverables: [
-          'Layout wey fit laptop, tablet, and mobile phone well',
-          'Clean website setup wey Google and search engines fit read well',
-          'Clear paths for customer questions and buying',
+          'Clean, phone-friendly business website wey explain wetin you dey do and make am easy for customers to reach you.',
+        problemAddressed:
+          'Customers dey find am hard to trust business or see correct info when everything just scatter inside social posts or DM chats.',
+        whatBhdProvides:
+          'BHD go design and build neat website wey fit your business level right now on phone and laptop. Extra things like payment link or third-party tools go enter only if we confirm am separately.',
+        whatYouReceive: [
+          'Mobile-friendly website with clear pages for your brand and services',
+          'Simple menu and clear enquiry path so visitors sabi how to reach you',
+          'Plain explanation notes wey show how your website dey arranged',
         ],
+        howToStart:
+          'Click "Yarn About Your Project" to tell BHD wetin your business dey sell, who your buyers be, and your budget.',
       },
       'landing-pages': {
-        title: 'Landing Pages',
+        title: 'Focused Landing Pages',
         summary:
-          'Focused single-goal pages wey dey explain one product or offer clearly and guide visitors straight to take one clear action.',
-        functionalFocus:
-          'E comot distraction so your campaign, product launch, or enquiry form go speak straight to the point.',
-        deliverables: [
-          'Clear offer flow from headline reach action button',
-          'Clean enquiry forms and direct link go your store',
-          'Fast-loading layout for mobile visitors',
+          'Focused single page wey we build around one clear product, service, or offer so visitors know the exact next step to take.',
+        problemAddressed:
+          'To send interested buyers go crowded page dey scatter their mind and drop enquiries because dem no know where to click.',
+        whatBhdProvides:
+          'BHD go arrange and build one clean single-goal page wey explain one specific offer well and point visitors go your confirmed enquiry form or store link.',
+        whatYouReceive: [
+          'One focused page wey cover one offer or campaign cleanly',
+          'Clear headline, short explanation, and clear action button',
+          'Neat phone view for people wey click enter from WhatsApp or social media',
         ],
+        howToStart:
+          'Tell BHD the exact offer you wan push and where interested people suppose go next.',
       },
       'digital-presence': {
-        title: 'Digital Presence Development',
+        title: 'Arrange Your Online Presence Well',
         summary:
-          'Clean, matching brand setup across your main website, digital storefront, and online pages so visitors trust your brand sharp-sharp.',
-        functionalFocus:
-          'E join your brand message, visual look, and links together anywhere customers meet you.',
-        deliverables: [
-          'Matching black-white-gold or custom brand look',
-          'Neat arrangement for Selar store, enquiry forms, and social links',
-          'Clear page order for visitors for Nigeria and abroad',
+          'Joining your website, public business links, and descriptions together inside one neat, matching brand setup.',
+        problemAddressed:
+          'Plenty small businesses dey lose trust when bio, links, and store pages dey yarn different things or lead go broken link.',
+        whatBhdProvides:
+          'BHD go check how your business dey look online right now, align your message and visual look, and arrange your verified website, store, and contact links neatly.',
+        whatYouReceive: [
+          'Matching business message and look anywhere customers see you online',
+          'Clean list of working links wey carry customers go the right pages',
+          'Practical suggestions wey match your business size right now',
         ],
+        howToStart:
+          'Send your current website, social handles, or store links make BHD check gaps and suggest clean fixes.',
       },
       'nocode-ai-solutions': {
-        title: 'No-Code & AI-Assisted Digital Solutions',
+        title: 'No-Code & AI-Assisted Page Building',
         summary:
-          'Practical workflow automations, client chatbot setups when client ask for am, and smart no-code systems wey dey reduce manual stress.',
-        functionalFocus:
-          'Use modern tools where dem truly save time and make daily operations smooth.',
-        deliverables: [
-          'Client workflow automation and custom chatbot setups',
-          'No-code enquiry forms, alerts, and connected tools',
-          'Simple guide wey non-tech teams fit handle easily',
+          'Practical use of vetted no-code tools and AI-assisted workflows to plan and build simple digital pages faster — only for wetin reliable and confirmed.',
+        problemAddressed:
+          'Small businesses dey need simple digital pages or clean intake setup without paying big money or waiting long for heavy custom software.',
+        whatBhdProvides:
+          'BHD dey use clean no-code and AI-assisted development workflows to plan layout, arrange content, and build simple confirmed pages. We no dey promise automated third-party connections unless we review and confirm am.',
+        whatYouReceive: [
+          'Practical digital pages or simple no-code setup wey easy for you to handle',
+          'Straight advice on wetin dey work reliably now versus wetin fit wait till later',
+          'Simple plain-English guide so your team sabi how everything dey work',
         ],
+        howToStart:
+          'Explain the simple digital setup or repeated task you wan explore make BHD confirm wetin fit work inside your budget.',
       },
       'digital-business-support': {
-        title: 'Digital Business Support',
+        title: 'Everyday Digital Business Tools & Work Arrangement',
         summary:
-          'Steady practical hand for founders and business owners wey dey launch digital products, set up online services, or run website updates.',
-        functionalFocus:
-          'Real technical and strategy hand so your digital plans no go hang.',
-        deliverables: [
-          'Fixing technical wahala and checking storefront readiness',
-          'Step-by-step feature updates and clean content arrangement',
-          'Simple, everyday explanation without confusing tech grammar',
+          'Helping small-business owners pick and arrange everyday digital tools like enquiry forms, shared links, and basic records so daily work go clean.',
+        problemAddressed:
+          'Customer enquiries, important links, and files dey loss inside personal chats and rough notes every day.',
+        whatBhdProvides:
+          'BHD go check how you dey handle customer messages and files right now, then help arrange everyday digital tools wey fit your budget and realistic growth plan. Ongoing support plans, custom integrations, or payment processing no dey inside unless we agree on am.',
+        whatYouReceive: [
+          'Clear suggestions on simple everyday tools your team fit actually use',
+          'Neater arrangement for customer enquiry links, forms, and key business info',
+          'Step-by-step plain guide without any confusing tech grammar',
         ],
+        howToStart:
+          'Send short message wey explain how you dey handle customer requests and files now make BHD suggest clean improvements.',
       },
+    },
+  },
+  portfolio: {
+    kicker: 'BHD Services · Work Showcase',
+    title: 'Selected Projects',
+    intro:
+      'Clean place where BYHENRYDIGITALS go dey show finished websites, digital systems, and practical business setups wey we don build.',
+    emptyStateTitle: 'Na Finished Client Work Wey Get Approval Go Show Here',
+    emptyStateBody:
+      'Right now, no finished client project dey here yet wey don get permission for public display. BYHENRYDIGITALS dey post only completed client work after everything don ready and the client agree—we no dey form fake client, fake result, or half-done work.',
+    emptyStateNote:
+      'As BHD dey finish new small-business websites, digital systems, and clean workflows wey clients approve make people see, each one go enter here with the exact format wey dey beside am.',
+    formatHeading: 'Wetin Every Published Project Post Go Carry',
+    formatItems: [
+      'Project name',
+      'Business or project category',
+      'Short talk about wetin the business need from start',
+      'Solution wey BHD build',
+      'Tools and tech wey we use, anywhere e matter',
+      'Project screenshots or preview pictures',
+      'Link go the live project, anywhere e dey available',
+    ],
+    discussCta: 'Yarn About Your Project',
+    exploreServicesCta: 'See Business Services',
+    labels: {
+      category: 'Business or project category',
+      requirement: 'Wetin the client need from start',
+      solution: 'Solution wey BHD build',
+      technologies: 'Tools & tech wey we use',
+      liveLink: 'Open Live Project',
+      previewZoom: 'Check Picture Well',
+      closePreview: 'Close picture preview',
+      similarProjectCta: 'Ask for Something Like Dis',
     },
   },
   resources: {
@@ -516,10 +631,11 @@ export const pcm: TranslationBundle = {
   },
   contact: {
     kicker: 'Reach Out',
-    title: 'Contact BYHENRYDIGITALS',
+    title: 'Reach Out to BYHENRYDIGITALS',
     intro:
       'You get question about website building, digital products, or our affiliate programme? Drop message for us below.',
     formTitle: 'BYHENRYDIGITALS Enquiry Form',
+    selectedTopicLabel: 'Topic wey you pick',
     nameLabel: 'Full Name',
     namePlaceholder: 'Your full name',
     emailLabel: 'Email Address',

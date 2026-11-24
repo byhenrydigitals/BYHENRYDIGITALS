@@ -6,10 +6,10 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'about-01': {
     question: 'Kí ni BYHENRYDIGITALS?',
     answer: [
-      'BYHENRYDIGITALS (BHD) jẹ́ ilé-iṣẹ́ ẹ̀kọ́ dígítà àti àwọn ìpinnu dígítà tí Henry (Coach Henry) dá sílẹ̀. Ó ń ran àwọn ènìyàn àti ilé-iṣẹ́ lọ́wọ́ láti ṣàwárí àǹfààní dígítà tó wúlò, kọ́ ìmọ̀ tó ṣeé lò, rí ìwé ìtọ́sọ́nà dígítà lórí Selar, kí wọ́n sì kọ́ ojú-òpó wẹ́ẹ̀bù tó ń ṣiṣẹ́.',
-      'Nínú ẹ̀kọ́ àti iṣẹ́ rẹ̀, BHD tẹnumọ́ ẹ̀kọ́ dígítà tó wúlò, iṣẹ́-ajé dígítà, ṣíṣẹ̀dá owó lórí íńtánẹ́ẹ̀tì ní ọ̀nà òótọ́, àti ìpinnu ìmọ̀-ẹ̀rọ.',
+      'BYHENRYDIGITALS (BHD) jẹ́ ilé-iṣẹ́ ìpinnu dígítà àti ẹ̀kọ́ tí Henry (Coach Henry) dá sílẹ̀ láti dín ìdènà ìkópa dígítà kù. Ó so ẹ̀ka méjì pọ̀: BHD Academy fún ẹnìkọ̀ọ̀kan tó ń kọ́ ìmọ̀ dígítà tó wúlò, àti BHD Services fún àwọn iṣẹ́ kéékèèké tó nílò ojú-òpó wẹ́ẹ̀bù àti ìlànà iṣẹ́.',
+      'Lábẹ́ ẹ̀ka méjèèjì, BHD dojú kọ ẹ̀kọ́ dígítà tó wúlò, àwọn ọjà Selar tó ṣe kedere, ètò alábàáṣepọ̀ òótọ́, àti ìpinnu wẹ́ẹ̀bù tó dá lórí àìní.',
     ],
-    extraKeywords: ['àlàyé', 'ẹ̀kọ́ dígítà', 'iṣẹ́ dígítà'],
+    extraKeywords: ['àlàyé', 'bhd academy', 'bhd services', 'ẹ̀kọ́ dígítà', 'iṣẹ́ dígítà'],
     actionLabel: 'Ka Nípa BHD',
   },
   'about-02': {
@@ -62,13 +62,13 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'about-09': {
     question: 'Àwọn wo ló lè jàǹfààní látọ̀dọ̀ BYHENRYDIGITALS?',
     answer: [
-      'Àwọn akẹ́kọ̀ọ́ tuntun, àwọn ọ̀dọ́ tí kò tíì pé ọmọ ọdún 18 àti òbí wọn tó ń wá ìmọ̀ tó bá ọjọ́-orí mu, àwọn olùkọ́ àti òǹkọ̀wé lórí ètò alábàáṣepọ̀, àti àwọn oníṣòwò tó nílò wẹ́ẹ̀bù tó ń ṣiṣẹ́.',
+      'BYHENRYDIGITALS ń ṣe ìrànwọ́ fún àwùjọ méjì: (1) Ẹnìkọ̀ọ̀kan nípasẹ̀ BHD Academy—àwọn olùbẹ̀rẹ̀, àwọn ọ̀dọ́ àti òbí tó ń wá ìmọ̀ tó bá ọjọ́-orí mu, àti àwọn olùṣẹ̀dá lórí ètò alábàáṣepọ̀ òótọ́; àti (2) Àwọn iṣẹ́ kéékèèké nípasẹ̀ BHD Services—àwọn oníṣòwò tó nílò wẹ́ẹ̀bù tó ń ṣiṣẹ́, ojú-ewé ìtọ́sọ́nà, àti ètò iṣẹ́ tó bá ìnáwó wọn mu.',
     ],
   },
   'about-10': {
     question: 'Ṣé pẹpẹ ẹ̀kọ́ dígítà ni BHD tàbí ilé-iṣẹ́ ìṣẹ̀dá iṣẹ́ dígítà?',
     answer: [
-      'BHD ń ṣe méjèèjì lábẹ́ àmì kan ṣoṣo: (1) ẹ̀kọ́ dígítà lórí Selar àti Ibùdó Ohun Èlò, àti (2) àwọn iṣẹ́ dígítà fún kíkọ́ wẹ́ẹ̀bù, ojú-ewé ìtọ́sọ́nà, àti ìṣàkóso no-code.',
+      'BYHENRYDIGITALS ń ṣe méjèèjì lábẹ́ àmì kan ṣoṣo: (1) BHD Academy — Kẹ́kọ̀ọ́. Kọ́. Dàgbà. fún ẹnìkọ̀ọ̀kan (àwọn ọjà Selar, Ibùdó Ohun Èlò, àti Ètò Alábàáṣepọ̀), àti (2) BHD Services — Àwọn Ìpinnu Dígítà Tó Wúlò Fún Iṣẹ́-Ajé (kíkọ́ wẹ́ẹ̀bù, ojú-ewé ìtọ́sọ́nà, ìfarahàn dígítà, no-code, àti irinṣẹ́ iṣẹ́).',
     ],
   },
   'about-11': {

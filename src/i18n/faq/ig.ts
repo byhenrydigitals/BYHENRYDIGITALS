@@ -6,10 +6,10 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'about-01': {
     question: 'Gịnị bụ BYHENRYDIGITALS?',
     answer: [
-      'BYHENRYDIGITALS (BHD) bụ akara mmụta dijitalụ na ngwọta dijitalụ nke Henry (Coach Henry) tọrọ ntọala ya. Ọ na-enyere ndị mmadụ na azụmaahịa aka ịchọta ohere dijitalụ bara uru, mụta nkà dị irè, nweta ntuziaka dijitalụ dị na Selar, ma wuo weebụsaịtị na-arụ ọrụ.',
-      'N’akụkụ mmụta na ọrụ ndị ahịa, BHD na-elekwasị anya na mmụta dijitalụ bara uru, azụmaahịa dijitalụ, ịkpata ego n’ịntanetị n’ụzọ ziri ezi, na ngwọta teknụzụ.',
+      'BYHENRYDIGITALS (BHD) bụ akara ngwọta dijitalụ na mmụta nke Henry (Coach Henry) tọrọ ntọala ya iji belata ihe mgbochi na nsonye dijitalụ. Ọ na-ejikọta ngalaba abụọ pụrụ iche: BHD Academy maka ndị mmadụ n’otu n’otu na-amụ nkà dijitalụ, na BHD Services maka obere azụmaahịa na ndị na-amalite azụmaahịa.',
+      'N’ime ngalaba abụọ a, BHD na-elekwasị anya na mmụta dijitalụ bara uru, ngwaahịa Selar doro anya, ohere njikọ kwụ ọtọ, na ngwọta weebụ dabere na mkpa azụmaahịa.',
     ],
-    extraKeywords: ['nkọwa', 'mmụta dijitalụ', 'ngwọta'],
+    extraKeywords: ['nkọwa', 'bhd academy', 'bhd services', 'mmụta dijitalụ', 'ngwọta'],
     actionLabel: 'Gụọ Maka BHD',
   },
   'about-02': {
@@ -62,13 +62,13 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'about-09': {
     question: 'Onye nwere ike irite uru na BYHENRYDIGITALS?',
     answer: [
-      'Ndị mbido na-amụ nkà dijitalụ, ụmụ akwụkwọ na ndị nne na nna na-achọ ụzọ dị mma maka ndị na-erubeghị afọ 18, ndị edemede na-akwado ngwaahịa, na ndị ọchụnta ego chọrọ weebụsaịtị dị irè.',
+      'BYHENRYDIGITALS na-ejere ndị mmadụ abụọ ozi: (1) Ndị mmadụ n’otu n’otu site na BHD Academy—ndị mbido na-amụ nkà dijitalụ, ndị nne na nna na ụmụ akwụkwọ na-achọ ntuziaka kwesịrị afọ, na ndị okike nwere mmasị na mmemme njikọ eziokwu; na (2) Obere azụmaahịa site na BHD Services—ndị chọrọ weebụsaịtị bara uru, ibe nnabata, na nhazi usoro ọrụ dabara na ego ha.',
     ],
   },
   'about-10': {
     question: 'BHD ọ bụ ikpo okwu mmụta dijitalụ ka ọ bụ akara ọrụ dijitalụ?',
     answer: [
-      'BHD na-ejikọta ha abụọ: (1) mmụta dijitalụ na ntuziaka dị na Selar na Ebe Ihe Ọmụma, na (2) ọrụ dijitalụ gụnyere imepụta weebụsaịtị, ibe nnabata, na akpaaka no-code.',
+      'BYHENRYDIGITALS na-arụ ha abụọ nke ọma n’okpuru otu akara: (1) BHD Academy — Mụta. Wulite. Too. maka ndị mmadụ n’otu n’otu (ngwaahịa Selar, Ebe Ihe Ọmụma, na Mmemme Njikọ BHD), na (2) BHD Services — Ngwọta Dijitalụ Bara Uru Maka Azụmaahịa (mmepe weebụsaịtị, ibe nnabata, ọnụnọ dijitalụ, no-code, na ngwaọrụ azụmaahịa).',
     ],
   },
   'about-11': {

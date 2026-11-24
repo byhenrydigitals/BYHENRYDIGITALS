@@ -46,9 +46,9 @@ export function getCanonicalUrl(route: PageRoute, baseUrl = getConfiguredSiteUrl
 
 export const ROUTE_SEO: Record<PageRoute, RouteSeoMeta> = {
   '/': {
-    title: 'BYHENRYDIGITALS | Digital Solutions & Practical Products',
+    title: 'BYHENRYDIGITALS | Practical Digital Solutions for Small Businesses',
     description:
-      'Discover BYHENRYDIGITALS (BHD) for functional websites, practical digital products on Selar, and a transparent 35% affiliate programme built for global reach.',
+      'BHD helps small businesses and startups identify, access and implement practical digital tools, functional websites, and digital products built for global impact.',
     changefreq: 'weekly',
     priority: '1.0',
     schemaType: 'WebPage',

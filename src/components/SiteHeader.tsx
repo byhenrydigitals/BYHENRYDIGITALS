@@ -158,9 +158,6 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                         <span className="flex items-center gap-1.5 min-w-0 truncate">
                           <span>{lang.nativeName}</span>
                           {lang.flag && <span aria-hidden="true">{lang.flag}</span>}
-                          {lang.name !== lang.nativeName && (
-                            <span className="opacity-75 truncate">({lang.name})</span>
-                          )}
                         </span>
                         <span className="text-[11px] font-mono-tabular shrink-0">
                           {isCurrent ? t.nav.activeBadge : ''}

@@ -29,20 +29,24 @@ export const ha: TranslationBundle = {
   },
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
-    heroTitle: 'Hanyoyin Dijital. Tasirin Duniya.',
+    tagline: 'Hanyoyin Dijital. Tasirin Duniya.',
+    heroTitle: 'Ilimin Dijital Mai Amfani, Albarkatu da Hanyoyin Kasuwanci.',
     heroSubtitle:
-      'Gano albarkatun dijital masu amfani, damammakin koyo da hanyoyin da aka ƙera don taimaka maka gina, bunƙasa da samar da daraja a duniyar dijital.',
+      'BYHENRYDIGITALS (BHD) yana rage shingaye ga shiga harkar dijital ta hanyar samar da ilimin dijital mai amfani, albarkatun koyo, da hanyoyin kasuwanci masu sauƙin samu—ta hanyar BHD Academy don mutane ɗaiɗaiku da BHD Services don ƙananan masana’antu.',
     secondaryTagline: 'Muna Gina Darajar Dijital Mai Sayarwa.',
-    primaryCta: 'Binciki Hanyoyinmu',
-    secondaryCta: 'Gano BHD',
+    needsApproachTitle: 'Hanyoyi Biyu Bayyanannu Ƙarƙashin Alama Guda',
+    needsApproachBody:
+      'Ko kai mutum ne da ke koyon ƙwarewar dijital ta BHD Academy ko mai kasuwanci ne da ke neman shafin yanar gizo da tsarin aiki ta BHD Services, BHD yana fara fahimtar matakinka kafin ya ba da shawarar mataki na gaba.',
+    primaryCta: 'Binciki BHD Services',
+    secondaryCta: 'Binciki BHD Academy',
     pillars: [
       {
-        title: 'Ilimin Dijital Mai Amfani',
-        detail: 'Jagorori masu bayani da albarkatu da aka tsara don aiki na zahiri.',
+        title: 'Hanyoyin Dijital Bisa Bukata',
+        detail: 'BHD Services yana fahimtar yadda aikinku ke tafiya a yanzu kafin mu ba da shawarar shafin yanar gizo ko kayan aiki.',
       },
       {
-        title: 'Hanyoyin Yanar Gizo Masu Aiki',
-        detail: 'Shafukan yanar gizo da shafukan sauka da aka gina don sauri, haske da sauƙin amfani.',
+        title: 'BHD Academy Don Mutane Ɗaiɗaiku',
+        detail: 'Jagororin ilimi, albarkatun koyo da kayayyakin dijital a Selar don gina ƙwarewa ta zahiri.',
       },
       {
         title: 'Tsarin Haɗin Gwiwa na Gaskiya',
@@ -50,26 +54,52 @@ export const ha: TranslationBundle = {
       },
       {
         title: 'Hangen Nesa na Duniya',
-        detail: 'Tsarin dijital mai sauƙin shiga don al’umma masu magana da harsuna daban-daban.',
+        detail: 'Tsarin dijital mai sauƙin shiga cikin Turanci, Igbo, Yorùbá, Hausa, Faransanci da Nigerian Pidgin.',
       },
     ],
-    productsSectionKicker: 'Kayayyakin Dijital',
+    pathways: {
+      sectionKicker: 'BHD Academy da BHD Services',
+      sectionTitle: 'Hanyoyi Biyu Daban-Daban Ƙarƙashin BYHENRYDIGITALS',
+      sectionSubtitle:
+        'BYHENRYDIGITALS yana rage shingaye ga shiga harkar dijital ta sassan aiki biyu—tallafa wa mutanen da ke koyon ƙwarewar dijital da taimaka wa ƙananan masana’antu su yi amfani da hanyoyin dijital masu amfani.',
+      business: {
+        label: 'BHD Services · Don Kasuwanci',
+        title: 'BHD Services — Hanyoyin Dijital Masu Amfani Ga Kasuwanci.',
+        description:
+          'Muna taimaka wa ƙananan masana’antu da sababbin kamfanoni gano, samu da amfani da hanyoyin dijital masu amfani da suka dace da bukatunsu, kasafinsu da matakin ci gabansu.',
+        cta: 'Binciki BHD Services',
+        servicesLinkLabel: 'Ayyukan Kasuwanci',
+        projectsLinkLabel: 'Zaɓaɓɓun Ayyuka',
+        contactLinkLabel: 'Tattauna Aiki',
+      },
+      individual: {
+        label: 'BHD Academy · Don Mutane Ɗaiɗaiku',
+        title: 'BHD Academy — Koyi. Gina. Haɓaka.',
+        description:
+          'Binciki ilimin dijital mai amfani, albarkatu da jagora da aka tsara don taimaka wa mutane su haɓaka ƙwarewar dijital masu amfani su kuma fahimci damammaki a tattalin arzikin dijital.',
+        cta: 'Binciki BHD Academy',
+        productsLinkLabel: 'Kayayyakin Dijital',
+        resourcesLinkLabel: 'Albarkatun Koyo',
+        affiliateLinkLabel: 'Shirin Haɗin Gwiwa',
+      },
+    },
+    productsSectionKicker: 'BHD Academy · Kayayyakin Dijital',
     productsSectionTitle: 'Jagororin Dijital da Albarkatun Koyo Tsarabtu',
     productsSectionDesc:
-      'Binciki kayayyakin dijital na BHD da ke kan Selar, waɗanda aka ƙera don taimaka wa masu koyo da masu gina dijital su sami ƙwarewa ta gaske.',
+      'Sashe na BHD Academy: binciki jagororin koyo da kayayyakin dijital a Selar don taimaka wa mutane su gina ƙwarewa mai amfani.',
     viewAllProducts: 'Duba Jerin Kayayyaki',
     selarBadge: 'Kundin Selar',
     selarLinkShort: 'BHD Store',
-    servicesSectionKicker: 'Ayyukan Dijital',
-    servicesSectionTitle: 'Kwarewar Dijital Mai Aiki Mai Kyau',
+    servicesSectionKicker: 'BHD Services · Don Kasuwanci',
+    servicesSectionTitle: 'Hanyoyin Dijital da Aka Tsara Bisa Bukatun Kasuwancinka',
     servicesSectionDesc:
-      'Daga shafukan sauka masu jan hankali zuwa hanyoyin aiki masu amfani da AI, BHD yana gina kadarorin dijital masu dogaro.',
+      'BHD Services yana farawa ne ta hanyar fahimtar yadda kasuwancinku ke aiki a yanzu, kasafinku da matakin ci gabanku kafin ya ba da shawarar kowace hanyar dijital—yana gina shafukan yanar gizo da tsare-tsare masu dogaro.',
     exploreServices: 'Binciki Ayyuka',
     enquireShort: 'Yi Tambaya',
-    affiliateSectionKicker: 'Koya Ko Ka Nemi Shiga · Tayi Biyu Daban-Daban',
+    affiliateSectionKicker: 'BHD Academy · Koya Ko Ka Nemi Shiga · Tayi Biyu Daban-Daban',
     affiliateSectionTitle: 'Affiliate Starter Kit vs. Shirin Haɗin Gwiwa na BHD',
     affiliateSectionDesc:
-      'BYHENRYDIGITALS tana da kayan ilimi na ₦8,000 Starter Kit daban don koyon tallan haɗin gwiwa da kuma shirin haɗin gwiwa na daban kyauta wanda ƙungiyarmu ke tantancewa.',
+      'A ƙarƙashin BHD Academy, BYHENRYDIGITALS tana da kayan ilimi na ₦8,000 Starter Kit daban don koyon tallan haɗin gwiwa da kuma shirin haɗin gwiwa na daban kyauta wanda ƙungiyarmu ke tantancewa.',
     learnAffiliate: 'Cikakken Bayani',
     applyAffiliate: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
     affiliateClarification:
@@ -102,7 +132,7 @@ export const ha: TranslationBundle = {
       selectionTitle: 'Tantancewa',
       selectionLabel: 'BYHENRYDIGITALS ce ke zaɓe bayan duba takardar nema',
     },
-    resourcesSectionKicker: 'Albarkatu da Bayanai',
+    resourcesSectionKicker: 'BHD Academy · Albarkatu da Bayanai',
     resourcesSectionTitle: 'Jagorori Kan Ƙwarewar Dijital, Yanar Gizo da AI',
     resourcesSectionDesc:
       'Karanta labarai masu amfani kan ilimin dijital, damammakin kan layi, kasuwanci, gina shafukan yanar gizo da kayan aikin dijital.',
@@ -329,79 +359,164 @@ export const ha: TranslationBundle = {
       'Bayyanar da Gaskiya: BYHENRYDIGITALS ba ya ba da garantin zaɓe, tallace-tallace, ko samun kuɗi. Sakamakon abokan haɗin gwiwa ya bambanta dangane da ƙoƙari, ingancin sadarwa da buƙatar kasuwa.',
   },
   services: {
-    kicker: 'Hanyoyin Abokan Ciniki',
-    title: 'Ayyukan Dijital da Aka Gina Don Amfani na Gaske',
+    kicker: 'Ayyuka Don Ƙananan Masana’antu',
+    title: 'Ayyukan Dijital Masu Amfani Cikin Harshe Mai Sauƙi',
     intro:
-      'Muna gina kwarewar dijital masu aiki—ba kawai shafukan yanar gizo masu kyau ba. Kowane aiki yana mai da hankali kan tsari, sauri da bayani mai sauƙi.',
-    philosophyTitle: 'Darajar Dijital Mai Sayarwa',
-    philosophyBody:
-      'Kyan gani kaɗai ba ya bunƙasa kasuwanci. BHD yana haɗa tsarin baƙi, fari da zinare da kyakkyawar hanyar amfani da tsarin dijital masu amfani.',
-    brandServicesTag: 'Ayyukan BYHENRYDIGITALS',
-    customScopedLabel: 'Ana tsara shi bisa buƙatar aikin',
+      'Ba ka buƙatar ilimin fasaha mai zurfi kafin ka yi aiki da BHD. Kowace hidima tana magance matsalar kasuwanci ta yau da kullum bisa bukatunka na yanzu, kasafinka, da shirin haɓaka mai yiwuwa.',
+    approachKicker: 'Yadda BHD Ke Aiki',
+    approachHeading:
+      'Fahimtar kasuwancin. Gano buƙatar. Ba da shawarar mafita mai dacewa. Aiwatar da ita.',
+    approachLead:
+      'BHD tana ba da shawarar mafita bisa bukatun abokin ciniki na yanzu, kasafinsa da tsarin haɓaka na gaske—ba tare da tilasta kayan aikin da ba dole ba.',
+    approachSteps: [
+      {
+        num: '01.',
+        title: 'Fahimtar kasuwancin.',
+        detail: 'Muna koyon abin da kasuwancinka ke sayarwa, wa kake hidima wa, da yadda aiki ke tafiya.',
+      },
+      {
+        num: '02.',
+        title: 'Gano buƙatar.',
+        detail: 'Muna gano inda abokan ciniki ke rikicewa ko inda aikin hannu ke jinkirta tambayoyi.',
+      },
+      {
+        num: '03.',
+        title: 'Ba da shawarar mafita mai dacewa.',
+        detail: 'Muna ba da shawarar tsari mai amfani da ya dace da kasafinka da shirin haɓakarka.',
+      },
+      {
+        num: '04.',
+        title: 'Aiwatar da ita.',
+        detail: 'Muna gina tare da tsara abin da aka amince da shi domin kasuwancinka ya fara amfani da shi nan take.',
+      },
+    ],
+    labels: {
+      problem: 'Matsalar kasuwanci da yake magancewa',
+      provides: 'Abin da BHD za ta iya bayarwa a zahiri',
+      receives: 'Abin da mai kasuwanci zai samu',
+      getStarted: 'Yadda za ka fara',
+    },
+    brandServicesTag: 'Ayyukan Kasuwanci na BYHENRYDIGITALS',
+    customScopedLabel: 'Ana tsara shi bisa bukatunka, kasafinka da abin da aka amince da shi',
     discussCta: 'Tattauna Aikin Ka',
     pricingNotice:
-      'Ana ƙayyade girman aiki da farashi yayin tattaunawa. Ba a jera farashi mai tsauri a nan ba.',
+      'Tattaunawa da Farashi: Ana tattauna girman aiki da kuɗi a fili tun farko bisa abin da kasuwancinka ke buƙata a yanzu.',
+    availabilityNotice:
+      'Sanarwar Iyaka da Samuwa: BHD tana alƙawarin abubuwan da aka amince da su yayin tattaunawa kaɗai. Ba a alƙawarin haɗin waje, aiki na atomatik, karɓar kuɗi ko tallafi mai ci gaba ba tare da an amince da su a fili ba.',
     items: {
       'web-design-dev': {
         title: 'Zane da Gina Shafukan Yanar Gizo',
         summary:
-          'Shafukan yanar gizo masu sauri da dacewa da kowace na’ura, waɗanda aka gina don tafiyar mai amfani bayyananna da amincin alama.',
-        functionalFocus:
-          'An gina don tallafawa ayyukan kasuwanci na gaske—ba shafin nuni kaɗai ba.',
-        deliverables: [
-          'Tsari mai dacewa da kwamfuta, kwamfutar hannu da wayar salula',
-          'Tsarin lamba mai tsafta da metadata na bincike',
-          'Hanyoyin tambaya da tuntuba bayyanannu',
+          'Shafin yanar gizo bayyananne mai aiki da kyau a waya, wanda ke bayyana abin da kake yi da sauƙaƙa wa abokan ciniki tuntuɓarka.',
+        problemAddressed:
+          'Abokan ciniki sukan yi wahalar amincewa ko samun cikakken bayani idan bayanan kasuwanci sun warwatse a saƙonni ko shafukan sada zumunta kaɗai.',
+        whatBhdProvides:
+          'BHD tana tsarawa da gina shafin yanar gizo mai tsabta da ya dace da matakin kasuwancinka a yanzu. Ƙarin abubuwa kamar hanyar biyan kuɗi suna shiga ne kaɗai idan an amince da su daban.',
+        whatYouReceive: [
+          'Shafin yanar gizo mai dacewa da waya tare da shafuka bayyanannu na ayyukanka',
+          'Hanyoyin bincike masu sauƙi da wuraren tambaya ga maziyarta',
+          'Bayanai masu sauƙi da ke nuna yadda aka tsara shafinka',
         ],
+        howToStart:
+          'Danna "Tattauna Aikin Ka" domin faɗar abin da kasuwancinka ke bayarwa, abokan cinikinka da kasafinka.',
       },
       'landing-pages': {
         title: 'Shafukan Sauka (Landing Pages)',
         summary:
-          'Shafuka masu manufa guda ɗaya da aka tsara don bayyana tayi a sarari da jagorantar baƙi zuwa mataki guda.',
-        functionalFocus:
-          'Yana kawar da shagala domin kamfen da fom ɗin neman bayani su yi magana kai tsaye.',
-        deliverables: [
-          'Tsarin gabatarwa daga taken zuwa matakin aiki',
-          'Fom ɗin da aka tantance da haɗi zuwa shago',
-          'Tsarin hotuna da rubutu mai saurin buɗewa',
+          'Shafi guda mai manufa ɗaya don bayyana wani tayi ko kaya a sarari domin baƙi su ɗauki mataki ɗaya kai tsaye.',
+        problemAddressed:
+          'Tura masu sha’awa zuwa shafi mai cunkoso yakan rikitar da su ya kuma rage masu yin tambaya.',
+        whatBhdProvides:
+          'BHD tana rubutawa da gina shafi guda mai bayyana tayi ɗaya sarai tare da tura baƙi zuwa fom ɗin tambaya ko shagon da aka tabbatar.',
+        whatYouReceive: [
+          'Shafi ɗaya da aka tsara don kaya, hidima, ko kamfen guda ɗaya',
+          'Taken magana bayyananne, taƙaitaccen bayani da maɓallin mataki na gaba',
+          'Tsari mai kyau ga baƙi masu shigowa daga WhatsApp ko sada zumunta',
         ],
+        howToStart:
+          'Faɗa wa BHD wane kaya ko hidima kake son tallatawa da inda za a tura masu sha’awa.',
       },
       'digital-presence': {
         title: 'Bunƙasa Kasancewa a Dijital',
         summary:
-          'Daidaito tsakanin babban shafinka, shagon kayayyaki da tashoshin abun ciki domin alamarka ta nuna kwarewa nan take.',
-        functionalFocus:
-          'Yana daidaita saƙon alama da ganuwa a duk wuraren tuntuba.',
-        deliverables: [
-          'Tsarin baƙi-fari-zinare ko launukan alamarka na musamman',
-          'Tsarin shago da mahada (Selar, fom da cibiyoyi)',
-          'Tsarin abun ciki don baƙi na ƙasa da ƙasa',
+          'Haɗa shafinka, mahadan kasuwanci da bayanan jama’a zuwa kwarewa guda mai tsari da aminci.',
+        problemAddressed:
+          'Ƙananan masana’antu sukan rasa kwarjini idan bayanai da mahada a shafuka daban-daban ba su dace ko suka tsufa ba.',
+        whatBhdProvides:
+          'BHD tana duba yadda kasuwancinka ke bayyana a kan layi yanzu, ta taimaka wajen daidaita saƙo da tsarin gani, sannan ta tsara mahadan shafi, shago da tuntuɓa.',
+        whatYouReceive: [
+          'Saƙon kasuwanci da tsarin gani da suka dace a duk wuraren tuntuba',
+          'Tsararrun mahada masu kai abokan ciniki zuwa shafuka da hanyoyin tuntuɓa masu kyau',
+          'Shawarwari masu amfani da suka dace da girman kasuwancinka na yanzu',
         ],
+        howToStart:
+          'Raba shafinka na yanzu, shafukan sada zumunta, ko mahadin shago domin BHD ta duba ta ba da shawarar gyara.',
       },
       'nocode-ai-solutions': {
-        title: 'Hanyoyin No-Code da Masu Amfani da AI',
+        title: 'Hanyoyin Aiki na No-Code da Masu Amfani da AI',
         summary:
-          'Tsarin aiki na atomatik masu amfani, haɗin chatbot ga abokan ciniki idan sun buƙata, da kayan aikin no-code don rage wahalar aikin hannu.',
-        functionalFocus:
-          'Yana sanya kayan aikin zamani inda suke adana lokaci ga ayyukan abokan ciniki.',
-        deliverables: [
-          'Ayyukan atomatik da haɗin chatbot na musamman ga abokan ciniki',
-          'Fom ɗin karɓar bayanai na no-code da sanarwa',
-          'Takardun jagora masu sauƙin fahimta ga ƙungiyoyi',
+          'Amfani da kayan aikin no-code da AI cikin tsari don tsara shafukan dijital masu sauƙi da sauri—a kan abubuwan da aka tabbatar kaɗai.',
+        problemAddressed:
+          'Ƙananan masana’antu sukan buƙaci shafuka masu sauƙi ba tare da tsadar kuɗi ko dogon jiran ginin software na musamman ba.',
+        whatBhdProvides:
+          'BHD tana amfani da tsarin no-code da taimakon AI don tsara shafuka da shirya bayanai masu sauƙi. Ba a alƙawarin haɗin atomatik na waje ba sai an duba an amince da shi.',
+        whatYouReceive: [
+          'Shafukan dijital masu amfani ko tsarin no-code da ya dace da iyawarka',
+          'Shawarar gaskiya a kan abin da ke aiki yanzu da abin da zai jira gaba',
+          'Bayani cikin harshe mai sauƙi domin ƙungiyarka ta fahimta',
         ],
+        howToStart:
+          'Bayyana aiki mai maimaituwa ko tsarin da kake son bincika domin BHD ta tabbatar da abin da zai yiwu da kasafinka.',
       },
       'digital-business-support': {
-        title: 'Tallafin Kasuwancin Dijital',
+        title: 'Kayan Aikin Kasuwancin Dijital Masu Amfani da Tsarin Aiki',
         summary:
-          'Jagora ta gaskiya ga waɗanda suka kafa kasuwanci yayin fitar da kayayyakin dijital ko kula da shafukan yanar gizo.',
-        functionalFocus:
-          'Tallafin fasaha da dabaru don ci gaba da tafiyar ayyukan dijital.',
-        deliverables: [
-          'Warware matsalolin fasaha da duba shagon yanar gizo',
-          'Sabunta fasaloli da faɗaɗa tsarin abun ciki',
-          'Jagorar aiwatarwa mai sauƙi ba tare da rikitarwa ba',
+          'Taimaka wa masu ƙananan masana’antu zaɓe da tsara kayan aikin dijital na yau da kullum kamar fom, mahada da tsarin bayanai.',
+        problemAddressed:
+          'Tambayoyin abokan ciniki, mahada masu muhimmanci da fayiloli sukan ɓace a cikin saƙonnin tattaunawa da rubuce-rubuce.',
+        whatBhdProvides:
+          'BHD tana duba yadda kake sarrafa saƙonnin abokan ciniki a yanzu, sannan ta taimaka wajen zaɓe da tsara kayan aiki masu dacewa da kasafinka da shirin haɓaka. Tallafi mai ci gaba ko sarrafa kuɗi ba su ciki sai an amince da su.',
+        whatYouReceive: [
+          'Shawarwari bayyanannu kan kayan aikin yau da kullum da ƙungiyarka za ta iya amfani da su',
+          'Tsari mai tsabta don hanyoyin tambayar abokan ciniki, mahada da muhimman bayanai',
+          'Jagora mataki-mataki ba tare da kalmomin fasaha masu wahala ba',
         ],
+        howToStart:
+          'Aika taƙaitacciyar tambaya game da yadda kake sarrafa saƙonnin abokan ciniki yanzu domin BHD ta ba da shawarar sauƙaƙawa.',
       },
+    },
+  },
+  portfolio: {
+    kicker: 'BHD Services · Tarihin Ayyuka',
+    title: 'Zaɓaɓɓun Ayyuka (Selected Projects)',
+    intro:
+      'Sashe na musamman don nuna shafukan yanar gizo, tsarin dijital, da hanyoyin kasuwanci masu amfani da BYHENRYDIGITALS ta gina.',
+    emptyStateTitle: 'Ana Wallafa Ayyukan Abokan Ciniki Bayan Kammalawa da Amincewa',
+    emptyStateBody:
+      'A halin yanzu babu wani aikin abokin ciniki da aka kammala kuma aka amince a nuna a bainar jama’a. BYHENRYDIGITALS tana wallafa ayyukan da aka gama gaba ɗaya ne kawai bayan an sami izinin abokin ciniki—ba ƙirƙirar sunayen abokan ciniki ko samfura marasa cika ba.',
+    emptyStateNote:
+      'Yayin da BHD ke kammala sababbin shafukan yanar gizo, tsarin dijital, da gyaran tsarin aiki tare da amincewar abokan ciniki, kowane aiki zai bayyana a nan bisa tsarin da ke gefe.',
+    formatHeading: 'Abin da Kowane Bayanin Aiki Ya Ƙunsa',
+    formatItems: [
+      'Sunan aiki (Project name)',
+      'Nau’in kasuwanci ko fannin aikin',
+      'Taƙaitaccen bayanin abin da aka buƙata tun farko',
+      'Hanyar warware matsala da BHD ta gina',
+      'Fasahohi da kayan aikin da aka yi amfani da su, idan ya dace',
+      'Hotunan shafin ko samfurin aikin',
+      'Mahada zuwa ainihin shafin aikin, idan tana samuwa',
+    ],
+    discussCta: 'Tattauna Aikin Ka',
+    exploreServicesCta: 'Binciki Ayyukan Kasuwanci',
+    labels: {
+      category: 'Nau’in kasuwanci ko aiki',
+      requirement: 'Buƙatar farko',
+      solution: 'Hanyar da BHD ta gina',
+      technologies: 'Fasahohi da kayan aikin da aka yi amfani da su',
+      liveLink: 'Duba Ainihin Aikin',
+      previewZoom: 'Duba Hoto Sosai',
+      closePreview: 'Rufe hoton samfuri',
+      similarProjectCta: 'Tambaya Game da Irin Wannan Tsari',
     },
   },
   resources: {
@@ -519,6 +634,7 @@ export const ha: TranslationBundle = {
     intro:
       'Kana da tambaya game da ayyukanmu na gidan yanar gizo, kayayyakin dijital ko shirin haɗin gwiwa? Aika saƙo a ƙasa.',
     formTitle: 'BYHENRYDIGITALS Enquiry Form',
+    selectedTopicLabel: 'Batun da aka zaɓa',
     nameLabel: 'Cikakken Suna',
     namePlaceholder: 'Cikakken sunanka',
     emailLabel: 'Adireshin Imel',

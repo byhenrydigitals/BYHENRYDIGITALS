@@ -29,20 +29,24 @@ export const yo: TranslationBundle = {
   },
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
-    heroTitle: 'Àwọn Ìpinnu Dígítà. Ipa Àgbáyé.',
+    tagline: 'Àwọn Ìpinnu Dígítà. Ipa Àgbáyé.',
+    heroTitle: 'Ìmọ̀ Dígítà Tó Wúlò, Ohun Èlò Ìkẹ́kọ̀ọ́ àti Ìpinnu Iṣẹ́-Ajé.',
     heroSubtitle:
-      'Ṣàwárí àwọn ohun èlò dígítà tó wúlò, àǹfààní ìkẹ́kọ̀ọ́ àti àwọn ìpinnu tí a ṣe láti ràn ọ́ lọ́wọ́ láti kọ́, dàgbà àti ṣẹ̀dá iye ní ayé dígítà.',
+      'BYHENRYDIGITALS (BHD) ń dín àwọn ìdènà ìkópa dígítà kù nípa mímú ìmọ̀ dígítà tó wúlò, ohun èlò ẹ̀kọ́, àti ìpinnu iṣẹ́-ajé tó ṣeé lò rọrùn—nípasẹ̀ BHD Academy fún ẹnìkọ̀ọ̀kan àti BHD Services fún àwọn iṣẹ́ kéékèèké.',
     secondaryTagline: 'À Ń Kọ́ Iye Dígítà Tó Ń Tà.',
-    primaryCta: 'Ṣàwárí Àwọn Ìpinnu Wa',
-    secondaryCta: 'Mọ̀ Nípa BHD',
+    needsApproachTitle: 'Ọ̀nà Méjì Tó Yéni Lábẹ́ Àkọlé Ìpinnu Dígítà Kan',
+    needsApproachBody:
+      'Yálà o jẹ́ ẹnìkọ̀ọ̀kan tó ń kọ́ ìmọ̀ dígítà nípasẹ̀ BHD Academy tàbí olùdásílẹ̀ iṣẹ́-ajé tó ń wá wẹ́ẹ̀bù àti ìlànà iṣẹ́ nípasẹ̀ BHD Services, BHD máa ń kọ́kọ́ lóye ipò rẹ kí ó tó dábàá ìgbésẹ̀ tó kàn.',
+    primaryCta: 'Ṣàwárí BHD Services',
+    secondaryCta: 'Ṣàwárí BHD Academy',
     pillars: [
       {
-        title: 'Ẹ̀kọ́ Dígítà Tó Wúlò',
-        detail: 'Àwọn ìtọ́sọ́nà tó ṣe kedere àti ohun èlò tó wà fún ìlò gidi.',
+        title: 'Ìpinnu Tó Bẹ̀rẹ̀ Pẹ̀lú Àìní Iṣẹ́',
+        detail: 'BHD Services máa ń lóye bí iṣẹ́ rẹ ṣe ń ṣiṣẹ́ lọ́wọ́lọ́wọ́ kí a tó dábàá wẹ́ẹ̀bù tàbí irinṣẹ́ dígítà.',
       },
       {
-        title: 'Ìpinnu Wẹ́ẹ̀bù Tó Ń Ṣiṣẹ́',
-        detail: 'Àwọn ojú-òpó wẹ́ẹ̀bù tí a kọ́ fún ìyéni, ìyára àti ìrọ̀rùn lílò.',
+        title: 'BHD Academy Fún Ẹnìkọ̀ọ̀kan',
+        detail: 'Àwọn ìtọ́sọ́nà ẹ̀kọ́, ohun èlò ìkẹ́kọ̀ọ́ àti ọjà dígítà lórí Selar fún kíkọ́ òye tó ṣeé lò ní gidi.',
       },
       {
         title: 'Ètò Alábàáṣepọ̀ Pẹ̀lú Òótọ́',
@@ -50,26 +54,52 @@ export const yo: TranslationBundle = {
       },
       {
         title: 'Ìran Àgbáyé',
-        detail: 'Àwọn ètò dígítà tó ṣeé dé fún àwùjọ onírúurú èdè káríayé.',
+        detail: 'Àwọn ètò dígítà tó ṣeé lò ní Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa, Faransé, àti Nigerian Pidgin.',
       },
     ],
-    productsSectionKicker: 'Àwọn Ọjà Dígítà',
+    pathways: {
+      sectionKicker: 'BHD Academy àti BHD Services',
+      sectionTitle: 'Àwọn Ọ̀nà Méjì Ọ̀tọ̀ọ̀tọ̀ Lábẹ́ BYHENRYDIGITALS',
+      sectionSubtitle:
+        'BYHENRYDIGITALS ń dín àwọn ìṣòro ìkópa dígítà kù nípasẹ̀ ẹ̀ka méjì pàtó—ṣíṣe ìtìlẹ́yìn fún àwọn tó ń kọ́ ìmọ̀ dígítà àti ríran àwọn iṣẹ́ kéékèèké lọ́wọ́ láti lo irinṣẹ́ dígítà tó wúlò.',
+      business: {
+        label: 'BHD Services · Fún Àwọn Iṣẹ́-Ajé',
+        title: 'BHD Services — Àwọn Ìpinnu Dígítà Tó Wúlò Fún Iṣẹ́-Ajé.',
+        description:
+          'A ń ran àwọn iṣẹ́ kéékèèké àti àwọn ilé-iṣẹ́ tuntun lọ́wọ́ láti ṣàwárí, ráyè sí àti lo àwọn ìpinnu dígítà tó bá àìní wọn, ìnáwó wọn àti ìpele ìdàgbàsókè wọn mu.',
+        cta: 'Ṣàwárí BHD Services',
+        servicesLinkLabel: 'Àwọn Iṣẹ́ Iṣẹ́-Ajé',
+        projectsLinkLabel: 'Àwọn Iṣẹ́ Tí A Yàn',
+        contactLinkLabel: 'Jíròrò Iṣẹ́',
+      },
+      individual: {
+        label: 'BHD Academy · Fún Ẹnìkọ̀ọ̀kan',
+        title: 'BHD Academy — Kẹ́kọ̀ọ́. Kọ́. Dàgbà.',
+        description:
+          'Ṣàwárí ẹ̀kọ́ dígítà tó wúlò, àwọn ohun èlò àti ìtọ́sọ́nà tí a ṣe láti ran ẹnìkọ̀ọ̀kan lọ́wọ́ láti kọ́ ìmọ̀ dígítà tó wúlò kí wọ́n sì lóye àwọn àǹfààní nínú ètò ọrọ̀-ajé dígítà.',
+        cta: 'Ṣàwárí BHD Academy',
+        productsLinkLabel: 'Àwọn Ọjà Dígítà',
+        resourcesLinkLabel: 'Àwọn Ohun Èlò Ẹ̀kọ́',
+        affiliateLinkLabel: 'Ètò Alábàáṣepọ̀',
+      },
+    },
+    productsSectionKicker: 'BHD Academy · Àwọn Ọjà Dígítà',
     productsSectionTitle: 'Àwọn Ìwé Ìtọ́sọ́nà Dígítà àti Ohun Èlò Ìkẹ́kọ̀ọ́',
     productsSectionDesc:
-      'Ṣàwárí àwọn ọjà dígítà BHD lórí Selar, tí a ṣẹ̀dá láti ran àwọn akẹ́kọ̀ọ́ àti olùkọ́ṣẹ́ dígítà lọ́wọ́ láti ní òye tó wúlò.',
+      'Apá kan lára BHD Academy: ṣàwárí àwọn ìtọ́sọ́nà ẹ̀kọ́ àti ọjà dígítà lórí Selar láti ran ẹnìkọ̀ọ̀kan lọ́wọ́ láti kọ́ ìmọ̀ tó wúlò.',
     viewAllProducts: 'Wo Àkójọ Àwọn Ọjà',
     selarBadge: 'Àkójọ Selar',
     selarLinkShort: 'BHD Store',
-    servicesSectionKicker: 'Àwọn Iṣẹ́ Dígítà',
-    servicesSectionTitle: 'Àwọn Ìrírí Dígítà Tó Ń Ṣiṣẹ́ Dáadáa',
+    servicesSectionKicker: 'BHD Services · Fún Àwọn Iṣẹ́-Ajé',
+    servicesSectionTitle: 'Àwọn Ìpinnu Dígítà Tó Dúró Lórí Àìní Iṣẹ́ Rẹ',
     servicesSectionDesc:
-      'Láti ojú-ewé ìtọ́sọ́nà títí dé ìlànà tí AI ń ṣe ìrànwọ́ fún, BHD ń kọ́ àwọn ohun-ìní dígítà tó ṣeé gbẹ́kẹ̀lé.',
+      'BHD Services máa ń bẹ̀rẹ̀ nípa lílóye bí iṣẹ́ rẹ ṣe ń lọ lọ́wọ́lọ́wọ́, ìnáwó rẹ àti ìpele ìdàgbàsókè rẹ kí ó tó dábàá ìpinnu dígítà—tí ó ń kọ́ àwọn wẹ́ẹ̀bù àti ìlànà tó ṣeé gbẹ́kẹ̀lé.',
     exploreServices: 'Ṣàwárí Àwọn Iṣẹ́',
     enquireShort: 'Béèrè',
-    affiliateSectionKicker: 'Kẹ́kọ̀ọ́ Tàbí Béèrè · Àwọn Ọ̀nà Méjì Ọ̀tọ̀ọ̀tọ̀',
+    affiliateSectionKicker: 'BHD Academy · Kẹ́kọ̀ọ́ Tàbí Béèrè · Àwọn Ọ̀nà Méjì Ọ̀tọ̀ọ̀tọ̀',
     affiliateSectionTitle: 'Affiliate Starter Kit vs. Ètò Alábàáṣepọ̀ BHD',
     affiliateSectionDesc:
-      'BYHENRYDIGITALS ní ohun èlò ẹ̀kọ́ ₦8,000 Starter Kit ọ̀tọ̀ fún kíkọ́ títà alábàáṣepọ̀ àti ètò alábàáṣepọ̀ ọ̀fẹ́ ọ̀tọ̀ tí ẹgbẹ́ wa ń ṣàyẹ̀wò kí a tó yan ènìyàn.',
+      'Nínú BHD Academy, BYHENRYDIGITALS ní ohun èlò ẹ̀kọ́ ₦8,000 Starter Kit ọ̀tọ̀ fún kíkọ́ títà alábàáṣepọ̀ àti ètò alábàáṣepọ̀ ọ̀fẹ́ ọ̀tọ̀ tí ẹgbẹ́ wa ń ṣàyẹ̀wò kí a tó yan ènìyàn.',
     learnAffiliate: 'Àlàyé Ètò',
     applyAffiliate: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
     affiliateClarification:
@@ -102,7 +132,7 @@ export const yo: TranslationBundle = {
       selectionTitle: 'Àyẹ̀wò BHD',
       selectionLabel: 'BYHENRYDIGITALS ni yóò yan àwọn tó yẹ lẹ́yìn àyẹ̀wò ìbéèrè',
     },
-    resourcesSectionKicker: 'Àwọn Ohun Èlò àti Ọ̀rọ̀',
+    resourcesSectionKicker: 'BHD Academy · Àwọn Ohun Èlò àti Ọ̀rọ̀',
     resourcesSectionTitle: 'Àwọn Ìtọ́sọ́nà Lórí Ìmọ̀ Dígítà, Wẹ́ẹ̀bù àti AI',
     resourcesSectionDesc:
       'Ka àwọn àpilẹ̀kọ tó wúlò nípa ẹ̀kọ́ dígítà, àǹfààní lórí íńtánẹ́ẹ̀tì, iṣẹ́-ajé, ìkọ́lé wẹ́ẹ̀bù àti àwọn irinṣẹ́ dígítà òde òní.',
@@ -329,79 +359,164 @@ export const yo: TranslationBundle = {
       'Ìkéde Òótọ́: BYHENRYDIGITALS kò ṣe ìlérí ìyàn alábàáṣepọ̀, títà, tàbí owó. Èsì da lórí ìsapá rẹ, ìjọra ọ̀rọ̀ àti ìbéèrè ọjà.',
   },
   services: {
-    kicker: 'Àwọn Ìpinnu Oníbàárà',
-    title: 'Àwọn Iṣẹ́ Dígítà Tí A Kọ́ Fún Ìwúlò Gidi',
+    kicker: 'Àwọn Iṣẹ́ Fún Iṣẹ́-Ajé Kéékèèké',
+    title: 'Àwọn Iṣẹ́ Dígítà Tó Wúlò Ní Èdè Tó Rọrùn',
     intro:
-      'À ń kọ́ àwọn ìrírí dígítà tó ń ṣiṣẹ́—kì í ṣe ojú-ewé wẹ́ẹ̀bù lásán. Gbogbo iṣẹ́ dojú kọ ètò, ìyára àti ìyéni fún àwùjọ rẹ.',
-    philosophyTitle: 'Iye Dígítà Tó Ń Tà',
-    philosophyBody:
-      'Àwòrán nìkan kò tó láti mú ilé-iṣẹ́ dàgbà. BHD so àṣà dúdú, funfun àti góòlù pọ̀ mọ́ ìrìn àlejò tó mọ́ àti ètò dígítà tó wúlò.',
-    brandServicesTag: 'Àwọn Iṣẹ́ BYHENRYDIGITALS',
-    customScopedLabel: 'A ṣe àtòjọ iṣẹ́ gẹ́gẹ́ bí ìbéèrè rẹ',
+      'O kò nílò ìmọ̀ ẹ̀rọ tó jinlẹ̀ kí o tó bá BHD ṣiṣẹ́. Iṣẹ́ kọ̀ọ̀kan dojú kọ yíyanjú ìṣòro iṣẹ́-ajé gidi ní ìbámu pẹ̀lú àìní rẹ lọ́wọ́lọ́wọ́, ìnáwó rẹ àti ìdàgbàsókè tó ṣeé ṣe.',
+    approachKicker: 'Bí BHD Ṣe Ń Ṣiṣẹ́',
+    approachHeading:
+      'Lóye iṣẹ́-ajé náà. Ṣàwárí àìní rẹ̀. Dábàá ìpinnu tó yẹ. Kó o sì ṣe é.',
+    approachLead:
+      'BHD máa ń dábàá ìpinnu ní ìbámu pẹ̀lú àìní oníbàárà lọ́wọ́lọ́wọ́, ìnáwó rẹ̀ àti ìlànà ìdàgbàsókè gidi—kì í fipá mú ènìyàn ra irinṣẹ́ tí kò pọn dandan.',
+    approachSteps: [
+      {
+        num: '01.',
+        title: 'Lóye iṣẹ́-ajé náà.',
+        detail: 'A máa ń kẹ́kọ̀ọ́ ohun tí iṣẹ́ rẹ ń tà, àwọn tí o ń sìn, àti bí iṣẹ́ ṣe ń lọ lójoojúmọ́.',
+      },
+      {
+        num: '02.',
+        title: 'Ṣàwárí àìní rẹ̀.',
+        detail: 'A máa ń wo ibi tí àwọn oníbàárà ti ń dààmú tàbí ibi tí iṣẹ́ ọwọ́ ti ń fa ìdádúró.',
+      },
+      {
+        num: '03.',
+        title: 'Dábàá ìpinnu tó yẹ.',
+        detail: 'A máa ń dábàá ọ̀nà tó wúlò tó bá ìnáwó rẹ àti ètò ìdàgbàsókè rẹ mu.',
+      },
+      {
+        num: '04.',
+        title: 'Kó o sì ṣe é.',
+        detail: 'A máa ń kọ́ àti ṣètò ohun tí a fọwọ́ sí kí iṣẹ́ rẹ lè bẹ̀rẹ̀ sí í lò ó lẹ́sẹ̀kẹsẹ̀.',
+      },
+    ],
+    labels: {
+      problem: 'Ìṣòro iṣẹ́ tí ó ń yanjú',
+      provides: 'Ohun tí BHD lè pèsè ní gidi',
+      receives: 'Ohun tí oníṣòwò yóò gbà',
+      getStarted: 'Bí o ṣe lè bẹ̀rẹ̀',
+    },
+    brandServicesTag: 'Àwọn Iṣẹ́ Iṣẹ́-Ajé BYHENRYDIGITALS',
+    customScopedLabel: 'A ṣe é ní ìbámu pẹ̀lú àìní rẹ, ìnáwó àti ohun tí a fọwọ́ sí',
     discussCta: 'Jíròrò Iṣẹ́ Rẹ',
     pricingNotice:
-      'Ìwọ̀n iṣẹ́ àti iye owó ni a máa ń sọ nígbà ìfọ̀rọ̀wérọ̀. Kò sí iye owó tí a fi sílẹ̀ nípa ipá.',
+      'Ìfọ̀rọ̀wérọ̀ àti Iye Owó: A máa ń sọ ìwọ̀n iṣẹ́ àti owó ní kedere lẹ́yìn ìjíròrò ní ìbámu pẹ̀lú ohun tí iṣẹ́ rẹ nílò lọ́wọ́lọ́wọ́.',
+    availabilityNotice:
+      'Àkíyèsí Ìwọ̀n Iṣẹ́: BHD máa ń ṣe ìlérí ohun tí a fọwọ́ sí nígbà ìjíròrò nìkan. A kò ṣe ìlérí ìsopọ̀ ẹgbẹ́ kẹta, ìṣiṣẹ́ aládàáṣe, ìsanwó lórí íńtánẹ́ẹ̀tì, tàbí ìtìlẹ́yìn títí láé àfi bí a bá fọwọ́ sí i ní pàtó.',
     items: {
       'web-design-dev': {
         title: 'Ìṣẹ̀dá àti Ìkọ́lé Wẹ́ẹ̀bù',
         summary:
-          'Àwọn wẹ́ẹ̀bù tó yára tí ó sì ń ṣiṣẹ́ lórí gbogbo ẹ̀rọ, tí a kọ́ fún ìrìn oníbàárà tó mọ́ àti ìgbẹ́kẹ̀lé.',
-        functionalFocus:
-          'A kọ́ ọ láti ṣiṣẹ́ fún iṣẹ́ gidi—kì í ṣe ìwé àṣà lásán.',
-        deliverables: [
-          'Ìṣètò tó péye lórí kọ̀ǹpútà, táblẹ́ẹ̀tì àti fóònù',
-          'Ètò ojú-òpó tó mọ́ àti metadata fún ìwákiri',
-          'Ọ̀nà ìbéèrè àti ìtọ́sọ́nà oníbàárà tó ṣe kedere',
+          'Ojú-òpó wẹ́ẹ̀bù tó yéni tó sì ń ṣiṣẹ́ lórí fóònù, tó ń ṣàlàyé ohun tí o ń ṣe tí ó sì rọrùn fún àwọn oníbàárà láti kàn sí ọ.',
+        problemAddressed:
+          'Àwọn oníbàárà máa ń ṣòro láti gbẹ́kẹ̀lé ilé-iṣẹ́ tàbí rí àlàyé pàtàkì nígbà tí ọ̀rọ̀ iṣẹ́ bá wà ní ìtúká lórí àwọn àkọsílẹ̀ tàbí ìfọ̀rọ̀wérọ̀ nìkan.',
+        whatBhdProvides:
+          'BHD ń ṣe àtòjọ àti ìkọ́lé wẹ́ẹ̀bù tó mọ́ fún ipò tí iṣẹ́ rẹ wà lọ́wọ́lọ́wọ́, tó ṣeé kà lórí fóònù àti kọ̀ǹpútà. Àwọn ẹ̀yà àfikún bíi ìsanwó tàbí ìsopọ̀ mìíràn nílò ìfọwọ́sí lọ́tọ̀.',
+        whatYouReceive: [
+          'Wẹ́ẹ̀bù tó ṣeé lò lórí fóònù pẹ̀lú àwọn ojú-ewé tó ṣe kedere fún iṣẹ́ rẹ',
+          'Ìtọ́sọ́nà tó rọrùn àti ọ̀nà ìbéèrè tààrà fún àwọn àlejò',
+          'Àlàyé tó rọrùn ní èdè gbangba lórí bí a ṣe ṣètò wẹ́ẹ̀bù rẹ',
         ],
+        howToStart:
+          'Tẹ "Jíròrò Iṣẹ́ Rẹ" láti sọ ohun tí iṣẹ́ rẹ ń ṣe, àwọn oníbàárà rẹ àti ìnáwó tí o lè lò.',
       },
       'landing-pages': {
         title: 'Ojú-ewé Ìtọ́sọ́nà (Landing Pages)',
         summary:
-          'Ojú-ewé kan ṣoṣo tí a ṣe láti ṣàlàyé ìfilọ̀ rẹ kedere kí ó sì darí àlejò sí ìgbésẹ̀ pàtó kan.',
-        functionalFocus:
-          'Ó ń yọ ìdààmú kúrò kí ìpolongo rẹ bá a lè sọ̀rọ̀ tààrà.',
-        deliverables: [
-          'Ìtàn ìpolongo láti àkọlé dé ìgbésẹ̀',
-          'Fọ́ọ̀mù ìbéèrè tó ní àyẹ̀wò àti ìsopọ̀ ilé-ìtajà',
-          'Ìṣètò fọ́tò àti kọ́ńtẹ́ǹtì tó yára',
+          'Ojú-ewé kan ṣoṣo tó dojú kọ ọjà tàbí iṣẹ́ pàtó kan kí àlejò lè ṣe ìgbésẹ̀ kan ṣoṣo láìsí ìdààmú.',
+        problemAddressed:
+          'Fífi àwọn olùfẹ́ ránṣẹ́ sí ojú-ewé tó kún fún ohun púpọ̀ máa ń dà wọ́n láàmú ó sì máa ń dín ìbéèrè kù.',
+        whatBhdProvides:
+          'BHD ń ṣètò ojú-ewé kan ṣoṣo tó ṣàlàyé ìfilọ̀ rẹ láti òkè dé ìsàlẹ̀ tí ó sì darí àwọn àlejò sí fọ́ọ̀mù ìbéèrè tàbí ìsopọ̀ ilé-ìtajà tó wà nílẹ̀.',
+        whatYouReceive: [
+          'Ojú-ewé kan ṣoṣo tí a kọ́ fún ọjà, iṣẹ́ tàbí ìpolongo kan pàtó',
+          'Àkọlé tó ṣe kedere, àlàyé kúkúrú àti bọtini ìgbésẹ̀ tó hàn gbangba',
+          'Ìṣètò tó rọrùn fún àwọn àlejò tó ń wọlé láti WhatsApp tàbí ìkànnì àwùjọ',
         ],
+        howToStart:
+          'Sọ fún BHD irú ọjà tàbí iṣẹ́ pàtó tí o fẹ́ gbé jáde àti ibi tí o fẹ́ kí àlejò lọ.',
       },
       'digital-presence': {
         title: 'Ìdàgbàsókè Ìfarahàn Dígítà',
         summary:
-          'Ìṣọ̀kan tó péye láàárín wẹ́ẹ̀bù rẹ, ilé-ìtajà ọjà àti àwọn ọ̀nà ìbánisọ̀rọ̀ kí ilé-iṣẹ́ rẹ lè ní iyì lẹ́sẹ̀kẹsẹ̀.',
-        functionalFocus:
-          'Ó ń so ọ̀rọ̀ àmì-ìdámọ̀ àti ìrísí pọ̀ ní gbogbo ibi.',
-        deliverables: [
-          'Àwòrán dúdú-funfun-góòlù tàbí àwọ̀ tirẹ pàtó',
-          'Ìṣètò Selar, fọ́ọ̀mù àti àkójọ ìsopọ̀',
-          'Àkóónú tó ṣètò fún àwọn àlejò àgbáyé',
+          'Ìṣọ̀kan wẹ́ẹ̀bù rẹ, àwọn ìsopọ̀ iṣẹ́ àti àlàyé ìtàn-ìdámọ̀ rẹ sínú ìrírí kan ṣoṣo tó wà ní ètò.',
+        problemAddressed:
+          'Ọ̀pọ̀ iṣẹ́ kéékèèké máa ń pàdánù ìgbẹ́kẹ̀lé nígbà tí àlàyé àti ìsopọ̀ wọn lórí ìkànnì kò bá bára mu tàbí tí wọ́n bá ti bàjẹ́.',
+        whatBhdProvides:
+          'BHD ń ṣàyẹ̀wò bí iṣẹ́ rẹ ṣe ń hàn lórí íńtánẹ́ẹ̀tì lọ́wọ́lọ́wọ́, ó ń ràn ọ́ lọ́wọ́ láti ṣètò ọ̀rọ̀ àti ìrísí rẹ, ó sì ń tún wẹ́ẹ̀bù àti àwọn ìsopọ̀ rẹ ṣe.',
+        whatYouReceive: [
+          'Ọ̀rọ̀ àti ìrísí iṣẹ́ tó bá ara wọn mu káàkiri ibi tí àwọn oníbàárà ti ń rí ọ',
+          'Àkójọ ìsopọ̀ tó péye tí ó ń darí àwọn oníbàárà sí ojú-ewé tàbí ọ̀nà ìbánisọ̀rọ̀ tó tọ́',
+          'Àbá tó ṣeé ṣe ní ìbámu pẹ̀lú ìwọ̀n iṣẹ́ rẹ lọ́wọ́lọ́wọ́',
         ],
+        howToStart:
+          'Pin wẹ́ẹ̀bù, ojú-òpó àwùjọ tàbí ìsopọ̀ ilé-ìtajà rẹ lọ́wọ́lọ́wọ́ kí BHD lè ṣàyẹ̀wò àti dábàá àtúnṣe.',
       },
       'nocode-ai-solutions': {
-        title: 'Ìpinnu No-Code àti AI',
+        title: 'Ìlànà Ìṣẹ̀dá No-Code àti Ìrànwọ́ AI',
         summary:
-          'Àwọn ìlànà ìṣiṣẹ́ aládàáṣe tó wúlò, ìsopọ̀ chatbot fún àwọn oníbàárà bí wọ́n bá béèrè fún un, àti irinṣẹ́ no-code láti dín iṣẹ́ ọwọ́ kù.',
-        functionalFocus:
-          'Ó ń lo irinṣẹ́ òde òní níbi tó ti ń fi àkókò pamọ́ fún iṣẹ́ oníbàárà.',
-        deliverables: [
-          'Ìṣiṣẹ́ aládàáṣe àti ìsopọ̀ chatbot pàtó fún iṣẹ́ oníbàárà',
-          'Fọ́ọ̀mù ìtẹ́wọ́gbà no-code àti ìfitónilétí',
-          'Ìtọ́sọ́nà ìlò tó rọrùn fún ẹgbẹ́ iṣẹ́',
+          'Lílo àwọn irinṣẹ́ no-code àti ìlànà ìrànwọ́ AI láti ṣètò ojú-ewé dígítà tó rọrùn ní kíákíá—ní pàtó lórí ohun tí a fọwọ́ sí.',
+        problemAddressed:
+          'Àwọn iṣẹ́ tó ń dàgbà máa ń fẹ́ ojú-ewé tàbí ìlànà tó rọrùn láìsí iye owó gíga tàbí ìdádúró gígùn ti sọ́fútíwẹ́à àdáni.',
+        whatBhdProvides:
+          'BHD ń lo ìlànà no-code àti ìrànwọ́ AI láti ṣe ètò ojú-ewé àti ṣètò àwọn ojú-ewé dígítà tó rọrùn. A kò ṣe ìlérí ìsopọ̀ aládàáṣe ẹgbẹ́ kẹta àfi bí a bá fọwọ́ sí i lẹ́yìn àyẹ̀wò.',
+        whatYouReceive: [
+          'Àwọn ojú-ewé dígítà tàbí ètò no-code tó rọrùn tí ó bá ìrírí rẹ mu',
+          'Ìmọ̀ràn òótọ́ lórí ohun tó ń ṣiṣẹ́ báyìí àti ohun tó yẹ kí ó dúró de ìdàgbàsókè',
+          'Àlàyé tó rọrùn kí ẹgbẹ́ rẹ lè mọ bí gbogbo rẹ̀ ṣe ń ṣiṣẹ́',
         ],
+        howToStart:
+          'Ṣàlàyé iṣẹ́ tí ó máa ń tún ara rẹ̀ ṣe tàbí ètò tó rọrùn tí o fẹ́ ṣàwárí kí BHD sọ ohun tó ṣeé ṣe pẹ̀lú ìnáwó rẹ.',
       },
       'digital-business-support': {
-        title: 'Ìtìlẹ́yìn Iṣẹ́ Dígítà',
+        title: 'Àwọn Irinṣẹ́ Iṣẹ́ Dígítà Tó Wúlò àti Ìṣètò Ìlànà Iṣẹ́',
         summary:
-          'Ìtọ́sọ́nà tó wúlò fún àwọn olùdásílẹ̀ tó ń gbé ọjà dígítà jáde tàbí tí wọ́n ń ṣe àbójútó wẹ́ẹ̀bù wọn.',
-        functionalFocus:
-          'Ìrànwọ́ ìmọ̀-ẹ̀rọ àti ètò láti jẹ́ kí iṣẹ́ dígítà máa lọ déédé.',
-        deliverables: [
-          'Àtúnṣe ìṣòro ìmọ̀-ẹ̀rọ àti àyẹ̀wò ilé-ìtajà',
-          'Àfikún ẹ̀yà tuntun àti ìfẹ̀sí àkóónú',
-          'Ìtọ́sọ́nà tó rọrùn láìsí ọ̀rọ̀ ìdààmú',
+          'Ríran àwọn olùdásílẹ̀ iṣẹ́ kéékèèké lọ́wọ́ láti yan àti ṣètò àwọn irinṣẹ́ ojoojúmọ́—bíi fọ́ọ̀mù ìbéèrè, ìsopọ̀ àti ìtọ́jú àlàyé—kí iṣẹ́ máa lọ ní ètò.',
+        problemAddressed:
+          'Ìbéèrè oníbàárà, ìsopọ̀ pàtàkì àti àwọn ìwé máa ń sọnù sínú ọ̀pọ̀ ìfọ̀rọ̀wérọ̀ àti àkọsílẹ̀ tó tú káàkiri.',
+        whatBhdProvides:
+          'BHD ń wo bí o ṣe ń ṣàkóso ìfọ̀rọ̀wérọ̀ oníbàárà lọ́wọ́lọ́wọ́, ó sì ń ràn ọ́ lọ́wọ́ láti yan àti ṣètò àwọn irinṣẹ́ tó bá ìnáwó àti ìdàgbàsókè rẹ mu. Ìtìlẹ́yìn títí láé, ìsopọ̀ ẹgbẹ́ kẹta tàbí ìsanwó kò sí nínú rẹ̀ àfi bí a bá fọwọ́ sí i.',
+        whatYouReceive: [
+          'Ìmọ̀ràn tó ṣe kedere lórí àwọn irinṣẹ́ ojoojúmọ́ tí ẹgbẹ́ rẹ lè lò ní rọ̀rùn',
+          'Ìṣètò tó mọ́ fún ọ̀nà ìbéèrè oníbàárà, ìsopọ̀ àti àlàyé iṣẹ́',
+          'Ìtọ́sọ́nà ìgbésẹ̀-ní-ìgbésẹ̀ láìsí ọ̀rọ̀ ìmọ̀-ẹ̀rọ tó ṣòro',
         ],
+        howToStart:
+          'Fi ìbéèrè ránṣẹ́ nípa bí o ṣe ń ṣàkóso ìránṣẹ́ oníbàárà àti àwọn ìwé rẹ lọ́wọ́lọ́wọ́ kí BHD dábàá ìrọ̀rùn.',
       },
+    },
+  },
+  portfolio: {
+    kicker: 'BHD Services · Àkójọ Iṣẹ́',
+    title: 'Àwọn Iṣẹ́ Tí A Yàn (Selected Projects)',
+    intro:
+      'Ààyè pàtó láti ṣàfihàn àwọn ojú-òpó wẹ́ẹ̀bù, ètò dígítà àti ìpinnu iṣẹ́-ajé tó wúlò tí BYHENRYDIGITALS kọ́.',
+    emptyStateTitle: 'Àwọn Iṣẹ́ Oníbàárà Tí A Parí Pẹ̀lú Àṣẹ Ni À Ń Fi Sílẹ̀ Níbí',
+    emptyStateBody:
+      'Lọ́wọ́lọ́wọ́, kò sí iṣẹ́ oníbàárà tí a ti parí pẹ̀lú àṣẹ ìtẹ̀jáde fún gbogbo ènìyàn tí a fi sílẹ̀. BYHENRYDIGITALS máa ń ṣàfihàn iṣẹ́ tí a ti parí pátápátá tí oníbàárà sì fọwọ́ sí nìkan—kì í ṣe àpẹẹrẹ àìparí tàbí àbájáde àròsọ.',
+    emptyStateNote:
+      'Bí BHD ṣe ń parí àwọn wẹ́ẹ̀bù, ètò dígítà, àti ìṣètò iṣẹ́ tuntun tí a sì gba àṣẹ ìfihàn, iṣẹ́ kọ̀ọ̀kan yóò máa hàn níbí ní ìlànà tó wà ní apá kejì.',
+    formatHeading: 'Ohun Tí Àfihàn Iṣẹ́ Kọ̀ọ̀kan Máa Ń Ní Nínú',
+    formatItems: [
+      'Orúkọ iṣẹ́ (Project name)',
+      'Ìsọ̀rí iṣẹ́-ajé tàbí irú iṣẹ́',
+      'Àlàyé ṣókí nípa ohun tí a béèrè ní ìbẹ̀rẹ̀',
+      'Ìpinnu tí BHD kọ́ àti bí ó ṣe ṣiṣẹ́',
+      'Ìmọ̀-ẹ̀rọ àti irinṣẹ́ tí a lò, níbi tó bá yẹ',
+      'Àwòrán ojú-òpó tàbí àwòrán àfihàn iṣẹ́',
+      'Ìjápọ̀ sí iṣẹ́ tó ń ṣiṣẹ́ lórí íńtánẹ́ẹ̀tì, nígbà tó bá wà',
+    ],
+    discussCta: 'Sọ̀rọ̀ Nípa Iṣẹ́ Rẹ',
+    exploreServicesCta: 'Ṣàwárí Àwọn Iṣẹ́ Iṣẹ́-Ajé',
+    labels: {
+      category: 'Ìsọ̀rí iṣẹ́-ajé tàbí iṣẹ́',
+      requirement: 'Ohun tí a béèrè ní ìbẹ̀rẹ̀',
+      solution: 'Ìpinnu tí BHD ṣe',
+      technologies: 'Ìmọ̀-ẹ̀rọ àti irinṣẹ́ tí a lò',
+      liveLink: 'Wo Iṣẹ́ Lórí Íńtánẹ́ẹ̀tì',
+      previewZoom: 'Wo Àwòrán Dáadáa',
+      closePreview: 'Pa àwòrán àfihàn',
+      similarProjectCta: 'Béèrè Fún Irú Ìpinnu Yìí',
     },
   },
   resources: {
@@ -519,6 +634,7 @@ export const yo: TranslationBundle = {
     intro:
       'Ṣé o ní ìbéèrè nípa iṣẹ́ wẹ́ẹ̀bù wa, àwọn ọjà dígítà tàbí ètò alábàáṣepọ̀? Fi ìránṣẹ́ ránṣẹ́ ní ìsàlẹ̀.',
     formTitle: 'BYHENRYDIGITALS Enquiry Form',
+    selectedTopicLabel: 'Àkọlé tí a yàn',
     nameLabel: 'Orúkọ Kíkún',
     namePlaceholder: 'Orúkọ rẹ ní kíkún',
     emailLabel: 'Àdírẹ́sì Ímeèlì',

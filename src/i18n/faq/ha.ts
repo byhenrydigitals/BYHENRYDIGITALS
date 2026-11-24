@@ -6,10 +6,10 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'about-01': {
     question: 'Menene BYHENRYDIGITALS?',
     answer: [
-      'BYHENRYDIGITALS (BHD) kamfani ne na ilimin dijital da hanyoyin fasahar dijital wanda Henry (Coach Henry) ya kafa. Yana taimaka wa mutane da kamfanoni gano damammakin dijital masu amfani, koyon ƙwarewa ta zahiri, samun jagorori kan Selar, da gina shafukan yanar gizo masu aiki.',
-      'A fannin ilimi da ayyuka, BHD yana mai da hankali kan ilimin dijital mai amfani, kasuwancin dijital, samar da kuɗi ta kan layi bisa gaskiya, da hanyoyin fasaha.',
+      'BYHENRYDIGITALS (BHD) alama ce ta hanyoyin dijital da ilimi wadda Henry (Coach Henry) ya kafa don rage shingaye ga shiga harkar dijital. Tana haɗa sassa biyu bayyanannu: BHD Academy don mutane ɗaiɗaiku masu koyon ƙwarewar dijital, da BHD Services don ƙananan masana’antu da ke neman shafukan yanar gizo da tsarin aiki masu amfani.',
+      'A duka sassan biyu, BHD tana mai da hankali kan ilimin dijital mai amfani, kayan koyo a Selar, tsarin haɗin gwiwa na gaskiya, da hanyoyin yanar gizo bisa buƙata.',
     ],
-    extraKeywords: ['bayanai', 'ilimin dijital', 'hanyoyin fasaha'],
+    extraKeywords: ['bayanai', 'bhd academy', 'bhd services', 'ilimin dijital', 'hanyoyin fasaha'],
     actionLabel: 'Karanta Game da BHD',
   },
   'about-02': {
@@ -62,13 +62,13 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'about-09': {
     question: 'Su wa za su iya amfana da BYHENRYDIGITALS?',
     answer: [
-      'Masu farawa masu koyon ƙwarewar dijital, ɗalibai ’yan ƙasa da shekaru 18 da iyayensu, marubuta da masu ƙirƙira a shirin haɗin gwiwa, da ’yan kasuwa masu buƙatar shafukan yanar gizo masu aiki.',
+      'BYHENRYDIGITALS tana hidima ga rukunai biyu: (1) Mutane ɗaiɗaiku ta BHD Academy—masu farawa da ke koyon ilimin dijital, ɗalibai ’yan ƙasa da 18 da iyaye, da marubuta a shirin haɗin gwiwa na gaskiya; da (2) Ƙananan masana’antu ta BHD Services—masu neman shafukan yanar gizo, shafukan sauka, da tsarin aiki da ya dace da kasafinsu.',
     ],
   },
   'about-10': {
     question: 'Shin BHD dandalin ilimin dijital ne ko kamfanin ayyukan dijital?',
     answer: [
-      'BHD yana haɗa duka biyun: (1) ilimin dijital da albarkatun koyo a Selar da Cibiyar Albarkatu, da (2) ayyukan dijital kamar gina shafukan yanar gizo, shafukan sauka, da tsarin no-code.',
+      'BYHENRYDIGITALS tana gudanar da duka biyun a ƙarƙashin alama guda: (1) BHD Academy — Koyi. Gina. Haɓaka. don mutane ɗaiɗaiku (kayayyakin Selar, Cibiyar Albarkatu, da Shirin Haɗin Gwiwa), da (2) BHD Services — Hanyoyin Dijital Masu Amfani Ga Kasuwanci (gina shafuka, shafukan sauka, no-code, da kayan aikin kasuwanci).',
     ],
   },
   'about-11': {

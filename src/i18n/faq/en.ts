@@ -6,10 +6,10 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'about-01': {
     question: 'What is BYHENRYDIGITALS?',
     answer: [
-      'BYHENRYDIGITALS (BHD) is a digital education and digital solutions brand founded by Henry (Coach Henry). It helps individuals and businesses discover practical digital opportunities, learn useful digital skills, access verified digital guides on Selar, and build functional websites and online systems.',
-      'Across both its learning resources and client services, BHD focuses on practical digital education, digital entrepreneurship, online monetisation, and technology-enabled business solutions.',
+      'BYHENRYDIGITALS (BHD) is a digital solutions and education brand founded by Henry (Coach Henry) to reduce barriers to digital participation. It brings together two distinct divisions: BHD Academy for individuals learning practical digital skills, and BHD Services for small businesses and startups seeking practical websites and digital workflows.',
+      'Across both divisions, BHD focuses on practical digital education, transparent resources on Selar, honest affiliate opportunities, and needs-first business web solutions.',
     ],
-    extraKeywords: ['overview', 'digital solutions', 'online monetisation', 'education'],
+    extraKeywords: ['overview', 'bhd academy', 'bhd services', 'digital solutions', 'education'],
     actionLabel: 'Read About BYHENRYDIGITALS',
   },
   'about-02': {
@@ -64,13 +64,13 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'about-09': {
     question: 'Who can benefit from BYHENRYDIGITALS?',
     answer: [
-      'BHD serves beginners exploring digital literacy and online opportunities, young learners and parents looking for age-appropriate remote skill pathways, content creators and writers interested in ethical affiliate recommendations, and entrepreneurs or businesses needing functional websites and digital presence.',
+      'BYHENRYDIGITALS serves two main audiences: (1) Individuals through BHD Academy—beginners exploring digital literacy and online opportunities, young learners and parents seeking age-appropriate guidance, and creators interested in honest affiliate opportunities; and (2) Small businesses and startups through BHD Services—owners looking for practical websites, landing pages, digital presence, and workflow organisation matched to their budget and stage of growth.',
     ],
   },
   'about-10': {
     question: 'Is BHD a digital education platform or a digital services brand?',
     answer: [
-      'BYHENRYDIGITALS combines both functions cleanly under one brand: (1) digital education and practical learning resources hosted through its Selar store and website Knowledge Hub, and (2) digital services covering website design, landing pages, digital presence, no-code workflows, and digital business support.',
+      'BYHENRYDIGITALS operates both cleanly under one brand: (1) BHD Academy — Learn. Build. Grow. for individuals, covering Selar educational products, Knowledge Hub articles, and the transparent Affiliate Programme; and (2) BHD Services — Practical Digital Solutions for Businesses, covering website design, landing pages, digital presence, no-code workflows, and practical business tools.',
     ],
   },
   'about-11': {

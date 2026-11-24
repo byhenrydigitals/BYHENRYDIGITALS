@@ -29,47 +29,77 @@ export const en: TranslationBundle = {
   },
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
-    heroTitle: 'Digital Solutions. Global Impact.',
+    tagline: 'Digital Solutions. Global Impact.',
+    heroTitle: 'Practical Digital Knowledge, Resources & Business Solutions.',
     heroSubtitle:
-      'Discover practical digital resources, learning opportunities and solutions designed to help you build, grow and create value in the digital world.',
+      'BYHENRYDIGITALS (BHD) reduces barriers to digital participation by making useful digital knowledge, educational resources, and practical business solutions accessible—bringing together BHD Academy for individuals and BHD Services for small businesses and startups.',
     secondaryTagline: 'We Build Digital Value That Sells.',
-    primaryCta: 'Explore Our Solutions',
-    secondaryCta: 'Discover BHD',
+    needsApproachTitle: 'Two Clear Pathways Under One Digital Solutions Brand',
+    needsApproachBody:
+      'Whether you are an individual building practical digital skills through BHD Academy or a business owner seeking dependable websites and workflows through BHD Services, BHD starts by understanding where you are before recommending your next step.',
+    primaryCta: 'Explore BHD Services',
+    secondaryCta: 'Explore BHD Academy',
     pillars: [
       {
-        title: 'Practical Digital Education',
-        detail: 'Clear guides and structured resources built for real-world application.',
+        title: 'Needs-First Business Solutions',
+        detail: 'BHD Services understands your current workflow before recommending websites, landing pages, or digital tools.',
       },
       {
-        title: 'Functional Web Solutions',
-        detail: 'Websites and landing pages engineered for clarity, speed, and usability.',
+        title: 'BHD Academy for Individuals',
+        detail: 'Structured educational guides, learning resources, and Selar products built for practical digital skills.',
       },
       {
         title: 'Transparent Affiliate Programme',
         detail: 'Free application, BHD selection review, no MLM, and 35% commission for approved affiliates.',
       },
       {
-        title: 'International Vision',
+        title: 'Global Multilingual Access',
         detail: 'Accessible digital systems available in English, Igbo, Yoruba, Hausa, French, and Nigerian Pidgin.',
       },
     ],
-    productsSectionKicker: 'Digital Products',
+    pathways: {
+      sectionKicker: 'BHD Academy & BHD Services',
+      sectionTitle: 'Two Distinct Pathways Under BYHENRYDIGITALS',
+      sectionSubtitle:
+        'BYHENRYDIGITALS reduces barriers to digital participation through two focused divisions—supporting individuals developing digital skills and helping small businesses implement practical digital tools.',
+      business: {
+        label: 'BHD Services · For Businesses',
+        title: 'BHD Services — Practical Digital Solutions for Businesses.',
+        description:
+          'We help small businesses and startups identify, access and implement practical digital solutions suited to their needs, budgets and stage of growth.',
+        cta: 'Explore BHD Services',
+        servicesLinkLabel: 'Business Services',
+        projectsLinkLabel: 'Selected Projects',
+        contactLinkLabel: 'Discuss a Project',
+      },
+      individual: {
+        label: 'BHD Academy · For Individuals',
+        title: 'BHD Academy — Learn. Build. Grow.',
+        description:
+          'Explore practical digital education, resources and guidance designed to help individuals develop useful digital skills and understand opportunities in the digital economy.',
+        cta: 'Explore BHD Academy',
+        productsLinkLabel: 'Digital Products',
+        resourcesLinkLabel: 'Learning Resources',
+        affiliateLinkLabel: 'Affiliate Programme',
+      },
+    },
+    productsSectionKicker: 'BHD Academy · Digital Products',
     productsSectionTitle: 'Structured Digital Guides & Learning Resources',
     productsSectionDesc:
-      'Explore BHD digital products hosted on Selar, created to help learners and emerging digital builders develop practical capabilities.',
+      'Part of BHD Academy: explore structured learning guides and digital products hosted on Selar to help individuals build practical skills and navigate digital opportunities.',
     viewAllProducts: 'View Product Catalogue',
     selarBadge: 'Selar Catalogue',
     selarLinkShort: 'BHD Store',
-    servicesSectionKicker: 'Digital Services',
-    servicesSectionTitle: 'Functional Digital Experiences Built to Perform',
+    servicesSectionKicker: 'BHD Services · For Businesses',
+    servicesSectionTitle: 'Practical Digital Solutions Built Around Your Business Needs',
     servicesSectionDesc:
-      'From conversion-focused landing pages to AI-assisted workflows, BHD builds dependable digital assets rather than static templates.',
-    exploreServices: 'Explore Services',
+      'BHD Services begins by understanding your business’s current operations, budget, and stage of growth before recommending any digital solution—building dependable websites, workflows, and digital assets.',
+    exploreServices: 'Explore Business Services',
     enquireShort: 'Enquire',
-    affiliateSectionKicker: 'Learn or Apply · Two Separate Offerings',
+    affiliateSectionKicker: 'BHD Academy · Learn or Apply · Two Separate Offerings',
     affiliateSectionTitle: 'Affiliate Starter Kit vs. BHD Affiliate Programme',
     affiliateSectionDesc:
-      'BYHENRYDIGITALS offers both a standalone ₦8,000 educational Starter Kit for learning affiliate marketing and a separate free-to-apply affiliate programme reviewed by our team.',
+      'Within BHD Academy, BYHENRYDIGITALS offers both a standalone ₦8,000 educational Starter Kit for learning affiliate marketing and a separate free-to-apply affiliate programme reviewed by our team.',
     learnAffiliate: 'Programme Details',
     applyAffiliate: 'Apply to Become a BHD Affiliate',
     affiliateClarification:
@@ -102,7 +132,7 @@ export const en: TranslationBundle = {
       selectionTitle: 'Reviewed',
       selectionLabel: 'Selected by BYHENRYDIGITALS after application review',
     },
-    resourcesSectionKicker: 'Resources & Insights',
+    resourcesSectionKicker: 'BHD Academy · Resources & Insights',
     resourcesSectionTitle: 'Guides Across Digital Skills, Web & AI',
     resourcesSectionDesc:
       'Read practical articles covering digital education, online opportunities, entrepreneurship, website development, and modern digital tools.',
@@ -329,79 +359,164 @@ export const en: TranslationBundle = {
       'Income Disclosure: BYHENRYDIGITALS does not guarantee affiliate selection, sales volume, or earnings. Approved affiliate results vary based on personal effort, communication quality, and market demand.',
   },
   services: {
-    kicker: 'Client Solutions',
-    title: 'Digital Services Built for Real Utility',
+    kicker: 'Small Business Services',
+    title: 'Practical Digital Services Explained Simply',
     intro:
-      'We build functional digital experiences—not merely attractive web pages. Every engagement focuses on structure, performance, and clarity for your audience.',
-    philosophyTitle: 'Functional Value That Sells',
-    philosophyBody:
-      'Design alone does not grow a business. BHD pairs clean black-white-gold editorial aesthetics with clear user flows, mobile responsiveness, and practical digital systems.',
-    brandServicesTag: 'BYHENRYDIGITALS Services',
-    customScopedLabel: 'Custom scoped per project requirements',
+      'You do not need a technical background to work with BHD. Each service focuses on solving an everyday business bottleneck based on your current needs, budget, and realistic growth plans.',
+    approachKicker: 'How BHD Works',
+    approachHeading:
+      'Understand the business. Identify the need. Recommend a suitable solution. Implement it.',
+    approachLead:
+      'We recommend digital solutions based on your current needs, budget, and realistic growth plans—never pushing unnecessary tools, complex systems, or features your business does not need yet.',
+    approachSteps: [
+      {
+        num: '01.',
+        title: 'Understand the business.',
+        detail: 'We learn what your business sells, who you serve, and how daily work currently runs.',
+      },
+      {
+        num: '02.',
+        title: 'Identify the need.',
+        detail: 'We pinpoint where customers get confused or where manual steps slow down enquiries.',
+      },
+      {
+        num: '03.',
+        title: 'Recommend a suitable solution.',
+        detail: 'We suggest a practical option matched to your current budget and realistic growth plans.',
+      },
+      {
+        num: '04.',
+        title: 'Implement it.',
+        detail: 'We build and organise the agreed setup cleanly so your business can use it immediately.',
+      },
+    ],
+    labels: {
+      problem: 'Business problem addressed',
+      provides: 'What BHD can actually provide',
+      receives: 'What you receive',
+      getStarted: 'How to get started',
+    },
+    brandServicesTag: 'BYHENRYDIGITALS Business Services',
+    customScopedLabel: 'Scoped to your current needs, budget & confirmed deliverables',
     discussCta: 'Discuss Your Project',
     pricingNotice:
-      'Project scope and pricing are tailored to deliverables during consultation. No arbitrary fixed pricing is listed.',
+      'Consultation & Pricing: Every project scope and fee is discussed upfront based on what your business currently needs and can realistically maintain.',
+    availabilityNotice:
+      'Scope & Availability Notice: BHD only commits to confirmed deliverables during consultation. Third-party integrations, automated workflows, payment processing, or ongoing support are not promised or included unless explicitly agreed.',
     items: {
       'web-design-dev': {
         title: 'Website Design & Development',
         summary:
-          'Responsive, fast-loading websites architected around clear user journeys, strong brand positioning, and reliable engineering.',
-        functionalFocus:
-          'Built to serve real business operations—not merely decorative brochure screens.',
-        deliverables: [
-          'Responsive desktop, tablet, and mobile architecture',
-          'Clean semantic structure and search-ready metadata',
-          'Clear enquiry and conversion pathways',
+          'A clear, mobile-friendly business website that explains what you do and makes it easy for customers to contact you.',
+        problemAddressed:
+          'Customers struggle to trust a business or find reliable details—such as services, contact channels, or how to enquire—when information lives only in scattered social posts or chats.',
+        whatBhdProvides:
+          'BHD designs and builds a clean, easy-to-read website tailored to your business stage, formatted properly for phones and computers. Any extra features such as payment links or third-party tools are only included when separately confirmed.',
+        whatYouReceive: [
+          'A mobile-friendly business website with clear pages for your brand and offerings',
+          'Simple navigation and visible enquiry paths so visitors know how to reach you',
+          'Plain-language handover notes explaining how your site is structured',
         ],
+        howToStart:
+          'Click "Discuss Your Project" to share what your business offers, who your customers are, and your working budget.',
       },
       'landing-pages': {
         title: 'Landing Pages',
         summary:
-          'Focused single-objective pages engineered to explain an offer clearly and guide qualified visitors toward a single action.',
-        functionalFocus:
-          'Eliminates distraction so campaigns, launches, and lead-capture flows communicate clearly.',
-        deliverables: [
-          'Structured proposition-to-action editorial flow',
-          'Validated lead forms and external store routing',
-          'Performance-conscious asset layout',
+          'A single focused page built around one clear service, product, or campaign so visitors take one straightforward action.',
+        problemAddressed:
+          'Sending prospective buyers to a crowded profile or general page often distracts them and lowers enquiries because they are unsure what to do next.',
+        whatBhdProvides:
+          'BHD organises and builds a dedicated single-goal page that explains one specific offer clearly and directs visitors to your confirmed enquiry form or existing store link.',
+        whatYouReceive: [
+          'One focused page written and laid out around a single offer or campaign',
+          'Clear headline, concise explanation, and a prominent next-step button',
+          'Clean mobile formatting for people clicking in from WhatsApp or social media',
         ],
+        howToStart:
+          'Tell BHD which specific offer you want to promote and where interested visitors should be sent.',
       },
       'digital-presence': {
         title: 'Digital Presence Development',
         summary:
-          'Cohesive positioning across your web flagship, product storefront, and content channels so your brand communicates credibility immediately.',
-        functionalFocus:
-          'Aligns brand messaging, visual consistency, and discoverability across touchpoints.',
-        deliverables: [
-          'Consistent black-white-gold or custom brand visual systems',
-          'Storefront and link-ecosystem organization (Selar, forms, hubs)',
-          'Structured content hierarchy for global visitors',
+          'Bringing your website, public business links, and customer-facing descriptions into one consistent, organised brand experience.',
+        problemAddressed:
+          'Small businesses often lose customer confidence when bios, links, and store pages say different things or point to broken or outdated destinations.',
+        whatBhdProvides:
+          'BHD reviews how your business currently shows up online, helps align your core messaging and visual presentation, and organises your verified website, storefront, and contact links cleanly.',
+        whatYouReceive: [
+          'Consistent business messaging and visual presentation across key customer touchpoints',
+          'An organised set of verified links guiding customers to the right pages or contact channels',
+          'Practical setup recommendations matched to your current team size',
         ],
+        howToStart:
+          'Share your existing website, social handles, or store links so BHD can review gaps and suggest practical improvements.',
       },
       'nocode-ai-solutions': {
-        title: 'No-Code & AI-Assisted Digital Solutions',
+        title: 'No-Code & AI-Assisted Development Workflows',
         summary:
-          'Practical workflow automations, client chatbot integrations where requested, and lightweight no-code systems tailored to reduce manual bottlenecks.',
-        functionalFocus:
-          'Deploys modern tools where they genuinely save time and improve client operations.',
-        deliverables: [
-          'Client workflow automation and custom chatbot integrations',
-          'No-code intake forms, notifications, and process bridges',
-          'Maintainable documentation for non-technical teams',
+          'Practical use of vetted no-code tools and AI-assisted workflows to plan and build simple digital pages faster—scoped strictly to what is confirmed and dependable.',
+        problemAddressed:
+          'Growing businesses often need clear digital pages or simple intake workflows without the high cost or long wait of traditional custom software.',
+        whatBhdProvides:
+          'BHD uses structured no-code and AI-assisted development workflows to plan page layouts, organise content, and set up simple confirmed digital pages. Automated third-party connections or advanced integrations are never promised unless explicitly reviewed and confirmed.',
+        whatYouReceive: [
+          'Practical digital pages or straightforward no-code setups matched to your comfort level',
+          'Honest advice on what works reliably right now versus what should wait until later growth',
+          'Plain-English notes so your team understands how everything works',
         ],
+        howToStart:
+          'Describe the repetitive task or simple digital setup you want to explore so BHD can confirm what is practical within your budget.',
       },
       'digital-business-support': {
-        title: 'Digital Business Support',
+        title: 'Practical Digital Business Tools & Workflow Organisation',
         summary:
-          'Ongoing practical guidance for founders and operators launching digital products, structuring online services, or maintaining web infrastructure.',
-        functionalFocus:
-          'Hands-on technical and strategic support to keep digital initiatives moving steadily.',
-        deliverables: [
-          'Technical troubleshooting and storefront readiness reviews',
-          'Incremental feature updates and content structure scaling',
-          'Clear, jargon-free implementation guidance',
+          'Helping small-business owners choose and organise everyday digital tools—such as enquiry forms, shared links, and basic content workflows—so daily work runs more smoothly.',
+        problemAddressed:
+          'Customer enquiries, essential links, and files frequently get buried in personal chat threads and scattered notes, making day-to-day follow-up stressful.',
+        whatBhdProvides:
+          'BHD looks at how your business currently handles customer messages and records, then helps select and organise practical everyday digital tools suited to your budget and realistic growth plans. Ongoing support retainers, custom integrations, or payment processing are not included unless explicitly agreed.',
+        whatYouReceive: [
+          'Clear recommendations on practical everyday tools your team can actually use',
+          'Tidier organisation for customer enquiry channels, links, and key business details',
+          'Step-by-step plain-language guidance with zero unnecessary technical jargon',
         ],
+        howToStart:
+          'Send a brief enquiry explaining how you currently handle customer requests and files so BHD can suggest practical improvements.',
       },
+    },
+  },
+  portfolio: {
+    kicker: 'BHD Services · Portfolio',
+    title: 'Selected Projects',
+    intro:
+      'A dedicated showcase for websites, digital systems, and practical business solutions designed and built by BYHENRYDIGITALS.',
+    emptyStateTitle: 'Verified Client Projects Published Upon Completion',
+    emptyStateBody:
+      'There are currently no completed client projects listed for public display. BYHENRYDIGITALS only publishes finished client work here after delivery is completed and public display is formally approved—never unfinished prototypes, sample mockups, or unverified results.',
+    emptyStateNote:
+      'As new small-business websites, digital systems, and workflow solutions are completed and approved by clients, each project will appear here using the showcase format opposite.',
+    formatHeading: 'What Each Published Project Entry Includes',
+    formatItems: [
+      'Project name',
+      'Business or project category',
+      'Brief description of the original requirement',
+      'Solution developed by BHD',
+      'Technologies and tools used, where relevant',
+      'Project screenshots or preview images',
+      'A link to the live project, when available',
+    ],
+    discussCta: 'Discuss Your Project',
+    exploreServicesCta: 'Explore Business Services',
+    labels: {
+      category: 'Business or project category',
+      requirement: 'Original requirement',
+      solution: 'Solution developed by BHD',
+      technologies: 'Technologies & tools used',
+      liveLink: 'View Live Project',
+      previewZoom: 'Inspect Preview',
+      closePreview: 'Close image preview',
+      similarProjectCta: 'Enquire About a Similar Solution',
     },
   },
   resources: {
@@ -519,6 +634,7 @@ export const en: TranslationBundle = {
     intro:
       'Have an enquiry about our web development services, digital products, or the affiliate programme? Send a message below.',
     formTitle: 'BYHENRYDIGITALS Enquiry Form',
+    selectedTopicLabel: 'Selected enquiry topic',
     nameLabel: 'Full Name',
     namePlaceholder: 'Your full name',
     emailLabel: 'Email Address',

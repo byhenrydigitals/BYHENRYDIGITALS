@@ -13,8 +13,10 @@ export interface ProductTranslation {
 export interface ServiceTranslation {
   title: string;
   summary: string;
-  functionalFocus: string;
-  deliverables: string[];
+  problemAddressed: string;
+  whatBhdProvides: string;
+  whatYouReceive: string[];
+  howToStart: string;
 }
 
 export interface ArticleTranslation {
@@ -45,12 +47,38 @@ export interface TranslationBundle {
   };
   home: {
     kicker: string;
+    tagline: string;
     heroTitle: string;
     heroSubtitle: string;
     secondaryTagline: string;
+    needsApproachTitle: string;
+    needsApproachBody: string;
     primaryCta: string;
     secondaryCta: string;
     pillars: { title: string; detail: string }[];
+    pathways: {
+      sectionKicker: string;
+      sectionTitle: string;
+      sectionSubtitle: string;
+      business: {
+        label: string;
+        title: string;
+        description: string;
+        cta: string;
+        servicesLinkLabel: string;
+        projectsLinkLabel: string;
+        contactLinkLabel: string;
+      };
+      individual: {
+        label: string;
+        title: string;
+        description: string;
+        cta: string;
+        productsLinkLabel: string;
+        resourcesLinkLabel: string;
+        affiliateLinkLabel: string;
+      };
+    };
     productsSectionKicker: string;
     productsSectionTitle: string;
     productsSectionDesc: string;
@@ -192,12 +220,21 @@ export interface TranslationBundle {
     kicker: string;
     title: string;
     intro: string;
-    philosophyTitle: string;
-    philosophyBody: string;
+    approachKicker: string;
+    approachHeading: string;
+    approachLead: string;
+    approachSteps: { num: string; title: string; detail: string }[];
+    labels: {
+      problem: string;
+      provides: string;
+      receives: string;
+      getStarted: string;
+    };
     brandServicesTag: string;
     customScopedLabel: string;
     discussCta: string;
     pricingNotice: string;
+    availabilityNotice: string;
     items: Record<
       | 'web-design-dev'
       | 'landing-pages'
@@ -206,6 +243,28 @@ export interface TranslationBundle {
       | 'digital-business-support',
       ServiceTranslation
     >;
+  };
+  portfolio: {
+    kicker: string;
+    title: string;
+    intro: string;
+    emptyStateTitle: string;
+    emptyStateBody: string;
+    emptyStateNote: string;
+    formatHeading: string;
+    formatItems: string[];
+    discussCta: string;
+    exploreServicesCta: string;
+    labels: {
+      category: string;
+      requirement: string;
+      solution: string;
+      technologies: string;
+      liveLink: string;
+      previewZoom: string;
+      closePreview: string;
+      similarProjectCta: string;
+    };
   };
   resources: {
     kicker: string;
@@ -234,6 +293,7 @@ export interface TranslationBundle {
     title: string;
     intro: string;
     formTitle: string;
+    selectedTopicLabel: string;
     nameLabel: string;
     namePlaceholder: string;
     emailLabel: string;

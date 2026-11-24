@@ -363,7 +363,9 @@ export function VanessaFaqPage({ onNavigate }: VanessaFaqPageProps) {
                   type="button"
                   onClick={() => {
                     setSelectedCategory('all');
-                    window.scrollTo({ top: 300, behavior: 'smooth' });
+                    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+                      resultsScrollRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                   }}
                   className={`flex min-h-[44px] min-w-0 w-full items-center justify-between gap-2 rounded-lg px-3.5 py-2.5 text-xs sm:text-sm font-medium transition-colors cursor-pointer text-start ${
                     selectedCategory === 'all'
@@ -393,7 +395,9 @@ export function VanessaFaqPage({ onNavigate }: VanessaFaqPageProps) {
                           (e) => e.categoryId === catId
                         );
                         if (firstInCat) setExpandedIds(new Set([firstInCat.id]));
-                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                        if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+                          resultsScrollRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
                       }}
                       className={`flex min-h-[44px] min-w-0 w-full items-center justify-between gap-2 rounded-lg px-3.5 py-2.5 text-xs sm:text-sm font-medium transition-colors cursor-pointer text-start ${
                         active
@@ -413,7 +417,7 @@ export function VanessaFaqPage({ onNavigate }: VanessaFaqPageProps) {
           </aside>
 
           {/* Right Main Results Pane */}
-          <div ref={resultsScrollRef} className="lg:col-span-8 xl:col-span-9 space-y-6 min-w-0">
+          <div ref={resultsScrollRef} className="scroll-mt-20 lg:col-span-8 xl:col-span-9 space-y-6 min-w-0">
             {/* Controls Bar */}
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-white/[0.1] bg-[#11151f] px-4 sm:px-5 py-3.5 text-xs sm:text-sm text-[#b0b4be]">
               <span>

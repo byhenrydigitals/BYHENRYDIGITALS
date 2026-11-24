@@ -6,10 +6,10 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
   'about-01': {
     question: 'Wetin be BYHENRYDIGITALS?',
     answer: [
-      'BYHENRYDIGITALS (BHD) na digital education and digital solutions brand wey Henry (Coach Henry) start. E dey help people and businesses find real digital opportunities, learn useful skills, buy verified digital guides for Selar, and build websites plus online systems wey dey work.',
-      'Across both learning materials and client services, BHD focus on practical digital learning, digital business, online earning, and tech-based solutions for businesses.',
+      'BYHENRYDIGITALS (BHD) na digital solutions and education brand wey Henry (Coach Henry) start to reduce barriers wey dey block people from digital participation. E join two clear parts together: BHD Academy for individuals wey wan learn useful digital skills, and BHD Services for small businesses and startups wey need practical websites and digital workflows.',
+      'Across both sides, BHD focus on practical digital education, clean learning guides on Selar, honest affiliate chances, and needs-first business web solutions.',
     ],
-    extraKeywords: ['overview', 'about bhd', 'wetin be bhd', 'digital solutions', 'digital education'],
+    extraKeywords: ['overview', 'about bhd', 'bhd academy', 'bhd services', 'digital solutions', 'digital education'],
     actionLabel: 'Read About BYHENRYDIGITALS',
   },
   'about-02': {
@@ -71,16 +71,16 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
   'about-09': {
     question: 'Who fit gain from BYHENRYDIGITALS?',
     answer: [
-      'Beginners wey wan sabi digital skills and online work, young learners plus parents wey dey find safe youth pathways, writers and content creators wey wan do honest affiliate work, and business owners wey need websites wey dey perform.',
+      'BYHENRYDIGITALS dey serve two main groups: (1) Individuals through BHD Academy — beginners wey wan sabi digital skills and online chances, young learners plus parents wey dey find safe guidance, and creators wey wan do honest affiliate work; and (2) Small businesses and startups through BHD Services — business owners wey need clean websites, landing pages, and better work setup wey match their budget and level.',
     ],
-    extraKeywords: ['who fit benefit', 'beginners', 'business owners', 'creators', 'students'],
+    extraKeywords: ['who fit benefit', 'bhd academy', 'bhd services', 'beginners', 'business owners', 'creators', 'students'],
   },
   'about-10': {
     question: 'BHD na digital learning site or digital services business?',
     answer: [
-      'BYHENRYDIGITALS join both work together cleanly under one name: (1) digital education and practical guides inside our Selar store plus our website Guides Hub, and (2) client digital services like website building, landing pages, brand presence, no-code workflows, and business support.',
+      'BYHENRYDIGITALS run both together cleanly under one brand: (1) BHD Academy — Learn. Build. Grow. for individuals (Selar digital products, Guides Hub, and transparent Affiliate Programme), and (2) BHD Services — Practical Digital Solutions for Businesses (website design, landing pages, digital presence, no-code workflows, and practical business tools).',
     ],
-    extraKeywords: ['education and services', 'business model'],
+    extraKeywords: ['education and services', 'bhd academy', 'bhd services', 'business model'],
   },
   'about-11': {
     question: 'Where I fit see official BYHENRYDIGITALS website info and organisation details?',
