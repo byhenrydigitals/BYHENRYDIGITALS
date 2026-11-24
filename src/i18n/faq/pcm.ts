@@ -117,7 +117,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
       'Exact buying terms and current price dey show straight for BHD Selar store.',
     ],
     extraKeywords: ['clicks to cash outcomes', 'affiliate fundamentals'],
-    actionLabel: 'Check Clicks-to-Cash for Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-04': {
     question: 'Wetin be Global Monetisation and who e good for?',
@@ -135,7 +135,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
       'Check the official Selar store to see live price and full details.',
     ],
     extraKeywords: ['packaging skills', 'multi-currency', 'international buyers'],
-    actionLabel: 'Check Global Monetisation for Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-06': {
     question: 'Wetin be Remote Jobs for Under 18 and who suppose read am?',
@@ -153,7 +153,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
       'E no dey promise automatic job placement — check the official Selar listing for live checkout details.',
     ],
     extraKeywords: ['under 18 safety', 'guardian supervision', 'youth digital skills'],
-    actionLabel: 'Check Listing for Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-08': {
     question: 'Which format and language BHD Selar books dey?',
@@ -170,7 +170,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
       'Selar dey show live price for supported currencies and open your download sharp-sharp after payment.',
     ],
     extraKeywords: ['how to buy', 'purchase', 'selar price'],
-    actionLabel: 'Open Official Selar Store',
+    actionLabel: 'BHD Store',
   },
   'prod-10': {
     question: 'BHD dey give certificate, live classes, or sure job with the guides?',
@@ -672,7 +672,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
       'All official BYHENRYDIGITALS digital products dey sell only through BHD verified Selar store at https://selar.com/m/BYHENRYDIGITALS.',
     ],
     extraKeywords: ['where to buy', 'official store', 'selar link'],
-    actionLabel: 'Open Official Selar Store',
+    actionLabel: 'BHD Store',
   },
   'pay-02': {
     question: 'How Selar checkout dey work for BHD products?',
@@ -680,7 +680,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
       'Once you open any BHD product inside Selar, Selar go show the verified price for your supported currency, let you read full description, and handle payment safely with Selar payment options.',
     ],
     extraKeywords: ['selar checkout', 'payment'],
-    actionLabel: 'Open Selar Storefront',
+    actionLabel: 'BHD Store',
   },
   'pay-03': {
     question: 'How buyers dey collect their digital product after paying for Selar?',

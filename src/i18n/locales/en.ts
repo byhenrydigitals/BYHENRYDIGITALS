@@ -59,7 +59,7 @@ export const en: TranslationBundle = {
       'Explore BHD digital products hosted on Selar, created to help learners and emerging digital builders develop practical capabilities.',
     viewAllProducts: 'View Product Catalogue',
     selarBadge: 'Selar Catalogue',
-    selarLinkShort: 'Selar',
+    selarLinkShort: 'BHD Store',
     servicesSectionKicker: 'Digital Services',
     servicesSectionTitle: 'Functional Digital Experiences Built to Perform',
     servicesSectionDesc:
@@ -146,13 +146,13 @@ export const en: TranslationBundle = {
     storeBannerTitle: 'Official BHD Storefront on Selar',
     storeBannerDesc:
       'Visit selar.com/m/BYHENRYDIGITALS to view current pricing, full product outlines, and instant digital checkout.',
-    visitStoreCta: 'Visit Official Selar Store',
+    visitStoreCta: 'BHD Store',
     problemLabel: 'Problem & Learning Need Addressed',
     audienceLabel: 'Intended Audience',
     outcomesLabel: 'What You Will Learn',
     priceLabel: 'Verified Store Pricing',
     originalLanguageLabel: 'Product Content Language',
-    productCta: 'View & Buy on Selar',
+    productCta: 'BHD Store',
     storeIntegrityNotice:
       'Official Checkout & Live Pricing: Every BYHENRYDIGITALS digital learning resource is hosted and fulfilled directly through Selar (selar.com/m/BYHENRYDIGITALS), where current pricing and instant digital delivery are confirmed prior to purchase.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
@@ -498,7 +498,7 @@ export const en: TranslationBundle = {
     secondaryTagline: 'We Build Digital Value That Sells.',
     navigationTitle: 'Explore BHD',
     officialLinksTitle: 'Official Contact & Store',
-    selarLinkLabel: 'Selar Product Store',
+    selarLinkLabel: 'BHD Store',
     emailUsLabel: 'Email Us',
     whatsappUsLabel: 'Chat With Us on WhatsApp',
     socialTitle: 'Social Channels',
@@ -511,5 +511,19 @@ export const en: TranslationBundle = {
     heading: "Let's Connect!",
     description:
       "Stay connected with BYHENRYDIGITALS. Follow us for digital insights, practical resources, business updates, new opportunities and a closer look at what we're building.",
+  },
+  community: {
+    kicker: 'BHD Community',
+    title: 'Join the BHD Community',
+    description:
+      'Connect with the BYHENRYDIGITALS community. Join conversations, connect with people interested in digital opportunities, share ideas and stay connected with the BHD community.',
+    cta: 'Join the BHD Community',
+    channelName: 'BHD Community (Matrix)',
+    channelTagline: 'Official community chat room',
+    whatsappChannelName: 'WhatsApp',
+    whatsappTagline: 'Direct messaging & support',
+    directChannelGroupLabel: 'Direct Messaging',
+    communityChannelGroupLabel: 'Community Space',
+    socialChannelGroupLabel: 'Social Media',
   },
 };

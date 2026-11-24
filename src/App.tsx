@@ -175,10 +175,10 @@ function AppShell({ initialRoute }: AppProps) {
   };
 
   return (
-    <div className="flex min-h-screen min-w-0 flex-col bg-[#0b0b0b] text-[#f5f5f4]">
+    <div className="flex min-h-screen min-w-0 flex-col bg-[#0b0c0f] text-[#f5f4f0]">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:rounded-lg focus:bg-[#eab308] focus:px-4 focus:py-2 focus:text-xs focus:font-semibold focus:text-[#0b0b0b] focus:shadow-lg"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:rounded-lg focus:bg-[#eab308] focus:px-4 focus:py-2 focus:text-xs focus:font-semibold focus:text-[#0b0c0f] focus:shadow-lg"
       >
         Skip to main content
       </a>

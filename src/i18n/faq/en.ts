@@ -104,7 +104,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
       'Many beginners struggle with scattered advice or spammy link-sharing instead of understanding how digital recommendations build buyer trust. Clicks-to-Cash clarifies product positioning, transparent marketing vs empty spam, and core workflow habits.',
       'Exact purchase terms and live pricing are verified directly on BHD’s Selar store.',
     ],
-    actionLabel: 'Check Clicks-to-Cash on Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-04': {
     question: 'What is Global Monetisation and who is it built for?',
@@ -120,7 +120,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
       'Skilled individuals often feel restricted to local audiences even when digital platforms support cross-border sales. Global Monetisation covers structuring educational formats, multi-currency storefront accessibility, and sustainable audience distribution habits.',
       'Visit the official Selar storefront to inspect live pricing and full edition details.',
     ],
-    actionLabel: 'Check Global Monetisation on Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-06': {
     question: 'What is Remote Jobs for Under 18 and who should use it?',
@@ -136,7 +136,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
       'The guide addresses common teenager challenges around age restrictions, payment rules, and misleading internet promises—focusing on age-compliant digital skills, platform rules, guardian supervision, and early portfolio practice.',
       'It does not promise automatic employment—review the official Selar listing for live checkout details.',
     ],
-    actionLabel: 'Check Listing on Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-08': {
     question: 'What format and language are BHD’s Selar digital products currently published in?',
@@ -151,7 +151,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
       'Visit BHD’s official Selar storefront at https://selar.com/m/BYHENRYDIGITALS directly, or browse the Products page on this website and click "View on Selar Store" on the item you want.',
       'Selar displays verified live pricing in supported currencies and handles instant digital checkout and delivery.',
     ],
-    actionLabel: 'Open Official Selar Store',
+    actionLabel: 'BHD Store',
   },
   'prod-10': {
     question: 'Does BHD offer certificates, live classes, or guaranteed job placement with its guides?',
@@ -589,14 +589,14 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     answer: [
       'All official BYHENRYDIGITALS digital products are sold exclusively through BHD’s verified Selar storefront at https://selar.com/m/BYHENRYDIGITALS.',
     ],
-    actionLabel: 'Visit Official Selar Store',
+    actionLabel: 'BHD Store',
   },
   'pay-02': {
     question: 'How does Selar checkout work for BHD products?',
     answer: [
       'When you open a product on BHD’s Selar store, Selar shows the verified price in your supported currency, lets you review the full listing description, and processes checkout securely through Selar’s supported payment methods.',
     ],
-    actionLabel: 'Open Selar Storefront',
+    actionLabel: 'BHD Store',
   },
   'pay-03': {
     question: 'How do customers access purchased digital products after payment?',

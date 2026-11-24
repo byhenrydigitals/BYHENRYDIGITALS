@@ -59,7 +59,7 @@ export const ig: TranslationBundle = {
       'Chọgharịa ngwaahịa dijitalụ BHD dị na Selar, e kere iji nyere ndị na-amụ ihe na ndị na-ewu azụmaahịa dijitalụ aka inweta nkà bara uru.',
     viewAllProducts: 'Lee Ndepụta Ngwaahịa',
     selarBadge: 'Ndepụta Selar',
-    selarLinkShort: 'Selar',
+    selarLinkShort: 'BHD Store',
     servicesSectionKicker: 'Ọrụ Dijitalụ',
     servicesSectionTitle: 'Ahụmịhe Dijitalụ Na-arụ Ọrụ Nke Ọma',
     servicesSectionDesc:
@@ -146,13 +146,13 @@ export const ig: TranslationBundle = {
     storeBannerTitle: 'Ụlọ Ahịa Gọọmentị BHD na Selar',
     storeBannerDesc:
       'Gaa na selar.com/m/BYHENRYDIGITALS iji lee ọnụahịa ugbu a, nkọwa zuru ezu nke ngwaahịa, na ịkwụ ụgwọ dijitalụ ozugbo.',
-    visitStoreCta: 'Gaa n’Ụlọ Ahịa Selar',
+    visitStoreCta: 'BHD Store',
     problemLabel: 'Nsogbu na Mkpa Mmụta Ọ Na-edozi',
     audienceLabel: 'Ndị E Mere Ya Maka Ha',
     outcomesLabel: 'Ihe Ị Ga-amụta',
     priceLabel: 'Ọnụahịa Dị na Selar',
     originalLanguageLabel: 'Asụsụ Ngwaahịa Mbụ',
-    productCta: 'Lee ma Zụta na Selar',
+    productCta: 'BHD Store',
     storeIntegrityNotice:
       'Ụlọ Ahịa Gọọmentị & Ọnụahịa Ugbu A: A na-akwado ma na-ekesa akụrụngwa mmụta dijitalụ niile nke BYHENRYDIGITALS ozugbo na Selar (selar.com/m/BYHENRYDIGITALS), ebe a na-ahụ ọnụahịa ugbu a tupu ịzụta.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
@@ -498,7 +498,7 @@ export const ig: TranslationBundle = {
     secondaryTagline: 'Anyị Na-ewu Uru Dijitalụ Na-ere Ahịa.',
     navigationTitle: 'Chọgharịa BHD',
     officialLinksTitle: 'Kpọtụrụ Anyị & Ụlọ Ahịa',
-    selarLinkLabel: 'Ụlọ Ahịa Selar',
+    selarLinkLabel: 'BHD Store',
     emailUsLabel: 'Ziga Anyị Ozi-e',
     whatsappUsLabel: 'Kparịta Ụka na WhatsApp',
     socialTitle: 'Ọwa Mmekọrịta',
@@ -511,5 +511,19 @@ export const ig: TranslationBundle = {
     heading: 'Ka Anyị Jikọọ!',
     description:
       'Nọgide na-ejikọ na BYHENRYDIGITALS. Soro anyị maka nghọta dijitalụ, akụrụngwa bara uru, mmelite azụmaahịa, ohere ọhụrụ na ileba anya n’ihe anyị na-ewu.',
+  },
+  community: {
+    kicker: 'Ọgbakọ BHD',
+    title: 'Sonyere Ọgbakọ BHD',
+    description:
+      'Jikọọ na ọgbakọ BYHENRYDIGITALS. Soro na mkparịta ụka, zute ndị nwere mmasị n’ohere dijitalụ, kekọrịta echiche ma nọgide na-ejikọ na ndị BHD.',
+    cta: 'Sonyere Ọgbakọ BHD',
+    channelName: 'Ọgbakọ BHD (Matrix)',
+    channelTagline: 'Ụlọ mkparịta ụka gọọmentị',
+    whatsappChannelName: 'WhatsApp',
+    whatsappTagline: 'Ozi ozugbo na nkwado',
+    directChannelGroupLabel: 'Ozi Ozugbo',
+    communityChannelGroupLabel: 'Ọgbakọ Mmekọrịta',
+    socialChannelGroupLabel: 'Mgbasa Ozi Mmekọrịta',
   },
 };

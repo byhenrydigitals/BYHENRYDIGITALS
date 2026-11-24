@@ -100,7 +100,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ọ na-enyere ndị mbido aka ịghọta otu nlebara anya n’ịntanetị si aghọ uru ngwaahịa n’ezie site na ndepụta nkwado na usoro ahịa doro anya.',
     ],
-    actionLabel: 'Lee Clicks-to-Cash na Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-04': {
     question: 'Gịnị bụ Global Monetisation ma onye ka e wuru ya maka ya?',
@@ -115,7 +115,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ọ na-egosi otu e si agbasawanye site n’ahịa obodo gaa n’ụwa niile site n’usoro ikpo okwu dijitalụ na ịnweta zuru ụwa ọnụ.',
     ],
-    actionLabel: 'Lee Global Monetisation na Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-06': {
     question: 'Gịnị bụ Remote Jobs for Under 18 ma onye kwesịrị iji ya?',
@@ -129,7 +129,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ọ na-akụzi ịchọpụta nkà dijitalụ kwesịrị afọ, iwulite pọtụfoliyo n’ụzọ dị nchebe, ịgbaso iwu ikpo okwu, na inwe atụmanya eziokwu. Ọ naghị ekwe nkwa ọrụ akpaaka.',
     ],
-    actionLabel: 'Lee Nkọwa na Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-08': {
     question: 'Kedu usoro na asụsụ e ji bipụta ngwaahịa Selar nke BHD ugbu a?',
@@ -142,7 +142,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Gaa na ụlọ ahịa Selar gọọmentị (https://selar.com/m/BYHENRYDIGITALS) ma ọ bụ pịa "Lee na Selar" na ibe Ngwaahịa.',
     ],
-    actionLabel: 'Mepee Ụlọ Ahịa Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-10': {
     question: 'BHD ọ na-enye asambodo, klas ndụ, ma ọ bụ nkwa inweta ọrụ n’akwụkwọ ndị a?',
@@ -560,7 +560,7 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Na ụlọ ahịa Selar gọọmentị na https://selar.com/m/BYHENRYDIGITALS.',
     ],
-    actionLabel: 'Gaa na Selar',
+    actionLabel: 'BHD Store',
   },
   'pay-02': {
     question: 'Kedu ka ịkwụ ụgwọ Selar si arụ ọrụ?',

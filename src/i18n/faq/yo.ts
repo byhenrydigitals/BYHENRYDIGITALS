@@ -100,7 +100,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ó ń kọ́ bí àfiyèsí lórí íńtánẹ́ẹ̀tì ṣe ń yí padà sí iye ọjà gidi nípasẹ̀ ìtọ́sọ́nà ìṣètò àti ìlànà ìpolówó olóòótọ́.',
     ],
-    actionLabel: 'Wo Clicks-to-Cash lórí Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-04': {
     question: 'Kí ni Global Monetisation àti ta ni a kọ́ ọ fún?',
@@ -114,7 +114,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ó ń ṣàlàyé bí olùṣẹ̀dá ṣe lè kọjá agbègbè ìbílẹ̀ láti dé ọ̀dọ̀ àwọn oníbàárà àgbáyé nípa lílo ìpínkiri pẹpẹ dígítà.',
     ],
-    actionLabel: 'Wo Global Monetisation lórí Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-06': {
     question: 'Kí ni Remote Jobs for Under 18 àti ta ló yẹ kó lò ó?',
@@ -128,7 +128,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ó tẹnumọ́ mímọ agbègbè ìmọ̀ tó bá ọjọ́-orí mu, kíkọ́ portfolio pẹ̀lú ààbò, títẹ̀lé òfin pẹpẹ, àti níní ìrètí gidi láìsí ìlérí iṣẹ́ lẹ́sẹ̀kẹsẹ̀.',
     ],
-    actionLabel: 'Wo Àlàyé lórí Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-08': {
     question: 'Irú fáìlì àti èdè wo ni àwọn ọjà Selar ti BHD wà nínú rẹ̀ lọ́wọ́lọ́wọ́?',
@@ -141,7 +141,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ṣabẹ̀wò sí https://selar.com/m/BYHENRYDIGITALS tààrà tàbí tẹ "Wo lórí Selar" ní ojú-ewé Àwọn Ọjà.',
     ],
-    actionLabel: 'Ṣí Ilé-ìtajà Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-10': {
     question: 'Ṣé BHD ń fúnni ní ìwé-ẹ̀rí, kíláàsì tààrà, tàbí ìdánilójú iṣẹ́ pẹ̀lú àwọn ìwé rẹ̀?',
@@ -556,7 +556,7 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ní ilé-ìtajà Selar gidi nìkan: https://selar.com/m/BYHENRYDIGITALS.',
     ],
-    actionLabel: 'Ṣabẹ̀wò sí Selar',
+    actionLabel: 'BHD Store',
   },
   'pay-02': {
     question: 'Báwo ni ìsanwó Selar ṣe ń ṣiṣẹ́?',

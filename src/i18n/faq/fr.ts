@@ -104,7 +104,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
       'Beaucoup de débutants peinent à comprendre comment transformer une audience en ligne en valeur réelle plutôt que de publier des liens au hasard. Clicks-to-Cash aborde les principes de conversion, les listes de préparation et les fondamentaux du marketing honnête.',
       'Les modules exacts et le tarif actuel figurent sur la fiche Selar officielle.',
     ],
-    actionLabel: 'Voir Clicks-to-Cash sur Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-04': {
     question: 'Qu’est-ce que Global Monetisation et pour qui est-il conçu ?',
@@ -119,7 +119,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     answer: [
       'De nombreux créateurs limitent leurs offres au marché local alors que les plateformes numériques permettent une distribution internationale. Global Monetisation explore l’accessibilité mondiale, les principes de diffusion et la création de valeur durable.',
     ],
-    actionLabel: 'Voir Global Monetisation sur Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-06': {
     question: 'Qu’est-ce que Remote Jobs for Under 18 et à qui ce guide est-il destiné ?',
@@ -135,7 +135,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
       'Le guide met l’accent sur le repérage de compétences adaptées à l’âge, la constitution progressive d’un portfolio, le respect des règles des plateformes et des attentes réalistes.',
       'Il ne garantit aucun emploi automatique ; consultez la fiche Selar pour les détails complets.',
     ],
-    actionLabel: 'Consulter la Fiche sur Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-08': {
     question: 'Dans quel format et quelle langue les produits Selar de BHD sont-ils publiés ?',
@@ -150,7 +150,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
       'Rendez-vous directement sur la boutique officielle Selar (https://selar.com/m/BYHENRYDIGITALS) ou ouvrez la page Produits de ce site puis cliquez sur « Voir sur Selar ».',
       'Selar affiche le prix vérifié dans votre devise et assure la livraison numérique immédiate.',
     ],
-    actionLabel: 'Ouvrir la Boutique Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-10': {
     question: 'BHD délivre-t-il des certificats, des cours en direct ou un placement garanti avec ses guides ?',
@@ -578,7 +578,7 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Tous les produits numériques officiels de BHD s’achètent exclusivement sur la boutique vérifiée Selar : https://selar.com/m/BYHENRYDIGITALS.',
     ],
-    actionLabel: 'Visiter la Boutique Selar',
+    actionLabel: 'BHD Store',
   },
   'pay-02': {
     question: 'Comment fonctionne le paiement sur la boutique Selar de BHD ?',

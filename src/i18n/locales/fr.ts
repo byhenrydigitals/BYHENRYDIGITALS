@@ -59,7 +59,7 @@ export const fr: TranslationBundle = {
       'Explorez les produits numériques BHD hébergés sur Selar, conçus pour développer des compétences pratiques.',
     viewAllProducts: 'Voir le Catalogue',
     selarBadge: 'Catalogue Selar',
-    selarLinkShort: 'Selar',
+    selarLinkShort: 'BHD Store',
     servicesSectionKicker: 'Services Numériques',
     servicesSectionTitle: 'Des Expériences Numériques Fonctionnelles',
     servicesSectionDesc:
@@ -146,13 +146,13 @@ export const fr: TranslationBundle = {
     storeBannerTitle: 'Boutique Officielle BHD sur Selar',
     storeBannerDesc:
       'Visitez selar.com/m/BYHENRYDIGITALS pour consulter les prix actualisés, les programmes complets et accéder au paiement sécurisé.',
-    visitStoreCta: 'Visiter la Boutique Selar',
+    visitStoreCta: 'BHD Store',
     problemLabel: 'Problème & Besoin Pédagogique Résolu',
     audienceLabel: 'Public Cible',
     outcomesLabel: 'Ce Que Vous Apprendrez',
     priceLabel: 'Tarif Vérifié sur Selar',
     originalLanguageLabel: 'Langue du Contenu',
-    productCta: 'Voir & Acheter sur Selar',
+    productCta: 'BHD Store',
     storeIntegrityNotice:
       'Boutique Officielle & Tarifs en Direct : Chaque ressource éducative numérique de BYHENRYDIGITALS est hébergée et délivrée directement sur Selar (selar.com/m/BYHENRYDIGITALS), où le tarif exact et la livraison immédiate sont confirmés avant achat.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
@@ -498,7 +498,7 @@ export const fr: TranslationBundle = {
     secondaryTagline: 'Nous Créons une Valeur Numérique Qui Vend.',
     navigationTitle: 'Navigation BHD',
     officialLinksTitle: 'Contact Officiel & Boutique',
-    selarLinkLabel: 'Boutique Selar',
+    selarLinkLabel: 'BHD Store',
     emailUsLabel: 'Nous Écrire par E-mail',
     whatsappUsLabel: 'Discuter avec nous sur WhatsApp',
     socialTitle: 'Réseaux Sociaux',
@@ -511,5 +511,19 @@ export const fr: TranslationBundle = {
     heading: 'Restons Connectés !',
     description:
       'Restez connecté avec BYHENRYDIGITALS. Suivez-nous pour découvrir nos conseils numériques, ressources pratiques, actualités, opportunités et coulisses de nos projets.',
+  },
+  community: {
+    kicker: 'Communauté BHD',
+    title: 'Rejoindre la Communauté BHD',
+    description:
+      'Échangez avec la communauté BYHENRYDIGITALS. Participez aux discussions, rencontrez des personnes intéressées par les opportunités numériques, partagez vos idées et restez connecté avec la communauté BHD.',
+    cta: 'Rejoindre la Communauté BHD',
+    channelName: 'Communauté BHD (Matrix)',
+    channelTagline: 'Espace de discussion officiel',
+    whatsappChannelName: 'WhatsApp',
+    whatsappTagline: 'Messagerie directe et assistance',
+    directChannelGroupLabel: 'Messagerie Directe',
+    communityChannelGroupLabel: 'Espace Communautaire',
+    socialChannelGroupLabel: 'Réseaux Sociaux',
   },
 };

@@ -242,4 +242,17 @@ export interface TranslationBundle {
     heading: string;
     description: string;
   };
+  community: {
+    kicker: string;
+    title: string;
+    description: string;
+    cta: string;
+    channelName: string;
+    channelTagline: string;
+    whatsappChannelName: string;
+    whatsappTagline: string;
+    directChannelGroupLabel: string;
+    communityChannelGroupLabel: string;
+    socialChannelGroupLabel: string;
+  };
 }

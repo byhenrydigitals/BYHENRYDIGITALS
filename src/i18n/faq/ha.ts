@@ -99,7 +99,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Yana taimaka wa masu farawa fahimtar tsarin juya ziyara zuwa saye da jerin matakai na aiki ba tare da yaudara ba.',
     ],
-    actionLabel: 'Duba Clicks-to-Cash a Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-04': {
     question: 'Menene Global Monetisation kuma ga wa aka tsara shi?',
@@ -113,7 +113,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Yana nuna yadda masu ƙwarewa za su kai ga masu saye a ƙasashe daban-daban ta dandamalin dijital.',
     ],
-    actionLabel: 'Duba Global Monetisation a Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-06': {
     question: 'Menene Remote Jobs for Under 18 kuma wa ya dace da shi?',
@@ -127,7 +127,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Yana koyar da zaɓar ƙwarewar da ta dace da shekaru, gina portfolio lafiya, bin dokokin dandamali, da rashin yin alƙawarin aiki kai tsaye.',
     ],
-    actionLabel: 'Duba Bayani a Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-08': {
     question: 'Wane tsari da harshe ne kayayyakin Selar na BHD suke ciki a yanzu?',
@@ -140,7 +140,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     answer: [
       'Ziyarci https://selar.com/m/BYHENRYDIGITALS kai tsaye ko danna "Duba a Selar" a shafin Kayayyaki.',
     ],
-    actionLabel: 'Buɗe Shagon Selar',
+    actionLabel: 'BHD Store',
   },
   'prod-10': {
     question: 'Shin BHD yana ba da takaddun shaida ko tabbacin samun aiki?',
@@ -551,7 +551,7 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     answer: [
       'A shagon Selar na hukuma kaɗai: https://selar.com/m/BYHENRYDIGITALS.',
     ],
-    actionLabel: 'Ziyarci Selar',
+    actionLabel: 'BHD Store',
   },
   'pay-02': {
     question: 'Yaya biyan kuɗi a Selar yake aiki?',

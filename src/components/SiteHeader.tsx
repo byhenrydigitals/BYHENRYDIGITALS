@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowUpRight, ChevronDown, Globe, Menu, X } from 'lucide-react';
-import { PageRoute, ROUTES, SITE_CONFIG } from '../config/siteConfig';
+import { ChevronDown, Globe, Menu, X } from 'lucide-react';
+import { PageRoute, ROUTES } from '../config/siteConfig';
 import { useLanguage } from '../i18n/LanguageContext';
 import { ActiveLanguageCode } from '../i18n/types';
 import { BrandLogo } from './BrandLogo';
@@ -51,8 +51,8 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/[0.08] bg-[#0b0b0b]/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-2 min-[375px]:gap-3 sm:gap-4 px-3 min-[375px]:px-4 py-3 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 border-b border-white/[0.08] bg-[#0b0c0f]/95 backdrop-blur-md">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-2 min-[375px]:gap-3 sm:gap-4 px-3 min-[375px]:px-4 py-2.5 sm:py-3 sm:px-6 lg:px-8">
         {/* Brand Zone */}
         <a
           href="/"
@@ -66,10 +66,10 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
           <BrandLogo />
         </a>
 
-        {/* Desktop Navigation (visible from 1024px+ for balanced tablet-landscape and desktop presentation) */}
+        {/* Desktop Navigation (1024px+) */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-6 text-xs xl:text-[13.5px] font-medium min-w-0"
+          className="hidden lg:flex items-center gap-4 xl:gap-5 2xl:gap-6 text-xs xl:text-[13.5px] font-medium min-w-0"
         >
           {ROUTES.map((item) => {
             const active = currentRoute === item.route;
@@ -82,17 +82,16 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                   handleNavClick(item.route);
                 }}
                 aria-current={active ? 'page' : undefined}
-                className={`whitespace-nowrap shrink-0 py-1.5 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308] rounded ${
+                className={`relative whitespace-nowrap shrink-0 py-1.5 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308] rounded ${
                   active
-                    ? 'text-[#eab308] font-semibold'
-                    : 'text-[#a1a1aa] hover:text-[#f5f5f4]'
+                    ? 'text-[#eab308] font-semibold after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-[#eab308] after:rounded-full'
+                    : 'text-[#b0b4be] hover:text-[#f5f4f0]'
                 }`}
               >
                 {t.nav[item.navKey]}
               </a>
             );
           })}
-
         </nav>
 
         {/* Actions Zone: Language Selector + Primary CTA + Mobile Toggle */}
@@ -105,9 +104,9 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
               aria-expanded={langMenuOpen}
               aria-haspopup="listbox"
               aria-label={`${t.nav.languageMenuLabel}: ${currentDefinition.nativeName}`}
-              className="inline-flex min-h-[44px] sm:min-h-[40px] items-center gap-1 sm:gap-1.5 rounded-lg border border-white/[0.12] bg-[#141414] px-2 min-[375px]:px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-medium text-[#f5f5f4] hover:border-white/[0.25] transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
+              className="inline-flex min-h-[44px] sm:min-h-[40px] items-center gap-1 sm:gap-1.5 rounded-lg border border-white/[0.14] bg-[#131720] px-2 min-[375px]:px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-medium text-[#f5f4f0] hover:border-[#eab308]/50 transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
             >
-              <Globe className="hidden min-[380px]:block h-3.5 w-3.5 text-[#eab308] shrink-0" />
+              <Globe className="hidden min-[360px]:block h-3.5 w-3.5 text-[#eab308] shrink-0" />
               <span>
                 {currentDefinition.code === 'pcm' ? (
                   <>
@@ -120,17 +119,17 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                   </>
                 )}
               </span>
-              <ChevronDown className="h-3.5 w-3.5 text-[#a1a1aa] shrink-0" />
+              <ChevronDown className="h-3.5 w-3.5 text-[#b0b4be] shrink-0" />
             </button>
 
             {langMenuOpen && (
               <div
                 role="dialog"
                 aria-label={t.nav.languageMenuLabel}
-                className="fixed end-3 top-[64px] sm:absolute sm:end-0 sm:top-auto sm:mt-2 w-[min(17.5rem,calc(100vw-1.5rem))] rounded-xl border border-white/[0.12] bg-[#141414] p-3 shadow-2xl z-50"
+                className="fixed end-3 top-[64px] sm:absolute sm:end-0 sm:top-auto sm:mt-2 w-[min(17.5rem,calc(100vw-1.5rem))] rounded-xl border border-white/[0.14] bg-[#121620] p-3 shadow-2xl z-50"
               >
                 <div className="mb-2 flex items-center justify-between px-1">
-                  <span className="text-xs font-semibold text-[#f5f5f4]">
+                  <span className="text-xs font-semibold text-[#f5f4f0]">
                     {t.nav.activeLanguagesLabel}
                   </span>
                   <span className="text-[11px] font-mono-tabular text-[#eab308]">
@@ -150,10 +149,10 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                         onClick={() =>
                           handleSelectLanguage(lang.code as ActiveLanguageCode)
                         }
-                        className={`flex w-full min-h-[40px] items-center justify-between gap-2 rounded-lg px-3 py-1.5 text-xs transition-colors cursor-pointer ${
+                        className={`flex w-full min-h-[42px] items-center justify-between gap-2 rounded-lg px-3 py-1.5 text-xs transition-colors cursor-pointer ${
                           isCurrent
-                            ? 'bg-[#eab308] text-[#0b0b0b] font-semibold'
-                            : 'text-[#e4e4e7] hover:bg-white/[0.06]'
+                            ? 'bg-[#eab308] text-[#0b0c0f] font-semibold'
+                            : 'text-[#e4e4e7] hover:bg-white/[0.07]'
                         }`}
                       >
                         <span className="flex items-center gap-1.5 min-w-0 truncate">
@@ -181,7 +180,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
               e.preventDefault();
               handleNavClick('/services');
             }}
-            className="hidden sm:inline-flex lg:hidden xl:inline-flex min-h-[40px] items-center justify-center rounded-lg bg-[#eab308] px-4 py-2 text-xs font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]"
+            className="hidden sm:inline-flex lg:hidden xl:inline-flex min-h-[40px] items-center justify-center rounded-lg bg-[#eab308] px-4 py-2 text-xs font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0c0f]"
           >
             {t.nav.primaryCta}
           </a>
@@ -192,7 +191,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? t.nav.closeMenuAria : t.nav.openMenuAria}
-            className="lg:hidden inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-white/[0.12] text-[#f5f5f4] hover:bg-white/[0.06] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
+            className="lg:hidden inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-white/[0.14] bg-[#131720] text-[#f5f4f0] hover:border-[#eab308]/50 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -201,8 +200,8 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
 
       {/* Responsive Navigation Drawer (< lg) */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-white/[0.08] bg-[#0b0b0b] px-4 py-4 sm:px-6">
-          <nav className="grid grid-cols-1 gap-1 sm:grid-cols-2" aria-label="Mobile Navigation">
+        <div className="lg:hidden border-t border-white/[0.08] bg-[#0b0c0f] px-4 py-4 sm:px-6">
+          <nav className="grid grid-cols-1 gap-1 min-[400px]:grid-cols-2" aria-label="Mobile Navigation">
             {ROUTES.map((item) => {
               const active = currentRoute === item.route;
               return (
@@ -216,15 +215,14 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                   aria-current={active ? 'page' : undefined}
                   className={`flex min-h-[44px] items-center rounded-lg px-3 text-sm font-medium transition-colors ${
                     active
-                      ? 'bg-[#141414] text-[#eab308] font-semibold'
-                      : 'text-[#d4d4d8] hover:bg-white/[0.04] hover:text-[#f5f5f4]'
+                      ? 'bg-[#141923] text-[#eab308] font-semibold'
+                      : 'text-[#d4d4d8] hover:bg-white/[0.05] hover:text-[#f5f4f0]'
                   }`}
                 >
                   {t.nav[item.navKey]}
                 </a>
               );
             })}
-
           </nav>
 
           <div className="mt-4 pt-3 border-t border-white/[0.08]">
@@ -234,7 +232,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
                 e.preventDefault();
                 handleNavClick('/services');
               }}
-              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-lg bg-[#eab308] px-4 py-2.5 text-sm font-semibold text-[#0b0b0b] hover:bg-[#facc15] transition-colors"
+              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-lg bg-[#eab308] px-4 py-2.5 text-sm font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors"
             >
               {t.nav.primaryCta}
             </a>

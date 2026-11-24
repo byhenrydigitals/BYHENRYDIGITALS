@@ -29,6 +29,8 @@ export const SITE_CONFIG = {
   affiliateStarterKitPrice: '₦8,000',
   founderName: 'Henry (Coach Henry)',
   vanessaSiteUrl: 'https://vanessabhd.my.canva.site/',
+  matrixCommunityUrl:
+    'https://matrix.to/#/!8-sfVgIoBPymduIB9mxpswI0Ei35N-qOUq1azWWia0w?via=matrix.org',
   locationLabel: 'Operating digitally for a global audience',
 } as const;
 

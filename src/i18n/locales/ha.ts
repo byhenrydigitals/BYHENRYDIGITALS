@@ -59,7 +59,7 @@ export const ha: TranslationBundle = {
       'Binciki kayayyakin dijital na BHD da ke kan Selar, waɗanda aka ƙera don taimaka wa masu koyo da masu gina dijital su sami ƙwarewa ta gaske.',
     viewAllProducts: 'Duba Jerin Kayayyaki',
     selarBadge: 'Kundin Selar',
-    selarLinkShort: 'Selar',
+    selarLinkShort: 'BHD Store',
     servicesSectionKicker: 'Ayyukan Dijital',
     servicesSectionTitle: 'Kwarewar Dijital Mai Aiki Mai Kyau',
     servicesSectionDesc:
@@ -146,13 +146,13 @@ export const ha: TranslationBundle = {
     storeBannerTitle: 'Shagon Hukuma na BHD akan Selar',
     storeBannerDesc:
       'Ziyarci selar.com/m/BYHENRYDIGITALS don duba farashin yanzu, cikakken tsarin kayayyaki da biyan kuɗi nan take.',
-    visitStoreCta: 'Ziyarci Shagon Selar',
+    visitStoreCta: 'BHD Store',
     problemLabel: 'Matsala da Buƙatar Koyo da Yake Magancewa',
     audienceLabel: 'Masu Amfani da Aka Tsara Don Su',
     outcomesLabel: 'Abin da Za Ka Koya',
     priceLabel: 'Farashi akan Selar',
     originalLanguageLabel: 'Harshen Asali na Kaya',
-    productCta: 'Duba & Saya akan Selar',
+    productCta: 'BHD Store',
     storeIntegrityNotice:
       'Shagon Hukuma & Farashin Yanzu: Duk albarkatun ilimin dijital na BYHENRYDIGITALS suna kan Selar (selar.com/m/BYHENRYDIGITALS), inda ake tabbatar da farashin yanzu kafin siya.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
@@ -498,7 +498,7 @@ export const ha: TranslationBundle = {
     secondaryTagline: 'Muna Gina Darajar Dijital Mai Sayarwa.',
     navigationTitle: 'Binciki BHD',
     officialLinksTitle: 'Tuntuɓa ta Hukuma & Shago',
-    selarLinkLabel: 'Shagon Kayayyaki na Selar',
+    selarLinkLabel: 'BHD Store',
     emailUsLabel: 'Aika Mana Imel',
     whatsappUsLabel: 'Yi Hira da Mu a WhatsApp',
     socialTitle: 'Tashoshin Sadarwa',
@@ -511,5 +511,19 @@ export const ha: TranslationBundle = {
     heading: 'Mu Haɗa Kai!',
     description:
       'Ci gaba da kasancewa tare da BYHENRYDIGITALS. Bi mu don samun fahimtar dijital, albarkatu masu amfani, sabbin bayanai na kasuwanci, sabbin damammaki da kallon abin da muke ginawa.',
+  },
+  community: {
+    kicker: 'Al’ummar BHD',
+    title: 'Shiga Al’ummar BHD',
+    description:
+      'Haɗu da al’ummar BYHENRYDIGITALS. Shiga tattaunawa, haɗu da mutanen da ke sha’awar damammakin dijital, raba ra’ayoyi kuma ka kasance tare da al’ummar BHD.',
+    cta: 'Shiga Al’ummar BHD',
+    channelName: 'Al’ummar BHD (Matrix)',
+    channelTagline: 'Ɗakin tattaunawa na hukuma',
+    whatsappChannelName: 'WhatsApp',
+    whatsappTagline: 'Saƙo kai tsaye da tallafi',
+    directChannelGroupLabel: 'Tuntuɓa Kai Tsaye',
+    communityChannelGroupLabel: 'Zauren Al’umma',
+    socialChannelGroupLabel: 'Shafukan Sada Zumunta',
   },
 };

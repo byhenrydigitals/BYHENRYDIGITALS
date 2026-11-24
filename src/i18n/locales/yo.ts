@@ -59,7 +59,7 @@ export const yo: TranslationBundle = {
       'Ṣàwárí àwọn ọjà dígítà BHD lórí Selar, tí a ṣẹ̀dá láti ran àwọn akẹ́kọ̀ọ́ àti olùkọ́ṣẹ́ dígítà lọ́wọ́ láti ní òye tó wúlò.',
     viewAllProducts: 'Wo Àkójọ Àwọn Ọjà',
     selarBadge: 'Àkójọ Selar',
-    selarLinkShort: 'Selar',
+    selarLinkShort: 'BHD Store',
     servicesSectionKicker: 'Àwọn Iṣẹ́ Dígítà',
     servicesSectionTitle: 'Àwọn Ìrírí Dígítà Tó Ń Ṣiṣẹ́ Dáadáa',
     servicesSectionDesc:
@@ -146,13 +146,13 @@ export const yo: TranslationBundle = {
     storeBannerTitle: 'Ilé-Ìtajà Gidi BHD lórí Selar',
     storeBannerDesc:
       'Ṣèbẹ̀wò sí selar.com/m/BYHENRYDIGITALS láti wo iye owó tuntun, àkójọ ìwé, àti ìsanwó dígítà kíákíá.',
-    visitStoreCta: 'Lọ sí Ilé-Ìtajà Selar',
+    visitStoreCta: 'BHD Store',
     problemLabel: 'Ìṣòro àti Àìní Ẹ̀kọ́ Tó Ń Yanjú',
     audienceLabel: 'Àwọn Tó Yẹ Fún',
     outcomesLabel: 'Ohun Tí O Máa Kọ́',
     priceLabel: 'Iye Owó Lórí Selar',
     originalLanguageLabel: 'Èdè Ọjà Àkọ́kọ́',
-    productCta: 'Wo Kí O Sì Rà lórí Selar',
+    productCta: 'BHD Store',
     storeIntegrityNotice:
       'Ilé-Ìtajà Gidi & Iye Owó Lọ́wọ́lọ́wọ́: Gbogbo ohun èlò ẹ̀kọ́ dígítà ti BYHENRYDIGITALS wà lórí Selar (selar.com/m/BYHENRYDIGITALS), níbi tí a ti ń ṣàfihàn iye owó tuntun àti ìfiránṣẹ́ lẹ́sẹ̀kẹsẹ̀.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
@@ -498,7 +498,7 @@ export const yo: TranslationBundle = {
     secondaryTagline: 'À Ń Kọ́ Iye Dígítà Tó Ń Tà.',
     navigationTitle: 'Ṣàwárí BHD',
     officialLinksTitle: 'Ìkànsí Gidi àti Ilé-Ìtajà',
-    selarLinkLabel: 'Ilé-Ìtajà Selar',
+    selarLinkLabel: 'BHD Store',
     emailUsLabel: 'Fi Ímeèlì Ránṣẹ́',
     whatsappUsLabel: 'Bá Wa Sọ̀rọ̀ lórí WhatsApp',
     socialTitle: 'Àwọn Ìkànnì Àjọlò',
@@ -511,5 +511,19 @@ export const yo: TranslationBundle = {
     heading: 'Ẹ Jẹ́ Ká Sopọ̀!',
     description:
       'Máa bá BYHENRYDIGITALS sọ̀rọ̀ nígbà gbogbo. Tẹ̀lé wa fún ìmọ̀ dígítà, ohun èlò tó wúlò, ìròyìn iṣẹ́-ajé, àǹfààní tuntun àti ìṣípayá ohun tí à ń kọ́.',
+  },
+  community: {
+    kicker: 'Àwùjọ BHD',
+    title: 'Darapọ̀ Mọ́ Àwùjọ BHD',
+    description:
+      'Sopọ̀ mọ́ àwùjọ BYHENRYDIGITALS. Kópa nínú ìjíròrò, pàdé àwọn tí ó ní ìfẹ́ sí àǹfààní dígítà, pín èrò kí o sì máa bá àwùjọ BHD sọ̀rọ̀.',
+    cta: 'Darapọ̀ Mọ́ Àwùjọ BHD',
+    channelName: 'Àwùjọ BHD (Matrix)',
+    channelTagline: 'Yàrá ìjíròrò àwùjọ gidi',
+    whatsappChannelName: 'WhatsApp',
+    whatsappTagline: 'Ìfọ̀rọ̀wérọ̀ tààrà àti ìtìlẹ́yìn',
+    directChannelGroupLabel: 'Ìbánisọ̀rọ̀ Tààrà',
+    communityChannelGroupLabel: 'Ààyè Àwùjọ',
+    socialChannelGroupLabel: 'Ìkànnì Àjọlò',
   },
 };
