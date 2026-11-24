@@ -46,7 +46,7 @@ export const yo: TranslationBundle = {
       },
       {
         title: 'Ètò Alábàáṣepọ̀ Pẹ̀lú Òótọ́',
-        detail: 'Ìdá 35% lórí títà Selar tó yẹ, láìsí owó ìforúkọsílẹ̀ tàbí MLM.',
+        detail: 'Ìbéèrè ọ̀fẹ́, àyẹ̀wò ìyàn BHD, kò sí MLM, àti 35% èrè fún àwọn alábàáṣepọ̀ tí a fọwọ́ sí.',
       },
       {
         title: 'Ìran Àgbáyé',
@@ -66,18 +66,41 @@ export const yo: TranslationBundle = {
       'Láti ojú-ewé ìtọ́sọ́nà títí dé ìlànà tí AI ń ṣe ìrànwọ́ fún, BHD ń kọ́ àwọn ohun-ìní dígítà tó ṣeé gbẹ́kẹ̀lé.',
     exploreServices: 'Ṣàwárí Àwọn Iṣẹ́',
     enquireShort: 'Béèrè',
-    affiliateSectionKicker: 'Ètò Alábàáṣepọ̀ BHD',
-    affiliateSectionTitle: 'Gba Ìdá 35% Nípa Pínpín Àwọn Ọjà Dígítà Tó Dájú',
+    affiliateSectionKicker: 'Kẹ́kọ̀ọ́ Tàbí Béèrè · Àwọn Ọ̀nà Méjì Ọ̀tọ̀ọ̀tọ̀',
+    affiliateSectionTitle: 'Affiliate Starter Kit vs. Ètò Alábàáṣepọ̀ BHD',
     affiliateSectionDesc:
-      'Ó jẹ́ ọ̀fẹ́ láti forúkọsílẹ̀ láìsí rírà ọjà dandan tàbí ètò ìṣọ̀wọ́ abẹ́lẹ̀. Béèrè tààrà tàbí yan Affiliate Starter Kit ti ₦8,000 bí àṣàyàn.',
+      'BYHENRYDIGITALS ní ohun èlò ẹ̀kọ́ ₦8,000 Starter Kit ọ̀tọ̀ fún kíkọ́ títà alábàáṣepọ̀ àti ètò alábàáṣepọ̀ ọ̀fẹ́ ọ̀tọ̀ tí ẹgbẹ́ wa ń ṣàyẹ̀wò kí a tó yan ènìyàn.',
     learnAffiliate: 'Àlàyé Ètò',
-    applyAffiliate: 'Béèrè Láti Darapọ̀',
+    applyAffiliate: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
+    affiliateClarification:
+      'Ṣé o fẹ́ kọ́ ìmọ̀ affiliate marketing? O lè ra ₦8,000 Affiliate Starter Kit wa. Ṣé o fẹ́ di alábàáṣepọ̀ BHD tòótọ́? Fi ìbéèrè ránṣẹ́ fún àyẹ̀wò. Àwọn méjèèjì yàtọ̀ síra. Rírà Starter Kit kò fún ọ ní ìdánilójú pé a ó yàn ọ́ sínú Ètò Alábàáṣepọ̀ BHD, o kò sì nílò láti rà á kí o tó béèrè.',
+    starterKitOffer: {
+      kicker: 'Ọjà Ẹ̀kọ́ Dígítà · ₦8,000',
+      title: 'Kọ́ Ìmọ̀ Affiliate Marketing',
+      priceLabel: '₦8,000 Affiliate Starter Kit',
+      description:
+        'Ohun èlò ẹ̀kọ́ olówó kan fún àwọn olùbẹ̀rẹ̀ tí wọ́n fẹ́ lóye bí affiliate marketing ṣe ń ṣiṣẹ́ kí wọ́n sì kọ́ òye tó wúlò fún ìrìn-àjò tiwọn.',
+      clarification:
+        'Ọjà ọ̀tọ̀ ni: rírà Starter Kit kò sọ ọ́ di alábàáṣepọ̀ BHD tòótọ́ bẹ́ẹ̀ ni kò ṣe ìdánilójú ìtẹ́wọ́gbà.',
+      cta: 'Gba ₦8,000 Affiliate Starter Kit',
+    },
+    programmeOffer: {
+      kicker: 'Ìbéèrè àti Ìyàn · Ọ̀fẹ́ (₦0)',
+      title: 'Di Alábàáṣepọ̀ BHD',
+      priceLabel: 'Ètò Alábàáṣepọ̀ BHD Gidi',
+      description:
+        'Fi ìbéèrè ránṣẹ́ kí BYHENRYDIGITALS ṣe àyẹ̀wò rẹ̀. Àwọn alábàáṣepọ̀ tí a yàn tí a sì fọwọ́ sí ń gba 35% èrè lórí títà Selar tó yẹ.',
+      clarification:
+        'Kò sí rírà ọjà kankan dandan. Fífi ìbéèrè ránṣẹ́ kò túmọ̀ sí ìdánilójú ìyàn.',
+      cta: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
+    },
     affiliateCards: {
-      commissionLabel: 'Ìpín èrè lórí títà Selar tó yẹ',
-      signupLabel: 'Kò sí owó ìforúkọsílẹ̀ tàbí rírà dandan',
+      commissionLabel: 'Ìpín èrè lórí títà Selar tó yẹ (alábàáṣepọ̀ tí a fọwọ́ sí)',
+      signupLabel: 'Ìbéèrè ọ̀fẹ́ láìsí rírà ọjà dandan',
       noMlmTitle: 'Kò sí MLM',
-      noMlmLabel: 'Ètò alábàáṣepọ̀ tààrà ìpele kan ṣoṣo',
-      starterKitLabel: 'Affiliate Starter Kit (Àṣàyàn)',
+      noMlmLabel: 'Ètò alábàáṣepọ̀ tààrà ìpele kan ṣoṣo láìsí downline',
+      selectionTitle: 'Àyẹ̀wò BHD',
+      selectionLabel: 'BYHENRYDIGITALS ni yóò yan àwọn tó yẹ lẹ́yìn àyẹ̀wò ìbéèrè',
     },
     resourcesSectionKicker: 'Àwọn Ohun Èlò àti Ọ̀rọ̀',
     resourcesSectionTitle: 'Àwọn Ìtọ́sọ́nà Lórí Ìmọ̀ Dígítà, Wẹ́ẹ̀bù àti AI',
@@ -156,6 +179,17 @@ export const yo: TranslationBundle = {
     storeIntegrityNotice:
       'Ilé-Ìtajà Gidi & Iye Owó Lọ́wọ́lọ́wọ́: Gbogbo ohun èlò ẹ̀kọ́ dígítà ti BYHENRYDIGITALS wà lórí Selar (selar.com/m/BYHENRYDIGITALS), níbi tí a ti ń ṣàfihàn iye owó tuntun àti ìfiránṣẹ́ lẹ́sẹ̀kẹsẹ̀.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
+    starterKitNotice: {
+      kicker: 'Ọjà Ẹ̀kọ́ Aládàáni · ₦8,000',
+      title: 'Affiliate Starter Kit (Kọ́ Ìmọ̀ Affiliate Marketing)',
+      priceDisplay: '₦8,000 lórí Selar',
+      description:
+        'Ọjà ẹ̀kọ́ tí a ṣe láti ran àwọn olùbẹ̀rẹ̀ lọ́wọ́ láti lóye bí affiliate marketing ṣe ń ṣiṣẹ́ kí wọ́n sì kọ́ òye tó wúlò fún ìrìn-àjò tiwọn—láìsí dandan láti béèrè fún ètò alábàáṣepọ̀ BHD.',
+      clarification:
+        'Àkíyèsí Pàtàkì: Rírà ₦8,000 Affiliate Starter Kit kò sọ ọ́ di alábàáṣepọ̀ BHD tòótọ́ láìṣàkóso, kò ṣe ìdánilójú ìtẹ́wọ́gbà, kò sì pọn dandan láti fi béèrè fún Ètò Alábàáṣepọ̀ BHD.',
+      cta: 'Gba ₦8,000 Affiliate Starter Kit',
+      affiliateLinkLabel: 'Tàbí wo Ètò Alábàáṣepọ̀ BHD ọ̀tọ̀',
+    },
     items: {
       'clicks-to-cash': {
         resourceTypeLabel: 'Ìtọ́sọ́nà Dígítà · Ìpilẹ̀ṣẹ̀ Alábàáṣepọ̀',
@@ -164,7 +198,7 @@ export const yo: TranslationBundle = {
         problemAddressed:
           'Ó ń ran àwọn olùbẹ̀rẹ̀ tí ìmọ̀ràn dàrú tàbí fífi spam ránṣẹ́ ń dí lọ́wọ́ láti lóye bí ìdábàá òótọ́ ṣe ń ṣẹ̀dá iye.',
         intendedAudience:
-          'Àwọn olùbẹ̀rẹ̀, olùkọ́ṣẹ́ ìpolongo dígítà, àti àwọn alábàáṣepọ̀ BHD tuntun tí wọ́n fẹ́ ìpilẹ̀ṣẹ̀ tó tò.',
+          'Àwọn olùbẹ̀rẹ̀, olùkọ́ṣẹ́ ìpolongo dígítà, àti àwọn akẹ́kọ̀ọ́ tí wọ́n fẹ́ ìpilẹ̀ṣẹ̀ tó tò lórí ìpolongo dígítà òótọ́.',
         learningOutcomes: [
           'Bí àfiyèsí dígítà ṣe ń di ìgbẹ́kẹ̀lé olùrà àti ìfihàn ọjà tó yé ni',
           'Ìyàtọ̀ láàárín ìdábàá ọjà òótọ́ àti pínpín àṣejù láìní ìtúmọ̀',
@@ -208,59 +242,91 @@ export const yo: TranslationBundle = {
     },
   },
   affiliate: {
-    kicker: 'Bá BHD Ṣe Alábàáṣepọ̀',
+    kicker: 'Ìbéèrè àti Ìyàn',
     title: 'Ètò Alábàáṣepọ̀ BHD',
     intro:
-      'Ṣedúró àwọn ọjà dígítà BYHENRYDIGITALS lórí Selar kí o sì gba ìdá 35% lórí títà tó yẹ—pẹ̀lú òótọ́, láìsí owó ìforúkọsílẹ̀ tàbí MLM.',
+      'BYHENRYDIGITALS ń gba ìbéèrè láti ọ̀dọ̀ àwọn tí wọ́n fẹ́ di alábàáṣepọ̀ BHD tòótọ́. Ẹgbẹ́ wa ń ṣàyẹ̀wò gbogbo ìbéèrè, àwọn tí a yàn tí a sì fọwọ́ sí ń gba 35% èrè lórí títà Selar tó yẹ.',
+    clarificationBanner:
+      'Ṣé o fẹ́ kọ́ ìmọ̀ affiliate marketing? O lè ra ₦8,000 Affiliate Starter Kit wa. Ṣé o fẹ́ di alábàáṣepọ̀ BHD tòótọ́? Fi ìbéèrè ránṣẹ́ fún àyẹ̀wò. Àwọn méjèèjì yàtọ̀ síra. Rírà Starter Kit kò fún ọ ní ìdánilójú pé a ó yàn ọ́ sínú Ètò Alábàáṣepọ̀ BHD, o kò sì nílò láti rà á kí o tó béèrè.',
+    sectionA: {
+      kicker: 'Ọjà Ẹ̀kọ́ Dígítà · ₦8,000',
+      title: 'Kọ́ Ìmọ̀ Affiliate Marketing',
+      productName: '₦8,000 Affiliate Starter Kit',
+      description:
+        'A ṣe é fún àwọn olùbẹ̀rẹ̀ tí wọ́n fẹ́ lóye bí affiliate marketing ṣe ń ṣiṣẹ́ kí wọ́n sì ní ìmọ̀ tó wúlò tí wọ́n lè lò nínú ìrìn-àjò tiwọn.',
+      bullets: [
+        'Ọjà ẹ̀kọ́ dígítà olówó tó wà lórí Selar (₦8,000).',
+        'Ọjà ọ̀tọ̀ ni — ẹnikẹ́ni lè rà á fún ẹ̀kọ́ nìkan láìbéèrè láti di alábàáṣepọ̀ BHD.',
+        'Rírà Starter Kit kò sọ ọ́ di alábàáṣepọ̀ BHD tòótọ́ láìṣàkóso.',
+        'Rírà rẹ̀ jẹ́ àṣàyàn pátápátá, kò sì ṣe ìdánilójú ìyàn sínú Ètò Alábàáṣepọ̀ BHD.',
+      ],
+      cta: 'Gba Starter Kit',
+    },
+    sectionB: {
+      kicker: 'Ètò Alábàáṣepọ̀ Gidi · Ìbéèrè Ọ̀fẹ́',
+      title: 'Di Alábàáṣepọ̀ BHD',
+      programmeName: 'Ètò Alábàáṣepọ̀ BHD',
+      description:
+        'Ìlànà ìbéèrè àti ìyàn pàtó tí BYHENRYDIGITALS fi ń ṣàyẹ̀wò àwọn olùfẹ́ kí ó sì yan àwọn tó yẹ láti darapọ̀ gẹ́gẹ́ bí alábàáṣepọ̀ BHD tòótọ́.',
+      bullets: [
+        'Ó nílò fífi ìbéèrè tòótọ́ ránṣẹ́ fún àyẹ̀wò láti ọ̀dọ̀ BYHENRYDIGITALS.',
+        'Fífi ìbéèrè ránṣẹ́ kò ṣe ìdánilójú ìyàn — àwọn tí a fọwọ́ sí ní ìjọba nìkan ni ó ń di alábàáṣepọ̀ BHD.',
+        'Ìbéèrè jẹ́ ọ̀fẹ́ (₦0) láìsí rírà ọjà dandan tàbí Starter Kit.',
+        'Kò sí owó ìkówọlẹ̀ ènìyàn, kò sí ìpele abẹ́lẹ̀ (downline), kò sì sí MLM.',
+        'Ìpín 35% lórí títà Selar tó yẹ fún àwọn alábàáṣepọ̀ tí a fọwọ́ sí.',
+      ],
+      cta: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
+    },
     applyNowCta: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
-    applyNowSubject: 'Ìforúkọsílẹ̀ Ètò Alábàáṣepọ̀ BHD',
+    applyNowSubject: 'Ìbéèrè Ètò Alábàáṣepọ̀ BHD',
     askQuestionCta: 'Béèrè Ìbéèrè',
     askQuestionSubject: 'Ìbéèrè Nípa Ètò Alábàáṣepọ̀ BHD',
     factsTitle: 'Ìṣètò Ètò Tó Dájú',
     facts: [
-      { label: 'Owó Ìforúkọsílẹ̀', value: 'Kò sí (₦0 láti béèrè)' },
-      { label: 'Rírà Ọjà Dandan', value: 'Kò pọn dandan' },
-      { label: 'Ìṣètò', value: 'Alábàáṣepọ̀ tààrà nìkan (Kò sí MLM)' },
-      { label: 'Ìwọ̀n Èrè', value: '35% lórí títà Selar tó yẹ' },
-      { label: 'Starter Kit (Àṣàyàn)', value: '₦8,000 (Ohun èlò àṣàyàn)' },
-      { label: 'Ọ̀nà Ìbánisọ̀rọ̀', value: 'Kàn sí BHD tààrà nípasẹ̀ Ímeèlì tàbí WhatsApp' },
+      { label: 'Owó Ìbéèrè', value: 'Ọ̀fẹ́ (₦0 láti béèrè)' },
+      { label: 'Ìlànà Ìyàn', value: 'BHD ń ṣàyẹ̀wò & yàn (kò sí ìdánilójú)' },
+      { label: 'Rírà Ọjà Dandan', value: 'Kò sí — o kò nílò Starter Kit láti béèrè' },
+      { label: 'Ìṣètò Ètò', value: 'Alábàáṣepọ̀ tààrà ìpele kan nìkan (Kò sí MLM)' },
+      { label: 'Ìwọ̀n Èrè', value: '35% lórí títà Selar tó yẹ (alábàáṣepọ̀ tí a fọwọ́ sí)' },
+      { label: 'Ibi Ìbéèrè', value: 'Fọ́ọ̀mù Ìbéèrè, Ímeèlì & WhatsApp' },
     ],
-    howItWorksTitle: 'Bí Ètò Náà Ṣe Ń Ṣiṣẹ́',
+    howItWorksTitle: 'Bí Ìlànà Ìbéèrè àti Ìyàn Ṣe Ń Ṣiṣẹ́',
     steps: [
       {
         num: '01',
-        title: 'Kàn Sí Wa Tààrà',
-        desc: 'Kàn sí BYHENRYDIGITALS nípasẹ̀ ojú-ewé Kàn Sí Wa, ímeèlì (byhenrydigitals@gmail.com), tàbí WhatsApp (+234 708 208 8942) fún ìtọ́sọ́nà ìbẹ̀rẹ̀. Kò sí owó ìbéèrè tàbí rírà ọjà dandan.',
+        title: 'Fi Ìbéèrè Rẹ Ránṣẹ́',
+        desc: 'Béèrè nípasẹ̀ BYHENRYDIGITALS Enquiry Form lórí ojú-ewé Kàn Sí Wa, ímeèlì (byhenrydigitals@gmail.com), tàbí WhatsApp (+234 708 208 8942). Ìbéèrè jẹ́ ọ̀fẹ́ kò sì nílò rírà ọjà kankan.',
       },
       {
         num: '02',
-        title: 'Ṣàyẹ̀wò Àwọn Ọjà àti Ohun Èlò',
-        desc: 'Lẹ́yìn ìfọwọ́sowọ́pọ̀, mọ àwọn ọjà Selar tí o fẹ́ dábàá. O lè ra Affiliate Starter Kit (₦8,000) bí àṣàyàn fún ìtọ́sọ́nà síwájú síi.',
+        title: 'Àyẹ̀wò àti Ìyàn láti ọ̀dọ̀ BHD',
+        desc: 'BYHENRYDIGITALS ń ṣàyẹ̀wò gbogbo ìbéèrè dáadáa láti yan àwọn tó yẹ. Fífi ìbéèrè ránṣẹ́ kò ṣe ìdánilójú ìtẹ́wọ́gbà; àwọn tí a fọwọ́ sí nìkan ni ó ń di alábàáṣepọ̀ BHD.',
       },
       {
         num: '03',
-        title: 'Pín Kí O Sì Gba 35%',
-        desc: 'Darí àwọn olùrà sí àwọn ọjà BHD nípasẹ̀ ọ̀nà Selar rẹ kí o sì gba ìdá 35% lórí rírà tó fìdí múlẹ̀.',
+        title: 'Ṣedúró Kí O Sì Gba 35% (Alábàáṣepọ̀ Tí A Fọwọ́ Sí)',
+        desc: 'Nígbà tí a bá ti yàn ọ́ tí a sì fọwọ́ sí ọ lábẹ́ òfin ètò, pín àwọn ọjà BHD tó yẹ nípasẹ̀ ọ̀nà Selar rẹ láti gba 35% èrè lórí títà tó fìdí múlẹ̀.',
       },
     ],
-    whoCanApplyTitle: 'Àwọn Tó Lè Forúkọsílẹ̀',
+    whoCanApplyTitle: 'Àwọn Tó Lè Béèrè Fún Àyẹ̀wò',
     whoCanApply: [
       'Àwọn olùkọ́ dígítà, òǹkọ̀wé àti olùṣẹ̀dá àkóónú tó ń pín àwọn irinṣẹ́ tó wúlò.',
       'Àwọn tó ní ìfẹ́ sí ìdábàá ọjà ní òótọ́ láìní láti ṣàkóso ẹrù ọjà.',
       'Àwọn olùbẹ̀rẹ̀ tó ṣetán láti kọ́ ìpolongo tòótọ́ dípò fífi spam ránṣẹ́.',
     ],
-    commissionsTitle: 'Bí Èrè àti Kit Àṣàyàn Ṣe Ń Ṣiṣẹ́',
+    commissionsTitle: 'Èrè Alábàáṣepọ̀ Tí A Fọwọ́ Sí àti Ìyàtọ̀ Ọjà',
     commissionsBody:
-      'Àwọn alábàáṣepọ̀ tí a fọwọ́ sí ń gba 35% lórí títà ọjà dígítà tó yẹ lórí Selar. Affiliate Starter Kit (₦8,000) jẹ́ àṣàyàn fún àwọn tó fẹ́ ìtọ́sọ́nà ìbẹ̀rẹ̀, ṣùgbọ́n rírà rẹ̀ kì í ṣe dandan rárá.',
+      'Àwọn olùbéèrè kì í bẹ̀rẹ̀ sí í gba èrè lẹ́sẹ̀kẹsẹ̀ tí wọ́n bá béèrè. Àwọn alábàáṣepọ̀ BHD tí a yàn tí a sì fọwọ́ sí nìkan ni ó ń gba 35% lórí títà Selar tó yẹ lábẹ́ òfin ètò. Lọ́tọ̀, ₦8,000 Affiliate Starter Kit jẹ́ ọjà ẹ̀kọ́ aládàáni fún kíkọ́ affiliate marketing—rírà rẹ̀ jẹ́ àṣàyàn, kì í fún ènìyàn ní ipò alábàáṣepọ̀, kò sì pọn dandan láti fi béèrè.',
     termsTitle: 'Àwọn Òfin Pàtàkì àti Òótọ́',
     terms: [
-      'Ìfọwọ́sowọ́pọ̀ da lórí àyẹ̀wò tààrà láti ọ̀dọ̀ BYHENRYDIGITALS.',
+      'Gbogbo ìbéèrè wà lábẹ́ àyẹ̀wò BYHENRYDIGITALS; kò sí ìdánilójú ìyàn.',
+      'Àwọn tí BHD yàn tí ó sì fọwọ́ sí nìkan ni ó ń di alábàáṣepọ̀ BHD.',
       'A kò ṣe ìlérí iye owó tàbí títà dandan—èsì da lórí ìsapá ẹnìkọ̀ọ̀kan.',
       'Ìpolongo èké, ìlérí ọrọ̀ kíákíá, tàbí ìṣe bíi BHD láìgba àṣẹ jẹ́ èèwọ̀.',
       'BHD ń lo ètò alábàáṣepọ̀ ìpele kan ṣoṣo láìsí ẹ̀bùn ìkówọlẹ̀ ènìyàn.',
     ],
     transparencyNotice:
-      'Ìkéde Òótọ́: BYHENRYDIGITALS kò ṣe ìlérí títà tàbí owó. Èsì da lórí ìsapá rẹ, ìjọra ọ̀rọ̀ àti ìbéèrè ọjà.',
+      'Ìkéde Òótọ́: BYHENRYDIGITALS kò ṣe ìlérí ìyàn alábàáṣepọ̀, títà, tàbí owó. Èsì da lórí ìsapá rẹ, ìjọra ọ̀rọ̀ àti ìbéèrè ọjà.',
   },
   services: {
     kicker: 'Àwọn Ìpinnu Oníbàárà',
@@ -382,7 +448,7 @@ export const yo: TranslationBundle = {
         body: [
           'Lílo àṣà ìpolongo alábàáṣepọ̀ bíi ọ̀nà àbùjá kì í kọ́ ìgbẹ́kẹ̀lé. Àwọn olùkà máa ń mọ̀ nígbà tí ìdábàá bá ń ṣe ìlérí èké.',
           'Àwọn alábàáṣepọ̀ tó péye máa ń ṣàlàyé kedere àwọn tí ohun èlò wà fún, ìṣòro ẹ̀kọ́ tó ń yanjú, àti ibi tí iye owó gidi wà lórí Selar.',
-          'Nínú Ètò Alábàáṣepọ̀ BYHENRYDIGITALS, àwọn alábàáṣepọ̀ ń gba 35% lórí títà Selar tó yẹ láìsí owó ìforúkọsílẹ̀ tàbí ètò MLM.',
+          'Nínú Ètò Alábàáṣepọ̀ BYHENRYDIGITALS, àwọn alábàáṣepọ̀ tí a yàn tí a sì fọwọ́ sí nìkan ni ó ń gba 35% èrè lórí títà Selar tó yẹ láìsí owó ìbéèrè, rírà dandan, tàbí MLM—nígbà tí ẹnikẹ́ni tí ó fẹ́ kọ́ ìmọ̀ affiliate marketing lọ́tọ̀ lè ṣàwárí ọjà ẹ̀kọ́ ₦8,000 Affiliate Starter Kit.',
         ],
       },
       'practical-workflows': {

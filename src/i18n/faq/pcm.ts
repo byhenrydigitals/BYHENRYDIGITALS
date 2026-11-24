@@ -105,7 +105,7 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
     question: 'Wetin be Clicks-to-Cash and who dem write am for?',
     answer: [
       'Clicks-to-Cash na featured BHD digital guide for Selar wey show beginners how online attention fit turn to clean digital sales — e explain how creators, affiliates, and buyers dey connect without empty hype.',
-      'Dem write am for beginners, upcoming digital marketers, and new BHD affiliates wey wan get strong base before dem start to promote products. Live price and checkout dey straight for Selar.',
+      'Dem write am for beginners, upcoming digital marketers, and learners wey wan get strong base on clean digital promotion. Live price and checkout dey straight for Selar.',
     ],
     extraKeywords: ['clicks to cash', 'clicks-to-cash', 'beginners guide'],
     actionLabel: 'Check Clicks-to-Cash',
@@ -224,28 +224,29 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
   'aff-01': {
     question: 'Wetin be the BHD Affiliate Programme?',
     answer: [
-      'The BHD Affiliate Programme na BYHENRYDIGITALS straight one-level referral system. Approved partners dey recommend eligible BHD digital products for Selar and earn 35% commission on top every verified sale.',
+      'The BHD Affiliate Programme na BYHENRYDIGITALS separate application and selection programme (single-tier, no MLM). Interested people dey submit application make BHD review am, and na only officially selected and approved affiliates dey earn 35% commission on top eligible Selar sales.',
+      'E different completely from the ₦8,000 Affiliate Starter Kit learning product.',
     ],
     extraKeywords: ['affiliate programme', 'partner', '35 percent'],
     actionLabel: 'See Affiliate Programme',
   },
   'aff-02': {
-    question: 'Who fit join BYHENRYDIGITALS as affiliate?',
+    question: 'Who fit apply to become BYHENRYDIGITALS affiliate?',
     answer: [
-      'Any digital teacher, writer, content creator, learner, or person wey wan recommend beta digital products honestly without keeping physical stock fit apply.',
-      'Beginners wey ready to learn ethical marketing instead of dropping spam links anyhow dey welcome; BHD people dey check every request one by one.',
+      'Any digital teacher, writer, content creator, learner, or person wey wan recommend beta digital products honestly without keeping physical stock fit submit application for review.',
+      'Submitting application no guarantee selection — BYHENRYDIGITALS dey check every application carefully, and na only officially approved applicants dey turn BHD affiliates.',
     ],
     extraKeywords: ['who fit apply', 'affiliate eligibility'],
-    actionLabel: 'See Who Fit Apply',
+    actionLabel: 'Apply to Become a BHD Affiliate',
   },
   'aff-03': {
     question: 'How the BHD Affiliate Programme dey work step by step?',
     answer: [
-      'Step 1: Message BYHENRYDIGITALS straight through our Contact page, email (byhenrydigitals@gmail.com), or WhatsApp (+234 708 208 8942) to apply for onboarding.',
-      'Step 2: Once dem check and approve you, study the eligible Selar products you wan share (you fit pick the optional ₦8,000 Affiliate Starter Kit if you want guided training).',
-      'Step 3: Recommend eligible products with your Selar affiliate link and earn 35% commission on top every verified sale.',
+      'Step 1: Submit your application through the BYHENRYDIGITALS Enquiry Form for our Contact page, email (byhenrydigitals@gmail.com), or WhatsApp (+234 708 208 8942). Application na free (₦0) and you no need buy anything.',
+      'Step 2: BYHENRYDIGITALS dey review every application and select suitable candidates. Submitting application no guarantee acceptance, and you no need buy the ₦8,000 Starter Kit.',
+      'Step 3: Once dem officially select and approve you under programme rules, share eligible products with your Selar affiliate link and earn 35% commission on top every verified sale.',
     ],
-    extraKeywords: ['how affiliate work', 'step by step', 'onboarding'],
+    extraKeywords: ['how affiliate work', 'step by step', 'application'],
     actionLabel: 'See Programme Steps',
   },
   'aff-04': {
@@ -281,9 +282,9 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
     extraKeywords: ['free signup', '₦0', 'registration fee'],
   },
   'aff-08': {
-    question: 'E compulsory make person buy product first before e join BHD Affiliate Programme?',
+    question: 'E compulsory make person buy product first before e apply for BHD Affiliate Programme?',
     answer: [
-      'No. No be by force to buy any product before you apply or take part inside the BHD Affiliate Programme.',
+      'No. No be by force to buy any product before you apply or take part inside the BHD Affiliate Programme — you no need buy the ₦8,000 Affiliate Starter Kit to apply.',
     ],
     extraKeywords: ['mandatory purchase', 'no compulsory buy', 'force-buy'],
   },
@@ -304,14 +305,16 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
   'aff-11': {
     question: 'Wetin be the ₦8,000 Affiliate Starter Kit?',
     answer: [
-      'The ₦8,000 Affiliate Starter Kit na optional guided onboarding pack from BYHENRYDIGITALS for partners wey wan structured step-by-step guidance as dem start.',
+      'The ₦8,000 Affiliate Starter Kit na separate paid educational digital product from BYHENRYDIGITALS for beginners wey wan learn how affiliate marketing dey work and build practical knowledge for their own journey.',
+      'Important Notice: Buying the Starter Kit no dey turn you to official BHD affiliate automatically, e no dey guarantee acceptance into the BHD Affiliate Programme, and you no need am before you apply.',
     ],
-    extraKeywords: ['starter kit', '8000', '₦8,000'],
+    extraKeywords: ['starter kit', '8000', '₦8,000', 'learn affiliate marketing'],
+    actionLabel: 'Get the ₦8,000 Affiliate Starter Kit',
   },
   'aff-12': {
-    question: 'Person must buy the Affiliate Starter Kit before dem accept am or pay commission?',
+    question: 'Person must buy the Affiliate Starter Kit to apply, get selected, or earn commission?',
     answer: [
-      'No. Buying the ₦8,000 Affiliate Starter Kit no be by force at all — you no need am to apply, get approved, or earn 35% commission on top eligible Selar sales.',
+      'No. Buying the ₦8,000 Affiliate Starter Kit dey separate and optional — you no need am to apply, get approved, or earn 35% commission if approved. Buying am no also guarantee say dem go select you for the BHD Affiliate Programme.',
     ],
     extraKeywords: ['starter kit optional', 'compulsory'],
   },
@@ -341,17 +344,17 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
   'aff-16': {
     question: 'How BHD dey check affiliate applications and sales?',
     answer: [
-      'Na BYHENRYDIGITALS people dey check every onboarding request one by one (no instant auto-approval), and Selar commerce system dey record and confirm eligible sales.',
+      'Na BYHENRYDIGITALS people dey review every application one by one — selection no be automatic and e no be guarantee, na only approved applicants dey turn official BHD affiliates. Selar commerce system dey record and confirm eligible sales.',
     ],
-    extraKeywords: ['onboarding review', 'sales verification'],
+    extraKeywords: ['application review', 'sales verification'],
   },
   'aff-17': {
-    question: 'How affiliates fit contact BYHENRYDIGITALS for onboarding or support?',
+    question: 'How applicants or affiliates fit contact BYHENRYDIGITALS?',
     answer: [
-      'Tally forms don comot from the BHD website. To apply for affiliate onboarding or ask support question, use our Contact page, email byhenrydigitals@gmail.com, or WhatsApp +234 708 208 8942.',
+      'To submit application for the BHD Affiliate Programme or ask question, use the BYHENRYDIGITALS Enquiry Form on top our Contact page, email byhenrydigitals@gmail.com, or WhatsApp +234 708 208 8942.',
     ],
-    extraKeywords: ['affiliate support', 'apply contact', 'no tally'],
-    actionLabel: 'Contact BHD for Onboarding',
+    extraKeywords: ['affiliate support', 'apply contact'],
+    actionLabel: 'Apply to Become a BHD Affiliate',
   },
 
   // D. Digital Services and Website Development (12)
@@ -783,11 +786,11 @@ const recordsPcm: Record<string, FaqLocalizedRecord> = {
     extraKeywords: ['social media', 'instagram', 'tiktok', 'facebook', 'twitter'],
   },
   'nav-08': {
-    question: 'BYHENRYDIGITALS still dey use Tally forms anywhere on dis site?',
+    question: 'How enquiries and affiliate applications dey work on dis BHD website?',
     answer: [
-      'No. All Tally forms and links don comot from the BYHENRYDIGITALS website. Direct enquiries, project chats, and affiliate applications now pass cleanly through BHD Contact page, official email (byhenrydigitals@gmail.com), and official WhatsApp (+234 708 208 8942).',
+      'Our Contact page get the official embedded BYHENRYDIGITALS Enquiry Form alongside official email (byhenrydigitals@gmail.com) and official WhatsApp (+234 708 208 8942) for project enquiries, product questions, and BHD Affiliate Programme applications.',
     ],
-    extraKeywords: ['tally removed', 'no tally'],
+    extraKeywords: ['enquiry form', 'contact form', 'affiliate application'],
     actionLabel: 'Open Official Contact Channels',
   },
 
@@ -899,7 +902,7 @@ export const faqPcm: FaqBundle = {
     },
     'affiliate-programme': {
       title: 'C. BHD Affiliate Programme',
-      description: '35% commission, ₦0 fee, no MLM, and optional ₦8,000 Starter Kit.',
+      description: 'Free application, BHD selection review (no guarantee), 35% commission, no MLM, and Starter Kit clarity.',
     },
     'web-services': {
       title: 'D. Digital Services & Website Building',

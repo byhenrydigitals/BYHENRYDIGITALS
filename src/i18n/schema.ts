@@ -67,12 +67,30 @@ export interface TranslationBundle {
     affiliateSectionDesc: string;
     learnAffiliate: string;
     applyAffiliate: string;
+    affiliateClarification: string;
+    starterKitOffer: {
+      kicker: string;
+      title: string;
+      priceLabel: string;
+      description: string;
+      clarification: string;
+      cta: string;
+    };
+    programmeOffer: {
+      kicker: string;
+      title: string;
+      priceLabel: string;
+      description: string;
+      clarification: string;
+      cta: string;
+    };
     affiliateCards: {
       commissionLabel: string;
       signupLabel: string;
       noMlmTitle: string;
       noMlmLabel: string;
-      starterKitLabel: string;
+      selectionTitle: string;
+      selectionLabel: string;
     };
     resourcesSectionKicker: string;
     resourcesSectionTitle: string;
@@ -122,12 +140,38 @@ export interface TranslationBundle {
     productCta: string;
     storeIntegrityNotice: string;
     brandPlatformTag: string;
+    starterKitNotice: {
+      kicker: string;
+      title: string;
+      priceDisplay: string;
+      description: string;
+      clarification: string;
+      cta: string;
+      affiliateLinkLabel: string;
+    };
     items: Record<'clicks-to-cash' | 'global-monetisation' | 'remote-jobs-under-18', ProductTranslation>;
   };
   affiliate: {
     kicker: string;
     title: string;
     intro: string;
+    clarificationBanner: string;
+    sectionA: {
+      kicker: string;
+      title: string;
+      productName: string;
+      description: string;
+      bullets: string[];
+      cta: string;
+    };
+    sectionB: {
+      kicker: string;
+      title: string;
+      programmeName: string;
+      description: string;
+      bullets: string[];
+      cta: string;
+    };
     applyNowCta: string;
     applyNowSubject: string;
     askQuestionCta: string;

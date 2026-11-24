@@ -187,20 +187,23 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'aff-01': {
     question: 'Kí ni Ètò Alábàáṣepọ̀ BHD?',
     answer: [
-      'Ètò Alábàáṣepọ̀ BHD jẹ́ ètò ìtọ́kasí tààrà ìpele kan ṣoṣo ní BYHENRYDIGITALS. Àwọn alábàáṣepọ̀ tí a fọwọ́ sí ń gba ìdá 35% lórí títà Selar tó yẹ.',
+      'Ètò Alábàáṣepọ̀ BHD jẹ́ ìlànà ìbéèrè àti ìyàn tààrà ìpele kan ṣoṣo ní BYHENRYDIGITALS (kò sí MLM). Àwọn olùfẹ́ ń fi ìbéèrè ránṣẹ́ fún àyẹ̀wò BHD, àwọn tí a yàn tí a sì fọwọ́ sí ń gba ìdá 35% lórí títà Selar tó yẹ.',
+      'Ó yàtọ̀ pátápátá sí ọjà ẹ̀kọ́ ₦8,000 Affiliate Starter Kit.',
     ],
     actionLabel: 'Wo Ètò Alábàáṣepọ̀',
   },
   'aff-02': {
-    question: 'Ta ló lè di alábàáṣepọ̀ BYHENRYDIGITALS?',
+    question: 'Ta ló lè béèrè láti di alábàáṣepọ̀ BYHENRYDIGITALS?',
     answer: [
-      'Àwọn olùkọ́ dígítà, òǹkọ̀wé, olùṣẹ̀dá àkóónú, àti ẹnikẹ́ni tó fẹ́ pín àwọn ọjà tó wúlò pẹ̀lú òótọ́. BHD ń ṣe àyẹ̀wò gbogbo ìbéèrè.',
+      'Àwọn olùkọ́ dígítà, òǹkọ̀wé, olùṣẹ̀dá àkóónú, akẹ́kọ̀ọ́, àti ẹnikẹ́ni tó fẹ́ pín àwọn ọjà tó wúlò pẹ̀lú òótọ́ lè fi ìbéèrè ránṣẹ́ fún àyẹ̀wò.',
+      'Fífi ìbéèrè ránṣẹ́ kò ṣe ìdánilójú ìyàn—BYHENRYDIGITALS ń ṣàyẹ̀wò gbogbo ìbéèrè, àwọn tí a fọwọ́ sí ní ìjọba nìkan ni ó ń di alábàáṣepọ̀ BHD.',
     ],
+    actionLabel: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
   },
   'aff-03': {
     question: 'Báwo ni Ètò Alábàáṣepọ̀ BHD ṣe ń ṣiṣẹ́ ní ìgbésẹ̀-sí-ìgbésẹ̀?',
     answer: [
-      '1. Kàn sí BHD ní ojú-ewé Kàn Sí Wa, ímeèlì (byhenrydigitals@gmail.com), tàbí WhatsApp (+234 708 208 8942).\n2. Lẹ́yìn ìfọwọ́sí, kọ́ nípa àwọn ọjà Selar (tàbí yan Affiliate Starter Kit ti ₦8,000 bí o bá fẹ́).\n3. Pín ìjápọ̀ Selar rẹ kí o sì gba 35% lórí títà tó yẹ.',
+      '1. Fi ìbéèrè ránṣẹ́ nípasẹ̀ BYHENRYDIGITALS Enquiry Form lórí ojú-ewé Kàn Sí Wa, ímeèlì (byhenrydigitals@gmail.com), tàbí WhatsApp (+234 708 208 8942). Ìbéèrè jẹ́ ọ̀fẹ́ (₦0) láìsí rírà ọjà.\n2. BYHENRYDIGITALS ń ṣàyẹ̀wò gbogbo ìbéèrè láti yan àwọn tó yẹ. Fífi ìbéèrè ránṣẹ́ kò ṣe ìdánilójú ìtẹ́wọ́gbà, o kò sì nílò láti ra ₦8,000 Starter Kit.\n3. Nígbà tí a bá ti yàn ọ́ tí a sì fọwọ́ sí ọ, pín ìjápọ̀ Selar rẹ kí o sì gba 35% lórí títà tó yẹ.',
     ],
     actionLabel: 'Wo Àwọn Ìgbésẹ̀',
   },
@@ -229,9 +232,9 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-08': {
-    question: 'Ṣé alábàáṣepọ̀ gbọ́dọ̀ ra ọjà kó tó darapọ̀?',
+    question: 'Ṣé olùbéèrè gbọ́dọ̀ ra ọjà kó tó béèrè láti darapọ̀?',
     answer: [
-      'Rárá. Kò sí rírà ọjà dandan kankan láti forúkọsílẹ̀.',
+      'Rárá. Kò sí rírà ọjà dandan kankan láti béèrè—o kò nílò láti ra ₦8,000 Affiliate Starter Kit kí o tó béèrè fún Ètò Alábàáṣepọ̀ BHD.',
     ],
   },
   'aff-09': {
@@ -249,13 +252,15 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'aff-11': {
     question: 'Kí ni Affiliate Starter Kit ti ₦8,000?',
     answer: [
-      'Ó jẹ́ ohun èlò ìtọ́sọ́nà àṣàyàn tí BHD ń fún àwọn alábàáṣepọ̀ tí wọ́n bá fẹ́ ìtọ́ni àṣẹ̀ṣẹ̀bẹ̀rẹ̀.',
+      '₦8,000 Affiliate Starter Kit jẹ́ ọjà ẹ̀kọ́ dígítà aládàáni tí BYHENRYDIGITALS ń tà fún àwọn olùbẹ̀rẹ̀ tí wọ́n fẹ́ lóye bí affiliate marketing ṣe ń ṣiṣẹ́ kí wọ́n sì kọ́ òye tó wúlò fún ìrìn-àjò tiwọn.',
+      'Àkíyèsí Pàtàkì: Rírà Starter Kit kò sọ ọ́ di alábàáṣepọ̀ BHD tòótọ́ láìṣàkóso, kò ṣe ìdánilójú ìtẹ́wọ́gbà sínú Ètò Alábàáṣepọ̀ BHD, kò sì pọn dandan láti fi béèrè.',
     ],
+    actionLabel: 'Gba ₦8,000 Affiliate Starter Kit',
   },
   'aff-12': {
-    question: 'Ṣé rírà Starter Kit jẹ́ dandan?',
+    question: 'Ṣé rírà Starter Kit jẹ́ dandan láti béèrè, kí a yàn ọ́, tàbí rí èrè?',
     answer: [
-      'Rárá. Rírà Affiliate Starter Kit ti ₦8,000 jẹ́ àṣàyàn pátápátá, kì í ṣe dandan láti darapọ̀ tàbí rí èrè 35%.',
+      'Rárá. Rírà ₦8,000 Affiliate Starter Kit yàtọ̀ pátápátá ó sì jẹ́ àṣàyàn—kì í ṣe dandan láti béèrè, rí ìfọwọ́sí, tàbí gba èrè 35%. Rírà rẹ̀ kò sì ṣe ìdánilójú ìyàn sínú Ètò Alábàáṣepọ̀ BHD.',
     ],
   },
   'aff-13': {
@@ -280,15 +285,15 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
   'aff-16': {
     question: 'Báwo ni BHD ṣe ń ṣe àyẹ̀wò ìbéèrè àti títà alábàáṣepọ̀?',
     answer: [
-      'BHD ń ṣe àyẹ̀wò ìbéèrè fúnra rẹ̀ (kò sí ìfọwọ́sí lójú-ẹsẹ̀), Selar sì ń ṣàyẹ̀wò gbogbo títà tó yẹ.',
+      'BYHENRYDIGITALS ń ṣàyẹ̀wò gbogbo ìbéèrè fúnra rẹ̀—kò sí ìdánilójú ìyàn, àwọn tí a fọwọ́ sí ní ìjọba nìkan ni ó ń di alábàáṣepọ̀ BHD. Selar ń ṣàyẹ̀wò gbogbo títà tó yẹ.',
     ],
   },
   'aff-17': {
-    question: 'Báwo ni alábàáṣepọ̀ ṣe lè kàn sí BHD fún ìrànlọ́wọ́?',
+    question: 'Báwo ni olùbéèrè tàbí alábàáṣepọ̀ ṣe lè kàn sí BHD?',
     answer: [
-      'A ti yọ fọ́ọ̀mù Tally kúrò. Kàn sí BHD ní ojú-ewé Kàn Sí Wa, ímeèlì (byhenrydigitals@gmail.com), tàbí WhatsApp (+234 708 208 8942).',
+      'Láti fi ìbéèrè ránṣẹ́ fún Ètò Alábàáṣepọ̀ BHD tàbí béèrè ìbéèrè, lo BYHENRYDIGITALS Enquiry Form lórí ojú-ewé Kàn Sí Wa, ímeèlì (byhenrydigitals@gmail.com), tàbí WhatsApp (+234 708 208 8942).',
     ],
-    actionLabel: 'Kàn Sí BHD',
+    actionLabel: 'Béèrè Láti Di Alábàáṣepọ̀ BHD',
   },
 
   // D. Àwọn Iṣẹ́ Dígítà àti Ìkọ́lé Wẹ́ẹ̀bù
@@ -647,9 +652,9 @@ const recordsYo: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'nav-08': {
-    question: 'Ṣé BYHENRYDIGITALS ṣì ń lo fọ́ọ̀mù Tally lórí wẹ́ẹ̀bù?',
+    question: 'Báwo ni ìbéèrè àti ìwé ìbéèrè alábàáṣepọ̀ ṣe ń ṣiṣẹ́ lórí wẹ́ẹ̀bù BHD?',
     answer: [
-      'Rárá. Gbogbo ìjápọ̀ àti fọ́ọ̀mù Tally ti parẹ́ kúrò lórí wẹ́ẹ̀bù pátápátá.',
+      'Ojú-ewé Kàn Sí Wa ní BYHENRYDIGITALS Enquiry Form gidi pẹ̀lú ímeèlì (byhenrydigitals@gmail.com) àti WhatsApp (+234 708 208 8942) fún ìbéèrè iṣẹ́, ọjà, àti Ètò Alábàáṣepọ̀ BHD.',
     ],
   },
 
@@ -752,7 +757,7 @@ export const faqYo: FaqBundle = {
     },
     'affiliate-programme': {
       title: 'C. Ètò Alábàáṣepọ̀ BHD',
-      description: 'Ìdá 35%, ₦0 ìforúkọsílẹ̀, kò sí MLM, Starter Kit àṣàyàn.',
+      description: 'Ìbéèrè ọ̀fẹ́, àyẹ̀wò ìyàn BHD, ìdá 35%, kò sí MLM, àti ìyàtọ̀ Starter Kit.',
     },
     'web-services': {
       title: 'D. Àwọn Iṣẹ́ Dígítà àti Ìkọ́lé Wẹ́ẹ̀bù',

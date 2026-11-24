@@ -46,7 +46,7 @@ export const fr: TranslationBundle = {
       },
       {
         title: 'Affiliation Transparente',
-        detail: '35 % de commission sur les ventes Selar éligibles, sans frais d’inscription ni MLM.',
+        detail: 'Candidature gratuite, sélection par BHD, sans MLM, et 35 % de commission pour les affiliés approuvés.',
       },
       {
         title: 'Vision Internationale',
@@ -66,18 +66,41 @@ export const fr: TranslationBundle = {
       'Des pages de destination aux solutions assistées par l’IA, BHD conçoit des outils fiables et performants.',
     exploreServices: 'Explorer les Services',
     enquireShort: 'Demander',
-    affiliateSectionKicker: 'Programme d’Affiliation BHD',
-    affiliateSectionTitle: 'Gagnez 35 % de Commission sur des Produits Vérifiés',
+    affiliateSectionKicker: 'Apprendre ou Postuler · Deux Offres Distinctes',
+    affiliateSectionTitle: 'Affiliate Starter Kit vs. Programme d’Affiliation BHD',
     affiliateSectionDesc:
-      'Inscription gratuite sans achat obligatoire ni structure pyramidale. Postulez directement ou optez pour le Starter Kit optionnel à ₦8,000.',
+      'BYHENRYDIGITALS propose à la fois un Starter Kit éducatif autonome à ₦8,000 pour apprendre le marketing d’affiliation et un programme d’affiliation gratuit distinct soumis à la sélection de notre équipe.',
     learnAffiliate: 'Détails du Programme',
-    applyAffiliate: 'Demander l’Affiliation',
+    applyAffiliate: 'Postuler pour Devenir Affilié BHD',
+    affiliateClarification:
+      'Vous souhaitez apprendre le marketing d’affiliation ? Vous pouvez acheter notre Affiliate Starter Kit à ₦8,000. Vous souhaitez devenir affilié officiel BHD ? Soumettez votre candidature pour examen. Il s’agit de deux offres distinctes. L’achat du Starter Kit ne garantit pas la sélection dans le Programme d’Affiliation BHD, et vous n’avez pas besoin de l’acheter pour postuler.',
+    starterKitOffer: {
+      kicker: 'Produit Éducatif Numérique · ₦8,000',
+      title: 'Apprendre le Marketing d’Affiliation',
+      priceLabel: 'Affiliate Starter Kit · ₦8,000',
+      description:
+        'Une ressource éducative payante conçue pour les débutants souhaitant comprendre le fonctionnement du marketing d’affiliation et acquérir des compétences pratiques pour leur propre parcours.',
+      clarification:
+        'Produit indépendant : l’achat du Starter Kit ne fait pas de vous un affilié officiel BHD et ne garantit aucune acceptation.',
+      cta: 'Obtenir l’Affiliate Starter Kit (₦8,000)',
+    },
+    programmeOffer: {
+      kicker: 'Candidature & Sélection · Gratuit (₦0)',
+      title: 'Devenir Affilié BHD',
+      priceLabel: 'Programme d’Affiliation Officiel BHD',
+      description:
+        'Soumettez votre candidature à l’examen de BYHENRYDIGITALS. Les affiliés officiellement sélectionnés perçoivent 35 % de commission sur les ventes Selar éligibles.',
+      clarification:
+        'Aucun achat requis. Le dépôt d’une candidature ne garantit pas la sélection.',
+      cta: 'Postuler pour Devenir Affilié BHD',
+    },
     affiliateCards: {
-      commissionLabel: 'Commission sur les ventes Selar éligibles',
-      signupLabel: 'Aucun frais d’inscription ni achat obligatoire',
+      commissionLabel: 'Commission sur ventes Selar éligibles (affiliés approuvés)',
+      signupLabel: 'Candidature gratuite sans aucun achat obligatoire',
       noMlmTitle: 'Sans MLM',
-      noMlmLabel: 'Programme d’affiliation direct à un seul niveau',
-      starterKitLabel: 'Affiliate Starter Kit optionnel',
+      noMlmLabel: 'Programme direct à un seul niveau sans filleuls',
+      selectionTitle: 'Sélectionné',
+      selectionLabel: 'Sélectionné par BYHENRYDIGITALS après examen',
     },
     resourcesSectionKicker: 'Ressources & Blog',
     resourcesSectionTitle: 'Guides Pratiques : Web, Compétences & IA',
@@ -156,6 +179,17 @@ export const fr: TranslationBundle = {
     storeIntegrityNotice:
       'Boutique Officielle & Tarifs en Direct : Chaque ressource éducative numérique de BYHENRYDIGITALS est hébergée et délivrée directement sur Selar (selar.com/m/BYHENRYDIGITALS), où le tarif exact et la livraison immédiate sont confirmés avant achat.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
+    starterKitNotice: {
+      kicker: 'Produit Éducatif Indépendant · ₦8,000',
+      title: 'Affiliate Starter Kit (Apprendre le Marketing d’Affiliation)',
+      priceDisplay: '₦8,000 sur Selar',
+      description:
+        'Un produit éducatif payant conçu pour aider les débutants à comprendre le marketing d’affiliation et à développer des compétences pratiques pour leur propre parcours—sans aucune obligation de postuler au programme d’affiliation BHD.',
+      clarification:
+        'Important : L’achat de l’Affiliate Starter Kit à ₦8,000 ne fait pas automatiquement de vous un affilié officiel BHD, ne garantit pas votre acceptation et n’est pas requis pour postuler au Programme d’Affiliation BHD.',
+      cta: 'Obtenir l’Affiliate Starter Kit (₦8,000)',
+      affiliateLinkLabel: 'Ou consulter le Programme d’Affiliation BHD distinct',
+    },
     items: {
       'clicks-to-cash': {
         resourceTypeLabel: 'Guide Numérique · Bases d’Affiliation & Conversion',
@@ -164,7 +198,7 @@ export const fr: TranslationBundle = {
         problemAddressed:
           'Aide les débutants perdus face aux conseils contradictoires ou au partage excessif de liens à comprendre comment la confiance et la recommandation honnête créent de la valeur.',
         intendedAudience:
-          'Débutants, nouveaux communicants digitaux et nouveaux partenaires affiliés BHD souhaitant des bases structurées.',
+          'Débutants, nouveaux communicants digitaux et apprenants souhaitant des bases structurées en promotion numérique éthique.',
         learningOutcomes: [
           'Comprendre comment l’attention numérique mène à la clarté de l’offre et à la confiance',
           'Distinguer la recommandation transparente de produits du simple partage de liens sans contexte',
@@ -208,59 +242,91 @@ export const fr: TranslationBundle = {
     },
   },
   affiliate: {
-    kicker: 'Partenariat BHD',
+    kicker: 'Candidature & Sélection',
     title: 'Le Programme d’Affiliation BHD',
     intro:
-      'Recommandez les produits numériques BYHENRYDIGITALS sur Selar et percevez 35 % de commission sur les ventes éligibles—sans frais d’inscription et sans MLM.',
-    applyNowCta: 'Demander à Devenir Affilié BHD',
+      'BYHENRYDIGITALS accepte les candidatures de personnes souhaitant devenir affiliés officiels BHD. Chaque dossier est examiné par notre équipe, et les affiliés sélectionnés perçoivent 35 % de commission sur les ventes Selar éligibles.',
+    clarificationBanner:
+      'Vous souhaitez apprendre le marketing d’affiliation ? Vous pouvez acheter notre Affiliate Starter Kit à ₦8,000. Vous souhaitez devenir affilié officiel BHD ? Soumettez votre candidature pour examen. Il s’agit de deux offres distinctes. L’achat du Starter Kit ne garantit pas la sélection dans le Programme d’Affiliation BHD, et vous n’avez pas besoin de l’acheter pour postuler.',
+    sectionA: {
+      kicker: 'Produit Éducatif Numérique · ₦8,000',
+      title: 'Apprendre le Marketing d’Affiliation',
+      productName: 'Affiliate Starter Kit (₦8,000)',
+      description:
+        'Conçu pour les débutants souhaitant comprendre le fonctionnement du marketing d’affiliation et développer des compétences pratiques pour leur propre parcours.',
+      bullets: [
+        'Produit éducatif numérique payant hébergé sur Selar (₦8,000).',
+        'Offre indépendante — chacun peut l’acheter uniquement pour apprendre sans postuler au statut d’affilié BHD.',
+        'L’achat du Starter Kit ne fait pas automatiquement de vous un affilié officiel BHD.',
+        'L’achat est strictement facultatif et ne garantit pas la sélection dans le Programme d’Affiliation BHD.',
+      ],
+      cta: 'Obtenir le Starter Kit',
+    },
+    sectionB: {
+      kicker: 'Programme d’Affiliation Officiel · Candidature Gratuite',
+      title: 'Devenir Affilié BHD',
+      programmeName: 'Programme d’Affiliation BHD',
+      description:
+        'Un processus dédié de candidature et de sélection par lequel BYHENRYDIGITALS évalue les candidats intéressés et sélectionne les personnes autorisées à rejoindre le programme en tant qu’affiliés officiels BHD.',
+      bullets: [
+        'Nécessite de soumettre une candidature officielle pour examen par BYHENRYDIGITALS.',
+        'Soumettre une candidature ne garantit pas la sélection — seules les personnes officiellement approuvées deviennent affiliés BHD.',
+        'Candidature gratuite (₦0) sans achat obligatoire ni exigence de Starter Kit.',
+        'Aucun frais de recrutement, aucun filleul et aucune structure MLM.',
+        '35 % de commission sur les ventes Selar éligibles pour les affiliés officiellement approuvés.',
+      ],
+      cta: 'Postuler pour Devenir Affilié BHD',
+    },
+    applyNowCta: 'Postuler pour Devenir Affilié BHD',
     applyNowSubject: 'Candidature au Programme d’Affiliation BHD',
     askQuestionCta: 'Poser une Question',
     askQuestionSubject: 'Question sur le Programme d’Affiliation BHD',
     factsTitle: 'Structure Vérifiée du Programme',
     facts: [
-      { label: 'Frais d’inscription', value: 'Aucun (₦0)' },
-      { label: 'Achat obligatoire', value: 'Aucun achat requis' },
-      { label: 'Modèle', value: 'Affiliation directe uniquement (Sans MLM)' },
-      { label: 'Commission', value: '35 % sur les ventes Selar éligibles' },
-      { label: 'Starter Kit optionnel', value: '₦8,000 (Ressource facultative)' },
-      { label: 'Contact d’intégration', value: 'Page Contact, E-mail & WhatsApp BHD' },
+      { label: 'Frais de candidature', value: 'Gratuit (₦0 pour postuler)' },
+      { label: 'Processus de sélection', value: 'Examiné & sélectionné par BHD (non garanti)' },
+      { label: 'Achat obligatoire', value: 'Aucun — Starter Kit non requis pour postuler' },
+      { label: 'Modèle du programme', value: 'Affiliation directe à un seul niveau (Sans MLM)' },
+      { label: 'Taux de commission', value: '35 % sur ventes Selar éligibles (affiliés approuvés)' },
+      { label: 'Où postuler', value: 'Formulaire Officiel, E-mail & WhatsApp' },
     ],
-    howItWorksTitle: 'Comment Fonctionne le Programme',
+    howItWorksTitle: 'Comment Fonctionne le Processus de Candidature et de Sélection',
     steps: [
       {
         num: '01',
-        title: 'Contactez-Nous Directement',
-        desc: 'Contactez BYHENRYDIGITALS via la page Contact, par e-mail (byhenrydigitals@gmail.com) ou sur WhatsApp (+234 708 208 8942) pour demander votre intégration. Aucun frais ni achat requis.',
+        title: 'Soumettez Votre Candidature',
+        desc: 'Postulez via le formulaire BYHENRYDIGITALS Enquiry Form sur notre page Contact, par e-mail (byhenrydigitals@gmail.com) ou sur WhatsApp (+234 708 208 8942). La candidature est gratuite et sans achat.',
       },
       {
         num: '02',
-        title: 'Découvrez les Produits',
-        desc: 'Étudiez les produits Selar éligibles. Le Starter Kit à ₦8,000 reste entièrement facultatif.',
+        title: 'Examen & Sélection par BHD',
+        desc: 'BYHENRYDIGITALS examine attentivement chaque dossier et sélectionne les profils adaptés. Déposer une candidature ne garantit pas l’acceptation ; seuls les candidats officiellement approuvés deviennent affiliés BHD.',
       },
       {
         num: '03',
-        title: 'Partagez et Gagnez 35 %',
-        desc: 'Partagez vos liens affiliés Selar de manière honnête et percevez 35 % sur chaque vente validée.',
+        title: 'Promouvez & Gagnez 35 % (Affiliés Approuvés)',
+        desc: 'Une fois officiellement sélectionné et approuvé selon les conditions du programme, partagez les produits BHD éligibles via votre lien affilié Selar pour gagner 35 % sur les ventes validées.',
       },
     ],
-    whoCanApplyTitle: 'Qui Peut Postuler',
+    whoCanApplyTitle: 'Qui Peut Soumettre une Candidature',
     whoCanApply: [
       'Créateurs de contenu, formateurs et communicants digitaux partageant des outils utiles.',
       'Personnes souhaitant recommander des ressources numériques utiles sans gérer de stock.',
       'Débutants prêts à promouvoir de façon éthique sans spam.',
     ],
-    commissionsTitle: 'Commissions & Kit Optionnel',
+    commissionsTitle: 'Commissions des Affiliés Approuvés & Indépendance du Produit',
     commissionsBody:
-      'Les affiliés approuvés perçoivent 35 % sur les ventes Selar éligibles. Le Starter Kit optionnel (₦8,000) offre un accompagnement structuré sans jamais être obligatoire.',
+      'Les candidats ne perçoivent pas de commissions dès le dépôt de leur demande. Seuls les affiliés BHD officiellement sélectionnés et approuvés gagnent 35 % de commission sur les ventes Selar éligibles. Séparément, l’Affiliate Starter Kit à ₦8,000 est un produit éducatif indépendant pour apprendre le marketing d’affiliation : son achat reste facultatif, ne confère pas le statut d’affilié et n’est jamais requis pour postuler.',
     termsTitle: 'Conditions & Transparence',
     terms: [
-      'Chaque demande est examinée directement par BYHENRYDIGITALS.',
-      'Aucun revenu ni volume de ventes n’est garanti.',
+      'Chaque demande est soumise à l’examen de BYHENRYDIGITALS ; la sélection n’est pas garantie.',
+      'Seules les personnes officiellement sélectionnées et approuvées par BHD deviennent affiliés BHD.',
+      'Aucun revenu ni volume de ventes n’est garanti — les résultats dépendent de votre engagement.',
       'Toute promesse trompeuse ou usurpation de marque est strictement interdite.',
       'Modèle direct à un seul niveau sans parrainage pyramidal.',
     ],
     transparencyNotice:
-      'Transparence : BYHENRYDIGITALS ne garantit aucun revenu. Les résultats dépendent de votre travail, de la pertinence pour votre audience et de la demande.',
+      'Transparence : BYHENRYDIGITALS ne garantit ni sélection, ni ventes, ni revenus. Les résultats des affiliés approuvés dépendent de votre travail, de la pertinence pour votre audience et de la demande.',
   },
   services: {
     kicker: 'Solutions Clients',
@@ -382,7 +448,7 @@ export const fr: TranslationBundle = {
         body: [
           'Traiter les liens d’affiliation comme des raccourcis ne construit jamais la confiance. Les lecteurs repèrent vite une recommandation exagérée ou dépourvue de contexte réel.',
           'Les meilleurs partenaires expliquent clairement à qui s’adresse la ressource, quel besoin pédagogique elle couvre et où consulter les informations vérifiées sur Selar.',
-          'Dans le Programme d’Affiliation BYHENRYDIGITALS, les affiliés perçoivent 35 % de commission sur les ventes Selar éligibles, sans frais d’inscription ni parrainage pyramidal.',
+          'Dans le Programme d’Affiliation BYHENRYDIGITALS, les affiliés officiellement sélectionnés et approuvés perçoivent 35 % de commission sur les ventes Selar éligibles, sans frais de candidature, sans achat obligatoire et sans parrainage pyramidal—tandis que toute personne souhaitant apprendre le marketing d’affiliation de façon indépendante peut découvrir le guide éducatif distinct Affiliate Starter Kit à ₦8,000.',
         ],
       },
       'practical-workflows': {

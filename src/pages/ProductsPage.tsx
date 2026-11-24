@@ -1,10 +1,14 @@
-import { ArrowUpRight, Check, Store } from 'lucide-react';
-import { SITE_CONFIG } from '../config/siteConfig';
+import { ArrowRight, ArrowUpRight, BookOpen, Check, Info, Store } from 'lucide-react';
+import { PageRoute, SITE_CONFIG } from '../config/siteConfig';
 import { DIGITAL_PRODUCTS } from '../data/catalog';
 import { useLanguage } from '../i18n/LanguageContext';
 import { ResilientImage } from '../components/ResilientImage';
 
-export function ProductsPage() {
+interface ProductsPageProps {
+  onNavigate?: (route: PageRoute, subject?: string) => void;
+}
+
+export function ProductsPage({ onNavigate }: ProductsPageProps) {
   const { t } = useLanguage();
 
   return (
@@ -155,6 +159,59 @@ export function ProductsPage() {
                 </article>
               );
             })}
+          </div>
+
+          {/* Separate Educational Product: ₦8,000 Affiliate Starter Kit */}
+          <div className="mt-10 rounded-xl border border-[#dfd9ca] bg-[#12161f] p-6 sm:p-8 text-[#f5f4f0]">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-center lg:gap-10">
+              <div className="min-w-0 space-y-3 lg:col-span-8">
+                <div className="flex items-center gap-2 text-xs font-semibold text-[#eab308]">
+                  <BookOpen className="h-4 w-4 shrink-0" />
+                  <span>{t.products.starterKitNotice.kicker}</span>
+                </div>
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <h2 className="font-display text-2xl font-semibold text-[#f5f4f0]">
+                    {t.products.starterKitNotice.title}
+                  </h2>
+                  <span className="font-mono-tabular text-sm font-semibold text-[#eab308]">
+                    {t.products.starterKitNotice.priceDisplay}
+                  </span>
+                </div>
+                <p className="text-sm leading-relaxed text-[#b0b4be]">
+                  {t.products.starterKitNotice.description}
+                </p>
+                <div className="flex items-start gap-2.5 rounded-lg border border-white/[0.12] bg-[#0b0e14] p-3.5 text-xs leading-relaxed text-[#d4d4d8]">
+                  <Info className="mt-0.5 h-4 w-4 shrink-0 text-[#eab308]" />
+                  <span>{t.products.starterKitNotice.clarification}</span>
+                </div>
+              </div>
+
+              <div className="flex min-w-0 flex-col items-stretch gap-3 lg:col-span-4 lg:items-end">
+                <a
+                  href={SITE_CONFIG.selarStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] w-full lg:w-auto items-center justify-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-center text-sm font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors"
+                >
+                  <Store className="h-4 w-4 shrink-0" />
+                  <span>{t.products.starterKitNotice.cta}</span>
+                  <ArrowUpRight className="h-4 w-4 shrink-0" />
+                </a>
+                <a
+                  href="/affiliate-programme"
+                  onClick={(e) => {
+                    if (onNavigate && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                      e.preventDefault();
+                      onNavigate('/affiliate-programme');
+                    }
+                  }}
+                  className="inline-flex min-h-[40px] items-center justify-center lg:justify-end gap-1.5 text-xs font-medium text-[#2dd4bf] hover:text-[#eab308] transition-colors"
+                >
+                  <span>{t.products.starterKitNotice.affiliateLinkLabel}</span>
+                  <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

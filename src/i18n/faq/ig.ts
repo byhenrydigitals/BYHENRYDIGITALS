@@ -189,21 +189,23 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'aff-01': {
     question: 'Gịnị bụ Mmemme Njikọ BHD?',
     answer: [
-      'Mmemme Njikọ BHD bụ mmemme ntụziaka ozugbo n’otu ọkwa nke BYHENRYDIGITALS. Ndị mmekọ a kwadoro na-ekesa ngwaahịa BHD tozuru oke na Selar ma nweta kọmịshọn 35%.',
+      'Mmemme Njikọ BHD bụ usoro ntinye akwụkwọ na nhọrọ nke BYHENRYDIGITALS (otu ọkwa, enweghị MLM). Ndị nwere mmasị na-ezipụ akwụkwọ ntinye ka BHD nyochaa ya, ndị njikọ a họọrọ ma kwado gọọmentị na-enweta kọmịshọn 35% na ire ahịa Selar tozuru oke.',
+      'Ọ dị iche kpamkpam na ngwaahịa mmụta ₦8,000 Affiliate Starter Kit.',
     ],
     actionLabel: 'Lee Mmemme Njikọ',
   },
   'aff-02': {
-    question: 'Onye nwere ike ịbụ onye njikọ BYHENRYDIGITALS?',
+    question: 'Onye nwere ike itinye akwụkwọ ịbụ onye njikọ BYHENRYDIGITALS?',
     answer: [
-      'Ndị nkuzi dijitalụ, ndị edemede, ndị okike ọdịnaya, na ndị chọrọ ịkọrọ ngwaahịa bara uru n’ụzọ eziokwu. A na-enyocha arịrịọ nnabata niile ozugbo.',
+      'Ndị nkuzi dijitalụ, ndị edemede, ndị okike ọdịnaya, ndị na-amụ ihe, na ndị chọrọ ịkọrọ ngwaahịa bara uru n’ụzọ eziokwu nwere ike itinye akwụkwọ ka e tụlee ha.',
+      'Izipu akwụkwọ ntinye anaghị ekwe nkwa nhọrọ—BYHENRYDIGITALS na-enyocha akwụkwọ niile, naanị ndị a kwadoro gọọmentị na-aghọ ndị njikọ BHD.',
     ],
-    actionLabel: 'Lee Onye Tozuru Oke',
+    actionLabel: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
   },
   'aff-03': {
     question: 'Kedu ka Mmemme Njikọ BHD si arụ ọrụ nzọụkwụ site n’nzọụkwụ?',
     answer: [
-      '1. Kpọtụrụ BHD site na ibe Kpọtụrụ Anyị, ozi-e (byhenrydigitals@gmail.com), ma ọ bụ WhatsApp (+234 708 208 8942).\n2. Mgbe a nabatara gị, mụta maka ngwaahịa Selar (ma ọ bụ jiri Affiliate Starter Kit nke ₦8,000 ma ọ bụrụ na ị chọrọ).\n3. Kesaa njikọ njikọ Selar gị ma nweta kọmịshọn 35% na ire ahịa tozuru oke.',
+      '1. Ziga akwụkwọ ntinye site na BYHENRYDIGITALS Enquiry Form dị na ibe Kpọtụrụ Anyị, ozi-e (byhenrydigitals@gmail.com), ma ọ bụ WhatsApp (+234 708 208 8942). Itinye akwụkwọ dị n’efu (₦0) n’enweghị ịzụta ihe.\n2. BYHENRYDIGITALS na-enyocha akwụkwọ niile ma na-ahọrọ ndị kwesịrị ekwesị. Izipu akwụkwọ anaghị ekwe nkwa nnabata, ị dịghịkwa mkpa ịzụta ₦8,000 Starter Kit.\n3. Ozugbo a họọrọ gị ma kwado gị gọọmentị, kesaa njikọ Selar gị ma nweta kọmịshọn 35% na ire ahịa tozuru oke.',
     ],
     actionLabel: 'Lee Usoro Ya',
   },
@@ -233,9 +235,9 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-08': {
-    question: 'Ndị njikọ ọ ga-azụrịrị ngwaahịa tupu ha esonye?',
+    question: 'Ndị na-etinye akwụkwọ ọ ga-azụrịrị ngwaahịa tupu ha etinye akwụkwọ?',
     answer: [
-      'Mba. Enweghị iwu ịzụta ngwaahịa ọ bụla tupu itinye akwụkwọ ma ọ bụ isonye.',
+      'Mba. Enweghị iwu ịzụta ngwaahịa ọ bụla tupu itinye akwụkwọ ma ọ bụ isonye—ị dịghị mkpa ịzụta ₦8,000 Affiliate Starter Kit iji tinye akwụkwọ.',
     ],
   },
   'aff-09': {
@@ -253,13 +255,15 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
   'aff-11': {
     question: 'Gịnị bụ Affiliate Starter Kit nke ₦8,000?',
     answer: [
-      'Ọ bụ akụrụngwa nduzi nhọrọ nke BHD na-enye ndị njikọ chọrọ ọzụzụ ahaziri maka ịmalite.',
+      '₦8,000 Affiliate Starter Kit bụ ngwaahịa mmụta dijitalụ nọọrọ onwe ya nke BYHENRYDIGITALS na-ere maka ndị mbido chọrọ ịmụta otu ahịa njikọ si arụ ọrụ ma wulite nkà maka njem nke ha.',
+      'Ihe dị mkpa: Ịzụta Starter Kit anaghị eme gị onye njikọ BHD gọọmentị na-akpaghị aka, anaghị ekwe nkwa nnabata n’ime Mmemme Njikọ BHD, ọ dịghịkwa mkpa iji tinye akwụkwọ.',
     ],
+    actionLabel: 'Nweta ₦8,000 Affiliate Starter Kit',
   },
   'aff-12': {
-    question: 'Affiliate Starter Kit ọ bụ iwu tupu ịbanye ma ọ bụ irite kọmịshọn?',
+    question: 'Affiliate Starter Kit ọ bụ iwu iji tinye akwụkwọ, ka e họrọ gị, ma ọ bụ irite kọmịshọn?',
     answer: [
-      'Mba. Ịzụta Starter Kit nke ₦8,000 bụ nhọrọ zuru oke, ọ bụghị iwu ma ọlị.',
+      'Mba. Ịzụta ₦8,000 Affiliate Starter Kit dị iche kpamkpam ma bụrụ nhọrọ—ọ dịghị mkpa iji tinye akwụkwọ, nweta nkwado, ma ọ bụ rite kọmịshọn 35%. Ịzụta ya anaghịkwa ekwe nkwa nhọrọ n’ime Mmemme Njikọ BHD.',
     ],
   },
   'aff-13': {
@@ -282,17 +286,17 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-16': {
-    question: 'Kedu ka BHD si enyocha arịrịọ na ire ahịa ndị njikọ?',
+    question: 'Kedu ka BHD si enyocha akwụkwọ ntinye na ire ahịa ndị njikọ?',
     answer: [
-      'BHD na-enyocha arịrịọ nnabata ozugbo (enweghị nkwado akpaaka), ebe Selar na-enyocha ire ahịa niile.',
+      'BYHENRYDIGITALS na-enyocha akwụkwọ ntinye ọ bụla n’onwe ya—anaghị ekwe nkwa nhọrọ, naanị ndị a kwadoro gọọmentị na-aghọ ndị njikọ BHD. Selar na-enyocha ire ahịa tozuru oke.',
     ],
   },
   'aff-17': {
-    question: 'Kedu ka ndị njikọ ga-esi kpọtụrụ BHD maka nkwado?',
+    question: 'Kedu ka ndị chọrọ itinye akwụkwọ ma ọ bụ ndị njikọ ga-esi kpọtụrụ BHD?',
     answer: [
-      'Ewepụla fọm Tally. Kpọtụrụ BHD site na ibe Kpọtụrụ Anyị, email (byhenrydigitals@gmail.com), ma ọ bụ WhatsApp (+234 708 208 8942).',
+      'Iji ziga akwụkwọ ntinye maka Mmemme Njikọ BHD ma ọ bụ jụọ ajụjụ, jiri BYHENRYDIGITALS Enquiry Form na ibe Kpọtụrụ Anyị, email (byhenrydigitals@gmail.com), ma ọ bụ WhatsApp (+234 708 208 8942).',
     ],
-    actionLabel: 'Kpọtụrụ BHD',
+    actionLabel: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
   },
 
   // D. Ọrụ Dijitalụ na Mmepe Weebụsaịtị
@@ -651,9 +655,9 @@ const recordsIg: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'nav-08': {
-    question: 'BYHENRYDIGITALS ọ ka na-eji fọm Tally na weebụsaịtị a?',
+    question: 'Otu ajụjụ na ntinye akwụkwọ njikọ si arụ ọrụ na weebụsaịtị BHD?',
     answer: [
-      'Mba. Ewepụla njikọ na fọm Tally niile kpamkpam.',
+      'Ibe Kpọtụrụ Anyị nwere BYHENRYDIGITALS Enquiry Form gọọmentị tinyere ozi-e (byhenrydigitals@gmail.com) na WhatsApp (+234 708 208 8942) maka ajụjụ ọrụ, ajụjụ ngwaahịa, na ntinye akwụkwọ Mmemme Njikọ BHD.',
     ],
   },
 
@@ -756,7 +760,7 @@ export const faqIg: FaqBundle = {
     },
     'affiliate-programme': {
       title: 'C. Mmemme Njikọ BHD',
-      description: 'Kọmịshọn 35%, ụgwọ ₦0, enweghị MLM, Starter Kit nhọrọ.',
+      description: 'Ntinye akwụkwọ n’efu, nyocha nhọrọ BHD, kọmịshọn 35%, enweghị MLM, na nkọwa Starter Kit.',
     },
     'web-services': {
       title: 'D. Ọrụ Dijitalụ na Mmepe Weebụsaịtị',

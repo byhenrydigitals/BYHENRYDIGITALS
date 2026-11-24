@@ -253,9 +253,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* 4. Affiliate Programme Introduction (Deep Forest-Slate Surface) */}
+      {/* 4. Affiliate Starter Kit vs. BHD Affiliate Programme (Deep Forest-Slate Surface) */}
       <section className="border-y border-white/[0.08] bg-[#0d1816] text-[#f5f4f0]">
-        <div className="mx-auto max-w-[1280px] px-4 py-14 sm:px-6 sm:py-18 lg:px-8">
+        <div className="mx-auto max-w-[1280px] px-4 py-14 sm:px-6 sm:py-18 lg:px-8 space-y-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
             <div className="min-w-0 space-y-4 lg:col-span-7">
               <p className="text-xs font-semibold text-[#2dd4bf]">
@@ -267,37 +267,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <p className="max-w-2xl text-[15px] leading-relaxed text-[#b4c4c0]">
                 {t.home.affiliateSectionDesc}
               </p>
-
-              <div className="flex flex-wrap items-center gap-3 pt-2">
-                <a
-                  href="/contact"
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
-                      e.preventDefault();
-                      onNavigate('/contact', t.affiliate.applyNowSubject);
-                    }
-                  }}
-                  className="inline-flex min-h-[44px] w-full min-[400px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-center text-sm font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors min-[400px]:whitespace-nowrap"
-                >
-                  <span>{t.home.applyAffiliate}</span>
-                  <ArrowRight className="h-4 w-4 shrink-0" />
-                </a>
-                <a
-                  href="/affiliate-programme"
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
-                      e.preventDefault();
-                      onNavigate('/affiliate-programme');
-                    }
-                  }}
-                  className="inline-flex min-h-[44px] w-full min-[400px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg border border-[#2dd4bf]/35 bg-[#091210] px-5 py-2.5 text-center text-sm font-medium text-[#f5f4f0] hover:border-[#2dd4bf] transition-colors min-[400px]:whitespace-nowrap"
-                >
-                  <span>{t.home.learnAffiliate}</span>
-                </a>
-              </div>
             </div>
 
-            {/* Clean Hairline Ledger Grid instead of 4 isolated dark boxes */}
+            {/* Clean Hairline Programme Ledger (Programme Facts Only) */}
             <div className="lg:col-span-5 min-w-0 overflow-hidden rounded-xl border border-[#2dd4bf]/25 bg-[#091210]">
               <div className="grid grid-cols-1 min-[360px]:grid-cols-2 divide-y min-[360px]:divide-y-0 divide-white/[0.08]">
                 <div className="p-5 min-[360px]:border-b min-[360px]:border-e border-white/[0.08]">
@@ -325,15 +297,112 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </div>
                 </div>
                 <div className="p-5">
-                  <div className="font-display font-mono-tabular text-lg font-semibold text-[#f5f4f0]">
-                    {SITE_CONFIG.affiliateStarterKitPrice}
+                  <div className="font-display text-lg font-semibold text-[#f5f4f0]">
+                    {t.home.affiliateCards.selectionTitle}
                   </div>
                   <div className="mt-1 text-xs text-[#b4c4c0]">
-                    {t.home.affiliateCards.starterKitLabel}
+                    {t.home.affiliateCards.selectionLabel}
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Two Differentiated Cards: A (Educational Product) vs B (Official Affiliate Programme) */}
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            {/* Section A: Educational Product — ₦8,000 Affiliate Starter Kit */}
+            <div className="flex min-w-0 flex-col justify-between rounded-xl border border-[#eab308]/35 bg-[#12161f] p-6 sm:p-7 space-y-5">
+              <div className="space-y-3">
+                <p className="text-xs font-semibold text-[#eab308]">
+                  {t.home.starterKitOffer.kicker}
+                </p>
+                <div className="space-y-1">
+                  <h3 className="font-display text-xl font-semibold text-[#f5f4f0]">
+                    {t.home.starterKitOffer.title}
+                  </h3>
+                  <p className="font-mono-tabular text-sm font-semibold text-[#eab308]">
+                    {t.home.starterKitOffer.priceLabel}
+                  </p>
+                </div>
+                <p className="text-sm leading-relaxed text-[#b0b4be]">
+                  {t.home.starterKitOffer.description}
+                </p>
+                <p className="rounded-lg border border-white/[0.1] bg-[#0b0e14] p-3 text-xs leading-relaxed text-[#d4d4d8]">
+                  {t.home.starterKitOffer.clarification}
+                </p>
+              </div>
+
+              <div className="pt-1">
+                <a
+                  href={SITE_CONFIG.selarStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] w-full min-[420px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg border border-[#eab308]/60 bg-[#0b0e14] px-5 py-2.5 text-center text-sm font-semibold text-[#eab308] hover:bg-[#eab308] hover:text-[#0b0c0f] transition-colors"
+                >
+                  <Store className="h-4 w-4 shrink-0" />
+                  <span>{t.home.starterKitOffer.cta}</span>
+                  <ArrowUpRight className="h-4 w-4 shrink-0" />
+                </a>
+              </div>
+            </div>
+
+            {/* Section B: Official Affiliate Programme — Application & BHD Selection */}
+            <div className="flex min-w-0 flex-col justify-between rounded-xl border border-[#2dd4bf]/35 bg-[#091210] p-6 sm:p-7 space-y-5">
+              <div className="space-y-3">
+                <p className="text-xs font-semibold text-[#2dd4bf]">
+                  {t.home.programmeOffer.kicker}
+                </p>
+                <div className="space-y-1">
+                  <h3 className="font-display text-xl font-semibold text-[#f5f4f0]">
+                    {t.home.programmeOffer.title}
+                  </h3>
+                  <p className="text-sm font-semibold text-[#2dd4bf]">
+                    {t.home.programmeOffer.priceLabel}
+                  </p>
+                </div>
+                <p className="text-sm leading-relaxed text-[#b4c4c0]">
+                  {t.home.programmeOffer.description}
+                </p>
+                <p className="rounded-lg border border-white/[0.1] bg-[#060d0b] p-3 text-xs leading-relaxed text-[#d4e0dd]">
+                  {t.home.programmeOffer.clarification}
+                </p>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-3 pt-1">
+                <a
+                  href="/contact"
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                      e.preventDefault();
+                      onNavigate('/contact', t.affiliate.applyNowSubject);
+                    }
+                  }}
+                  className="inline-flex min-h-[44px] w-full min-[420px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-center text-sm font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors"
+                >
+                  <span>{t.home.programmeOffer.cta}</span>
+                  <ArrowRight className="h-4 w-4 shrink-0" />
+                </a>
+                <a
+                  href="/affiliate-programme"
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                      e.preventDefault();
+                      onNavigate('/affiliate-programme');
+                    }
+                  }}
+                  className="inline-flex min-h-[44px] w-full min-[420px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg border border-[#2dd4bf]/35 bg-[#060d0b] px-4 py-2.5 text-center text-sm font-medium text-[#f5f4f0] hover:border-[#2dd4bf] transition-colors"
+                >
+                  <span>{t.home.learnAffiliate}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Direct Plain Clarification Callout */}
+          <div className="rounded-xl border border-white/[0.16] bg-[#091210] p-5 sm:p-6">
+            <p className="text-sm leading-relaxed text-[#e4e8e7]">
+              {t.home.affiliateClarification}
+            </p>
           </div>
         </div>
       </section>

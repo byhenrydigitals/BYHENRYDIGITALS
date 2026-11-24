@@ -45,8 +45,8 @@ export const ig: TranslationBundle = {
         detail: 'Weebụsaịtị na ibe nnabata e mere maka nghọta, ọsọ, na ịdị mfe iji.',
       },
       {
-        title: 'Usoro Njikọ Doro Anya',
-        detail: 'Kọmịshọn 35% na ire ahịa Selar tozuru oke, enweghị ụgwọ ndebanye ma ọ bụ MLM.',
+        title: 'Mmemme Njikọ Doro Anya',
+        detail: 'Ntinye akwụkwọ n’efu, nyocha nhọrọ BHD, enweghị MLM, na kọmịshọn 35% maka ndị njikọ a kwadoro.',
       },
       {
         title: 'Ọhụụ Mba Ụwa',
@@ -66,18 +66,41 @@ export const ig: TranslationBundle = {
       'Site na ibe nnabata na-eweta nsonaazụ ruo na usoro AI na-enyere aka, BHD na-ewu ngwa dijitalụ pụrụ ịdabere na ya, ọ bụghị naanị ibe nkịtị.',
     exploreServices: 'Chọpụta Ọrụ Anyị',
     enquireShort: 'Jụọ Ajụjụ',
-    affiliateSectionKicker: 'Mmemme Njikọ BHD',
-    affiliateSectionTitle: 'Nweta Kọmịshọn 35% Site n’Ịkọrọ Ngwaahịa Dijitalụ Kwesịrị Ekwesị',
+    affiliateSectionKicker: 'Mụta Ma Ọ Bụ Tinye Akwụkwọ · Ihe Abụọ Dị Iche',
+    affiliateSectionTitle: 'Affiliate Starter Kit vs. Mmemme Njikọ BHD',
     affiliateSectionDesc:
-      'Ọ dị n’efu itinye akwụkwọ n’enweghị ịzụta ihe n’ike ma ọ bụ usoro ọtụtụ ọkwa. Tinye akwụkwọ ozugbo ma ọ bụ jiri Affiliate Starter Kit nke ₦8,000 dị ka nhọrọ.',
+      'BYHENRYDIGITALS nwere ma ngwaahịa mmụta ₦8,000 Starter Kit dị iche maka ịmụ ahịa njikọ ma mmemme njikọ n’efu nke ndị otu anyị na-enyocha tupu ahọrọ mmadụ.',
     learnAffiliate: 'Nkọwa Mmemme',
-    applyAffiliate: 'Jụọ Maka Njikọ',
+    applyAffiliate: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
+    affiliateClarification:
+      'Ị chọrọ ịmụ ahịa njikọ (affiliate marketing)? Ị nwere ike ịzụta Affiliate Starter Kit anyị nke ₦8,000. Ị chọrọ ịbụ onye njikọ BHD gọọmentị? Ziga akwụkwọ ntinye ka e tụlee gị. Ihe ndị a bụ ụzọ abụọ dị iche kpamkpam. Ịzụta Starter Kit anaghị ekwe nkwa na a ga-ahọrọ gị n’ime Mmemme Njikọ BHD, ị dịghịkwa mkpa ịzụta ya tupu itinye akwụkwọ.',
+    starterKitOffer: {
+      kicker: 'Ngwaahịa Mmụta Dijitalụ · ₦8,000',
+      title: 'Mụta Ahịa Njikọ (Affiliate Marketing)',
+      priceLabel: '₦8,000 Affiliate Starter Kit',
+      description:
+        'Ngwaahịa mmụta a na-akwụ ụgwọ maka ndị mbido chọrọ ịghọta otu ahịa njikọ si arụ ọrụ ma wulite nkà bara uru maka njem nke ha.',
+      clarification:
+        'Ngwaahịa nọọrọ onwe ya: ịzụta Starter Kit anaghị eme gị onye njikọ BHD gọọmentị ma ọ bụ kwe nkwa nnabata.',
+      cta: 'Nweta ₦8,000 Affiliate Starter Kit',
+    },
+    programmeOffer: {
+      kicker: 'Ntinye Akwụkwọ na Nhọrọ · N’efu (₦0)',
+      title: 'Bụrụ Onye Njikọ BHD',
+      priceLabel: 'Mmemme Njikọ BHD Gọọmentị',
+      description:
+        'Ziga akwụkwọ ntinye ka BYHENRYDIGITALS nyochaa ya. Ndị njikọ a họọrọ ma kwado gọọmentị na-enweta kọmịshọn 35% na ire ahịa Selar tozuru oke.',
+      clarification:
+        'Achọghị ịzụta ihe ọ bụla. Izipu akwụkwọ ntinye anaghị ekwe nkwa na a ga-ahọrọ gị.',
+      cta: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
+    },
     affiliateCards: {
-      commissionLabel: 'Kọmịshọn na ire ahịa Selar tozuru oke',
-      signupLabel: 'Enweghị ụgwọ ndebanye ma ọ bụ ịzụta n’ike',
+      commissionLabel: 'Kọmịshọn na ire ahịa Selar tozuru oke (ndị a kwadoro)',
+      signupLabel: 'Ntinye akwụkwọ n’efu n’enweghị ịzụta ngwaahịa n’ike',
       noMlmTitle: 'Enweghị MLM',
-      noMlmLabel: 'Mmemme njikọ ozugbo n’otu ọkwa',
-      starterKitLabel: 'Affiliate Starter Kit (Nhọrọ)',
+      noMlmLabel: 'Mmemme njikọ ozugbo n’otu ọkwa n’enweghị downline',
+      selectionTitle: 'A Na-enyocha',
+      selectionLabel: 'Ndi BYHENRYDIGITALS na-ahọrọ mgbe ha nyochachara akwụkwọ',
     },
     resourcesSectionKicker: 'Ihe Ọmụma na Ntụziaka',
     resourcesSectionTitle: 'Ntuziaka Maka Nkà Dijitalụ, Weebụ na AI',
@@ -156,6 +179,17 @@ export const ig: TranslationBundle = {
     storeIntegrityNotice:
       'Ụlọ Ahịa Gọọmentị & Ọnụahịa Ugbu A: A na-akwado ma na-ekesa akụrụngwa mmụta dijitalụ niile nke BYHENRYDIGITALS ozugbo na Selar (selar.com/m/BYHENRYDIGITALS), ebe a na-ahụ ọnụahịa ugbu a tupu ịzụta.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
+    starterKitNotice: {
+      kicker: 'Ngwaahịa Mmụta Nọọrọ Onwe Ya · ₦8,000',
+      title: 'Affiliate Starter Kit (Mụta Ahịa Njikọ)',
+      priceDisplay: '₦8,000 na Selar',
+      description:
+        'Ngwaahịa mmụta a na-akwụ ụgwọ e mere iji nyere ndị mbido aka ịghọta otu ahịa njikọ si arụ ọrụ ma wulite nkà bara uru maka njem nke ha—n’enweghị iwu itinye akwụkwọ maka mmemme njikọ BHD.',
+      clarification:
+        'Ihe dị mkpa: Ịzụta ₦8,000 Affiliate Starter Kit anaghị eme gị onye njikọ BHD gọọmentị na-akpaghị aka, anaghị ekwe nkwa nnabata, ọ dịghịkwa mkpa tupu itinye akwụkwọ maka Mmemme Njikọ BHD.',
+      cta: 'Nweta ₦8,000 Affiliate Starter Kit',
+      affiliateLinkLabel: 'Ma ọ bụ lee Mmemme Njikọ BHD dị iche',
+    },
     items: {
       'clicks-to-cash': {
         resourceTypeLabel: 'Nduzi Dijitalụ · Ntọala Njikọ na Ntụgharị',
@@ -164,7 +198,7 @@ export const ig: TranslationBundle = {
         problemAddressed:
           'Na-enyere ndị mbido na-eche ihu ndụmọdụ gbasasịrị agbasa ma ọ bụ izipu njikọ spam aka ịghọta otu nkwado eziokwu si ebute uru.',
         intendedAudience:
-          'Ndị mbido, ndị na-amụ ahịa dijitalụ, na ndị mmekọ BHD ọhụrụ chọrọ ntọala doro anya tupu ha akwado ngwaahịa dijitalụ.',
+          'Ndị mbido, ndị na-amụ ahịa dijitalụ, na ndị chọrọ ntọala doro anya maka nkwalite dijitalụ ziri ezi.',
         learningOutcomes: [
           'Otu nlebara anya dijitalụ si aga n’ihu ruo na nkwenye onye na-azụ ahịa',
           'Ụkpụrụ dị n’etiti nkwado ngwaahịa eziokwu na izipu njikọ n’enweghị isi',
@@ -208,59 +242,91 @@ export const ig: TranslationBundle = {
     },
   },
   affiliate: {
-    kicker: 'Soro BHD Rụkọọ Ọrụ',
+    kicker: 'Ntinye Akwụkwọ na Nhọrọ',
     title: 'Mmemme Njikọ Ndị Nkwado BHD',
     intro:
-      'Kwuoro ndị mmadụ ngwaahịa dijitalụ BYHENRYDIGITALS na Selar ma nweta kọmịshọn 35% na ire ahịa tozuru oke—ewuru na ntụkwasị obi, n’enweghị ụgwọ ndebanye na enweghị MLM.',
-    applyNowCta: 'Jụọ Maka Ịbụ Onye Njikọ BHD',
-    applyNowSubject: 'Ntinye Akwụkwọ na Nduzi Mmemme Njikọ BHD',
+      'BYHENRYDIGITALS na-anabata akwụkwọ ntinye site n’aka ndị nwere mmasị ịbụ ndị njikọ BHD gọọmentị. Ndị otu anyị na-enyocha akwụkwọ niile, ndị njikọ a họọrọ na-enweta kọmịshọn 35% na ire ahịa Selar tozuru oke.',
+    clarificationBanner:
+      'Ị chọrọ ịmụ ahịa njikọ (affiliate marketing)? Ị nwere ike ịzụta Affiliate Starter Kit anyị nke ₦8,000. Ị chọrọ ịbụ onye njikọ BHD gọọmentị? Ziga akwụkwọ ntinye ka e tụlee gị. Ihe ndị a bụ ụzọ abụọ dị iche kpamkpam. Ịzụta Starter Kit anaghị ekwe nkwa na a ga-ahọrọ gị n’ime Mmemme Njikọ BHD, ị dịghịkwa mkpa ịzụta ya tupu itinye akwụkwọ.',
+    sectionA: {
+      kicker: 'Ngwaahịa Mmụta Dijitalụ · ₦8,000',
+      title: 'Mụta Ahịa Njikọ (Affiliate Marketing)',
+      productName: '₦8,000 Affiliate Starter Kit',
+      description:
+        'E mere ya maka ndị mbido chọrọ ịghọta otu ahịa njikọ si arụ ọrụ ma nweta nkà bara uru ha ga-eji mee ihe na njem ahịa njikọ nke ha.',
+      bullets: [
+        'Ngwaahịa mmụta dijitalụ a na-akwụ ụgwọ dị na Selar (₦8,000).',
+        'Onyinye nọọrọ onwe ya — onye ọ bụla nwere ike ịzụta ya naanị iji mụta ihe n’etinyeghị akwụkwọ ịbụ onye njikọ BHD.',
+        'Ịzụta Starter Kit anaghị eme gị onye njikọ BHD gọọmentị na-akpaghị aka.',
+        'Ịzụta ya bụ nhọrọ kpamkpam, ọ dịghịkwa ekwe nkwa na a ga-ahọrọ gị n’ime Mmemme Njikọ BHD.',
+      ],
+      cta: 'Nweta Starter Kit',
+    },
+    sectionB: {
+      kicker: 'Mmemme Njikọ Gọọmentị · Ntinye N’efu',
+      title: 'Bụrụ Onye Njikọ BHD',
+      programmeName: 'Mmemme Njikọ BHD',
+      description:
+        'Usoro ntinye akwụkwọ na nhọrọ pụrụ iche nke BYHENRYDIGITALS na-eji enyocha ndị nwere mmasị ma na-ahọrọ ndị ga-abụ ndị njikọ BHD gọọmentị.',
+      bullets: [
+        'Ọ chọrọ izipu akwụkwọ ntinye gọọmentị ka BYHENRYDIGITALS nyochaa ya.',
+        'Izipu akwụkwọ ntinye anaghị ekwe nkwa nhọrọ — naanị ndị a kwadoro gọọmentị na-aghọ ndị njikọ BHD.',
+        'Itinye akwụkwọ dị n’efu (₦0) n’enweghị ịzụta ngwaahịa n’ike ma ọ bụ Starter Kit.',
+        'Enweghị ụgwọ ịkpọbata mmadụ, enweghị downline, enweghịkwa usoro MLM.',
+        'Kọmịshọn 35% na ire ahịa Selar tozuru oke maka ndị njikọ a kwadoro gọọmentị.',
+      ],
+      cta: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
+    },
+    applyNowCta: 'Tinye Akwụkwọ Ka Ị Bụrụ Onye Njikọ BHD',
+    applyNowSubject: 'Ntinye Akwụkwọ Mmemme Njikọ BHD',
     askQuestionCta: 'Jụọ Ajụjụ',
     askQuestionSubject: 'Ajụjụ Maka Mmemme Njikọ BHD',
     factsTitle: 'Nhazi Mmemme E Kwadoro',
     facts: [
-      { label: 'Ụgwọ Ndebanye', value: 'Ọ dịghị (₦0 itinye akwụkwọ)' },
-      { label: 'Ịzụta Ihe N’ike', value: 'Achọghị ya' },
-      { label: 'Nhazi', value: 'Njikọ ozugbo naanị (Enweghị MLM)' },
-      { label: 'Ọnụọgụ Kọmịshọn', value: '35% na ire ahịa Selar tozuru oke' },
-      { label: 'Starter Kit (Nhọrọ)', value: '₦8,000 (Akụrụngwa nhọrọ)' },
-      { label: 'Ọwa Ntinye Akwụkwọ', value: 'Kpọtụrụ BHD site na Ozi-e ma ọ bụ WhatsApp' },
+      { label: 'Ụgwọ Ntinye Akwụkwọ', value: 'N’efu (₦0 itinye akwụkwọ)' },
+      { label: 'Usoro Nhọrọ', value: 'BHD na-enyocha ma na-ahọrọ (enweghị nkwa)' },
+      { label: 'Ịzụta Ihe N’ike', value: 'Ọ dịghị — achọghị Starter Kit tupu itinye akwụkwọ' },
+      { label: 'Nhazi Mmemme', value: 'Njikọ ozugbo n’otu ọkwa naanị (Enweghị MLM)' },
+      { label: 'Ọnụọgụ Kọmịshọn', value: '35% na ire ahịa Selar tozuru oke (ndị a kwadoro)' },
+      { label: 'Ebe A Na-etinye Akwụkwọ', value: 'Fọm Ntinye Gọọmentị, Ozi-e na WhatsApp' },
     ],
-    howItWorksTitle: 'Otu Mmemme Ahụ Si Arụ Ọrụ',
+    howItWorksTitle: 'Otu Usoro Ntinye Akwụkwọ na Nhọrọ Si Arụ Ọrụ',
     steps: [
       {
         num: '01',
-        title: 'Kpọtụrụ Anyị Ozugbo',
-        desc: 'Kpọtụrụ BYHENRYDIGITALS site na ibe Kpọtụrụ Anyị, ozi-e (byhenrydigitals@gmail.com), ma ọ bụ WhatsApp (+234 708 208 8942) maka ndebanye. Enweghị ụgwọ ntinye akwụkwọ ma ọ bụ ịzụta ihe n’ike.',
+        title: 'Ziga Akwụkwọ Ntinye Gị',
+        desc: 'Tinye akwụkwọ site na BYHENRYDIGITALS Enquiry Form dị na ibe Kpọtụrụ Anyị, ozi-e (byhenrydigitals@gmail.com), ma ọ bụ WhatsApp (+234 708 208 8942). Itinye akwụkwọ dị n’efu, ọ dịghịkwa achọ ịzụta ngwaahịa.',
       },
       {
         num: '02',
-        title: 'Nyochaa Ngwaahịa na Akụrụngwa',
-        desc: 'Mgbe a nabatara gị, mụta maka ngwaahịa Selar tozuru oke ị họọrọ ikwado. Ị nwere ike ịzụta Affiliate Starter Kit nke ₦8,000 ma ọ bụrụ na ị chọrọ ọzụzụ ahaziri.',
+        title: 'Nyocha na Nhọrọ site na BHD',
+        desc: 'BYHENRYDIGITALS na-enyocha akwụkwọ ntinye ọ bụla nke ọma ma na-ahọrọ ndị kwesịrị ekwesị. Izipu akwụkwọ anaghị ekwe nkwa nnabata; naanị ndị a kwadoro gọọmentị na-aghọ ndị njikọ BHD.',
       },
       {
         num: '03',
-        title: 'Kekọrịta Ma Nweta 35% Kọmịshọn',
-        desc: 'Duzi ndị nwere mmasị gaa na ngwaahịa BHD site na njikọ Selar gị ma nweta kọmịshọn 35% na ịzụrụ e kwadoro.',
+        title: 'Kwalite Ma Nweta 35% (Ndị A Kwadoro)',
+        desc: 'Ozugbo a họọrọ gị ma kwado gị n’okpuru usoro mmemme, kekọrịta ngwaahịa BHD tozuru oke site na njikọ Selar gị iji nweta kọmịshọn 35% na ire ahịa ruru eru.',
       },
     ],
-    whoCanApplyTitle: 'Ndị Nwere Ike Itinye Akwụkwọ',
+    whoCanApplyTitle: 'Ndị Nwere Ike Itinye Akwụkwọ Ka E Tụlee Ha',
     whoCanApply: [
       'Ndị nkuzi dijitalụ, ndị edemede, na ndị na-emepụta ọdịnaya na-ekesa ngwaọrụ bara uru.',
       'Ndị nwere mmasị n’ịkwado ngwaahịa n’ụzọ kwụ ọtọ n’enweghị ijikwa ngwaahịa anụ ahụ.',
       'Ndị mbido dị njikere ịmụ ahịa eziokwu kama izipu njikọ spam.',
     ],
-    commissionsTitle: 'Otu Kọmịshọn na Kit Nhọrọ Si Arụ Ọrụ',
+    commissionsTitle: 'Kọmịshọn Ndị A Kwadoro na Nnwere Onwe Ngwaahịa',
     commissionsBody:
-      'Ndị mmekọ a kwadoro na-enweta 35% na ire ngwaahịa dijitalụ tozuru oke nke a na-enyocha na Selar. Affiliate Starter Kit nhọrọ (₦8,000) dị maka ndị chọrọ ntuziaka ọzụzụ, mana ịzụta ya bụ nhọrọ kpamkpam.',
+      'Ndị tinyere akwụkwọ anaghị amalite inweta kọmịshọn ozugbo ha tinyere akwụkwọ. Naanị ndị njikọ BHD a họọrọ ma kwado gọọmentị na-enweta kọmịshọn 35% na ire ahịa Selar tozuru oke. N’ụzọ dị iche, ₦8,000 Affiliate Starter Kit bụ ngwaahịa mmụta nọọrọ onwe ya maka ịmụ ahịa njikọ—ịzụta ya bụ nhọrọ, ọ naghị enye ọkwa onye njikọ, ọ dịghịkwa mkpa mgbe ọ bụla iji tinye akwụkwọ.',
     termsTitle: 'Usoro Dị Mkpa na Eziokwu',
     terms: [
-      'Nkwado na-adabere na nyocha akwụkwọ ntinye ozugbo site n’aka BYHENRYDIGITALS.',
+      'Akwụkwọ ntinye ọ bụla ga-agabiga nyocha nke BYHENRYDIGITALS; anaghị ekwe nkwa nhọrọ.',
+      'Naanị ndị BYHENRYDIGITALS họọrọ ma kwado gọọmentị na-aghọ ndị njikọ BHD.',
       'A naghị ekwe nkwa ego, ọnụọgụ ire ahịa, ma ọ bụ ọkwa ego a ga-enweta—nsonaazụ dabere na mbọ onye ọ bụla.',
       'A machibidoro ikwu okwu nduhie, nkwa ịba ọgaranya ngwa ngwa, ma ọ bụ iṅomi akara n’enweghị ikike.',
       'BHD na-arụ usoro njikọ ozugbo n’otu ọkwa na-enweghị ụgwọ ịkpọbata mmadụ.',
     ],
     transparencyNotice:
-      'Nkwupụta Eziokwu: BYHENRYDIGITALS anaghị ekwe nkwa ire ahịa ma ọ bụ ego. Nsonaazụ dabere na mbọ onwe onye, ogo nkwukọrịta, na mkpa ahịa.',
+      'Nkwupụta Eziokwu: BYHENRYDIGITALS anaghị ekwe nkwa nhọrọ njikọ, ire ahịa, ma ọ bụ ego. Nsonaazụ ndị njikọ a kwadoro dabere na mbọ onwe onye, ogo nkwukọrịta, na mkpa ahịa.',
   },
   services: {
     kicker: 'Ngwọta Ndị Ahịa',
@@ -382,7 +448,7 @@ export const ig: TranslationBundle = {
         body: [
           'Iji njikọ affiliate dị ka ụzọ mkpirisi anaghị ewu ntụkwasị obi. Ndị mmadụ na-amata ngwa ngwa mgbe nkwado enweghị nkọwa ma ọ bụ na-ekwe nkwa ego dandan.',
           'Ndị njikọ siri ike na-akọwa nke ọma ndị e mere akụrụngwa maka ha, nsogbu mmụta ọ na-edozi, na ebe ọnụahịa kwesịrị ekwesị dị na Selar.',
-          'N’ime Mmemme Njikọ BYHENRYDIGITALS, ndị mmekọ na-enweta 35% na ire ahịa Selar tozuru oke n’enweghị ụgwọ ndebanye ma ọ bụ ọkwa MLM.',
+          'N’ime Mmemme Njikọ BYHENRYDIGITALS, ndị njikọ a họọrọ ma kwado gọọmentị na-enweta kọmịshọn 35% na ire ahịa Selar tozuru oke n’enweghị ụgwọ ntinye, n’enweghị ịzụta ihe n’ike, ma ọ bụ ọkwa MLM—ebe onye ọ bụla chọrọ ịmụ ahịa njikọ n’onwe ya nwere ike ịhọrọ ngwaahịa mmụta ₦8,000 Affiliate Starter Kit dị iche.',
         ],
       },
       'practical-workflows': {

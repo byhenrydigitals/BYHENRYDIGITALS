@@ -362,8 +362,9 @@ export const FAQ_RECORDS_META: FaqRecordMeta[] = [
     status: 'published',
     verified: true,
     lastUpdated: '2026-11',
-    canonicalKeywords: ['affiliate starter kit', '₦8,000', '8000', 'what is starter kit', 'guided onboarding'],
+    canonicalKeywords: ['affiliate starter kit', '₦8,000', '8000', 'what is starter kit', 'learn affiliate marketing', 'educational product'],
     relatedIds: ['aff-12', 'aff-07', 'aff-08'],
+    actionExternalUrl: SITE_CONFIG.selarStoreUrl,
   },
   {
     id: 'aff-12',

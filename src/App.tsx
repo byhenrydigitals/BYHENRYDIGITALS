@@ -158,7 +158,7 @@ function AppShell({ initialRoute }: AppProps) {
       case '/about':
         return <AboutPage onNavigate={navigate} />;
       case '/products':
-        return <ProductsPage />;
+        return <ProductsPage onNavigate={navigate} />;
       case '/affiliate-programme':
         return <AffiliatePage onNavigate={navigate} />;
       case '/services':

@@ -184,20 +184,23 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'aff-01': {
     question: 'Menene Shirin Haɗin Gwiwa na BHD?',
     answer: [
-      'Shiri ne na haɗin gwiwa kai tsaye mataki ɗaya na BYHENRYDIGITALS inda abokan hulɗa ke samun kashi 35% na kwamishon kan sayan Selar da ya cancanta.',
+      'Shirin Haɗin Gwiwa na BHD tsari ne na nema da zaɓe (mataki ɗaya, babu MLM) na BYHENRYDIGITALS. Masu sha’awa suna aika takardar nema don BHD ta duba, kuma waɗanda aka zaɓa aka amince da su suna samun kwamishon 35% akan tallace-tallacen Selar da suka cancanta.',
+      'Ya bambanta gaba ɗaya da kayan ilimi na ₦8,000 Affiliate Starter Kit.',
     ],
     actionLabel: 'Duba Shirin Haɗin Gwiwa',
   },
   'aff-02': {
-    question: 'Wane ne zai iya zama abokin haɗin gwiwa na BHD?',
+    question: 'Wane ne zai iya neman zama abokin haɗin gwiwa na BHD?',
     answer: [
-      'Malaman dijital, marubuta, masu ƙirƙirar abun ciki, da duk mai son raba kayayyaki masu amfani bisa gaskiya.',
+      'Malaman dijital, marubuta, masu ƙirƙirar abun ciki, masu koyo, da duk mai son raba kayayyaki masu amfani bisa gaskiya na iya aika takardar nema don a duba.',
+      'Aika takardar nema ba ya ba da garantin zaɓe—BYHENRYDIGITALS ke tantancewa, kuma waɗanda aka amince da su a hukuma kaɗai ne ke zama abokan haɗin gwiwar BHD.',
     ],
+    actionLabel: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
   },
   'aff-03': {
     question: 'Yaya Shirin Haɗin Gwiwa na BHD yake aiki mataki-mataki?',
     answer: [
-      '1. Tuntuɓi BHD ta shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942).\n2. Bayan amincewa, binciki kayayyakin Selar (ko zaɓi Starter Kit na ₦8,000 idan kana so).\n3. Raba hanyar haɗin Selar ka kuma sami 35% akan tallace-tallacen da suka cancanta.',
+      '1. Aika takardar nema ta BYHENRYDIGITALS Enquiry Form a shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942). Nema kyauta ne (₦0) ba tare da sayan komai ba.\n2. BYHENRYDIGITALS tana duba kowace takarda da kyau kuma tana zaɓar waɗanda suka dace. Nema ba ya ba da garantin karɓa, kuma ba ka buƙatar siyan ₦8,000 Starter Kit.\n3. Da zarar an zaɓe ka aka amince da kai a hukuma, raba hanyar haɗin Selar ka kuma sami 35% akan tallace-tallacen da suka cancanta.',
     ],
   },
   'aff-04': {
@@ -225,9 +228,9 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-08': {
-    question: 'Shin dole ne mutum ya sayi samfuri kafin ya shiga shirin?',
+    question: 'Shin dole ne mutum ya sayi samfuri kafin ya nemi shiga shirin?',
     answer: [
-      'A’a. Babu sayan tilas ko kaɗan.',
+      'A’a. Babu sayan tilas ko kaɗan don neman Shirin Haɗin Gwiwa na BHD—ba ka buƙatar siyan ₦8,000 Affiliate Starter Kit don nema.',
     ],
   },
   'aff-09': {
@@ -245,13 +248,15 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
   'aff-11': {
     question: 'Menene Affiliate Starter Kit na ₦8,000?',
     answer: [
-      'Jagora ce ta zaɓi da BHD ke bayarwa ga abokan haɗin gwiwa da ke son horo na tsari.',
+      '₦8,000 Affiliate Starter Kit kayan ilimi ne na dijital mai zaman kansa da BYHENRYDIGITALS ke sayarwa ga masu farawa da ke son koyon yadda affiliate marketing ke aiki don tafiyarsu.',
+      'Muhimmin Bayani: Siyan Starter Kit ba ya sanya ka zama abokin haɗin gwiwar BHD na hukuma kai tsaye, ba ya ba da garantin shiga Shirin Haɗin Gwiwa na BHD, kuma ba ya zama dole don nema.',
     ],
+    actionLabel: 'Sami ₦8,000 Affiliate Starter Kit',
   },
   'aff-12': {
-    question: 'Shin Starter Kit tilas ne?',
+    question: 'Shin Starter Kit tilas ne don nema, zaɓe, ko samun kwamishon?',
     answer: [
-      'A’a. Sayan Affiliate Starter Kit na ₦8,000 na zaɓi ne kaɗai, ba tilas ba ne.',
+      'A’a. Siyan ₦8,000 Affiliate Starter Kit daban yake kuma na zaɓi ne—ba a buƙatarsa don nema, samun zaɓe, ko kwamishon 35%. Siyansa ba ya ba da garantin shiga Shirin Haɗin Gwiwa na BHD.',
     ],
   },
   'aff-13': {
@@ -273,17 +278,17 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-16': {
-    question: 'Yaya BHD ke duba buƙatun shiga da tallace-tallace?',
+    question: 'Yaya BHD ke duba takardun nema da tallace-tallace?',
     answer: [
-      'BHD yana duba buƙatun shiga da hannu (babu amincewa kai tsaye), yayin da Selar ke tabbatar da tallace-tallace.',
+      'BYHENRYDIGITALS tana duba kowace takardar nema da hannu—ba a ba da garantin zaɓe, waɗanda aka amince da su a hukuma kaɗai ne ke zama abokan haɗin gwiwar BHD. Selar tana tabbatar da tallace-tallacen da suka cancanta.',
     ],
   },
   'aff-17': {
-    question: 'Ta yaya abokan haɗin gwiwa za su tuntuɓi BHD don tallafi?',
+    question: 'Ta yaya masu nema ko abokan haɗin gwiwa za su tuntuɓi BHD?',
     answer: [
-      'An cire fom ɗin Tally. Tuntuɓi BHD ta shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942).',
+      'Don aika takardar neman Shirin Haɗin Gwiwa na BHD ko tambaya, yi amfani da BYHENRYDIGITALS Enquiry Form a shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942).',
     ],
-    actionLabel: 'Tuntuɓi BHD',
+    actionLabel: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
   },
 
   // D. Ayyukan Dijital da Gina Shafukan Yanar Gizo
@@ -642,9 +647,9 @@ const recordsHa: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'nav-08': {
-    question: 'Shin BYHENRYDIGITALS yana amfani da fom ɗin Tally a shafin?',
+    question: 'Yaya neman bayani da neman shirin haɗin gwiwa ke aiki a shafin BHD?',
     answer: [
-      'A’a. An cire dukan hanyoyin haɗi da fom ɗin Tally gaba ɗaya.',
+      'Shafin Tuntuɓe Mu yana da BYHENRYDIGITALS Enquiry Form na hukuma tare da imel (byhenrydigitals@gmail.com) da WhatsApp (+234 708 208 8942) don tambayoyin ayyuka, kayayyaki, da neman Shirin Haɗin Gwiwa na BHD.',
     ],
   },
 
@@ -747,7 +752,7 @@ export const faqHa: FaqBundle = {
     },
     'affiliate-programme': {
       title: 'C. Shirin Haɗin Gwiwa na BHD',
-      description: 'Kwamishon 35%, ₦0 rajista, babu MLM, Starter Kit na zaɓi.',
+      description: 'Nema kyauta, tantancewar zaɓe ta BHD, kwamishon 35%, babu MLM, da bayanin Starter Kit.',
     },
     'web-services': {
       title: 'D. Ayyukan Dijital da Gina Shafukan Yanar Gizo',

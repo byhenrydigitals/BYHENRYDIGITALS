@@ -197,24 +197,25 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'aff-01': {
     question: 'Qu’est-ce que le Programme d’Affiliation BHD ?',
     answer: [
-      'Le Programme d’Affiliation BHD est le programme de recommandation direct à un seul niveau de BYHENRYDIGITALS. Les partenaires approuvés partagent les produits numériques éligibles sur Selar et perçoivent 35 % de commission sur les ventes vérifiées.',
+      'Le Programme d’Affiliation BHD est le programme distinct de candidature et de sélection de BYHENRYDIGITALS (direct à un niveau, sans MLM). Les candidats soumettent leur dossier pour examen par BHD, et les affiliés officiellement sélectionnés et approuvés perçoivent 35 % de commission sur les ventes Selar éligibles.',
+      'Il est entièrement distinct du produit éducatif Affiliate Starter Kit à ₦8,000.',
     ],
     actionLabel: 'Voir le Programme d’Affiliation',
   },
   'aff-02': {
-    question: 'Qui peut devenir affilié BYHENRYDIGITALS ?',
+    question: 'Qui peut postuler pour devenir affilié BYHENRYDIGITALS ?',
     answer: [
-      'Les formateurs numériques, rédacteurs, créateurs de contenu et personnes souhaitant recommander sérieusement des ressources utiles sans gérer de stock peuvent demander à rejoindre le programme.',
-      'Les débutants prêts à apprendre une promotion honnête (sans spam) sont les bienvenus, sous réserve d’examen par BHD.',
+      'Les formateurs numériques, rédacteurs, créateurs de contenu, apprenants et personnes souhaitant recommander sérieusement des ressources utiles sans gérer de stock peuvent soumettre une candidature.',
+      'Déposer une candidature ne garantit pas la sélection : chaque demande est évaluée par BYHENRYDIGITALS, et seules les personnes officiellement approuvées deviennent affiliés BHD.',
     ],
-    actionLabel: 'Voir les Critères',
+    actionLabel: 'Postuler pour Devenir Affilié BHD',
   },
   'aff-03': {
     question: 'Comment fonctionne le Programme d’Affiliation BHD étape par étape ?',
     answer: [
-      'Étape 1 : Contactez directement BYHENRYDIGITALS via la page Contact, par e-mail (byhenrydigitals@gmail.com) ou sur WhatsApp (+234 708 208 8942) pour demander l’intégration.',
-      'Étape 2 : Après validation, découvrez les produits Selar éligibles (avec le Starter Kit optionnel à ₦8,000 si vous le souhaitez).',
-      'Étape 3 : Partagez votre lien d’affiliation Selar et gagnez 35 % de commission sur les ventes réussies éligibles.',
+      'Étape 1 : Soumettez votre candidature via le formulaire BYHENRYDIGITALS Enquiry Form sur notre page Contact, par e-mail (byhenrydigitals@gmail.com) ou sur WhatsApp (+234 708 208 8942). La demande est gratuite (₦0) et sans achat requis.',
+      'Étape 2 : BYHENRYDIGITALS examine chaque dossier et sélectionne les candidats retenus. La candidature ne garantit pas l’acceptation, et l’achat du Starter Kit à ₦8,000 n’est pas nécessaire.',
+      'Étape 3 : Une fois officiellement sélectionné et approuvé, partagez votre lien d’affiliation Selar et gagnez 35 % de commission sur les ventes réussies éligibles.',
     ],
     actionLabel: 'Voir les Étapes',
   },
@@ -245,9 +246,9 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-08': {
-    question: 'Un affilié doit-il acheter un produit avant de rejoindre le programme ?',
+    question: 'Un candidat doit-il acheter un produit avant de postuler au programme ?',
     answer: [
-      'Non. Aucun achat obligatoire n’est exigé pour postuler ou participer au Programme d’Affiliation BHD.',
+      'Non. Aucun achat obligatoire n’est exigé pour postuler ou participer au Programme d’Affiliation BHD—vous n’avez pas besoin d’acheter l’Affiliate Starter Kit à ₦8,000 pour candidater.',
     ],
   },
   'aff-09': {
@@ -265,13 +266,15 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
   'aff-11': {
     question: 'Qu’est-ce que l’Affiliate Starter Kit à ₦8,000 ?',
     answer: [
-      'L’Affiliate Starter Kit à ₦8,000 est une ressource optionnelle d’accompagnement destinée aux affiliés qui souhaitent un guide structuré pour démarrer.',
+      'L’Affiliate Starter Kit à ₦8,000 est un produit éducatif numérique payant indépendant proposé par BYHENRYDIGITALS aux débutants souhaitant comprendre le marketing d’affiliation et développer des compétences pratiques pour leur propre parcours.',
+      'Important : L’achat du Starter Kit ne fait PAS automatiquement de vous un affilié officiel BHD, ne garantit PAS la sélection dans le Programme d’Affiliation BHD et n’est PAS requis pour postuler.',
     ],
+    actionLabel: 'Obtenir l’Affiliate Starter Kit (₦8,000)',
   },
   'aff-12': {
-    question: 'L’achat du Starter Kit est-il obligatoire pour participer ou percevoir des commissions ?',
+    question: 'L’achat du Starter Kit est-il obligatoire pour postuler, être sélectionné ou gagner des commissions ?',
     answer: [
-      'Non. L’achat de l’Affiliate Starter Kit à ₦8,000 est strictement facultatif et n’est jamais exigé pour postuler, être accepté ou toucher 35 % de commission.',
+      'Non. L’achat de l’Affiliate Starter Kit à ₦8,000 est distinct et facultatif—il n’est jamais requis pour postuler, être approuvé ou percevoir 35 % de commission. Son achat ne garantit pas non plus la sélection dans le Programme d’Affiliation BHD.',
     ],
   },
   'aff-13': {
@@ -294,17 +297,17 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-16': {
-    question: 'Comment les demandes d’intégration et les ventes affiliées sont-elles examinées ?',
+    question: 'Comment les candidatures et les ventes affiliées sont-elles examinées ?',
     answer: [
-      'Les demandes de partenariat sont examinées manuellement par BYHENRYDIGITALS (sans validation automatique), et les ventes éligibles sont suivies via l’enregistrement commercial Selar.',
+      'Chaque candidature est examinée directement par BYHENRYDIGITALS—la sélection n’est ni automatique ni garantie, et seuls les candidats approuvés deviennent affiliés officiels BHD. Les ventes éligibles des affiliés approuvés sont vérifiées via Selar.',
     ],
   },
   'aff-17': {
-    question: 'Comment contacter BYHENRYDIGITALS pour l’intégration ou l’assistance affilié ?',
+    question: 'Comment contacter BYHENRYDIGITALS pour postuler ou obtenir de l’assistance ?',
     answer: [
-      'Les formulaires Tally ont été entièrement retirés du site. Contactez BHD directement via la page Contact, par e-mail à byhenrydigitals@gmail.com ou sur WhatsApp au +234 708 208 8942.',
+      'Pour soumettre une candidature au Programme d’Affiliation BHD ou poser une question, utilisez le formulaire BYHENRYDIGITALS Enquiry Form sur la page Contact, écrivez à byhenrydigitals@gmail.com ou sur WhatsApp au +234 708 208 8942.',
     ],
-    actionLabel: 'Contacter BHD pour l’Affiliation',
+    actionLabel: 'Postuler pour Devenir Affilié BHD',
   },
 
   // D. Services Numériques et Développement Web
@@ -673,9 +676,9 @@ const recordsFr: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'nav-08': {
-    question: 'BYHENRYDIGITALS utilise-t-il encore des formulaires Tally sur son site ?',
+    question: 'Comment fonctionnent les demandes de renseignements et candidatures d’affiliation sur le site ?',
     answer: [
-      'Non. Tous les liens et formulaires Tally ont été définitivement supprimés. Toutes les demandes passent désormais par la page Contact, byhenrydigitals@gmail.com et WhatsApp (+234 708 208 8942).',
+      'La page Contact intègre officiellement le formulaire BYHENRYDIGITALS Enquiry Form aux côtés de l’e-mail (byhenrydigitals@gmail.com) et de WhatsApp (+234 708 208 8942) pour vos projets, questions produits et candidatures au Programme d’Affiliation BHD.',
     ],
     actionLabel: 'Contacter BHD',
   },
@@ -781,7 +784,7 @@ export const faqFr: FaqBundle = {
     },
     'affiliate-programme': {
       title: 'C. Programme d’Affiliation BHD',
-      description: 'Commission de 35 %, ₦0 d’inscription, sans MLM, Starter Kit optionnel.',
+      description: 'Candidature gratuite, sélection par BHD (non garantie), 35 %, sans MLM et clarté sur le Starter Kit.',
     },
     'web-services': {
       title: 'D. Services Numériques & Développement Web',

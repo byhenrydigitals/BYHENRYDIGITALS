@@ -72,7 +72,7 @@ export const ROUTE_SEO: Record<PageRoute, RouteSeoMeta> = {
   '/affiliate-programme': {
     title: 'BHD Affiliate Programme | Earn 35% Commission on Selar',
     description:
-      'Join the transparent BYHENRYDIGITALS affiliate programme: free registration, no mandatory purchase, no MLM structure, and 35% commission on eligible sales.',
+      'Apply to the BYHENRYDIGITALS Affiliate Programme: free application, BHD selection review, no mandatory purchase or MLM, and 35% commission for approved affiliates.',
     changefreq: 'monthly',
     priority: '0.9',
     schemaType: 'WebPage',

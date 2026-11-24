@@ -94,7 +94,7 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     question: 'What is Clicks-to-Cash and who is it designed for?',
     answer: [
       'Clicks-to-Cash is a featured BHD digital guide on Selar offering a beginner-friendly introduction to how online attention turns into ethical digital sales—explaining the core relationship between creators, affiliate partners, and buyers without hype.',
-      'It is intended for beginners, aspiring digital marketers, and new BHD affiliates seeking structured fundamentals before promoting digital products. Live pricing and verified checkout are displayed directly on Selar.',
+      'It is intended for beginners, aspiring digital marketers, and learners seeking structured fundamentals on ethical digital promotion. Live pricing and verified checkout are displayed directly on Selar.',
     ],
     actionLabel: 'Explore Clicks-to-Cash',
   },
@@ -199,24 +199,25 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'aff-01': {
     question: 'What is the BHD Affiliate Programme?',
     answer: [
-      'The BHD Affiliate Programme is BYHENRYDIGITALS’ direct single-tier referral programme. Approved partners share eligible BHD digital products on Selar and earn a 35% commission on verified successful purchases.',
+      'The BHD Affiliate Programme is BYHENRYDIGITALS’ separate application and selection programme (single-tier, no MLM). Interested candidates submit an application for BHD review, and officially selected and approved affiliates earn a 35% commission on eligible successful Selar sales.',
+      'It is completely separate from the ₦8,000 Affiliate Starter Kit educational product.',
     ],
     actionLabel: 'View Affiliate Programme',
   },
   'aff-02': {
-    question: 'Who can become a BYHENRYDIGITALS affiliate?',
+    question: 'Who can apply to become a BYHENRYDIGITALS affiliate?',
     answer: [
-      'Digital educators, writers, content creators, learners, and individuals interested in making honest, helpful product recommendations without holding inventory can request to become a BHD affiliate.',
-      'Beginners willing to learn ethical marketing rather than spamming links are welcome; onboarding is subject to direct review by BYHENRYDIGITALS.',
+      'Digital educators, writers, content creators, learners, and individuals interested in making honest, helpful product recommendations without holding inventory can submit an application for consideration.',
+      'Submitting an application does not guarantee selection—every application is reviewed by BYHENRYDIGITALS, and only officially approved individuals become BHD affiliates.',
     ],
-    actionLabel: 'See Eligibility Details',
+    actionLabel: 'Apply to Become a BHD Affiliate',
   },
   'aff-03': {
     question: 'How does the BHD Affiliate Programme work step by step?',
     answer: [
-      'Step 1: Contact BYHENRYDIGITALS directly via our Contact page, email (byhenrydigitals@gmail.com), or WhatsApp (+234 708 208 8942) to request affiliate onboarding.',
-      'Step 2: Once reviewed and approved, study the eligible Selar products you plan to share (optionally using the ₦8,000 Affiliate Starter Kit if desired).',
-      'Step 3: Recommend eligible products through your Selar affiliate link and earn a 35% commission on verified purchases.',
+      'Step 1: Submit an application via the BYHENRYDIGITALS Enquiry Form on our Contact page, by email (byhenrydigitals@gmail.com), or on WhatsApp (+234 708 208 8942). Applying is free (₦0) and requires no purchase.',
+      'Step 2: BYHENRYDIGITALS reviews every application and selects suitable candidates. Submitting an application does not guarantee acceptance, and purchasing the ₦8,000 Starter Kit is not required.',
+      'Step 3: Once officially selected and approved under programme terms, share eligible products through your Selar affiliate link and earn a 35% commission on verified purchases.',
     ],
     actionLabel: 'See Programme Steps',
   },
@@ -249,9 +250,9 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-08': {
-    question: 'Must affiliates buy a product before joining the BHD Affiliate Programme?',
+    question: 'Must applicants buy a product before applying to the BHD Affiliate Programme?',
     answer: [
-      'No. There is no mandatory product purchase required to apply for or participate in the BHD Affiliate Programme.',
+      'No. There is no mandatory product purchase required to apply for consideration or participate in the BHD Affiliate Programme—you do not need to buy the ₦8,000 Affiliate Starter Kit to apply.',
     ],
   },
   'aff-09': {
@@ -269,13 +270,15 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
   'aff-11': {
     question: 'What is the ₦8,000 Affiliate Starter Kit?',
     answer: [
-      'The ₦8,000 Affiliate Starter Kit is an optional guided onboarding resource offered by BYHENRYDIGITALS for affiliates who want structured guidance on getting started.',
+      'The ₦8,000 Affiliate Starter Kit is a standalone paid educational digital product offered by BYHENRYDIGITALS for beginners who want to understand how affiliate marketing works and build practical skills for their own journey.',
+      'Important: Purchasing the Starter Kit does NOT automatically make you an official BHD affiliate, does NOT guarantee acceptance into the BHD Affiliate Programme, and is NOT required to apply.',
     ],
+    actionLabel: 'Get the ₦8,000 Affiliate Starter Kit',
   },
   'aff-12': {
-    question: 'Is the Affiliate Starter Kit compulsory to join or earn commissions?',
+    question: 'Is the Affiliate Starter Kit compulsory to apply, get selected, or earn commissions?',
     answer: [
-      'No. Purchasing the ₦8,000 Affiliate Starter Kit is strictly optional—it is never compulsory to apply, become approved, or earn 35% commission on eligible Selar sales.',
+      'No. Purchasing the ₦8,000 Affiliate Starter Kit is completely separate and optional—it is never required to apply, become selected, or earn 35% commission if approved. Buying it also does not guarantee selection into the BHD Affiliate Programme.',
     ],
   },
   'aff-13': {
@@ -299,17 +302,17 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'aff-16': {
-    question: 'How are affiliate sales and onboarding requests reviewed by BHD?',
+    question: 'How are affiliate applications and sales reviewed by BHD?',
     answer: [
-      'Onboarding enquiries are reviewed directly by BYHENRYDIGITALS—there is no automated instant approval—and eligible product sales are tracked and verified through Selar’s commerce records.',
+      'Every affiliate application is reviewed directly by BYHENRYDIGITALS—selection is not automatic or guaranteed, and only approved applicants become official BHD affiliates. Eligible sales by approved affiliates are tracked and verified through Selar’s commerce records.',
     ],
   },
   'aff-17': {
-    question: 'How can affiliates contact BYHENRYDIGITALS for onboarding or support?',
+    question: 'How can applicants or affiliates contact BYHENRYDIGITALS?',
     answer: [
-      'Tally forms have been removed from the BHD website. To request affiliate onboarding or ask an affiliate support question, use our Contact page, email byhenrydigitals@gmail.com, or chat on WhatsApp at +234 708 208 8942.',
+      'To submit an application for the BHD Affiliate Programme or ask an affiliate question, use the BYHENRYDIGITALS Enquiry Form on our Contact page, email byhenrydigitals@gmail.com, or chat on WhatsApp at +234 708 208 8942.',
     ],
-    actionLabel: 'Contact BHD for Onboarding',
+    actionLabel: 'Apply to Become a BHD Affiliate',
   },
 
   // D. Digital Services and Website Development
@@ -686,9 +689,9 @@ const recordsEn: Record<string, FaqLocalizedRecord> = {
     ],
   },
   'nav-08': {
-    question: 'Does BYHENRYDIGITALS use Tally forms anywhere on the website?',
+    question: 'How do enquiries and affiliate applications work on the BHD website?',
     answer: [
-      'No. All Tally forms and links have been completely removed from the BYHENRYDIGITALS website. Direct enquiries, project discussions, and affiliate onboarding requests now go cleanly through the BHD Contact page, official email (byhenrydigitals@gmail.com), and official WhatsApp (+234 708 208 8942).',
+      'The Contact page features the official embedded BYHENRYDIGITALS Enquiry Form alongside direct email (byhenrydigitals@gmail.com) and WhatsApp (+234 708 208 8942) for project enquiries, product questions, and BHD Affiliate Programme applications.',
     ],
     actionLabel: 'Go to Official Contact Channels',
   },
@@ -794,7 +797,7 @@ export const faqEn: FaqBundle = {
     },
     'affiliate-programme': {
       title: 'C. BHD Affiliate Programme',
-      description: '35% commission, ₦0 fee, no MLM, and optional ₦8,000 Starter Kit.',
+      description: 'Free application, BHD selection review (not guaranteed), 35% commission, no MLM, and Starter Kit clarity.',
     },
     'web-services': {
       title: 'D. Digital Services & Website Development',

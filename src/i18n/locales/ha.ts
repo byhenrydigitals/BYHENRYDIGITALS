@@ -46,7 +46,7 @@ export const ha: TranslationBundle = {
       },
       {
         title: 'Tsarin Haɗin Gwiwa na Gaskiya',
-        detail: 'Kashi 35% na kwamishon akan tallace-tallacen Selar da suka cancanta, ba tare da kuɗin rajista ko MLM ba.',
+        detail: 'Aiwatarwa kyauta, tantancewar zaɓe ta BHD, babu MLM, da kwamishon 35% ga abokan haɗin gwiwa da aka amince.',
       },
       {
         title: 'Hangen Nesa na Duniya',
@@ -66,18 +66,41 @@ export const ha: TranslationBundle = {
       'Daga shafukan sauka masu jan hankali zuwa hanyoyin aiki masu amfani da AI, BHD yana gina kadarorin dijital masu dogaro.',
     exploreServices: 'Binciki Ayyuka',
     enquireShort: 'Yi Tambaya',
-    affiliateSectionKicker: 'Shirin Haɗin Gwiwa na BHD',
-    affiliateSectionTitle: 'Sami Kashi 35% Ta Hanyar Raba Ingantattun Kayayyakin Dijital',
+    affiliateSectionKicker: 'Koya Ko Ka Nemi Shiga · Tayi Biyu Daban-Daban',
+    affiliateSectionTitle: 'Affiliate Starter Kit vs. Shirin Haɗin Gwiwa na BHD',
     affiliateSectionDesc:
-      'Aiwatarwa kyauta ce ba tare da sayan tilas ko tsarin ƙasa-da-ƙasa ba. Aiwatar kai tsaye ko ka zaɓi Affiliate Starter Kit na ₦8,000 a matsayin zaɓi.',
+      'BYHENRYDIGITALS tana da kayan ilimi na ₦8,000 Starter Kit daban don koyon tallan haɗin gwiwa da kuma shirin haɗin gwiwa na daban kyauta wanda ƙungiyarmu ke tantancewa.',
     learnAffiliate: 'Cikakken Bayani',
-    applyAffiliate: 'Nemi Shiga Haɗin Gwiwa',
+    applyAffiliate: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
+    affiliateClarification:
+      'Kana son koyon affiliate marketing? Za ka iya siyan ₦8,000 Affiliate Starter Kit namu. Kana son zama abokin haɗin gwiwar BHD na hukuma? Aika takardar nema don a duba ta. Waɗannan abubuwa biyu daban ne. Siyan Starter Kit ba ya ba da garantin zaɓe cikin Shirin Haɗin Gwiwa na BHD, kuma ba ka buƙatar siyan sa kafin ka nema.',
+    starterKitOffer: {
+      kicker: 'Kayan Ilimi na Dijital · ₦8,000',
+      title: 'Koyi Affiliate Marketing',
+      priceLabel: '₦8,000 Affiliate Starter Kit',
+      description:
+        'Kayan ilimi na biyan kuɗi don masu farawa da ke son fahimtar yadda affiliate marketing ke aiki da haɓaka ƙwarewa don tafiyarsu.',
+      clarification:
+        'Kaya ne mai zaman kansa: siyan Starter Kit ba ya mayar da kai abokin haɗin gwiwar BHD na hukuma ko ba da garantin karɓa.',
+      cta: 'Sami ₦8,000 Affiliate Starter Kit',
+    },
+    programmeOffer: {
+      kicker: 'Nema da Tantancewa · Kyauta (₦0)',
+      title: 'Zama Abokin Haɗin Gwiwar BHD',
+      priceLabel: 'Shirin Haɗin Gwiwa na BHD na Hukuma',
+      description:
+        'Aika takardar nema don BYHENRYDIGITALS ta duba. Abokan haɗin gwiwa da aka zaɓa aka amince da su suna samun kwamishon 35% akan tallace-tallacen Selar da suka cancanta.',
+      clarification:
+        'Ba a buƙatar siyan komai. Aika takardar nema ba ya ba da garantin zaɓe.',
+      cta: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
+    },
     affiliateCards: {
-      commissionLabel: 'Kwamishon akan tallace-tallacen Selar da suka cancanta',
-      signupLabel: 'Babu kuɗin rajista ko sayan tilas',
+      commissionLabel: 'Kwamishon akan tallace-tallacen Selar da suka cancanta (waɗanda aka amince)',
+      signupLabel: 'Aiwatarwa kyauta ba tare da sayan tilas ba',
       noMlmTitle: 'Babu MLM',
-      noMlmLabel: 'Shirin haɗin gwiwa kai tsaye mataki ɗaya',
-      starterKitLabel: 'Affiliate Starter Kit (Na Zaɓi)',
+      noMlmLabel: 'Shirin haɗin gwiwa kai tsaye mataki ɗaya babu downline',
+      selectionTitle: 'Tantancewa',
+      selectionLabel: 'BYHENRYDIGITALS ce ke zaɓe bayan duba takardar nema',
     },
     resourcesSectionKicker: 'Albarkatu da Bayanai',
     resourcesSectionTitle: 'Jagorori Kan Ƙwarewar Dijital, Yanar Gizo da AI',
@@ -156,6 +179,17 @@ export const ha: TranslationBundle = {
     storeIntegrityNotice:
       'Shagon Hukuma & Farashin Yanzu: Duk albarkatun ilimin dijital na BYHENRYDIGITALS suna kan Selar (selar.com/m/BYHENRYDIGITALS), inda ake tabbatar da farashin yanzu kafin siya.',
     brandPlatformTag: 'BYHENRYDIGITALS · Selar',
+    starterKitNotice: {
+      kicker: 'Kayan Ilimi Mai Zaman Kansa · ₦8,000',
+      title: 'Affiliate Starter Kit (Koyi Affiliate Marketing)',
+      priceDisplay: '₦8,000 akan Selar',
+      description:
+        'Kayan ilimi na biyan kuɗi da aka tsara don taimaka wa masu farawa su fahimci yadda affiliate marketing ke aiki da haɓaka ƙwarewa don tafiyarsu—ba tare da wajabcin neman shirin haɗin gwiwa na BHD ba.',
+      clarification:
+        'Muhimmin Bayani: Siyan ₦8,000 Affiliate Starter Kit ba ya sanya ka zama abokin haɗin gwiwar BHD na hukuma kai tsaye, ba ya ba da garantin amincewa, kuma ba ya zama dole don neman Shirin Haɗin Gwiwa na BHD.',
+      cta: 'Sami ₦8,000 Affiliate Starter Kit',
+      affiliateLinkLabel: 'Ko duba Shirin Haɗin Gwiwa na BHD na daban',
+    },
     items: {
       'clicks-to-cash': {
         resourceTypeLabel: 'Jagorar Dijital · Tushen Haɗin Gwiwa & Sayarwa',
@@ -164,7 +198,7 @@ export const ha: TranslationBundle = {
         problemAddressed:
           'Yana taimaka wa masu farawa da ke shan wahala da shawarwari masu rikitarwa ko tura spam su fahimci yadda shawarar gaskiya ke samar da daraja.',
         intendedAudience:
-          'Masu farawa, sabbin masu tallan dijital, da sabbin abokan haɗin gwiwar BHD da ke son tsarin tushe mai kyau.',
+          'Masu farawa, sabbin masu tallan dijital, da masu koyo da ke son tsarin tushe mai kyau kan tallan dijital na gaskiya.',
         learningOutcomes: [
           'Yadda hankalin dijital ke motsawa zuwa amincin mai siya da tsarin kaya',
           'Bambanci tsakanin ba da shawarar kaya na gaskiya da tura hanyoyi barkatai',
@@ -208,59 +242,91 @@ export const ha: TranslationBundle = {
     },
   },
   affiliate: {
-    kicker: 'Yi Haɗin Gwiwa da BHD',
+    kicker: 'Nema da Tantancewa',
     title: 'Shirin Haɗin Gwiwa na BHD',
     intro:
-      'Ba da shawarar kayayyakin dijital na BYHENRYDIGITALS akan Selar kuma ka sami kashi 35% na kwamishon akan tallace-tallacen da suka cancanta—ba tare da kuɗin rajista ko MLM ba.',
+      'BYHENRYDIGITALS tana karɓar takardun nema daga mutanen da ke sha’awar zama abokan haɗin gwiwar BHD na hukuma. Ƙungiyarmu tana tantance duk takardu, kuma waɗanda aka zaɓa suna samun kwamishon 35% akan tallace-tallacen Selar da suka cancanta.',
+    clarificationBanner:
+      'Kana son koyon affiliate marketing? Za ka iya siyan ₦8,000 Affiliate Starter Kit namu. Kana son zama abokin haɗin gwiwar BHD na hukuma? Aika takardar nema don a duba ta. Waɗannan abubuwa biyu daban ne. Siyan Starter Kit ba ya ba da garantin zaɓe cikin Shirin Haɗin Gwiwa na BHD, kuma ba ka buƙatar siyan sa kafin ka nema.',
+    sectionA: {
+      kicker: 'Kayan Ilimi na Dijital · ₦8,000',
+      title: 'Koyi Affiliate Marketing',
+      productName: '₦8,000 Affiliate Starter Kit',
+      description:
+        'An tsara shi don masu farawa da ke son fahimtar yadda affiliate marketing ke aiki da haɓaka ilimin da za su yi amfani da shi a tafiyarsu ta tallan haɗin gwiwa.',
+      bullets: [
+        'Kayan ilimi na dijital na biyan kuɗi akan Selar (₦8,000).',
+        'Tayi mai zaman kansa — kowa na iya siyan sa don koyo kawai ba tare da neman zama abokin haɗin gwiwar BHD ba.',
+        'Siyan Starter Kit ba ya mayar da kai abokin haɗin gwiwar BHD na hukuma kai tsaye.',
+        'Siyansa zaɓi ne kawai, kuma ba ya ba da garantin zaɓe cikin Shirin Haɗin Gwiwa na BHD.',
+      ],
+      cta: 'Sami Starter Kit',
+    },
+    sectionB: {
+      kicker: 'Shirin Haɗin Gwiwa na Hukuma · Nema Kyauta',
+      title: 'Zama Abokin Haɗin Gwiwar BHD',
+      programmeName: 'Shirin Haɗin Gwiwa na BHD',
+      description:
+        'Tsarin nema da zaɓe na musamman wanda BYHENRYDIGITALS ke tantance masu sha’awa sannan ta zaɓi waɗanda za su shiga a matsayin abokan haɗin gwiwar BHD na hukuma.',
+      bullets: [
+        'Yana buƙatar aika takardar nema ta hukuma don BYHENRYDIGITALS ta duba.',
+        'Aika takardar nema ba ya ba da garantin zaɓe — waɗanda aka amince da su a hukuma kaɗai ne ke zama abokan haɗin gwiwar BHD.',
+        'Aiwatarwa kyauta ce (₦0) ba tare da sayan tilas ko buƙatar Starter Kit ba.',
+        'Babu kuɗin ɗaukar mutane, babu downline, kuma babu tsarin MLM.',
+        'Kashi 35% na kwamishon akan tallace-tallacen Selar da suka cancanta ga abokan haɗin gwiwa da aka amince.',
+      ],
+      cta: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
+    },
     applyNowCta: 'Nemi Zama Abokin Haɗin Gwiwar BHD',
-    applyNowSubject: 'Aiwatarwa da Bayani Kan Shirin Haɗin Gwiwa na BHD',
+    applyNowSubject: 'Neman Shirin Haɗin Gwiwa na BHD',
     askQuestionCta: 'Yi Tambaya',
     askQuestionSubject: 'Tambaya Game da Shirin Haɗin Gwiwa na BHD',
     factsTitle: 'Sahihin Tsarin Shirin',
     facts: [
-      { label: 'Kuɗin Rajista', value: 'Babu (₦0 don aiwatarwa)' },
-      { label: 'Sayan Tilas', value: 'Ba a buƙata ba' },
-      { label: 'Tsari', value: 'Haɗin gwiwa kai tsaye kaɗai (Babu MLM)' },
-      { label: 'Adadin Kwamishon', value: '35% akan tallace-tallacen Selar da suka cancanta' },
-      { label: 'Starter Kit (Na Zaɓi)', value: '₦8,000 (Albarkatu na zaɓi)' },
-      { label: 'Tuntuɓar Shiga', value: 'Shafin Tuntuɓa, Imel & WhatsApp na BHD' },
+      { label: 'Kuɗin Nema', value: 'Kyauta (₦0 don aiwatarwa)' },
+      { label: 'Tsarin Zaɓe', value: 'BHD ke tantancewa da zaɓa (ba garanti)' },
+      { label: 'Sayan Tilas', value: 'Babu — ba a buƙatar Starter Kit don nema' },
+      { label: 'Tsarin Shirin', value: 'Haɗin gwiwa kai tsaye mataki ɗaya (Babu MLM)' },
+      { label: 'Adadin Kwamishon', value: '35% akan tallace-tallacen Selar da suka cancanta (waɗanda aka amince)' },
+      { label: 'Wurin Nema', value: 'Fom ɗin Nema na Hukuma, Imel & WhatsApp' },
     ],
-    howItWorksTitle: 'Yadda Shirin Ke Aiki',
+    howItWorksTitle: 'Yadda Tsarin Nema da Zaɓe Ke Aiki',
     steps: [
       {
         num: '01',
-        title: 'Tuntuɓe Mu Kai Tsaye',
-        desc: 'Tuntuɓi BYHENRYDIGITALS ta shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942) don neman shiga. Babu kuɗin rajista ko sayan tilas.',
+        title: 'Aika Takardar Nemanka',
+        desc: 'Aiwatar ta BYHENRYDIGITALS Enquiry Form a shafin Tuntuɓe Mu, imel (byhenrydigitals@gmail.com), ko WhatsApp (+234 708 208 8942). Nema kyauta ne kuma ba a buƙatar siyan kaya.',
       },
       {
         num: '02',
-        title: 'Duba Kayayyaki da Albarkatu',
-        desc: 'Da zarar an amince da kai, fahimci kayayyakin Selar da ka zaɓa ka gabatar. Za ka iya siyan Affiliate Starter Kit na ₦8,000 idan kana son horo na musamman.',
+        title: 'Tantancewa da Zaɓe ta BHD',
+        desc: 'BYHENRYDIGITALS tana duba kowace takarda da kyau kuma tana zaɓar waɗanda suka dace. Aika takarda ba ya ba da garantin karɓa; waɗanda aka amince da su a hukuma kaɗai ne ke zama abokan haɗin gwiwar BHD.',
       },
       {
         num: '03',
-        title: 'Raba Kuma Ka Sami 35%',
-        desc: 'Jagoranci masu sha’awa zuwa kayayyakin BHD ta hanyar mahadar Selar taka kuma ka sami kwamishon 35% akan sayan da aka tabbatar.',
+        title: 'Tallata Kuma Ka Sami 35% (Waɗanda Aka Amince)',
+        desc: 'Da zarar an zaɓe ka aka amince da kai ƙarƙashin sharuɗɗan shirin, raba kayayyakin BHD da suka cancanta ta mahadar Selar taka don samun kwamishon 35%.',
       },
     ],
-    whoCanApplyTitle: 'Waɗanda Za Su Iya Aiwatarwa',
+    whoCanApplyTitle: 'Waɗanda Za Su Iya Neman Tantancewa',
     whoCanApply: [
       'Malaman dijital, marubuta da masu ƙirƙirar abun ciki da ke raba kayan aiki masu amfani.',
       'Mutane masu sha’awar ba da shawarar kayayyaki cikin gaskiya ba tare da kula da kaya na zahiri ba.',
       'Masu farawa da ke shirye su koyi tallan gaskiya ba tura spam ba.',
     ],
-    commissionsTitle: 'Yadda Kwamishon da Kit na Zaɓi Ke Aiki',
+    commissionsTitle: 'Kwamishon Abokan Haɗin Gwiwa da Kayan Ilimi Masu Zaman Kansu',
     commissionsBody:
-      'Abokan haɗin gwiwa da aka amince da su suna samun 35% akan tallace-tallacen kayayyakin dijital da aka bi ta Selar. Affiliate Starter Kit na zaɓi (₦8,000) yana nan ga masu son horon jagora, amma sayan sa na zaɓi ne gaba ɗaya.',
-    termsTitle: 'Muhimman Sharudda da Gaskiya',
+      'Masu nema ba sa fara samun kwamishon nan take bayan nema. Waɗanda BYHENRYDIGITALS ta zaɓa ta amince da su a hukuma kaɗai ne ke samun kwamishon 35% akan tallace-tallacen Selar da suka cancanta. Daban kuma, ₦8,000 Affiliate Starter Kit kayan ilimi ne mai zaman kansa don koyon affiliate marketing—siyansa na zaɓi ne, ba ya ba da matsayin abokin haɗin gwiwa, kuma ba ya zama dole don nema.',
+    termsTitle: 'Muhimman Sharuɗɗa da Gaskiya',
     terms: [
-      'Amincewa ta dogara ne akan duba aikace-aikace kai tsaye daga BYHENRYDIGITALS.',
-      'Ba a bada garantin kuɗi ko adadin tallace-tallace ba—sakamako ya dogara da ƙoƙarin mutum.',
+      'Kowace takardar nema tana ƙarƙashin tantancewar BYHENRYDIGITALS; ba a ba da garantin zaɓe.',
+      'Mutanen da BHD ta zaɓa ta amince da su a hukuma kaɗai ne ke zama abokan haɗin gwiwar BHD.',
+      'Ba a ba da garantin kuɗi ko adadin tallace-tallace ba—sakamako ya dogara da ƙoƙarin mutum.',
       'Yin ƙarya, alƙawuran arziki na gaggawa, ko kwaikwayon alama ba tare da izini ba haramun ne.',
       'BHD yana gudanar da tsarin haɗin gwiwa mataki ɗaya ba tare da ladan kawo mutane ba.',
     ],
     transparencyNotice:
-      'Bayyanar da Gaskiya: BYHENRYDIGITALS ba ya bada garantin tallace-tallace ko samun kuɗi. Sakamako ya bambanta dangane da ƙoƙari, ingancin sadarwa da buƙatar kasuwa.',
+      'Bayyanar da Gaskiya: BYHENRYDIGITALS ba ya ba da garantin zaɓe, tallace-tallace, ko samun kuɗi. Sakamakon abokan haɗin gwiwa ya bambanta dangane da ƙoƙari, ingancin sadarwa da buƙatar kasuwa.',
   },
   services: {
     kicker: 'Hanyoyin Abokan Ciniki',
@@ -382,7 +448,7 @@ export const ha: TranslationBundle = {
         body: [
           'Ɗaukar hanyoyin affiliate a matsayin gajeriyar hanya ba ya gina aminci. Masu karatu suna gane da sauri idan shawarar ba ta da bayani ko tana alƙawarin riba.',
           'Ƙwararrun abokan haɗin gwiwa suna bayyana a sarari waɗanda aka tsara kayan don su, matsalar koyo da yake magancewa, da inda sahihin farashi yake akan Selar.',
-          'A cikin Shirin Haɗin Gwiwa na BYHENRYDIGITALS, abokan haɗin gwiwa suna samun 35% na kwamishon akan tallace-tallacen Selar ba tare da kuɗin rajista ko tsarin MLM ba.',
+          'A cikin Shirin Haɗin Gwiwa na BYHENRYDIGITALS, abokan haɗin gwiwa da aka zaɓa aka amince da su a hukuma kaɗai ne ke samun kwamishon 35% akan tallace-tallacen Selar da suka cancanta ba tare da kuɗin nema, sayan tilas, ko tsarin MLM ba—yayin da duk mai son koyon affiliate marketing daban zai iya siyan jagorar ilimi ta ₦8,000 Affiliate Starter Kit.',
         ],
       },
       'practical-workflows': {
