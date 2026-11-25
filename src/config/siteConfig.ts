@@ -72,14 +72,16 @@ export const SOCIAL_LINKS: SocialLinkItem[] = [
 
 export const ROUTES: { route: PageRoute; navKey: keyof NavLabels; titleSuffix: string }[] = [
   { route: '/', navKey: 'home', titleSuffix: 'Digital Solutions. Global Impact.' },
-  { route: '/about', navKey: 'about', titleSuffix: 'About BYHENRYDIGITALS' },
-  { route: '/products', navKey: 'products', titleSuffix: 'Digital Products' },
+  { route: '/products', navKey: 'products', titleSuffix: 'BHD Academy — Digital Products & Learning' },
+  { route: '/services', navKey: 'services', titleSuffix: 'BHD Services — Practical Digital Solutions' },
   { route: '/affiliate-programme', navKey: 'affiliate', titleSuffix: 'Affiliate Programme' },
-  { route: '/services', navKey: 'services', titleSuffix: 'Digital Services' },
   { route: '/resources', navKey: 'resources', titleSuffix: 'Resources & Blog' },
+  { route: '/about', navKey: 'about', titleSuffix: 'About BYHENRYDIGITALS' },
   { route: '/contact', navKey: 'contact', titleSuffix: 'Contact BHD' },
   { route: '/faq', navKey: 'faq', titleSuffix: 'Vanessa FAQ & Information Centre' },
 ];
+
+export const PRIMARY_NAV_ROUTES = ROUTES.filter((item) => item.route !== '/faq');
 
 export type ResourceTopicId =
   | 'digital-education'

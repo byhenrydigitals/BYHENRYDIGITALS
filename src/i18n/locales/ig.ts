@@ -4,9 +4,9 @@ export const ig: TranslationBundle = {
   routeTitles: {
     '/': 'Ngwọta Dijitalụ. Mmetụta Zuru Ụwa Ọnụ.',
     '/about': 'Maka BYHENRYDIGITALS',
-    '/products': 'Ngwaahịa Dijitalụ',
+    '/products': 'BHD Academy — Ngwaahịa Dijitalụ na Mmụta',
     '/affiliate-programme': 'Mmemme Njikọ Ndị Nkwado',
-    '/services': 'Ọrụ Dijitalụ',
+    '/services': 'BHD Services — Ngwọta Dijitalụ Maka Azụmaahịa',
     '/resources': 'Ihe Ọmụma na Blọọgụ',
     '/contact': 'Kpọtụrụ BHD',
     '/faq': 'Vanessa FAQ & Ebe Ozi',
@@ -14,9 +14,9 @@ export const ig: TranslationBundle = {
   nav: {
     home: 'Nnabata',
     about: 'Maka Anyị',
-    products: 'Ngwaahịa',
+    products: 'BHD Academy',
     affiliate: 'Mmemme Njikọ',
-    services: 'Ọrụ Anyị',
+    services: 'BHD Services',
     resources: 'Ihe Ọmụma',
     faq: 'Ajụjụ Vanessa',
     contact: 'Kpọtụrụ Anyị',
@@ -188,11 +188,11 @@ export const ig: TranslationBundle = {
       'Henry, nke a makwaara dị ka Coach Henry, hibere BYHENRYDIGITALS n’ebumnuche ime ka mmụta dijitalụ bara uru, ngwọta mmepe weebụ, na ụzọ nnabata uru n’ịntanetị dị mfe nghọta na inweta.',
     founderNote:
       'Coach Henry na-eduzi BHD site n’itinye uche na mmụta bara uru, sistemụ dijitalụ dị ọcha, na nkwado doro anya maka ndị na-amụ ihe na azụmaahịa n’ụwa niile.',
-    exploreProductsCta: 'Chọpụta Ngwaahịa BHD',
+    exploreProductsCta: 'Chọpụta BHD Academy',
     contactCta: 'Kpọtụrụ BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Ndepụta Ngwaahịa Selar',
+    kicker: 'BHD Academy · Ngwaahịa Dijitalụ na Mmụta',
     title: 'Ngwaahịa Dijitalụ nke BYHENRYDIGITALS',
     intro:
       'A na-ekesa ngwaahịa dijitalụ gọọmentị niile nke BYHENRYDIGITALS n’enweghị nsogbu site na ụlọ ahịa Selar anyị. Nkọwa zuru ezu na ọnụahịa e kwadoro dị na ndepụta Selar nke ọ bụla.',
@@ -359,7 +359,7 @@ export const ig: TranslationBundle = {
       'Nkwupụta Eziokwu: BYHENRYDIGITALS anaghị ekwe nkwa nhọrọ njikọ, ire ahịa, ma ọ bụ ego. Nsonaazụ ndị njikọ a kwadoro dabere na mbọ onwe onye, ogo nkwukọrịta, na mkpa ahịa.',
   },
   services: {
-    kicker: 'Ọrụ Maka Obere Azụmaahịa',
+    kicker: 'BHD Services · Maka Azụmaahịa',
     title: 'Ọrụ Dijitalụ Bara Uru E Kọwara N’ụzọ Dị Mfe',
     intro:
       'Ọ dịghị mkpa ka ị nwee nzụlite teknụzụ tupu gị na BHD arụọ ọrụ. Ọrụ ọ bụla na-elekwasị anya n’idozi nsogbu azụmaahịa dabere na mkpa gị ugbu a, ego ị nwere, na atụmatụ uto gị.',

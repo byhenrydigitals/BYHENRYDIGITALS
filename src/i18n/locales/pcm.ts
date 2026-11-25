@@ -4,22 +4,22 @@ export const pcm: TranslationBundle = {
   routeTitles: {
     '/': 'Digital Solutions Wey Dey Make Global Impact.',
     '/about': 'Sabi More About BYHENRYDIGITALS',
-    '/products': 'Digital Products for Learners',
+    '/products': 'BHD Academy — Digital Products & Learning',
     '/affiliate-programme': 'BHD Affiliate Programme',
-    '/services': 'Business Digital Services',
+    '/services': 'BHD Services — Business Digital Solutions',
     '/resources': 'Practical Guides & Articles',
     '/contact': 'Reach Out to BHD',
     '/faq': 'Vanessa FAQ & Answer Centre',
   },
   nav: {
     home: 'Home',
-    about: 'About BHD',
-    products: 'Products',
+    about: 'About',
+    products: 'BHD Academy',
     affiliate: 'Affiliate Programme',
-    services: 'Services',
-    resources: 'Guides & Blog',
+    services: 'BHD Services',
+    resources: 'Resources',
     faq: 'Vanessa FAQ',
-    contact: 'Contact Us',
+    contact: 'Contact',
     primaryCta: 'See Our Solutions',
     languageMenuLabel: 'Language',
     activeLanguagesLabel: 'Languages Wey Dey Work',
@@ -189,11 +189,11 @@ export const pcm: TranslationBundle = {
       'Henry, wey plenty people sabi as Coach Henry, start BYHENRYDIGITALS with one clear mind: make practical digital learning, website development, and structured online earning ways simple for everyday people and growing businesses to understand.',
     founderNote:
       'Coach Henry dey lead BHD with strong focus on real digital education, clean web systems, and honest support for learners and businesses anywhere for world.',
-    exploreProductsCta: 'Check BHD Products',
+    exploreProductsCta: 'Check BHD Academy',
     contactCta: 'Reach Out to BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Selar Product Shelf',
+    kicker: 'BHD Academy · Digital Products & Learning',
     title: 'Digital Products Wey BYHENRYDIGITALS Get',
     intro:
       'All official BYHENRYDIGITALS digital products dey sell safely inside our Selar store. Complete product details and live prices dey show straight on each Selar page.',
@@ -360,7 +360,7 @@ export const pcm: TranslationBundle = {
       'Income Notice: BYHENRYDIGITALS no dey guarantee affiliate selection, sales, or fixed earnings. Approved affiliate result depend on personal effort, clear talk, and buyer demand.',
   },
   services: {
-    kicker: 'Services for Small Businesses',
+    kicker: 'BHD Services · For Businesses',
     title: 'Practical Digital Services Wey Easy to Understand',
     intro:
       'You no need sabi tech grammar before you work with BHD. Every service focus on solving real everyday business problem based on wetin you need now, your budget, and realistic growth plan.',

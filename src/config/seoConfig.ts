@@ -62,7 +62,7 @@ export const ROUTE_SEO: Record<PageRoute, RouteSeoMeta> = {
     schemaType: 'AboutPage',
   },
   '/products': {
-    title: 'Digital Products | BYHENRYDIGITALS Official Selar Store',
+    title: 'BHD Academy — Digital Products | BYHENRYDIGITALS Official Selar Store',
     description:
       'Explore verified BHD digital resources on Selar, including Clicks-to-Cash, Global Monetisation, and Remote Jobs for Under 18 for practical skill building.',
     changefreq: 'weekly',
@@ -78,7 +78,7 @@ export const ROUTE_SEO: Record<PageRoute, RouteSeoMeta> = {
     schemaType: 'WebPage',
   },
   '/services': {
-    title: 'Web Design & Digital Services | BYHENRYDIGITALS (BHD)',
+    title: 'BHD Services — Web Design & Digital Solutions | BYHENRYDIGITALS',
     description:
       'Work with BYHENRYDIGITALS for responsive websites, campaign landing pages, digital presence setups, no-code workflows, and structured business support.',
     changefreq: 'monthly',

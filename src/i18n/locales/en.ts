@@ -4,9 +4,9 @@ export const en: TranslationBundle = {
   routeTitles: {
     '/': 'Digital Solutions. Global Impact.',
     '/about': 'About BYHENRYDIGITALS',
-    '/products': 'Digital Products',
+    '/products': 'BHD Academy — Digital Products & Learning',
     '/affiliate-programme': 'Affiliate Programme',
-    '/services': 'Digital Services',
+    '/services': 'BHD Services — Practical Digital Solutions',
     '/resources': 'Resources & Blog',
     '/contact': 'Contact BHD',
     '/faq': 'Vanessa FAQ & Information Centre',
@@ -14,9 +14,9 @@ export const en: TranslationBundle = {
   nav: {
     home: 'Home',
     about: 'About',
-    products: 'Products',
+    products: 'BHD Academy',
     affiliate: 'Affiliate Programme',
-    services: 'Services',
+    services: 'BHD Services',
     resources: 'Resources',
     faq: 'Vanessa FAQ',
     contact: 'Contact',
@@ -188,11 +188,11 @@ export const en: TranslationBundle = {
       'BYHENRYDIGITALS was founded by Henry, widely known as Coach Henry, with the goal of making practical digital education, web development solutions, and structured online earning pathways understandable and accessible.',
     founderNote:
       'Coach Henry leads BHD with a focus on practical education, clean digital systems, and transparent support for learners and growing businesses worldwide.',
-    exploreProductsCta: 'Explore BHD Products',
+    exploreProductsCta: 'Explore BHD Academy',
     contactCta: 'Contact BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Selar Product Catalogue',
+    kicker: 'BHD Academy · Digital Products & Learning',
     title: 'Digital Products by BYHENRYDIGITALS',
     intro:
       'All official BYHENRYDIGITALS digital products are distributed securely through our Selar storefront. Specific descriptions and verified prices live on each Selar listing.',
@@ -359,7 +359,7 @@ export const en: TranslationBundle = {
       'Income Disclosure: BYHENRYDIGITALS does not guarantee affiliate selection, sales volume, or earnings. Approved affiliate results vary based on personal effort, communication quality, and market demand.',
   },
   services: {
-    kicker: 'Small Business Services',
+    kicker: 'BHD Services · For Businesses',
     title: 'Practical Digital Services Explained Simply',
     intro:
       'You do not need a technical background to work with BHD. Each service focuses on solving an everyday business bottleneck based on your current needs, budget, and realistic growth plans.',

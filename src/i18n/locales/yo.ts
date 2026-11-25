@@ -4,9 +4,9 @@ export const yo: TranslationBundle = {
   routeTitles: {
     '/': 'Àwọn Ìpinnu Dígítà. Ipa Àgbáyé.',
     '/about': 'Nípa BYHENRYDIGITALS',
-    '/products': 'Àwọn Ọjà Dígítà',
+    '/products': 'BHD Academy — Àwọn Ọjà Dígítà àti Ìkẹ́kọ̀ọ́',
     '/affiliate-programme': 'Ètò Alábàáṣepọ̀',
-    '/services': 'Àwọn Iṣẹ́ Dígítà',
+    '/services': 'BHD Services — Àwọn Ìpinnu Dígítà Fún Iṣẹ́-Ajé',
     '/resources': 'Àwọn Ohun Èlò àti Búlọ́ọ̀gì',
     '/contact': 'Kàn Sí BHD',
     '/faq': 'Vanessa FAQ & Ile-iṣẹ Alaye',
@@ -14,9 +14,9 @@ export const yo: TranslationBundle = {
   nav: {
     home: 'Ilé',
     about: 'Nípa Wa',
-    products: 'Àwọn Ọjà',
+    products: 'BHD Academy',
     affiliate: 'Ètò Alábàáṣepọ̀',
-    services: 'Àwọn Iṣẹ́',
+    services: 'BHD Services',
     resources: 'Àwọn Ohun Èlò',
     faq: 'Ìbéèrè Vanessa',
     contact: 'Kàn Sí Wa',
@@ -188,11 +188,11 @@ export const yo: TranslationBundle = {
       'Henry, tí a tún mọ̀ sí Coach Henry, ni ó dá BYHENRYDIGITALS sílẹ̀ pẹ̀lú èrò láti mú kí ẹ̀kọ́ dígítà tó wúlò, ìpinnu wẹ́ẹ̀bù àti ọ̀nà ìṣẹ̀dá iye lórí íńtánẹ́ẹ̀tì yé ènìyàn.',
     founderNote:
       'Coach Henry ń darí BHD pẹ̀lú àfiyèsí lórí ẹ̀kọ́ tó wúlò, àwọn ètò dígítà tó mọ́, àti ìtìlẹ́yìn òótọ́ fún àwọn akẹ́kọ̀ọ́ àti ilé-iṣẹ́ káríayé.',
-    exploreProductsCta: 'Ṣàwárí Àwọn Ọjà BHD',
+    exploreProductsCta: 'Ṣàwárí BHD Academy',
     contactCta: 'Kàn Sí BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Àkójọ Ọjà Selar',
+    kicker: 'BHD Academy · Àwọn Ọjà Dígítà àti Ìkẹ́kọ̀ọ́',
     title: 'Àwọn Ọjà Dígítà Láti BYHENRYDIGITALS',
     intro:
       'Gbogbo àwọn ọjà dígítà pàtàkì ti BYHENRYDIGITALS wà ní ìpamọ́ àti ìpínkiri lórí ilé-ìtajà Selar wa. Àlàyé pàtó àti iye owó gidi wà lórí ojú-ewé Selar kọ̀ọ̀kan.',
@@ -359,7 +359,7 @@ export const yo: TranslationBundle = {
       'Ìkéde Òótọ́: BYHENRYDIGITALS kò ṣe ìlérí ìyàn alábàáṣepọ̀, títà, tàbí owó. Èsì da lórí ìsapá rẹ, ìjọra ọ̀rọ̀ àti ìbéèrè ọjà.',
   },
   services: {
-    kicker: 'Àwọn Iṣẹ́ Fún Iṣẹ́-Ajé Kéékèèké',
+    kicker: 'BHD Services · Fún Iṣẹ́-Ajé',
     title: 'Àwọn Iṣẹ́ Dígítà Tó Wúlò Ní Èdè Tó Rọrùn',
     intro:
       'O kò nílò ìmọ̀ ẹ̀rọ tó jinlẹ̀ kí o tó bá BHD ṣiṣẹ́. Iṣẹ́ kọ̀ọ̀kan dojú kọ yíyanjú ìṣòro iṣẹ́-ajé gidi ní ìbámu pẹ̀lú àìní rẹ lọ́wọ́lọ́wọ́, ìnáwó rẹ àti ìdàgbàsókè tó ṣeé ṣe.',

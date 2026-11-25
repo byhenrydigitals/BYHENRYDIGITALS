@@ -4,9 +4,9 @@ export const ha: TranslationBundle = {
   routeTitles: {
     '/': 'Hanyoyin Dijital. Tasirin Duniya.',
     '/about': 'Game da BYHENRYDIGITALS',
-    '/products': 'Kayayyakin Dijital',
+    '/products': 'BHD Academy — Kayayyakin Dijital da Koyo',
     '/affiliate-programme': 'Shirin Haɗin Gwiwa (Affiliate)',
-    '/services': 'Ayyukan Dijital',
+    '/services': 'BHD Services — Hanyoyin Dijital Ga Kasuwanci',
     '/resources': 'Albarkatu da Labarai',
     '/contact': 'Tuntuɓi BHD',
     '/faq': 'Vanessa FAQ & Cibiyar Bayanai',
@@ -14,9 +14,9 @@ export const ha: TranslationBundle = {
   nav: {
     home: 'Gida',
     about: 'Game da Mu',
-    products: 'Kayayyaki',
+    products: 'BHD Academy',
     affiliate: 'Shirin Haɗin Gwiwa',
-    services: 'Ayyuka',
+    services: 'BHD Services',
     resources: 'Albarkatu',
     faq: 'Tambayoyin Vanessa',
     contact: 'Tuntuɓe Mu',
@@ -188,11 +188,11 @@ export const ha: TranslationBundle = {
       'Henry, wanda aka fi sani da Coach Henry, ne ya kafa BYHENRYDIGITALS da burin mayar da ilimin dijital mai amfani, gina shafukan yanar gizo da hanyoyin samun daraja a kan layi masu sauƙin fahimta.',
     founderNote:
       'Coach Henry yana jagorantar BHD tare da mai da hankali kan ilimi mai amfani, tsarin dijital mai tsafta, da tallafi na gaskiya ga masu koyo da kasuwanci a duniya.',
-    exploreProductsCta: 'Binciki Kayayyakin BHD',
+    exploreProductsCta: 'Binciki BHD Academy',
     contactCta: 'Tuntuɓi BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Kundin Kayayyakin Selar',
+    kicker: 'BHD Academy · Kayayyakin Dijital da Koyo',
     title: 'Kayayyakin Dijital na BYHENRYDIGITALS',
     intro:
       'Ana rarraba duk sahihan kayayyakin dijital na BYHENRYDIGITALS cikin aminci ta shagonmu na Selar. Cikakkun bayanai da farashin gaskiya suna kan kowane shafin Selar.',
@@ -359,7 +359,7 @@ export const ha: TranslationBundle = {
       'Bayyanar da Gaskiya: BYHENRYDIGITALS ba ya ba da garantin zaɓe, tallace-tallace, ko samun kuɗi. Sakamakon abokan haɗin gwiwa ya bambanta dangane da ƙoƙari, ingancin sadarwa da buƙatar kasuwa.',
   },
   services: {
-    kicker: 'Ayyuka Don Ƙananan Masana’antu',
+    kicker: 'BHD Services · Ga Kasuwanci',
     title: 'Ayyukan Dijital Masu Amfani Cikin Harshe Mai Sauƙi',
     intro:
       'Ba ka buƙatar ilimin fasaha mai zurfi kafin ka yi aiki da BHD. Kowace hidima tana magance matsalar kasuwanci ta yau da kullum bisa bukatunka na yanzu, kasafinka, da shirin haɓaka mai yiwuwa.',

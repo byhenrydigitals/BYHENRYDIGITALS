@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ChevronDown, Globe, Menu, X } from 'lucide-react';
-import { PageRoute, ROUTES } from '../config/siteConfig';
+import { PageRoute, PRIMARY_NAV_ROUTES } from '../config/siteConfig';
 import { useLanguage } from '../i18n/LanguageContext';
 import { ActiveLanguageCode } from '../i18n/types';
 import { BrandLogo } from './BrandLogo';
@@ -71,7 +71,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
           aria-label="Primary Navigation"
           className="hidden lg:flex items-center gap-4 xl:gap-5 2xl:gap-6 text-xs xl:text-[13.5px] font-medium min-w-0"
         >
-          {ROUTES.map((item) => {
+          {PRIMARY_NAV_ROUTES.map((item) => {
             const active = currentRoute === item.route;
             return (
               <a
@@ -100,7 +100,10 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
           <div ref={langMenuRef} className="relative">
             <button
               type="button"
-              onClick={() => setLangMenuOpen((prev) => !prev)}
+              onClick={() => {
+                setMobileOpen(false);
+                setLangMenuOpen((prev) => !prev);
+              }}
               aria-expanded={langMenuOpen}
               aria-haspopup="listbox"
               aria-label={`${t.nav.languageMenuLabel}: ${currentDefinition.nativeName}`}
@@ -185,7 +188,10 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
           {/* Mobile / Tablet Portrait Menu Button */}
           <button
             type="button"
-            onClick={() => setMobileOpen((prev) => !prev)}
+            onClick={() => {
+              setLangMenuOpen(false);
+              setMobileOpen((prev) => !prev);
+            }}
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? t.nav.closeMenuAria : t.nav.openMenuAria}
             className="lg:hidden inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-white/[0.14] bg-[#131720] text-[#f5f4f0] hover:border-[#eab308]/50 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
@@ -199,7 +205,7 @@ export function SiteHeader({ currentRoute, onNavigate }: SiteHeaderProps) {
       {mobileOpen && (
         <div className="lg:hidden border-t border-white/[0.08] bg-[#0b0c0f] px-4 py-4 sm:px-6">
           <nav className="grid grid-cols-1 gap-1 min-[400px]:grid-cols-2" aria-label="Mobile Navigation">
-            {ROUTES.map((item) => {
+            {PRIMARY_NAV_ROUTES.map((item) => {
               const active = currentRoute === item.route;
               return (
                 <a

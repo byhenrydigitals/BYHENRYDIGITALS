@@ -4,9 +4,9 @@ export const fr: TranslationBundle = {
   routeTitles: {
     '/': 'Solutions Numériques. Impact Mondial.',
     '/about': 'À propos de BYHENRYDIGITALS',
-    '/products': 'Produits Numériques',
+    '/products': 'BHD Academy — Produits Numériques & Formation',
     '/affiliate-programme': 'Programme d’Affiliation',
-    '/services': 'Services Numériques',
+    '/services': 'BHD Services — Solutions Numériques Pratiques',
     '/resources': 'Ressources & Blog',
     '/contact': 'Contacter BHD',
     '/faq': 'Vanessa FAQ & Centre d’Information',
@@ -14,9 +14,9 @@ export const fr: TranslationBundle = {
   nav: {
     home: 'Accueil',
     about: 'À propos',
-    products: 'Produits',
+    products: 'BHD Academy',
     affiliate: 'Programme d’affiliation',
-    services: 'Services',
+    services: 'BHD Services',
     resources: 'Ressources',
     faq: 'Vanessa FAQ',
     contact: 'Contact',
@@ -188,11 +188,11 @@ export const fr: TranslationBundle = {
       'BYHENRYDIGITALS a été fondé par Henry, également connu sous le nom de Coach Henry, avec l’objectif de rendre l’éducation numérique, les solutions web et la création de valeur en ligne accessibles.',
     founderNote:
       'Coach Henry dirige BHD avec une priorité constante donnée à la pédagogie pratique, aux systèmes numériques fiables et à un accompagnement transparent à l’international.',
-    exploreProductsCta: 'Découvrir les Produits BHD',
+    exploreProductsCta: 'Découvrir BHD Academy',
     contactCta: 'Contacter BYHENRYDIGITALS',
   },
   products: {
-    kicker: 'Catalogue Selar',
+    kicker: 'BHD Academy · Produits Numériques & Formation',
     title: 'Produits Numériques BYHENRYDIGITALS',
     intro:
       'Tous les produits numériques officiels de BYHENRYDIGITALS sont disponibles sur notre boutique Selar. Les tarifs vérifiés figurent directement sur Selar.',
@@ -359,7 +359,7 @@ export const fr: TranslationBundle = {
       'Transparence : BYHENRYDIGITALS ne garantit ni sélection, ni ventes, ni revenus. Les résultats des affiliés approuvés dépendent de votre travail, de la pertinence pour votre audience et de la demande.',
   },
   services: {
-    kicker: 'Services aux Petites Entreprises',
+    kicker: 'BHD Services · Pour Entreprises',
     title: 'Des Services Numériques Expliqués Simplement',
     intro:
       'Aucune compétence technique n’est requise pour travailler avec BHD. Chaque service répond à un besoin concret selon votre situation actuelle, votre budget et vos objectifs réalistes.',
