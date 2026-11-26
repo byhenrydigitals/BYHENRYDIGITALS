@@ -56,6 +56,12 @@ export interface TranslationBundle {
     primaryCta: string;
     secondaryCta: string;
     pillars: { title: string; detail: string }[];
+    solvingSectionKicker: string;
+    solvingSectionTitle: string;
+    solvingSectionDesc: string;
+    aboutSectionKicker: string;
+    aboutSectionTitle: string;
+    aboutSectionDesc: string;
     pathways: {
       sectionKicker: string;
       sectionTitle: string;

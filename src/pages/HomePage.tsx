@@ -36,43 +36,71 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   {t.home.heroSubtitle}
                 </p>
 
-                <div className="max-w-xl rounded-lg border border-white/[0.12] bg-[#12161f] p-4 space-y-1">
-                  <p className="text-xs font-semibold text-[#eab308]">
-                    {t.home.needsApproachTitle}
-                  </p>
-                  <p className="text-xs sm:text-[13.5px] leading-relaxed text-[#d4d4d8]">
-                    {t.home.needsApproachBody}
-                  </p>
-                </div>
               </div>
 
-              <div className="mt-6 flex flex-wrap items-center gap-3 pt-1">
-                <a
-                  href="#business-services"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById('business-services')
-                      ?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="inline-flex min-h-[44px] w-full min-[400px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-center text-sm font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors min-[400px]:whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0c0f]"
-                >
-                  <span>{t.home.primaryCta}</span>
-                  <ArrowRight className="h-4 w-4 shrink-0" />
-                </a>
+              {/* Two-Column Card Layout for Businesses and Individuals */}
+              <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                {/* For Businesses Card */}
+                <div className="flex flex-col justify-between rounded-xl border border-[#eab308]/35 bg-[#12161f] p-5 sm:p-6 space-y-4 hover:border-[#eab308]/60 transition-colors">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-xs font-semibold text-[#eab308]">
+                      <Briefcase className="h-4 w-4 shrink-0" />
+                      <span>{t.home.pathways.business.label}</span>
+                    </div>
+                    <h3 className="font-display text-base font-semibold text-[#f5f4f0]">
+                      For Businesses
+                    </h3>
+                    <p className="text-xs sm:text-[13px] leading-relaxed text-[#b0b4be]">
+                      Explore websites, digital tools and practical business solutions.
+                    </p>
+                  </div>
+                  <div>
+                    <a
+                      href="#business-services"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .getElementById('business-services')
+                          ?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="inline-flex min-h-[40px] w-full items-center justify-center gap-2 rounded-lg bg-[#eab308] px-4 py-2 text-center text-xs font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors"
+                    >
+                      <span>{t.home.primaryCta}</span>
+                      <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                    </a>
+                  </div>
+                </div>
 
-                <a
-                  href="#academy-products"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById('academy-products')
-                      ?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="inline-flex min-h-[44px] w-full min-[400px]:w-auto max-w-full items-center justify-center gap-2 rounded-lg border border-white/[0.16] bg-[#12161f] px-5 py-2.5 text-center text-sm font-medium text-[#f5f4f0] hover:border-[#eab308]/50 hover:bg-[#171c28] transition-colors min-[400px]:whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#eab308]"
-                >
-                  <span>{t.home.secondaryCta}</span>
-                </a>
+                {/* For Individuals Card */}
+                <div className="flex flex-col justify-between rounded-xl border border-white/[0.14] bg-[#12161f] p-5 sm:p-6 space-y-4 hover:border-white/[0.25] transition-colors">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-xs font-semibold text-[#2dd4bf]">
+                      <BookOpen className="h-4 w-4 shrink-0" />
+                      <span>{t.home.pathways.individual.label}</span>
+                    </div>
+                    <h3 className="font-display text-base font-semibold text-[#f5f4f0]">
+                      For Individuals
+                    </h3>
+                    <p className="text-xs sm:text-[13px] leading-relaxed text-[#b0b4be]">
+                      Explore BHD Academy, digital skills and educational resources.
+                    </p>
+                  </div>
+                  <div>
+                    <a
+                      href="#academy-products"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .getElementById('academy-products')
+                          ?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="inline-flex min-h-[40px] w-full items-center justify-center gap-2 rounded-lg border border-white/[0.16] bg-[#171c28] px-4 py-2 text-center text-xs font-medium text-[#f5f4f0] hover:border-[#eab308]/50 hover:bg-[#1f2636] transition-colors"
+                    >
+                      <span>{t.home.secondaryCta}</span>
+                      <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -89,22 +117,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </div>
           </div>
 
-          {/* 4-Column Editorial Value Pillars */}
-          <div className="mt-12 grid grid-cols-1 gap-6 border-t border-white/[0.1] pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-            {t.home.pillars.map((pillar, idx) => (
-              <div key={pillar.title} className="min-w-0 space-y-1.5">
-                <div className="font-mono-tabular text-xs font-semibold text-[#eab308]">
-                  0{idx + 1}.
-                </div>
-                <h2 className="font-display text-sm font-semibold text-[#f5f4f0]">
-                  {pillar.title}
-                </h2>
-                <p className="text-xs leading-relaxed text-[#b0b4be]">
-                  {pillar.detail}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -278,6 +290,39 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. What BHD Helps Solve */}
+      <section className="border-b border-[#e5e0d3] bg-white text-[#111216]">
+        <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 sm:py-14 lg:px-8">
+          <div className="max-w-3xl space-y-2">
+            <p className="text-xs font-semibold text-[#9a6700]">
+              {t.home.solvingSectionKicker}
+            </p>
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-[#111216] sm:text-3xl text-balance">
+              {t.home.solvingSectionTitle}
+            </h2>
+            <p className="text-sm sm:text-[15px] leading-relaxed text-[#4b4e57]">
+              {t.home.solvingSectionDesc}
+            </p>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+            {t.home.pillars.map((pillar, idx) => (
+              <div key={pillar.title} className="rounded-xl border border-[#dfd9ca] bg-[#f6f3eb] p-6 space-y-2 min-w-0">
+                <div className="font-mono-tabular text-xs font-semibold text-[#9a6700]">
+                  0{idx + 1}.
+                </div>
+                <h3 className="font-display text-base font-semibold text-[#111216]">
+                  {pillar.title}
+                </h3>
+                <p className="text-xs sm:text-[13px] leading-relaxed text-[#4b4e57]">
+                  {pillar.detail}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -707,7 +752,43 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* 6. Supported Languages + Vanessa Searchable FAQ Split (Warm Ivory Surface) */}
+      {/* 6. Brief About BHD Section */}
+      <section className="border-t border-[#e5e0d3] bg-white text-[#111216]">
+        <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+          <div className="rounded-xl border border-[#dfd9ca] bg-[#111216] p-6 sm:p-10 text-[#f5f4f0]">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
+              <div className="min-w-0 space-y-3 lg:col-span-8">
+                <p className="text-xs font-semibold text-[#eab308]">
+                  {t.home.aboutSectionKicker}
+                </p>
+                <h2 className="font-display text-2xl font-semibold tracking-tight text-[#f5f4f0] sm:text-3xl text-balance">
+                  {t.home.aboutSectionTitle}
+                </h2>
+                <p className="text-sm sm:text-[15px] leading-relaxed text-[#b0b4be]">
+                  {t.home.aboutSectionDesc}
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 sm:flex-row lg:col-span-4 lg:flex-col lg:items-stretch">
+                <a
+                  href="/about"
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+                      e.preventDefault();
+                      onNavigate('/about');
+                    }
+                  }}
+                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg bg-[#eab308] px-5 py-2.5 text-center text-sm font-semibold text-[#0b0c0f] hover:bg-[#facc15] transition-colors"
+                >
+                  <span>{t.nav.about}</span>
+                  <ArrowRight className="h-4 w-4 shrink-0" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Supported Languages + Vanessa Searchable FAQ Split (Warm Ivory Surface) */}
       <section className="border-t border-[#e5e0d3] bg-[#f6f3eb] text-[#111216]">
         <div className="mx-auto max-w-[1280px] px-4 py-14 sm:px-6 sm:py-18 lg:px-8">
           <div className="grid grid-cols-1 gap-7 lg:grid-cols-2">

@@ -57,6 +57,14 @@ export const yo: TranslationBundle = {
         detail: 'Àwọn ètò dígítà tó ṣeé lò ní Gẹ̀ẹ́sì, Igbo, Yorùbá, Hausa, Faransé, àti Nigerian Pidgin.',
       },
     ],
+    solvingSectionKicker: 'Àwọn Ìṣòro Tó Ń Yànjú',
+    solvingSectionTitle: 'Ohun Tí BHD Ń Ràn Lọ́wọ́ Láti Yànjú',
+    solvingSectionDesc:
+      'Àwọn iṣẹ́-ajé kéékèèké máa ń dojú kọ àwọn ìṣòro ojoojúmọ́. BHD ń yànjú àwọn wọ̀nyí pẹ̀lú ìpinnu tó rọrùn àti owó tó wọ̀.',
+    aboutSectionKicker: 'Nípa BYHENRYDIGITALS',
+    aboutSectionTitle: 'Dín Àwọn Ìṣòro Ìkópa Dígítà Kù',
+    aboutSectionDesc:
+      'BYHENRYDIGITALS (BHD) ń ṣiṣẹ́ lábẹ́ àmì kan pẹ̀lú ọ̀nà méjì: BHD Services fún ìpinnu iṣẹ́-ajé àti BHD Academy fún ẹ̀kọ́ dígítà.',
     pathways: {
       sectionKicker: 'BHD Academy àti BHD Services',
       sectionTitle: 'Àwọn Ọ̀nà Méjì Ọ̀tọ̀ọ̀tọ̀ Lábẹ́ BYHENRYDIGITALS',

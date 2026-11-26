@@ -57,6 +57,14 @@ export const ha: TranslationBundle = {
         detail: 'Tsarin dijital mai sauƙin shiga cikin Turanci, Igbo, Yorùbá, Hausa, Faransanci da Nigerian Pidgin.',
       },
     ],
+    solvingSectionKicker: 'Matsalolin da Ake Magancewa',
+    solvingSectionTitle: 'Abin da BHD ke Taimakawa wajen Magancewa',
+    solvingSectionDesc:
+      'Ƙananan masana’antu na fuskantar cikas a kullum. BHD tana magance waɗannan ta hanyar sauƙaƙe hanyoyin dijital masu sauƙin araha.',
+    aboutSectionKicker: 'Game da BYHENRYDIGITALS',
+    aboutSectionTitle: 'Rage Shingaye ga Shiga Harkar Dijital',
+    aboutSectionDesc:
+      'BYHENRYDIGITALS (BHD) tana aiki a ƙarƙashin alama ɗaya tare da hanyoyi biyu: BHD Services don kasuwanci da BHD Academy don ilimin dijital.',
     pathways: {
       sectionKicker: 'BHD Academy da BHD Services',
       sectionTitle: 'Hanyoyi Biyu Daban-Daban Ƙarƙashin BYHENRYDIGITALS',

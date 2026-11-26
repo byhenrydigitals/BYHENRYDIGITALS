@@ -57,6 +57,14 @@ export const fr: TranslationBundle = {
         detail: 'Systèmes numériques accessibles en anglais, igbo, yoruba, haoussa, français et Nigerian Pidgin.',
       },
     ],
+    solvingSectionKicker: 'Défis Clés Relevés',
+    solvingSectionTitle: 'Ce Que BHD Résout',
+    solvingSectionDesc:
+      'Les petites entreprises et startups font face à des obstacles quotidiens. BHD y répond par des solutions pratiques et abordables.',
+    aboutSectionKicker: 'À propos de BYHENRYDIGITALS',
+    aboutSectionTitle: 'Réduire les Barrières à la Participation Numérique',
+    aboutSectionDesc:
+      'BYHENRYDIGITALS (BHD) propose deux parcours complémentaires : BHD Services pour les solutions professionnelles et BHD Academy pour l’éducation numérique.',
     pathways: {
       sectionKicker: 'BHD Academy & BHD Services',
       sectionTitle: 'Deux Parcours Complémentaires au Sein de BYHENRYDIGITALS',

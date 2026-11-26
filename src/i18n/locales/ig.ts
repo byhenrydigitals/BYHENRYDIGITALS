@@ -57,6 +57,14 @@ export const ig: TranslationBundle = {
         detail: 'Sistemụ dijitalụ dị mfe ịbanye n’asụsụ English, Igbo, Yorùbá, Hausa, French, na Nigerian Pidgin.',
       },
     ],
+    solvingSectionKicker: 'Nsogbu Ndị A Na-edozi',
+    solvingSectionTitle: 'Ihe BHD Na-enyere Aka Idozi',
+    solvingSectionDesc:
+      'Obere azụmaahịa na-enwekarị mgbochi kwa ụbọchị. BHD na-edozi ndị a ozugbo site na ngwọta dị mfe ma dị ọnụ ala.',
+    aboutSectionKicker: 'Maka BYHENRYDIGITALS',
+    aboutSectionTitle: 'Ibelata Mgbochi na Nsonye Dijitalụ',
+    aboutSectionDesc:
+      'BYHENRYDIGITALS (BHD) na-arụ ọrụ n’okpuru otu akara nwere ụzọ abụọ: BHD Services maka ngwọta azụmaahịa na BHD Academy maka agụmakwụkwọ dijitalụ.',
     pathways: {
       sectionKicker: 'BHD Academy na BHD Services',
       sectionTitle: 'Ụzọ Abụọ Dị Iche N’okpuru BYHENRYDIGITALS',

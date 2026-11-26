@@ -58,6 +58,14 @@ export const pcm: TranslationBundle = {
           'Platform wey dey work for English, Igbo, Yorùbá, Hausa, French, and Nigerian Pidgin.',
       },
     ],
+    solvingSectionKicker: 'Wahala Wey We Dey Solve',
+    solvingSectionTitle: 'Wetin BHD Dey Help Fix',
+    solvingSectionDesc:
+      'Small business and startup dey face everyday wahala for digital work. BHD dey fix dis things straight with simple and affordable solutions.',
+    aboutSectionKicker: 'About BYHENRYDIGITALS',
+    aboutSectionTitle: 'To Make Digital Work Easy for Everybody',
+    aboutSectionDesc:
+      'BYHENRYDIGITALS (BHD) get two sides under one brand: BHD Services for business website and digital solutions, and BHD Academy for learning digital skills.',
     pathways: {
       sectionKicker: 'BHD Academy & BHD Services',
       sectionTitle: 'Two Separate Doors Under BYHENRYDIGITALS',

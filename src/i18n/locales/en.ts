@@ -30,9 +30,9 @@ export const en: TranslationBundle = {
   home: {
     kicker: 'BYHENRYDIGITALS (BHD)',
     tagline: 'Digital Solutions. Global Impact.',
-    heroTitle: 'Practical Digital Knowledge, Resources & Business Solutions.',
+    heroTitle: 'Digital solutions that make business easier.',
     heroSubtitle:
-      'BYHENRYDIGITALS (BHD) reduces barriers to digital participation by making useful digital knowledge, educational resources, and practical business solutions accessible—bringing together BHD Academy for individuals and BHD Services for small businesses and startups.',
+      'We help small businesses and startups access affordable websites, digital tools and practical workflows that fit their needs.',
     secondaryTagline: 'We Build Digital Value That Sells.',
     needsApproachTitle: 'Two Clear Pathways Under One Digital Solutions Brand',
     needsApproachBody:
@@ -41,22 +41,30 @@ export const en: TranslationBundle = {
     secondaryCta: 'Explore BHD Academy',
     pillars: [
       {
-        title: 'Needs-First Business Solutions',
-        detail: 'BHD Services understands your current workflow before recommending websites, landing pages, or digital tools.',
+        title: 'Affordability',
+        detail: 'Cost-effective digital assets tailored to small budgets and realistic business growth goals.',
       },
       {
-        title: 'BHD Academy for Individuals',
-        detail: 'Structured educational guides, learning resources, and Selar products built for practical digital skills.',
+        title: 'Technical Complexity',
+        detail: 'Simple, jargon-free implementation without heavy code or unnecessary software.',
       },
       {
-        title: 'Transparent Affiliate Programme',
-        detail: 'Free application, BHD selection review, no MLM, and 35% commission for approved affiliates.',
+        title: 'Operational Inefficiency',
+        detail: 'Streamlining customer enquiries, shared links, and daily communication workflows.',
       },
       {
-        title: 'Global Multilingual Access',
-        detail: 'Accessible digital systems available in English, Igbo, Yoruba, Hausa, French, and Nigerian Pidgin.',
+        title: 'Digital Visibility',
+        detail: 'Dependable websites and clear online presence that build instant customer trust.',
       },
     ],
+    solvingSectionKicker: 'Core Challenges Addressed',
+    solvingSectionTitle: 'What BHD Helps Solve',
+    solvingSectionDesc:
+      'Small businesses and startups often face everyday barriers to digital adoption. BHD addresses these directly with practical, affordable solutions.',
+    aboutSectionKicker: 'About BYHENRYDIGITALS',
+    aboutSectionTitle: 'Reducing Barriers to Digital Participation',
+    aboutSectionDesc:
+      'BYHENRYDIGITALS (BHD) operates as a unified brand with two distinct pathways: BHD Services providing practical digital solutions for growing businesses, and BHD Academy offering practical digital education and resources for individuals.',
     pathways: {
       sectionKicker: 'BHD Academy & BHD Services',
       sectionTitle: 'Two Distinct Pathways Under BYHENRYDIGITALS',
@@ -66,7 +74,7 @@ export const en: TranslationBundle = {
         label: 'BHD Services · For Businesses',
         title: 'BHD Services — Practical Digital Solutions for Businesses.',
         description:
-          'We help small businesses and startups identify, access and implement practical digital solutions suited to their needs, budgets and stage of growth.',
+          'Explore websites, digital tools and practical business solutions.',
         cta: 'Explore BHD Services',
         servicesLinkLabel: 'Business Services',
         projectsLinkLabel: 'Selected Projects',
@@ -76,7 +84,7 @@ export const en: TranslationBundle = {
         label: 'BHD Academy · For Individuals',
         title: 'BHD Academy — Learn. Build. Grow.',
         description:
-          'Explore practical digital education, resources and guidance designed to help individuals develop useful digital skills and understand opportunities in the digital economy.',
+          'Explore BHD Academy, digital skills and educational resources.',
         cta: 'Explore BHD Academy',
         productsLinkLabel: 'Digital Products',
         resourcesLinkLabel: 'Learning Resources',
