@@ -74,7 +74,7 @@ export const en: TranslationBundle = {
         label: 'BHD Services · For Businesses',
         title: 'BHD Services — Practical Digital Solutions for Businesses.',
         description:
-          'Explore websites, digital tools and practical business solutions.',
+          'Explore affordable websites, digital tools and practical solutions for your business.',
         cta: 'Explore BHD Services',
         servicesLinkLabel: 'Business Services',
         projectsLinkLabel: 'Selected Projects',
@@ -84,7 +84,7 @@ export const en: TranslationBundle = {
         label: 'BHD Academy · For Individuals',
         title: 'BHD Academy — Learn. Build. Grow.',
         description:
-          'Explore BHD Academy, digital skills and educational resources.',
+          'Explore BHD Academy\'s digital skills, educational products and resources.',
         cta: 'Explore BHD Academy',
         productsLinkLabel: 'Digital Products',
         resourcesLinkLabel: 'Learning Resources',
@@ -373,29 +373,29 @@ export const en: TranslationBundle = {
       'You do not need a technical background to work with BHD. Each service focuses on solving an everyday business bottleneck based on your current needs, budget, and realistic growth plans.',
     approachKicker: 'How BHD Works',
     approachHeading:
-      'Understand the business. Identify the need. Recommend a suitable solution. Implement it.',
+      'Understand the business. Identify the solution. Ensure sustainability. Implement and support.',
     approachLead:
-      'We recommend digital solutions based on your current needs, budget, and realistic growth plans—never pushing unnecessary tools, complex systems, or features your business does not need yet.',
+      'We recommend what a business actually needs based on your current operations and budget—never selling unnecessary services, complex systems, or features you do not need yet.',
     approachSteps: [
       {
         num: '01.',
-        title: 'Understand the business.',
-        detail: 'We learn what your business sells, who you serve, and how daily work currently runs.',
+        title: 'Understand the business & needs.',
+        detail: 'We learn what your business sells, who you serve, and your current operational setup.',
       },
       {
         num: '02.',
-        title: 'Identify the need.',
-        detail: 'We pinpoint where customers get confused or where manual steps slow down enquiries.',
+        title: 'Identify the appropriate solution.',
+        detail: 'We pinpoint the most suitable digital tool or website structure for your goals.',
       },
       {
         num: '03.',
-        title: 'Recommend a suitable solution.',
-        detail: 'We suggest a practical option matched to your current budget and realistic growth plans.',
+        title: 'Consider affordability & sustainability.',
+        detail: 'We evaluate cost-effectiveness and long-term maintainability before proceeding.',
       },
       {
         num: '04.',
-        title: 'Implement it.',
-        detail: 'We build and organise the agreed setup cleanly so your business can use it immediately.',
+        title: 'Implement & support management.',
+        detail: 'We build the solution cleanly and help you understand and manage the tools provided.',
       },
     ],
     labels: {

@@ -51,7 +51,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       For Businesses
                     </h3>
                     <p className="text-xs sm:text-[13px] leading-relaxed text-[#b0b4be]">
-                      Explore websites, digital tools and practical business solutions.
+                      {t.home.pathways.business.description}
                     </p>
                   </div>
                   <div>
@@ -82,7 +82,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       For Individuals
                     </h3>
                     <p className="text-xs sm:text-[13px] leading-relaxed text-[#b0b4be]">
-                      Explore BHD Academy, digital skills and educational resources.
+                      {t.home.pathways.individual.description}
                     </p>
                   </div>
                   <div>
